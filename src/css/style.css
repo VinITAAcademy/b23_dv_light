@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../fonts/Pacifico-Regular.eot');
+    src: local('Pacifico Regular'), local('Pacifico-Regular'),
+        url('Pacifico-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Pacifico-Regular.woff2') format('woff2'),
+        url('../fonts/Pacifico-Regular.woff') format('woff'),
+        url('../fonts/Pacifico-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Yeseva One';
+    src: url('../fonts/YesevaOne-Regular.eot');
+    src: local('Yeseva One Regular'), local('YesevaOne-Regular'),
+        url('YesevaOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/YesevaOne-Regular.woff2') format('woff2'),
+        url('../fonts/YesevaOne-Regular.woff') format('woff'),
+        url('../fonts/YesevaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+/*============================ Mobile375 px========================*/
+@media(min-width: 375px){
+/*header start*/
+/*header end*/
+
+/*main-block start*/
+/*main block end*/
+
+/*registration start*/
+/*registration end*/
+
+/*about the program start*/
+/*about the program end*/
+
+/*video clip start*/
+/*video clip end*/
+
+/*we provide start*/
+/*we provide end*/
+
+/*tape with photos start*/
+/*tape with photos end*/
+
+/*register.attention start*/
+/*register.attention end*/
+
+/*become our partner start*/
+/*become our partner end*/
+
+/*our partners start*/
+/*our partners end*/
+
+/*reference to financial support start*/
+/*reference to financial support end*/
+
+/*specialty start*/
+/*specialty end*/
+
+/*footer start*/
+/*footer end*/
+}
+
+/*============================ Tablet 768 px========================*/
+
+@media(min-width: 768px){
+/*header start*/
+/*header end*/
+
+/*main-block start*/
+/*main block end*/
+
+/*registration start*/
+/*registration end*/
+
+/*about the program start*/
+/*about the program end*/
+
+/*video clip start*/
+/*video clip end*/
+
+/*we provide start*/
+/*we provide end*/
+
+/*tape with photos start*/
+/*tape with photos end*/
+
+/*register.attention start*/
+/*register.attention end*/
+
+/*become our partner start*/
+/*become our partner end*/
+
+/*our partners start*/
+/*our partners end*/
+
+/*reference to financial support start*/
+/*reference to financial support end*/
+
+/*specialty start*/
+/*specialty end*/
+
+/*footer start*/
+/*footer end*/
+}
+
+
+/*============================ Desktop 1024 px========================*/
+
+@media(min-width: 1024px){
+/*header start*/
+/*header end*/
+
+/*main-block start*/
+/*main block end*/
+
+/*registration start*/
+/*registration end*/
+
+/*about the program start*/
+/*about the program end*/
+
+/*video clip start*/
+/*video clip end*/
+
+/*we provide start*/
+/*we provide end*/
+
+/*tape with photos start*/
+/*tape with photos end*/
+
+/*register.attention start*/
+/*register.attention end*/
+
+/*become our partner start*/
+/*become our partner end*/
+
+/*our partners start*/
+/*our partners end*/
+
+/*reference to financial support start*/
+/*reference to financial support end*/
+
+/*specialty start*/
+/*specialty end*/
+
+/*footer start*/
+/*footer end*/
+}
+
+
+
+
+
+
+
+
+
