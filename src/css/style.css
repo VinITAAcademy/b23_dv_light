@@ -25,145 +25,152 @@
 
 
 
-body{
-	margin: 0;
-	padding: 0;
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-white: #FFFFFF;
+    --color-yellow: #FDD817;
+    --color-blue-1: #05003E;
+    --color-blue-2: #2162B4;
+    --color-black: #000000;
+    --color-red: #FF0000;
+    --color-burgundy: #CF0032;
+    --color-footer: #6A8EA8;
+    --color-grey-1: #999999;
+    --color-grey-2: #E9E9E9;
+
+
+
 }
 
 /*============================ Mobile375 px========================*/
-@media(min-width: 375px){
-/*header start*/
-/*header end*/
+@media(min-width: 375px) {
+    /*header start*/
+    /*header end*/
 
-/*main-block start*/
-/*main block end*/
+    /*main-block start*/
+    /*main block end*/
 
-/*registration start*/
-/*registration end*/
+    /*registration start*/
+    /*registration end*/
 
-/*about the program start*/
-/*about the program end*/
+    /*about the program start*/
+    /*about the program end*/
 
-/*video clip start*/
-/*video clip end*/
+    /*video clip start*/
+    /*video clip end*/
 
-/*we provide start*/
-/*we provide end*/
+    /*we provide start*/
+    /*we provide end*/
 
-/*tape with photos start*/
-/*tape with photos end*/
+    /*tape with photos start*/
+    /*tape with photos end*/
 
-/*register.attention start*/
-/*register.attention end*/
+    /*register.attention start*/
+    /*register.attention end*/
 
-/*become our partner start*/
-/*become our partner end*/
+    /*become our partner start*/
+    /*become our partner end*/
 
-/*our partners start*/
-/*our partners end*/
+    /*our partners start*/
+    /*our partners end*/
 
-/*reference to financial support start*/
-/*reference to financial support end*/
+    /*reference to financial support start*/
+    /*reference to financial support end*/
 
-/*specialty start*/
-/*specialty end*/
+    /*specialty start*/
+    /*specialty end*/
 
-/*footer start*/
-/*footer end*/
+    /*footer start*/
+    /*footer end*/
 }
 
 /*============================ Tablet 768 px========================*/
 
-@media(min-width: 768px){
-/*header start*/
-/*header end*/
+@media(min-width: 768px) {
+    /*header start*/
+    /*header end*/
 
-/*main-block start*/
-/*main block end*/
+    /*main-block start*/
+    /*main block end*/
 
-/*registration start*/
-/*registration end*/
+    /*registration start*/
+    /*registration end*/
 
-/*about the program start*/
-/*about the program end*/
+    /*about the program start*/
+    /*about the program end*/
 
-/*video clip start*/
-/*video clip end*/
+    /*video clip start*/
+    /*video clip end*/
 
-/*we provide start*/
-/*we provide end*/
+    /*we provide start*/
+    /*we provide end*/
 
-/*tape with photos start*/
-/*tape with photos end*/
+    /*tape with photos start*/
+    /*tape with photos end*/
 
-/*register.attention start*/
-/*register.attention end*/
+    /*register.attention start*/
+    /*register.attention end*/
 
-/*become our partner start*/
-/*become our partner end*/
+    /*become our partner start*/
+    /*become our partner end*/
 
-/*our partners start*/
-/*our partners end*/
+    /*our partners start*/
+    /*our partners end*/
 
-/*reference to financial support start*/
-/*reference to financial support end*/
+    /*reference to financial support start*/
+    /*reference to financial support end*/
 
-/*specialty start*/
-/*specialty end*/
+    /*specialty start*/
+    /*specialty end*/
 
-/*footer start*/
-/*footer end*/
+    /*footer start*/
+    /*footer end*/
 }
 
 
 /*============================ Desktop 1024 px========================*/
 
-@media(min-width: 1024px){
-/*header start*/
-/*header end*/
+@media(min-width: 1024px) {
+    /*header start*/
+    /*header end*/
 
-/*main-block start*/
-/*main block end*/
+    /*main-block start*/
+    /*main block end*/
 
-/*registration start*/
-/*registration end*/
+    /*registration start*/
+    /*registration end*/
 
-/*about the program start*/
-/*about the program end*/
+    /*about the program start*/
+    /*about the program end*/
 
-/*video clip start*/
-/*video clip end*/
+    /*video clip start*/
+    /*video clip end*/
 
-/*we provide start*/
-/*we provide end*/
+    /*we provide start*/
+    /*we provide end*/
 
-/*tape with photos start*/
-/*tape with photos end*/
+    /*tape with photos start*/
+    /*tape with photos end*/
 
-/*register.attention start*/
-/*register.attention end*/
+    /*register.attention start*/
+    /*register.attention end*/
 
-/*become our partner start*/
-/*become our partner end*/
+    /*become our partner start*/
+    /*become our partner end*/
 
-/*our partners start*/
-/*our partners end*/
+    /*our partners start*/
+    /*our partners end*/
 
-/*reference to financial support start*/
-/*reference to financial support end*/
+    /*reference to financial support start*/
+    /*reference to financial support end*/
 
-/*specialty start*/
-/*specialty end*/
+    /*specialty start*/
+    /*specialty end*/
 
-/*footer start*/
-/*footer end*/
+    /*footer start*/
+    /*footer end*/
 }
-
-
-
-
-
-
-
-
-
