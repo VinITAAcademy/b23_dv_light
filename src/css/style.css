@@ -58,17 +58,13 @@ body {
 /*registration end*/
 
 /*about the program start*/
-body {
+
+#aboutTheProgram .contain {
     margin: 0;
     padding: 0;
 }
 
-.contain {
-    margin: 0;
-    padding: 0;
-}
-
-.text1 {
+#aboutTheProgram .text1 {
     font-family: Montserrat;
     font-size: 12px;
     font-style: italic;
@@ -76,23 +72,23 @@ body {
     line-height: normal;
 }
 
-.text {
+#aboutTheProgram .text {
     width: 100%;
     padding: 29px 0;
     background-color: var(--color-grey-2);
 
 }
 
-.foot {
+#aboutTheProgram .foot {
     width: 100%;
     margin-bottom: 24px;
 }
 
-.fut {
+#aboutTheProgram .fut {
     display: none;
 }
 
-.text-title {
+#aboutTheProgram .text-title {
     font-family: Montserrat;
     font-size: 12px;
     font-style: italic;
@@ -148,24 +144,24 @@ body {
     /*registration end*/
 
     /*about the program start*/
-    .contain {
+    #aboutTheProgram .contain {
 
         margin: 0 auto;
 
     }
 
-    .text {
+    #aboutTheProgram .text {
         text-align: center;
         margin: 0 auto;
         padding: 50px 0;
         background-color: var(--color-grey-2);
     }
 
-    .text1 {
+    #aboutTheProgram .text1 {
         all: unset;
     }
 
-    .text2 {
+    #aboutTheProgram .text2 {
         color: var(--color-blue-1);
         font-family: Montserrat;
         font-size: 24px;
@@ -175,17 +171,16 @@ body {
     }
 
 
-    .foot {
+    #aboutTheProgram .foot {
         width: 100%;
-        /* height: 384px;*/
         margin: 0;
     }
 
-    .fut {
+    #aboutTheProgram .fut {
         display: none;
     }
 
-    .text-title {
+    #aboutTheProgram .text-title {
         color: var(--color-blue-1);
         text-align: center;
         font-family: Montserrat;
@@ -242,27 +237,27 @@ body {
     /*registration end*/
 
     /*about the program start*/
-    .contain {
+    #aboutTheProgram .contain {
         width: 100%;
         height: 448px;
         background-color: var(--color-grey-2);
     }
 
-    .block {
+    #aboutTheProgram .block {
         max-width: 1024px;
         margin: 0 auto;
     }
 
-    .text {
+    #aboutTheProgram .text {
         margin: 0;
         padding: 0;
     }
 
-    .text1 {
+    #aboutTheProgram .text1 {
         all: unset;
     }
 
-    .text2 {
+    #aboutTheProgram .text2 {
         color: var(--color-blue-1);
         font-family: Montserrat;
         font-size: 16px;
@@ -270,20 +265,19 @@ body {
         line-height: 180%;
     }
 
-    .foot {
+    #aboutTheProgram .foot {
         display: none;
     }
 
-    .fut {
+    #aboutTheProgram .fut {
         display: flex;
-
         width: 304px;
         height: 300.95px;
         float: right;
         margin: 69.57px 48px 77.48px 0;
     }
 
-    .text-title {
+    #aboutTheProgram .text-title {
         color: var(--color-blue-1);
         text-align: center;
         font-family: Montserrat;
