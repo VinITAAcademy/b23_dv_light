@@ -46,16 +46,15 @@ body {
 
 }
 
-#video .videoYT{
-    width: 100%;
+#video{
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 #video .videoPreview{
     background: url(../images/video/video-preview.svg) no-repeat center;
     background-size: cover;
     background-clip: content-box;
-    padding-top: 12px;
-    padding-bottom: 12px;
     width: 100%;
 }
 
@@ -78,10 +77,6 @@ body {
     /*about the program end*/
 
     /*video clip start*/
-    #video .videoYT{
-        height: 210px;
-    }
-
     #video .videoPreview{
         height: 210px;
     }
@@ -128,11 +123,6 @@ body {
     /*about the program end*/
 
     /*video clip start*/
-    #video .videoYT{
-        max-width: 762px;
-        height: 431px;
-    }
-
     #video .videoPreview{
         max-width: 762px;
         height: 431px;
@@ -181,10 +171,6 @@ body {
     /*about the program end*/
 
     /*video clip start*/
-    #video .videoYT{
-        height: 450.3px;
-    }
-
     #video .videoPreview{
         height: 450.3px;
     }
