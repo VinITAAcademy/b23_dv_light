@@ -46,6 +46,22 @@ body {
 
 }
 
+#video{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#video .videoPreview{
+    background: url(../images/video/video-preview.svg) no-repeat center;
+    background-size: cover;
+    background-clip: content-box;
+    width: 100%;
+}
+
+#video .videoPreview:hover{
+    cursor: pointer;
+}
+
 /*============================ Mobile375 px========================*/
 @media(min-width: 375px) {
     /*header start*/
@@ -61,6 +77,9 @@ body {
     /*about the program end*/
 
     /*video clip start*/
+    #video .videoPreview{
+        height: 210px;
+    }
     /*video clip end*/
 
     /*we provide start*/
@@ -104,6 +123,10 @@ body {
     /*about the program end*/
 
     /*video clip start*/
+    #video .videoPreview{
+        max-width: 762px;
+        height: 431px;
+    }
     /*video clip end*/
 
     /*we provide start*/
@@ -148,6 +171,9 @@ body {
     /*about the program end*/
 
     /*video clip start*/
+    #video .videoPreview{
+        height: 450.3px;
+    }
     /*video clip end*/
 
     /*we provide start*/
