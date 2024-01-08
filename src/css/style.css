@@ -39,29 +39,10 @@ body {
     --color-footer: #6A8EA8;
     --color-grey-1: #999999;
     --color-grey-2: #E9E9E9;
-
-
-
-}
-
-#video{
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
-
-#video .videoPreview{
-    background: url(../images/video/video-preview.svg) no-repeat center;
-    background-size: cover;
-    background-clip: content-box;
-    width: 100%;
-}
-
-#video .videoPreview:hover{
-    cursor: pointer;
 }
 
 /*============================ Mobile375 px========================*/
-/* @media(min-width: 375px) {*/
+
 /*header start*/
 /*header end*/
 
@@ -85,7 +66,7 @@ body {
     margin-bottom: 24px;
 }
 
-#aboutTheProgram br{
+#aboutTheProgram br {
     display: none;
 }
 
@@ -98,7 +79,7 @@ body {
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
-    line-height:normal;
+    line-height: normal;
     text-align: center;
     color: var(--color-blue-1);
     width: 328px;
@@ -106,10 +87,31 @@ body {
     padding: 29px 24px 24px 23px;
     margin: 0 auto;
 }
+
 /*about the program end*/
 
-    /*video clip start*/
-    /*video clip end*/
+/*video clip start*/
+#video {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#video .videoPreview {
+    background: url(../images/video/video-preview.svg) no-repeat center;
+    background-size: cover;
+    background-clip: content-box;
+    width: 100%;
+}
+
+#video .videoPreview:hover {
+    cursor: pointer;
+}
+
+#video .videoPreview {
+    height: 210px;
+}
+
+/*video clip end*/
 
 /*we provide start*/
 /*we provide end*/
@@ -134,7 +136,6 @@ body {
 
 /*footer start*/
 /*footer end*/
-/*}*/
 
 /*============================ Tablet 768 px========================*/
 
@@ -154,11 +155,11 @@ body {
         padding: 0;
     }
 
-    #aboutTheProgram br{
+    #aboutTheProgram br {
         display: none;
     }
 
-    #aboutTheProgram .tex{
+    #aboutTheProgram .tex {
         background-color: var(--color-grey-2);
     }
 
@@ -167,7 +168,6 @@ body {
         background-size: cover;
         padding: 25%;
         margin: 0;
-       
     }
 
     #aboutTheProgram .text-title {
@@ -187,7 +187,7 @@ body {
     /*about the program end*/
 
     /*video clip start*/
-    #video .videoPreview{
+    #video .videoPreview {
         max-width: 762px;
         height: 431px;
     }
@@ -251,9 +251,10 @@ body {
         margin: 0 auto;
     }
 
-    #aboutTheProgram br{
+    #aboutTheProgram br {
         display: flex;
     }
+
     #aboutTheProgram .text {
         background-color: var(--color-grey-2);
     }
@@ -276,7 +277,7 @@ body {
     /*about the program end*/
 
     /*video clip start*/
-    #video .videoPreview{
+    #video .videoPreview {
         height: 450.3px;
     }
     /*video clip end*/
