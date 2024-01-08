@@ -248,6 +248,7 @@ body {
     #aboutTheProgram .main_unit {
         max-width: 1024px;
         height: 448px;
+        margin: 0 auto;
     }
 
     #aboutTheProgram br{
