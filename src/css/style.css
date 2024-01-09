@@ -64,6 +64,34 @@ body {
     /*video clip end*/
 
     /*we provide start*/
+#provide .images{
+    background-image: url(../images/provide/providemobile.png);
+    margin: 28px 31px 0 17px;
+    width: 326.727px;
+    height: 186.2px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#provide .text{
+    color: #05003E;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+}    
+#provide .text1{
+    width: 279px;
+    text-align: left;
+    color: #05003E;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
     /*we provide end*/
 
     /*tape with photos start*/
@@ -107,6 +135,36 @@ body {
     /*video clip end*/
 
     /*we provide start*/
+    #provide .images{
+        background-image: url(../images/provide/provide.tablet.png);
+        margin: 20px 34px 0 34px;
+        width: 700px;
+        height: 917px;
+        flex-shrink: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #provide .text{
+        color: #05003E;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }    
+    #provide .text1{
+        margin-left: 91px;
+        margin-right: 91px;
+        margin-top: 30px;
+        width: 586px;
+        color: #05003E;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.8;
+    }
     /*we provide end*/
 
     /*tape with photos start*/
@@ -151,6 +209,37 @@ body {
     /*video clip end*/
 
     /*we provide start*/
+    #provide .images{
+        background-image: url(../images/provide/provide.desktop.png);
+        margin: 0px 130px 0 130px;
+        width: 762.721px;
+        height: 349.395px;
+        flex-shrink: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #provide .text{
+        color: #05003E;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }    
+    #provide .text1{
+        line-height: 1.8;
+        padding: 15px 0 ;
+        margin-left: 50px;
+        width: 316.299px;
+        height: 218.44px;
+        color: #05003E;
+        font-family: Montserrat;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+    
+    }
     /*we provide end*/
 
     /*tape with photos start*/
