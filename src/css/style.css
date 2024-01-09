@@ -97,45 +97,84 @@ body {
 }
 
 #video .videoPreview {
-    background: url(../images/video/video-preview.svg) no-repeat center;
+    background: url(../images/video/video-preview.jpg) no-repeat center;
     background-size: cover;
     background-clip: content-box;
     width: 100%;
+    height: 210px;
 }
 
 #video .videoPreview:hover {
     cursor: pointer;
 }
 
-#video .videoPreview {
-    height: 210px;
+/*============================ Mobile375 px========================*/
+@media(min-width: 375px) {
+    /*header start*/
+    /*header end*/
+
+    /*main-block start*/
+    /*main block end*/
+
+    /*registration start*/
+    /*registration end*/
+
+    /*about the program start*/
+    /*about the program end*/
+
+    /*video clip start*/
+    /*video clip end*/
+
+    /*we provide start*/
+    /*we provide end*/
+
+    /*tape with photos start*/
+    /*tape with photos end*/
+
+    /*register.attention start*/
+    /*register.attention end*/
+
+    /*become our partner start*/
+    /*become our partner end*/
+
+    /*our partners start*/
+    /*our partners end*/
+
+    /*reference to financial support start*/
+    /*reference to financial support end*/
+
+    /*specialty start*/
+    /*specialty end*/
+
+    /*footer start*/
+    /*footer end*/
+
+    /*video clip end*/
+
+    /*we provide start*/
+    /*we provide end*/
+
+    /*tape with photos start*/
+    /*tape with photos end*/
+
+    /*register.attention start*/
+    /*register.attention end*/
+
+    /*become our partner start*/
+    /*become our partner end*/
+
+    /*our partners start*/
+    /*our partners end*/
+
+    /*reference to financial support start*/
+    /*reference to financial support end*/
+
+    /*specialty start*/
+    /*specialty end*/
+
+    /*footer start*/
+    /*footer end*/
 }
-
-/*video clip end*/
-
-/*we provide start*/
-/*we provide end*/
-
-/*tape with photos start*/
-/*tape with photos end*/
-
-/*register.attention start*/
-/*register.attention end*/
-
-/*become our partner start*/
-/*become our partner end*/
-
-/*our partners start*/
-/*our partners end*/
-
-/*reference to financial support start*/
-/*reference to financial support end*/
-
-/*specialty start*/
-/*specialty end*/
-
-/*footer start*/
-/*footer end*/
 
 /*============================ Tablet 768 px========================*/
 
@@ -191,6 +230,7 @@ body {
         max-width: 762px;
         height: 431px;
     }
+
     /*video clip end*/
 
     /*we provide start*/
@@ -277,9 +317,6 @@ body {
     /*about the program end*/
 
     /*video clip start*/
-    #video .videoPreview {
-        height: 450.3px;
-    }
     /*video clip end*/
 
     /*we provide start*/
