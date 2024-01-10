@@ -22,7 +22,6 @@
     font-style: normal;
 }
 
-
 body {
     margin: 0;
     padding: 0;
@@ -106,159 +105,141 @@ body {
 #video .videoPreview:hover {
     cursor: pointer;
 }
+/*video clip end*/
 
-/*============================ Mobile375 px========================*/
-@media (min-width: 375px) {
-    /*header start*/
-    /*header end*/
-
-    /*main-block start*/
-    /*main block end*/
-
-    /*registration start*/
-    /*registration end*/
-
-    /*about the program start*/
-    /*about the program end*/
-
-    /*video clip start*/
-    /*video clip end*/
-
-    /*we provide start*/
-    #provide .images {
-        background-image: url(../images/provide/providemobile.png);
-        margin: 0 auto;
-        width: 326.727px;
-        height: 186.2px;
-        flex-shrink: 0;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    #provide .text {
-        color: #05003e;
-        text-align: center;
-        font-family: Open Sans;
-        font-size: 20px;
-        font-style: italic;
-        font-weight: 600;
-        line-height: normal;
-    }
-
-    #provide .text1 {
-        width: 279px;
-        text-align: left;
-        color: #05003e;
-        font-family: Montserrat;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-    }
-
-    /*we provide end*/
-
-    /*tape with photos start*/
-    /*tape with photos end*/
-
-    /*register.attention start*/
-    /*register.attention end*/
-
-    /*become our partner start*/
-    /*become our partner end*/
-
-    /*our partners start*/
-    #partners {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        position: relative;
-        margin-top: 12px;
-        margin-bottom: 44px;
-    }
-
-    #partners .partners_title {
-        color: var(--color-blue-1);
-        font-family: 'Montserrat';
-        font-size: 18px;
-        font-style: italic;
-        font-weight: 600;
-        line-height: 22px;
-        letter-spacing: 0em;
-        text-align: center;
-
-    }
-
-    #partners .carousel {
-        display: flex;
-        width: 100%;
-        max-width: 768px;
-    }
-
-    #partners .carousel .carousel-inner .carousel-item img {
-        height: 40px;
-    }
-
-    #partners .carousel .carousel-control-butt .carousel-control-prev-icon {
-        background: url(../images/our_partners/prev.svg);
-        width: 24px;
-        height: 24px;
-    }
-
-    #partners .carousel .carousel-control-butt .carousel-control-next-icon {
-        background: url(../images/our_partners/next.svg) no-repeat;
-        width: 24px;
-        height: 24px;
-    }
-
-    #partners .carousel .carousel-control-butt {
-        position: static;
-        border-radius: 50%;
-    }
-
-    #partners .our_partners {
-        display: none;
-    }
-
-    /*our partners end*/
-
-    /*reference to financial support start*/
-    /*reference to financial support end*/
-
-    /*specialty start*/
-    /*specialty end*/
-
-    /*footer start*/
-    /*footer end*/
-
-    /*video clip end*/
-
-    /*we provide start*/
-    /*we provide end*/
-
-    /*tape with photos start*/
-    /*tape with photos end*/
-
-    /*register.attention start*/
-    /*register.attention end*/
-
-    /*become our partner start*/
-    /*become our partner end*/
-
-    /*our partners start*/
-    /*our partners end*/
-
-    /*reference to financial support start*/
-    /*reference to financial support end*/
-
-    /*specialty start*/
-    /*specialty end*/
-
-    /*footer start*/
-    /*footer end*/
+/*we provide start*/
+#provide .images {
+    background-image: url(../images/provide/providemobile.png);
+    margin: 0 auto;
+    width: 326.727px;
+    height: 186.2px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+#provide .text {
+    color: #05003e;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#provide .text1 {
+    width: 279px;
+    text-align: left;
+    color: #05003e;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/*we provide end*/
+
+/*tape with photos start*/
+/*tape with photos end*/
+
+/*register.attention start*/
+/*register.attention end*/
+
+/*become our partner start*/
+/*become our partner end*/
+
+/*our partners start*/
+#partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-top: 12px;
+    margin-bottom: 44px;
+}
+
+#partners .partners_title {
+    color: var(--color-blue-1);
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+#partners .carousel {
+    display: flex;
+    width: 100%;
+    max-width: 768px;
+}
+
+#partners .carousel .carousel-inner .carousel-item img {
+    height: 40px;
+}
+
+#partners .carousel .carousel-control-butt .carousel-control-prev-icon {
+    background: url(../images/our_partners/prev.svg);
+    width: 24px;
+    height: 24px;
+}
+
+#partners .carousel .carousel-control-butt .carousel-control-next-icon {
+    background: url(../images/our_partners/next.svg) no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+#partners .carousel .carousel-control-butt {
+    position: static;
+    border-radius: 50%;
+}
+
+#partners .our_partners {
+    display: none;
+}
+
+/*our partners end*/
+
+/*reference to financial support start*/
+/*reference to financial support end*/
+
+/*specialty start*/
+/*specialty end*/
+
+/*footer start*/
+/*footer end*/
+
+/*video clip end*/
+
+/*we provide start*/
+/*we provide end*/
+
+/*tape with photos start*/
+/*tape with photos end*/
+
+/*register.attention start*/
+/*register.attention end*/
+
+/*become our partner start*/
+/*become our partner end*/
+
+/*our partners start*/
+/*our partners end*/
+
+/*reference to financial support start*/
+/*reference to financial support end*/
+
+/*specialty start*/
+/*specialty end*/
+
+/*footer start*/
+/*footer end*/
 
 /*============================ Tablet 768 px========================*/
 
@@ -376,14 +357,13 @@ body {
 
     #partners .partners_title {
         color: var(--color-blue-1);
-        font-family: 'Montserrat';
+        font-family: "Montserrat";
         font-size: 18px;
         font-style: italic;
         font-weight: 600;
         line-height: 22px;
         letter-spacing: 0em;
         text-align: center;
-
     }
 
     #partners .carousel {
@@ -429,7 +409,6 @@ body {
     /*footer end*/
 }
 
-
 /*============================ Desktop 1024 px========================*/
 
 @media (min-width: 1024px) {
@@ -451,7 +430,7 @@ body {
 
     #aboutTheProgram .foto {
         float: right;
-        background-image: url(../images/about_the_program/photo_about_the_program_\(1\).png);
+        background-image: url(../images/about_the_program/photo_about_the_program_1.png);
         padding: 14%;
         margin: 69.57px 48px 77.48px 0;
     }
@@ -522,7 +501,6 @@ body {
         font-style: normal;
         font-weight: 400;
     }
-
     /*we provide end*/
 
     /*tape with photos start*/
