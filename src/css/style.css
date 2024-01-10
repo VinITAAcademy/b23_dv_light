@@ -130,6 +130,7 @@ body {
     text-align: center;
     position: relative;
     margin-top: 12px;
+    margin-bottom: 44px;
 }
 
 .partners_title {
@@ -403,7 +404,9 @@ body {
     }
 
     .all_icons {
-        height: 347px;
+        height: 327px;
+        margin-top: 25px;
+        margin-bottom: 15px;
     }
 
     .preview_icon {
@@ -434,7 +437,7 @@ body {
     .central_rows {
         display: flex;
         align-items: center;
-        height: 50%;
+        height: 45%;
     }
 
     .col-md-4 {
