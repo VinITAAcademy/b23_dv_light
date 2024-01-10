@@ -1,23 +1,23 @@
 @font-face {
-    font-family: 'Pacifico';
-    src: url('../fonts/Pacifico-Regular.eot');
-    src: local('Pacifico Regular'), local('Pacifico-Regular'),
-        url('Pacifico-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Pacifico-Regular.woff2') format('woff2'),
-        url('../fonts/Pacifico-Regular.woff') format('woff'),
-        url('../fonts/Pacifico-Regular.ttf') format('truetype');
+    font-family: "Pacifico";
+    src: url("../fonts/Pacifico-Regular.eot");
+    src: local("Pacifico Regular"), local("Pacifico-Regular"),
+        url("Pacifico-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Pacifico-Regular.woff2") format("woff2"),
+        url("../fonts/Pacifico-Regular.woff") format("woff"),
+        url("../fonts/Pacifico-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Yeseva One';
-    src: url('../fonts/YesevaOne-Regular.eot');
-    src: local('Yeseva One Regular'), local('YesevaOne-Regular'),
-        url('YesevaOne-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/YesevaOne-Regular.woff2') format('woff2'),
-        url('../fonts/YesevaOne-Regular.woff') format('woff'),
-        url('../fonts/YesevaOne-Regular.ttf') format('truetype');
+    font-family: "Yeseva One";
+    src: url("../fonts/YesevaOne-Regular.eot");
+    src: local("Yeseva One Regular"), local("YesevaOne-Regular"),
+        url("YesevaOne-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/YesevaOne-Regular.woff2") format("woff2"),
+        url("../fonts/YesevaOne-Regular.woff") format("woff"),
+        url("../fonts/YesevaOne-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -29,16 +29,16 @@ body {
 }
 
 :root {
-    --color-white: #FFFFFF;
-    --color-yellow: #FDD817;
-    --color-blue-1: #05003E;
-    --color-blue-2: #2162B4;
+    --color-white: #ffffff;
+    --color-yellow: #fdd817;
+    --color-blue-1: #05003e;
+    --color-blue-2: #2162b4;
     --color-black: #000000;
-    --color-red: #FF0000;
-    --color-burgundy: #CF0032;
-    --color-footer: #6A8EA8;
+    --color-red: #ff0000;
+    --color-burgundy: #cf0032;
+    --color-footer: #6a8ea8;
     --color-grey-1: #999999;
-    --color-grey-2: #E9E9E9;
+    --color-grey-2: #e9e9e9;
 }
 
 /*============================ Mobile375 px========================*/
@@ -107,115 +107,162 @@ body {
     cursor: pointer;
 }
 
-/*video clip end*/
+/*============================ Mobile375 px========================*/
+@media (min-width: 375px) {
+    /*header start*/
+    /*header end*/
 
-/*we provide start*/
-/*we provide end*/
+    /*main-block start*/
+    /*main block end*/
 
-/*tape with photos start*/
-/*tape with photos end*/
+    /*registration start*/
+    /*registration end*/
 
-/*register.attention start*/
-/*register.attention end*/
+    /*about the program start*/
+    /*about the program end*/
 
-/*become our partner start*/
-/*become our partner end*/
+    /*video clip start*/
+    /*video clip end*/
 
-/*our partners start*/
-#partners {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    margin-top: 12px;
-    margin-bottom: 44px;
+    /*we provide start*/
+    #provide .images {
+        background-image: url(../images/provide/providemobile.png);
+        margin: 0 auto;
+        width: 326.727px;
+        height: 186.2px;
+        flex-shrink: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #provide .text {
+        color: #05003e;
+        text-align: center;
+        font-family: Open Sans;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    #provide .text1 {
+        width: 279px;
+        text-align: left;
+        color: #05003e;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    /*we provide end*/
+
+    /*tape with photos start*/
+    /*tape with photos end*/
+
+    /*register.attention start*/
+    /*register.attention end*/
+
+    /*become our partner start*/
+    /*become our partner end*/
+
+    /*our partners start*/
+    #partners {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        margin-top: 12px;
+        margin-bottom: 44px;
+    }
+
+    #partners .partners_title {
+        color: var(--color-blue-1);
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+
+    }
+
+    #partners .carousel {
+        display: flex;
+        width: 100%;
+        max-width: 768px;
+    }
+
+    #partners .carousel .carousel-inner .carousel-item img {
+        height: 40px;
+    }
+
+    #partners .carousel .carousel-control-butt .carousel-control-prev-icon {
+        background: url(../images/our_partners/prev.svg);
+        width: 24px;
+        height: 24px;
+    }
+
+    #partners .carousel .carousel-control-butt .carousel-control-next-icon {
+        background: url(../images/our_partners/next.svg) no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+
+    #partners .carousel .carousel-control-butt {
+        position: static;
+        border-radius: 50%;
+    }
+
+    #partners .our_partners {
+        display: none;
+    }
+
+    /*our partners end*/
+
+    /*reference to financial support start*/
+    /*reference to financial support end*/
+
+    /*specialty start*/
+    /*specialty end*/
+
+    /*footer start*/
+    /*footer end*/
+
+    /*video clip end*/
+
+    /*we provide start*/
+    /*we provide end*/
+
+    /*tape with photos start*/
+    /*tape with photos end*/
+
+    /*register.attention start*/
+    /*register.attention end*/
+
+    /*become our partner start*/
+    /*become our partner end*/
+
+    /*our partners start*/
+    /*our partners end*/
+
+    /*reference to financial support start*/
+    /*reference to financial support end*/
+
+    /*specialty start*/
+    /*specialty end*/
+
+    /*footer start*/
+    /*footer end*/
 }
-
-#partners .partners_title {
-    color: var(--color-blue-1);
-    font-family: 'Montserrat';
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 600;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: center;
-
-}
-
-#partners .carousel {
-    display: flex;
-    width: 100%;
-    max-width: 768px;
-}
-
-#partners .carousel .carousel-inner .carousel-item img {
-    height: 40px;
-}
-
-#partners .carousel .carousel-control-butt .carousel-control-prev-icon {
-    background: url(../images/our_partners/prev.svg);
-    width: 24px;
-    height: 24px;
-}
-
-#partners .carousel .carousel-control-butt .carousel-control-next-icon {
-    background: url(../images/our_partners/next.svg) no-repeat;
-    width: 24px;
-    height: 24px;
-}
-
-#partners .carousel .carousel-control-butt {
-    position: static;
-    border-radius: 50%;
-}
-
-#partners .our_partners {
-    display: none;
-}
-
-/*our partners end*/
-
-/*reference to financial support start*/
-/*reference to financial support end*/
-
-/*specialty start*/
-/*specialty end*/
-
-/*footer start*/
-/*footer end*/
-
-/*video clip end*/
-
-/*we provide start*/
-/*we provide end*/
-
-/*tape with photos start*/
-/*tape with photos end*/
-
-/*register.attention start*/
-/*register.attention end*/
-
-/*become our partner start*/
-/*become our partner end*/
-
-/*our partners start*/
-/*our partners end*/
-
-/*reference to financial support start*/
-/*reference to financial support end*/
-
-/*specialty start*/
-/*specialty end*/
-
-/*footer start*/
-/*footer end*/
 
 /*============================ Tablet 768 px========================*/
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
     /*header start*/
     /*header end*/
 
@@ -271,6 +318,39 @@ body {
     /*video clip end*/
 
     /*we provide start*/
+    #provide .images {
+        background-image: url(../images/provide/provide.tablet.png);
+        margin: 0 auto;
+        width: 700px;
+        height: 917px;
+        flex-shrink: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #provide .text {
+        color: #05003e;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    #provide .text1 {
+        margin-left: 91px;
+        margin-right: 91px;
+        margin-top: 30px;
+        width: 586px;
+        color: #05003e;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.8;
+    }
+
     /*we provide end*/
 
     /*tape with photos start*/
@@ -283,6 +363,60 @@ body {
     /*become our partner end*/
 
     /*our partners start*/
+    #partners {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        margin-top: 12px;
+        margin-bottom: 44px;
+    }
+
+    #partners .partners_title {
+        color: var(--color-blue-1);
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+
+    }
+
+    #partners .carousel {
+        display: flex;
+        width: 100%;
+        max-width: 768px;
+    }
+
+    #partners .carousel .carousel-inner .carousel-item img {
+        height: 40px;
+    }
+
+    #partners .carousel .carousel-control-butt .carousel-control-prev-icon {
+        background: url(../images/our_partners/prev.svg);
+        width: 24px;
+        height: 24px;
+    }
+
+    #partners .carousel .carousel-control-butt .carousel-control-next-icon {
+        background: url(../images/our_partners/next.svg) no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+
+    #partners .carousel .carousel-control-butt {
+        position: static;
+        border-radius: 50%;
+    }
+
+    #partners .our_partners {
+        display: none;
+    }
+
     /*our partners end*/
 
     /*reference to financial support start*/
@@ -298,7 +432,7 @@ body {
 
 /*============================ Desktop 1024 px========================*/
 
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
     /*header start*/
     /*header end*/
 
@@ -357,6 +491,38 @@ body {
     /*video clip end*/
 
     /*we provide start*/
+    #provide .images {
+        background-image: url(../images/provide/provide.desktop.png);
+        margin: 0 auto;
+        width: 762.721px;
+        height: 349.395px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #provide .text {
+        color: #05003e;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    #provide .text1 {
+        line-height: 1.8;
+        padding: 15px 0;
+        margin-left: 50px;
+        width: 316.299px;
+        height: 218.44px;
+        color: #05003e;
+        font-family: Montserrat;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
     /*we provide end*/
 
     /*tape with photos start*/
@@ -444,6 +610,8 @@ body {
         flex: 1;
     }
 
+    /*our partners end*/
+    /*our partners start*/
     /*our partners end*/
 
     /*reference to financial support start*/
