@@ -133,7 +133,7 @@ body {
     margin-bottom: 44px;
 }
 
-.partners_title {
+#partners .partners_title {
     color: var(--color-blue-1);
     font-family: 'Montserrat';
     font-size: 18px;
@@ -145,34 +145,34 @@ body {
 
 }
 
-.carousel {
+#partners .carousel {
     display: flex;
     width: 100%;
     max-width: 768px;
 }
 
-.carousel-item img {
+#partners .carousel .carousel-inner .carousel-item img {
     height: 40px;
 }
 
-.carousel-control-prev-icon {
+#partners .carousel .carousel-control-butt .carousel-control-prev-icon {
     background: url(../images/our_partners/prev.svg);
     width: 24px;
     height: 24px;
 }
 
-.carousel-control-next-icon {
+#partners .carousel .carousel-control-butt .carousel-control-next-icon {
     background: url(../images/our_partners/next.svg) no-repeat;
     width: 24px;
     height: 24px;
 }
 
-.carousel-control-butt {
+#partners .carousel .carousel-control-butt {
     position: static;
     border-radius: 50%;
 }
 
-.our_partners {
+#partners .our_partners {
     display: none;
 }
 
@@ -373,11 +373,11 @@ body {
         margin-top: 137px;
     }
 
-    .carousel {
+    #partners .carousel {
         display: none;
     }
 
-    .partners_title {
+    #partners .partners_title {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -392,7 +392,7 @@ body {
         top: -15%;
     }
 
-    .our_partners {
+    #partners .our_partners {
         display: block;
         background: url(../images/our_partners/border.svg) no-repeat;
         background-size: contain;
@@ -403,19 +403,19 @@ body {
         overflow: hidden;
     }
 
-    .all_icons {
+    #partners .our_partners .all_icons {
         height: 327px;
         margin-top: 25px;
         margin-bottom: 15px;
     }
 
-    .preview_icon {
+    #partners .our_partners .preview_icon {
         display: flex;
         align-items: center;
         height: 347px;
     }
 
-    .show-all {
+    #partners .show-all {
         position: absolute;
         bottom: 0;
         right: 0;
@@ -429,18 +429,18 @@ body {
         letter-spacing: 0em;
     }
 
-    .row {
+    #partners .our_partners .all_icons .row {
         margin: 0;
         padding: 0;
     }
 
-    .central_rows {
+    #partners .our_partners .all_icons .central_rows {
         display: flex;
         align-items: center;
         height: 45%;
     }
 
-    .col-md-4 {
+    #partners .our_partners .all_icons .central_rows .col-md-4 {
         flex: 1;
     }
 
