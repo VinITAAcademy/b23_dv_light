@@ -105,6 +105,7 @@ body {
 #video .videoPreview:hover {
     cursor: pointer;
 }
+/*video clip end*/
 
 /*we provide start*/
 #provide .images {
@@ -429,9 +430,7 @@ body {
 
     #aboutTheProgram .foto {
         float: right;
-        background-image: url(../images/about_the_program/photo_about_the_program_\(
- 1\
-).png);
+        background-image: url(../images/about_the_program/photo_about_the_program_1.png)
         padding: 14%;
         margin: 69.57px 48px 77.48px 0;
     }
