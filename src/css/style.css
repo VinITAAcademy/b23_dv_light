@@ -593,12 +593,12 @@ body {
         line-height: 180%;
     }
 
-    #resources .resources_block b {
-        font-size: 26px;
-        font-weight: 700;
-        line-height: 180%;
+  #resources .resources_block b {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 180%;
         ;
-    }
+  }
 
     #resources .resources_block img {
         width: 600px;
