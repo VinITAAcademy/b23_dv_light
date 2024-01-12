@@ -105,6 +105,7 @@ body {
 #video .videoPreview:hover {
   cursor: pointer;
 }
+
 /*video clip end*/
 
 /*we provide start*/
@@ -154,6 +155,50 @@ body {
 
 /*register.attention start*/
 /*register.attention end*/
+
+/*resources start*/
+#resources {
+    padding-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#resources .resources_block {
+    position: relative;
+    width: 342px;
+    height: 163px;
+    display: flex;
+    justify-content: center;
+}
+
+#resources .resources_block img {
+    width: 183px;
+    height: 43px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#resources .resources_block p {
+    color: var(--color-blue-1);
+    width: 327px;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14.63px;
+}
+
+#resources .resources_block b {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/*resources end*/
 
 /*become our partner start*/
 /*become our partner end*/
@@ -212,32 +257,6 @@ body {
   display: none;
 }
 
-/*our partners end*/
-
-/*reference to financial support start*/
-/*reference to financial support end*/
-
-/*specialty start*/
-/*specialty end*/
-
-/*footer start*/
-/*footer end*/
-
-/*video clip end*/
-
-/*we provide start*/
-/*we provide end*/
-
-/*tape with photos start*/
-/*tape with photos end*/
-
-/*register.attention start*/
-/*register.attention end*/
-
-/*become our partner start*/
-/*become our partner end*/
-
-/*our partners start*/
 /*our partners end*/
 
 /*reference to financial support start*/
@@ -354,8 +373,34 @@ body {
 
   /*tape with photos end*/
 
-  /*register.attention start*/
-  /*register.attention end*/
+    /*resources start*/
+    #resources .resources_block {
+        width: 742px;
+        height: 359px;
+    }
+
+    #resources .resources_block p {
+        width: 700px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 180%;
+    }
+
+    #resources .resources_block b {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 180%;
+    }
+
+    #resources .resources_block img {
+        width: 268px;
+        height: 74px;
+    }
+
+    /*resources end*/
+
+    /*become our partner start*/
+    /*become our partner end*/
 
   /*become our partner start*/
   /*become our partner end*/
@@ -506,19 +551,20 @@ body {
     line-height: normal;
   }
 
-  #provide .text1 {
-    line-height: 1.8;
-    padding: 15px 0;
-    margin-left: 50px;
-    width: 316.299px;
-    height: 218.44px;
-    color: #05003e;
-    font-family: Montserrat;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-  }
-  /*we provide end*/
+    #provide .text1 {
+        line-height: 1.8;
+        padding: 15px 0;
+        margin-left: 50px;
+        width: 316.299px;
+        height: 218.44px;
+        color: #05003e;
+        font-family: Montserrat;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    /*we provide end*/
 
   /*tape with photos start*/
   #photos .images {
@@ -534,8 +580,35 @@ body {
   /*register.attention start*/
   /*register.attention end*/
 
-  /*become our partner start*/
-  /*become our partner end*/
+    /*resources start*/
+    #resources .resources_block {
+        width: 904px;
+        height: 428px;
+    }
+
+    #resources .resources_block p {
+        width: 859px;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 180%;
+    }
+
+    #resources .resources_block b {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 180%;
+        ;
+    }
+
+    #resources .resources_block img {
+        width: 600px;
+        height: 140px;
+    }
+
+    /*resources end*/
+
+    /*become our partner start*/
+    /*become our partner end*/
 
   /*our partners start*/
   #partners {
