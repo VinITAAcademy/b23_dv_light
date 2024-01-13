@@ -144,6 +144,15 @@ body {
 /*we provide end*/
 
 /*tape with photos start*/
+#photos .images {
+    background-image: url(../images/tape_with_photos/photos_mobile.jpg);
+    margin-top: 31px;
+    background-size: cover;
+    display: flex;
+    height: 117px;
+    flex-shrink: 0;
+}
+
 /*tape with photos end*/
 
 /*register.attention start*/
@@ -177,7 +186,7 @@ body {
 #resources .resources_block p {
     color: var(--color-blue-1);
     width: 327px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -398,10 +407,16 @@ line-height: normal;
     /*we provide end*/
 
     /*tape with photos start*/
-    /*tape with photos end*/
+    #photos .images {
+        background-image: url(../images/tape_with_photos/photos_tablet.jpg);
+        margin-top: 50px;
+        background-size: cover;
+        display: flex;
+        height: 368px;
+        flex-shrink: 0;
+    }
 
-    /*register.attention start*/
-    /*register.attention end*/
+    /*tape with photos end*/
 
     /*resources start*/
     #resources .resources_block {
@@ -428,6 +443,9 @@ line-height: normal;
     }
 
     /*resources end*/
+
+    /*become our partner start*/
+    /*become our partner end*/
 
     /*become our partner start*/
     /*become our partner end*/
@@ -594,6 +612,15 @@ line-height: normal;
     /*we provide end*/
 
     /*tape with photos start*/
+    #photos .images {
+        background-image: url(../images/tape_with_photos/photos_desktop.jpg);
+        margin-top: 90px;
+        background-size: cover;
+        display: flex;
+        height: 258px;
+        flex-shrink: 0;
+    }
+
     /*tape with photos end*/
 
     /*register.attention start*/
@@ -616,7 +643,6 @@ line-height: normal;
         font-size: 26px;
         font-weight: 700;
         line-height: 180%;
-        ;
     }
 
     #resources .resources_block img {
