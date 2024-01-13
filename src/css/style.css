@@ -144,7 +144,7 @@ body {
 
 /*tape with photos start*/
 #photos .images {
-    background-image: url(../images/tape_with_photos/Scroll.png);
+    background-image: url(../images/tape_with_photos/photos_mobile.jpg);
     margin-top: 31px;
     background-size: cover;
     display: flex;
@@ -364,7 +364,7 @@ body {
 
     /*tape with photos start*/
     #photos .images {
-        background-image: url(../images/tape_with_photos/scroll.tablet.png);
+        background-image: url(../images/tape_with_photos/photos_tablet.jpg);
         margin-top: 50px;
         background-size: cover;
         display: flex;
@@ -569,7 +569,7 @@ body {
 
     /*tape with photos start*/
     #photos .images {
-        background-image: url(../images/tape_with_photos/scroll.desktop.png);
+        background-image: url(../images/tape_with_photos/photos_desktop.jpg);
         margin-top: 90px;
         background-size: cover;
         display: flex;
