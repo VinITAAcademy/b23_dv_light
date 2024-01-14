@@ -237,7 +237,7 @@ body {
     line-height: 20px;
 }
 
-#becomeOurPartner .content_button {
+#becomeOurPartner .content-button {
     background-color: var(--color-blue-2);
     width: 230px;
     height: 55px;
@@ -251,11 +251,11 @@ body {
     display: none;
 }
 
-#becomeOurPartner .join_our_team {
+#becomeOurPartner .join-our-team {
     margin-top: 19px;
 }
 
-#becomeOurPartner .join_our_team p {
+#becomeOurPartner .join-our-team p {
     width: 336px;
 }
 
@@ -512,7 +512,7 @@ line-height: normal;
         line-height: 180%;
     }
 
-    #becomeOurPartner .join_our_team .foto {
+    #becomeOurPartner .join-our-team .foto {
         display: block;
     }
 
@@ -521,10 +521,10 @@ line-height: normal;
         font-size: 24px;
         line-height: normal;
     }
-    #becomeOurPartner .join_our_team p {
+    #becomeOurPartner .join-our-team p {
         width: 586px;
     }
-    #becomeOurPartner .content_button {
+    #becomeOurPartner .content-button {
         width: 494px;
         height: 89px;
         font-size: 32px;
@@ -750,18 +750,18 @@ line-height: normal;
         justify-content: center;
         align-items: flex-start;
     }
-    #becomeOurPartner .join_our_team,
+    #becomeOurPartner .join-our-team,
     #becomeOurPartner .description {
         height: 887px;
         width: 452px;
     }
-    #becomeOurPartner .join_our_team{
+    #becomeOurPartner .join-our-team{
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0;
     }
-    #becomeOurPartner .join_our_team .foto {
+    #becomeOurPartner .join-our-team .foto {
         width: 437px;
         height: 645px;
     }
@@ -785,14 +785,14 @@ line-height: normal;
         font-weight: 400;
         margin-top: 0;
     }
-    #becomeOurPartner .join_our_team p{
+    #becomeOurPartner .join-our-team p{
         width: 420px;
     }
     #becomeOurPartner .description .title,
     #becomeOurPartner .title {
         font-size: 16px;
     }
-    #becomeOurPartner .content_button {
+    #becomeOurPartner .content-button {
         width: 432px;
         height: 90px;
         gap: 10px;
