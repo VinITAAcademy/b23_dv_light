@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,       initial-scale=1.0" />
     <title>DV-light</title>
-   
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
@@ -21,23 +22,90 @@
 
     <div id="wrapper">
         <!--"header start"-->
-        <header id="header"></header>
+        <header id="header">
+            <nav class="navbar bg-body-tertiary navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img class="foto-swallow" src="./src/images/header/swallow.svg"
+                            alt="Swallow"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <p class="offcanvas-title" id="offcanvasNavbarLabel">UA</p>
+                            <div class="icon-flag"><img class="flagUA" src="./src/images/header/flag.svg" alt=""></div>
+                            <div class="burder-menu-text1">Добрий вечір, ми з
+                                <div class="burger-menu-text2">України</div>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="horizontal-line"></div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#aboutTheProgram">Про программу</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Спеціальності</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Контакти</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Партнери</a>
+                                </li>
+                                <div>
+                                    <a class="icon-UA" href="#">UA</a>
+                                </div>
+                                <div class="horizontal-line1"></div>
+                                <div class=" flag-UA"><img src="./src/images/header/UA.svg" alt=""></div>
+                            </ul>
+                            <div class="icon-link">
+                                <a class="nav-link"
+                                    href=".https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fvinnytsia.itacademy%2F%3Flocale%3Duk_UA"><img
+                                        class="iconc" src="./src/images/header/facebook.svg" alt="icon-facebook"></a>
+                                <a class="nav-link"
+                                    href="https://twitter.com/intent/tweet?url=https://twitter.com/vinnytsiaita?s=11&t=26yMelGn3njhSXsERHXerg"><img
+                                        class="iconc" src="./src/images/header/twitter.svg" alt="icon-twitter."></a>
+                                <a class="nav-link"
+                                    href="https://www.instagram.com/ita.in.ua?igsh=dzJ3bTMxdTFmMGNr"><img class="iconc"
+                                        src="./src/images/header/instagram.svg" alt="icon-instagram"></a>
+                                <a class="nav-link" href="https://api.whatsapp.com/send/?phone=380674317424&text&type=phone_number&app_absent=0
+                                "><img class="iconc" src="./src/images/header/basil_viber-outline.svg"
+                                        alt="icon-viber"></a>
+                                <a class="nav-link" href="https://api.whatsapp.com/send/?phone=380674317424&text&type=phone_number&app_absent=0
+                                "><img class="iconc" src="./src/images/header/bxl_whatsapp.svg"
+                                        alt="icon-whatsapp"></a>
+                                <a class="nav-link"
+                                    href="https://www.instagram.com/ita.in.ua?igsh=dzJ3bTMxdTFmMGNr"><img class="iconc"
+                                        src="./src/images/header/ph_telegram-logo.svg" alt="icon-telegram"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
         <!--"header end"-->
 
         <!--"main-block start"-->
-        <section id="mainblock" >
-    <div class="mainblock">
+        <section id="mainblock">
+            <div class="mainblock">
 
-    <div class="work_it">
-       <a href="https://ita.in.ua/" class="work_it_linc">
-         <img src="/src/images/Main_block/work_it.png" alt="Bg-min" class="work_it-pic" >
-        </a>
-    </div>
-         <div class="text">
-            <h2 class="text_1">Доброго вечора, ми з</h2>
-            <h1 class="text_2">України!</h1>
-         </div>
-    </div>
+                <div class="work_it">
+                    <a href="https://ita.in.ua/" class="work_it_linc">
+                        <img src="/src/images/Main_block/work_it.png" alt="Bg-min" class="work_it-pic">
+                    </a>
+                </div>
+                <div class="text">
+                    <h2 class="text_1">Доброго вечора, ми з</h2>
+                    <h1 class="text_2">України!</h1>
+                </div>
+            </div>
         </section>
         <!--"main block end"-->
 
