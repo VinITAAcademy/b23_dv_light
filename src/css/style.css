@@ -210,7 +210,8 @@ body {
     text-align: center;
     flex-direction: column;
     font-family: "Montserrat";
-    padding-top: 25px;
+    padding-top: 11px;
+    padding-bottom: 10px;
 }
 
 #becomeOurPartner .description {
@@ -262,17 +263,19 @@ body {
 #becomeOurPartner .description .text .title {
     font-weight: 700;
 }
-#becomeOurPartner .content-button:active{
+
+#becomeOurPartner .content-button:active {
     background-color: transparent;
     color: var(--color-blue-2);
     border: 2px solid var(--color-blue-2);
 }
-#becomeOurPartner .content-button:disabled{
+
+#becomeOurPartner .content-button:disabled {
     background-color: var(--color-grey-1);
     color: var(--color-black);
 }
 
-#becomeOurPartner .description .buttons .label-button b{
+#becomeOurPartner .description .buttons .label-button b {
     font-weight: 500;
 }
 
@@ -517,6 +520,10 @@ body {
     /*resources end*/
 
     /*become our partner start*/
+    #becomeOurPartner{
+        padding-top: 65px;
+        padding-bottom: 37px;
+    }
     #becomeOurPartner .description {
         background: none;
     }
@@ -555,7 +562,8 @@ body {
     #becomeOurPartner .description .text .title {
         font-size: 36px;
     }
-    #becomeOurPartner .description .buttons .label-button b{
+
+    #becomeOurPartner .description .buttons .label-button b {
         font-weight: 600;
     }
 
@@ -768,6 +776,8 @@ body {
 
     /*become our partner start*/
     #becomeOurPartner {
+        padding-top: 90px;
+        padding-bottom: 0;
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
@@ -830,7 +840,8 @@ body {
         gap: 10px;
         font-size: 30px;
     }
-    #becomeOurPartner .description .buttons .label-button b{
+
+    #becomeOurPartner .description .buttons .label-button b {
         font-weight: 700;
     }
 
