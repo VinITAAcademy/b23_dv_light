@@ -45,7 +45,7 @@ body {
 /*header end*/
 
 /*main-block start*/
-   
+
 /*main block end*/
 
 /*registration start*/
@@ -259,6 +259,19 @@ body {
     width: 336px;
 }
 
+#becomeOurPartner .description .text .title {
+    font-weight: 700;
+}
+#becomeOurPartner .content-button:active{
+    background-color: transparent;
+    color: var(--color-blue-2);
+    border: 2px solid var(--color-blue-2);
+}
+#becomeOurPartner .content-button:disabled{
+    background-color: var(--color-grey-1);
+    color: var(--color-black);
+}
+
 /*become our partner end*/
 
 /*our partners start*/
@@ -333,32 +346,31 @@ body {
     /*header end*/
 
     /*main-block start*/
-    #mainblock .mainblock{
-       background: url(/src/images/Main_block/Group\ 1029.png);
-       background-repeat: no-repeat ;
-       background-size: cover;
+    #mainblock .mainblock {
+        background: url(/src/images/Main_block/Group\ 1029.png);
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 100%;
         height: 1024px;
-        margin: 0 auto;  
+        margin: 0 auto;
         position: relative;
 
     }
 
-    #mainblock .work_it-pic{
-   width: 128px;
-   position: absolute;
-   bottom: 57px;
-   right: 20px;  
+    #mainblock .work_it-pic {
+        width: 128px;
+        position: absolute;
+        bottom: 57px;
+        right: 20px;
     }
 
-    #mainblock .text{
-        padding-top: 355px ;
+    #mainblock .text {
+        padding-top: 355px;
         padding-left: 71px;
     }
-    
-    #mainblock .text_1{
-        color: #05003E;
 
+    #mainblock .text_1 {
+        color: #05003E;
         font-family: Pacifico;
         font-size: 64px;
         font-style: normal;
@@ -366,14 +378,14 @@ body {
         line-height: normal;
 
     }
-    #mainblock .text_2{
-        color: #05003E;
 
-font-family: Montserrat;
-font-size: 128px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+    #mainblock .text_2 {
+        color: #05003E;
+        font-family: Montserrat;
+        font-size: 128px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
 
     /*main block end*/
@@ -521,20 +533,23 @@ line-height: normal;
         font-size: 24px;
         line-height: normal;
     }
+
     #becomeOurPartner .join-our-team p {
         width: 586px;
     }
+
     #becomeOurPartner .content-button {
         width: 494px;
         height: 89px;
         font-size: 32px;
     }
-    #becomeOurPartner .buttons{
+
+    #becomeOurPartner .buttons {
         margin-top: 30px;
     }
-    #becomeOurPartner .description .text .title{
+
+    #becomeOurPartner .description .text .title {
         font-size: 36px;
-        font-weight: 700;
     }
 
     /*become our partner end*/
@@ -750,21 +765,25 @@ line-height: normal;
         justify-content: center;
         align-items: flex-start;
     }
+
     #becomeOurPartner .join-our-team,
     #becomeOurPartner .description {
         height: 887px;
         width: 452px;
     }
-    #becomeOurPartner .join-our-team{
+
+    #becomeOurPartner .join-our-team {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0;
     }
+
     #becomeOurPartner .join-our-team .foto {
         width: 437px;
         height: 645px;
     }
+
     #becomeOurPartner .description p {
         font-size: 16px;
         line-height: 180%;
@@ -773,31 +792,38 @@ line-height: normal;
         margin-top: 36px;
         margin-bottom: 36px;
     }
-    #becomeOurPartner .buttons{
+
+    #becomeOurPartner .buttons {
         margin-bottom: 0;
         margin-top: auto;
     }
-    #becomeOurPartner .description .text{
+
+    #becomeOurPartner .description .text {
         height: 645px;
     }
-    #becomeOurPartner .description .text .title{
+
+    #becomeOurPartner .description .text .title {
         font-size: 32px;
         font-weight: 400;
         margin-top: 0;
     }
-    #becomeOurPartner .join-our-team p{
+
+    #becomeOurPartner .join-our-team p {
         width: 420px;
     }
+
     #becomeOurPartner .description .title,
     #becomeOurPartner .title {
         font-size: 16px;
     }
+
     #becomeOurPartner .content-button {
         width: 432px;
         height: 90px;
         gap: 10px;
         font-size: 30px;
     }
+
     /*become our partner end*/
 
     /*our partners start*/
