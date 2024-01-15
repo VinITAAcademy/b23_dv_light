@@ -42,6 +42,169 @@ body {
 
 /*============================ Mobile375 px========================*/
 /*header start*/
+* {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0px;
+    padding: 0px;
+    box-shadow: none !important;
+    border: none;
+}
+
+#header .navbar .bg-body-tertiary .navbar-expand-lg {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#header .foto-swallow {
+    display: none;
+}
+
+#header .offcanvas.offcanvas-end {
+    width: 100%;
+    height: 351px;
+    border-radius: 20px;
+}
+
+#header .offcanvas-body {
+    position: relative;
+    left: 37px;
+    top: 53px;
+}
+
+#header .navbar-toggler {
+    border: none;
+}
+
+#header .navbar-toggler-icon {
+    width: 16px;
+}
+
+#header p {
+    color: var(--color-blue-2);
+    text-align: center;
+    font-family: Uuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    border-right: 1px solid var(--color-blue-2);
+    margin: 0 11px;
+}
+
+#header .burder-menu-text1 {
+    display: block;
+    width: 211px;
+    height: 41px;
+    flex-shrink: 0;
+    margin: 0 auto;
+}
+
+#header .burger-menu-text2 {
+    width: 164.781px;
+    height: 34.105px;
+    flex-shrink: 0;
+    display: flex;
+    padding-left: 44px;
+}
+
+h3 {
+    color: var(--color-blue-1);
+    font-family: 'Yeseva One';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-content: center;
+}
+
+h2 {
+    color: var(--color-blue-1);
+    font-family: Pacifico;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#header .nav-link {
+    color: var(--color-blue-1);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0 5px;
+    margin: 7px 0px;
+}
+
+#header .nav-link:hover {
+    color: var(--color-blue-2);
+}
+
+#header .offcanvas-header {
+    display: flex;
+    text-align: center;
+    padding: 0px;
+}
+
+#header .text4 {
+    display: none;
+}
+
+#header .icon-link {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 42px;
+    right: 35px;
+}
+
+#header .horizontal-line1 {
+    top: 22px;
+    width: 348px;
+    height: 2px;
+    left: -48px;
+    position: relative;
+    background-color: var(--color-blue-1);
+    border-bottom: 1px solid var(--color-yellow);
+}
+
+#header .horizontal-line {
+    top: 55px;
+    left: 29px;
+    width: 322px;
+    height: 2px;
+    position: relative;
+    background-color: var(--color-blue-1);
+    border-bottom: 1px solid var(--color-yellow);
+}
+
+#header .icon-UA {
+    display: none;
+}
+
+#header .flag-UA {
+    display: none;
+}
+
+#header .icon-flag {
+    position: relative;
+    top: -2px;
+    left: -6px;
+}
+
+#header .flagUA {
+    width: 18px;
+    height: 13px;
+}
+
+#header .btn-close {
+    margin: 0 5px;
+}
+
 /*header end*/
 
 /*main-block start*/
@@ -349,7 +512,156 @@ body {
 /*============================ Tablet 768 px========================*/
 
 @media (min-width: 768px) {
+
     /*header start*/
+    #header .navbar .bg-body-tertiary .navbar-expand-lg {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #header .container-fluid {
+        padding: 0 !important;
+    }
+
+    #header .foto-swallow {
+        display: flex;
+        width: 75px;
+        height: 50px;
+        flex-shrink: 0;
+        padding: 0;
+    }
+
+    #header .offcanvas.offcanvas-end {
+        width: 100%;
+        height: 659px;
+        border-radius: 20px;
+    }
+
+    #header .offcanvas-body {
+        position: relative;
+        left: 11px;
+        top: 95px;
+    }
+
+    #header p {
+        color: var(--color-blue-2);
+        text-align: center;
+        font-family: Ubuntu;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        border-right: 1px solid var(--color-blue-2);
+        margin: 20px 0px 0px 19px;
+    }
+
+    #header .navbar-toggler-icon {
+        width: 75px;
+        height: 50px;
+        margin: 20px;
+    }
+
+    #header .burder-menu-text1 {
+        width: 382px;
+        height: 66px;
+        flex-shrink: 0;
+    }
+
+    #header .burger-menu-text2 {
+        position: relative;
+        width: 224px;
+        height: 49px;
+        flex-shrink: 0;
+        left: 41px;
+    }
+
+    h3 {
+        color: var(--color-blue-1);
+        font-family: 'Yeseva One';
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        justify-content: center;
+    }
+
+    h2 {
+        color: var(--color-blue-1);
+        font-family: Pacifico;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    #header .nav-link {
+        color: var(--color-blue-1);
+        font-family: Montserrat;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 0px 5px;
+        margin: 14px 0px;
+    }
+
+    #header.offcanvas-header {
+        display: flex;
+        text-align: center;
+    }
+
+    #header .horizontal-line {
+        top: 91px;
+        left: 30px;
+        width: 708px;
+        height: 3.3px;
+        position: relative;
+        background-color: var(--color-blue-1);
+        border-bottom: 1.9px solid var(--color-yellow);
+    }
+
+    #header .horizontal-line1 {
+        top: 22px;
+        width: 708px;
+        height: 3.1px;
+        left: 6px;
+        position: relative;
+        background-color: var(--color-blue-1);
+        border-bottom: 1.9px solid var(--color-yellow);
+    }
+
+    #header.offcanvas .offcanvas-end {
+        width: 100%;
+        height: 659px;
+        border-radius: 20px;
+    }
+
+    #header .icon-flag {
+        position: relative;
+        top: 9px;
+        left: 4px;
+    }
+
+    #header .flagUA {
+        width: 20px;
+        height: 18px;
+    }
+
+    #header .iconc {
+        width: 50px;
+        height: 50px;
+    }
+
+    #header .icon-link {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 70px;
+        right: 35px;
+    }
+
     /*header end*/
 
     /*main-block start*/
@@ -388,6 +700,7 @@ body {
 
     #mainblock .text_2 {
         color: #05003E;
+
         font-family: Montserrat;
         font-size: 128px;
         font-style: normal;
@@ -639,11 +952,95 @@ body {
     /*footer end*/
 }
 
+
+/*============================  992 px========================*/
+@media (min-width: 992px) {
+
+    /*header start*/
+    #header .navbar .bg-body-tertiary .navbar-expand-lg {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #header .container-fluid {
+        padding: 0 !important;
+    }
+
+    #header .offcanvas-body {
+        top: -17px;
+        left: 4px;
+    }
+
+    #header .foto-swallow {
+        display: flex;
+        width: 90px;
+        height: 90px;
+        flex-shrink: 0;
+        padding: 0;
+    }
+
+    #header .icon-UA {
+        display: flex;
+        text-decoration: none !important;
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    #header .flag-UA {
+        display: flex;
+    }
+
+    #header .navbar-toggler {
+        border: none !important;
+    }
+
+    #header.offcanvas-header {
+        display: none !important;
+    }
+
+    #header .icon-link {
+        display: none;
+    }
+
+    #header .offcanvas-header {
+        display: none;
+    }
+
+    #header .nav-link {
+        display: flex;
+        color: var(--color-blue-1);
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 0 5px;
+        margin: 7px 0px;
+    }
+
+    #header .horizontal-line {
+        display: none;
+    }
+
+    #header .horizontal-line1 {
+        display: none;
+    }
+
+    #header ul .navbar-nav .justify-content-end .flex-grow-1 .pe-3 {
+        position: relative;
+        bottom: 112px;
+        right: 8px;
+    }
+}
+
+/*header end*/
+
+
 /*============================ Desktop 1024 px========================*/
 
 @media (min-width: 1024px) {
-    /*header start*/
-    /*header end*/
 
     /*main-block start*/
     /*main block end*/
