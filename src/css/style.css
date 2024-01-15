@@ -520,10 +520,11 @@ body {
     /*resources end*/
 
     /*become our partner start*/
-    #becomeOurPartner{
+    #becomeOurPartner {
         padding-top: 65px;
         padding-bottom: 37px;
     }
+
     #becomeOurPartner .description {
         background: none;
     }
