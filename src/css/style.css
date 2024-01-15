@@ -272,6 +272,10 @@ body {
     color: var(--color-black);
 }
 
+#becomeOurPartner .description .buttons .label-button b{
+    font-weight: 500;
+}
+
 /*become our partner end*/
 
 /*our partners start*/
@@ -551,6 +555,9 @@ body {
     #becomeOurPartner .description .text .title {
         font-size: 36px;
     }
+    #becomeOurPartner .description .buttons .label-button b{
+        font-weight: 600;
+    }
 
     /*become our partner end*/
 
@@ -822,6 +829,9 @@ body {
         height: 90px;
         gap: 10px;
         font-size: 30px;
+    }
+    #becomeOurPartner .description .buttons .label-button b{
+        font-weight: 700;
     }
 
     /*become our partner end*/
