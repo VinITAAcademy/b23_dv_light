@@ -48,7 +48,6 @@ body {
     padding: 0px;
     box-shadow: none !important;
     border: none;
-
 }
 
 #header .navbar .bg-body-tertiary .navbar-expand-lg {
@@ -61,7 +60,6 @@ body {
 
 #header .foto-swallow {
     display: none;
-
 }
 
 #header .offcanvas.offcanvas-end {
@@ -101,12 +99,6 @@ body {
     width: 211px;
     height: 41px;
     flex-shrink: 0;
-    color: var(--color-blue-1);
-    font-family: Pacifico;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin: 0 auto;
 }
 
@@ -115,6 +107,10 @@ body {
     height: 34.105px;
     flex-shrink: 0;
     display: flex;
+    padding-left: 44px;
+}
+
+h2 {
     color: var(--color-blue-1);
     font-family: 'Yeseva One';
     font-size: 32px;
@@ -122,7 +118,15 @@ body {
     font-weight: 400;
     line-height: normal;
     justify-content: center;
-    padding-left: 44px;
+}
+
+h3 {
+    color: var(--color-blue-1);
+    font-family: Pacifico;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 #header .nav-link {
@@ -164,8 +168,8 @@ body {
     height: 2px;
     left: -48px;
     position: relative;
-    background-color: blue;
-    border-bottom: 1px solid yellow;
+    background-color: var(--color-blue-1);
+    border-bottom: 1px solid var(--color-yellow);
 }
 
 #header .horizontal-line {
@@ -174,8 +178,8 @@ body {
     width: 322px;
     height: 2px;
     position: relative;
-    background-color: blue;
-    border-bottom: 1px solid yellow;
+    background-color: var(--color-blue-1);
+    border-bottom: 1px solid var(--color-yellow);
 }
 
 #header .icon-UA {
@@ -200,7 +204,6 @@ body {
 #header .btn-close {
     margin: 0 5px;
 }
-
 
 /*header end*/
 
@@ -488,12 +491,6 @@ body {
         width: 382px;
         height: 66px;
         flex-shrink: 0;
-        color: var(--color-blue-1);
-        font-family: Pacifico;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
     }
 
     #header .burger-menu-text2 {
@@ -501,15 +498,26 @@ body {
         width: 224px;
         height: 49px;
         flex-shrink: 0;
-        display: flex;
+        left: 41px;
+    }
+
+    h2 {
         color: var(--color-blue-1);
-        font-family: Yeseva One;
+        font-family: 'Yeseva One';
         font-size: 48px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         justify-content: center;
-        left: 41px;
+    }
+
+    h3 {
+        color: var(--color-blue-1);
+        font-family: Pacifico;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 
     #header .nav-link {
@@ -534,8 +542,8 @@ body {
         width: 708px;
         height: 3.3px;
         position: relative;
-        background-color: blue;
-        border-bottom: 1.9px solid yellow;
+        background-color: var(--color-blue-1);
+        border-bottom: 1.9px solid var(--color-yellow);
     }
 
     #header .horizontal-line1 {
@@ -544,8 +552,8 @@ body {
         height: 3.1px;
         left: 6px;
         position: relative;
-        background-color: blue;
-        border-bottom: 1.9px solid yellow;
+        background-color: var(--color-blue-1);
+        border-bottom: 1.9px solid var(--color-yellow);
     }
 
     #header.offcanvas .offcanvas-end {
@@ -825,6 +833,7 @@ body {
 /*============================  992 px========================*/
 @media (min-width: 992px) {
 
+    /*header start*/
     #header .navbar .bg-body-tertiary .navbar-expand-lg {
         display: flex;
         flex-wrap: inherit;
@@ -847,7 +856,6 @@ body {
         height: 90px;
         flex-shrink: 0;
         padding: 0;
-
     }
 
     #header .icon-UA {
@@ -904,13 +912,12 @@ body {
     }
 }
 
+/*header end*/
 
 
 /*============================ Desktop 1024 px========================*/
 
 @media (min-width: 1024px) {
-    /*header start*/
-    /*header end*/
 
     /*main-block start*/
     /*main block end*/
