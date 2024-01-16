@@ -744,6 +744,7 @@ h2 {
   /*main-block start*/
   #mainblock .mainblock {
     background: url(/src/images/Main_block/main-background-tablet.png);
+    height: 100vh;
   }
 
   #mainblock .flag-backgroud {
