@@ -1116,10 +1116,19 @@ h2 {
   }
 
   #mainblock .social {
+    display: block;
     position: absolute;
     right: 0;
+    left: unset;
     top: 50%;
     transform: translate(-50%, -50%);
+  }
+  #mainblock .social-list__item {
+    img {
+      display: block;
+      width: 32px;
+      height: 32px;
+    }
   }
 
   #mainblock .social-list {
