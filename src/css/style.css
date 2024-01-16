@@ -366,6 +366,83 @@ h2 {
 /*resources end*/
 
 /*become our partner start*/
+#becomeOurPartner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: "Montserrat";
+    padding-top: 11px;
+    padding-bottom: 10px;
+}
+
+#becomeOurPartner .description {
+    background: url(../images/become_our_partner/description_background.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#becomeOurPartner .description p {
+    color: var(--color-blue-1);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    width: 320px;
+}
+
+#becomeOurPartner .description .title,
+#becomeOurPartner .title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    padding-top: 16px;
+}
+
+#becomeOurPartner .content-button {
+    background-color: var(--color-blue-2);
+    width: 230px;
+    height: 55px;
+    border: none;
+    color: var(--color-white);
+    margin-bottom: 13px;
+    color: #FFF;
+}
+
+#becomeOurPartner .foto {
+    display: none;
+}
+
+#becomeOurPartner .join-our-team {
+    margin-top: 19px;
+}
+
+#becomeOurPartner .join-our-team p {
+    width: 336px;
+}
+
+#becomeOurPartner .description .text .title {
+    font-weight: 700;
+}
+
+#becomeOurPartner .content-button:active {
+    background-color: transparent;
+    color: var(--color-blue-2);
+    border: 2px solid var(--color-blue-2);
+}
+
+#becomeOurPartner .content-button:disabled {
+    background-color: var(--color-grey-1);
+    color: var(--color-black);
+}
+
+#becomeOurPartner .description .buttons .label-button b {
+    font-weight: 500;
+}
+
 /*become our partner end*/
 
 /*our partners start*/
@@ -614,7 +691,6 @@ h2 {
 
     #mainblock .text_1 {
         color: #05003E;
-
         font-family: Pacifico;
         font-size: 64px;
         font-style: normal;
@@ -758,6 +834,54 @@ h2 {
     /*resources end*/
 
     /*become our partner start*/
+    #becomeOurPartner {
+        padding-top: 65px;
+        padding-bottom: 37px;
+    }
+
+    #becomeOurPartner .description {
+        background: none;
+    }
+
+    #becomeOurPartner .description p {
+        width: 728px;
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 180%;
+    }
+
+    #becomeOurPartner .join-our-team .foto {
+        display: block;
+    }
+
+    #becomeOurPartner .description .title,
+    #becomeOurPartner .title {
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    #becomeOurPartner .join-our-team p {
+        width: 586px;
+    }
+
+    #becomeOurPartner .content-button {
+        width: 494px;
+        height: 89px;
+        font-size: 32px;
+    }
+
+    #becomeOurPartner .buttons {
+        margin-top: 30px;
+    }
+
+    #becomeOurPartner .description .text .title {
+        font-size: 36px;
+    }
+
+    #becomeOurPartner .description .buttons .label-button b {
+        font-weight: 600;
+    }
+
     /*become our partner end*/
 
     /*become our partner start*/
@@ -1050,6 +1174,76 @@ h2 {
     /*resources end*/
 
     /*become our partner start*/
+    #becomeOurPartner {
+        padding-top: 90px;
+        padding-bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    #becomeOurPartner .join-our-team,
+    #becomeOurPartner .description {
+        height: 887px;
+        width: 452px;
+    }
+
+    #becomeOurPartner .join-our-team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    #becomeOurPartner .join-our-team .foto {
+        width: 437px;
+        height: 645px;
+    }
+
+    #becomeOurPartner .description p {
+        font-size: 16px;
+        line-height: 180%;
+        font-weight: 400;
+        width: 446px;
+        margin-top: 36px;
+        margin-bottom: 36px;
+    }
+
+    #becomeOurPartner .buttons {
+        margin-bottom: 0;
+        margin-top: auto;
+    }
+
+    #becomeOurPartner .description .text {
+        height: 645px;
+    }
+
+    #becomeOurPartner .description .text .title {
+        font-size: 32px;
+        font-weight: 400;
+        margin-top: 0;
+    }
+
+    #becomeOurPartner .join-our-team p {
+        width: 420px;
+    }
+
+    #becomeOurPartner .description .title,
+    #becomeOurPartner .title {
+        font-size: 16px;
+    }
+
+    #becomeOurPartner .content-button {
+        width: 432px;
+        height: 90px;
+        gap: 10px;
+        font-size: 30px;
+    }
+
+    #becomeOurPartner .description .buttons .label-button b {
+        font-weight: 700;
+    }
+
     /*become our partner end*/
 
     /*our partners start*/
