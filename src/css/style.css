@@ -505,6 +505,136 @@ h2 {
 /*reference to financial support end*/
 
 /*specialty start*/
+#specialty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: "Montserrat";
+    margin-bottom: 25px;
+}
+
+#specialty .specialty-tittle {
+    background: url(../images/specialty/boreder_icons_mobile.png) no-repeat;
+    width: 320px;
+    height: 263px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    position: relative;
+}
+
+#specialty .specialty-tittle .title {
+    position: absolute;
+    top: -4%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-blue-1);
+}
+
+#specialty .specialty-tittle .description {
+    width: 216px;
+    font-size: 12px;
+    margin: 0;
+    margin-top: 14px;
+}
+
+#specialty .specialty-tittle .professions {
+    width: 176px;
+    height: 116px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#specialty .cards {
+    display: flex;
+    flex-direction: column;
+}
+
+#specialty .cards .card {
+    background: url(../images/specialty/card_background_mobile.png) no-repeat;
+    background-size: cover;
+    width: 320px;
+    height: 441px;
+    display: flex;
+    align-items: center;
+    border: none;
+    text-align: center;
+    margin-top: 25px;
+    position: relative;
+}
+
+#specialty .cards .programing {
+    margin-top: 14px;
+}
+
+#specialty .cards p {
+    margin-top: 17px;
+    margin-bottom: 0;
+}
+
+#specialty .cards button {
+    width: 230px;
+    height: 55px;
+    color: var(--color-white);
+    background-color: var(--color-blue-1);
+    position: absolute;
+    bottom: 0;
+    margin: 15px 0px;
+}
+
+#specialty .cards .label-button {
+    font-size: 12px;
+    width: 189px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 84px;
+}
+
+#specialty .cards .card-title {
+    font-size: 18px;
+}
+
+#specialty .cards img {
+    margin-top: 32px;
+    width: 100px;
+    height: 100px;
+}
+
+#specialty .cards .card .card-descripton {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    width: 236px;
+}
+
+#specialty .cards .programing .card-descripton {
+    margin-top: 48px;
+}
+
+#specialty .cards .testing .card-descripton {
+    margin-top: 17px;
+}
+
+#specialty .cards .Web .card-descripton {
+    margin-top: 38px;
+}
+
+#specialty .cards .PM .card-descripton {
+    margin-top: 35px;
+}
+
+#specialty .cards .row {
+    max-width: 320px;
+}
+
 /*specialty end*/
 
 /*footer start*/
@@ -947,6 +1077,61 @@ h2 {
     /*reference to financial support end*/
 
     /*specialty start*/
+    #specialty {
+        margin-top: 78px;
+    }
+
+    #specialty .cards .programing,
+    #specialty .cards .testing {
+        margin-top: 54px;
+    }
+
+    #specialty .cards .testing .card-descripton {
+        margin-top: 23px;
+        font-size: 11px;
+    }
+
+    #specialty .cards .row {
+        max-width: 700px;
+        justify-content: space-evenly !important;
+        align-items: center;
+    }
+
+    #specialty .specialty-tittle {
+        background: url(../images/specialty/border_icons_tablet.png) no-repeat;
+        background-size: cover;
+        width: 706px;
+        height: 893px;
+    }
+
+    #specialty .specialty-tittle .title {
+        font-size: 45px;
+        font-weight: 400;
+        left: 48%;
+    }
+
+    #specialty .specialty-tittle .description {
+        font-size: 28px;
+        font-weight: 400;
+        width: 492px;
+        height: 68px;
+        margin-top: 57px;
+    }
+
+    #specialty .specialty-tittle .professions {
+        font-size: 48px;
+        font-weight: 700;
+        width: 506px;
+        height: 384px;
+        margin-top: 92px;
+    }
+
+    #specialty .specialty-tittle .description-bottomn {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 120px;
+    }
+
     /*specialty end*/
 
     /*footer start*/
@@ -1330,6 +1515,78 @@ h2 {
     /*reference to financial support end*/
 
     /*specialty start*/
+    #specialty {
+        margin-top: 108px;
+    }
+
+    #specialty .cards .row {
+        max-width: 904px;
+    }
+
+    #specialty .cards .card {
+        background: url(../images/specialty/card_background_desktop.png) no-repeat;
+        background-size: cover;
+        width: 422px;
+        height: 684px;
+    }
+
+    #specialty .cards img {
+        width: 160px;
+        height: 160px;
+    }
+
+    #specialty .cards .card-title {
+        font-size: 30px;
+    }
+
+    #specialty .cards .card .card-descripton {
+        font-size: 18px;
+        width: 310px;
+    }
+
+    #specialty .cards .label-button {
+        font-size: 16px;
+        width: 258px;
+        margin-bottom: 143px;
+    }
+
+    #specialty .cards button {
+        width: 380px;
+        height: 90px;
+        font-size: 32px;
+    }
+
+    #specialty .specialty-tittle {
+        background: url(../images/specialty/border_icons_desktop.png) no-repeat;
+        background-size: contain;
+        margin-left: 26px;
+        width: 927px;
+        height: 696px;
+    }
+
+    #specialty .specialty-tittle .title {
+        font-size: 42px;
+        font-style: italic;
+        font-weight: 600;
+    }
+
+    #specialty .specialty-tittle .description {
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 29px;
+    }
+
+    #specialty .specialty-tittle .professions {
+        font-size: 40px;
+        font-weight: 500;
+        margin-top: 15px;
+        line-height: 200%;
+    }
+
+    #specialty .specialty-tittle .description-bottomn {
+        margin-bottom: 29px;
+    }
+
     /*specialty end*/
 
     /*footer start*/
