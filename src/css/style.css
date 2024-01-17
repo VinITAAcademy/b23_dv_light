@@ -45,7 +45,7 @@ body {
 /*header end*/
 
 /*main-block start*/
-   
+
 /*main block end*/
 
 /*registration start*/
@@ -262,6 +262,30 @@ body {
 /*our partners end*/
 
 /*reference to financial support start*/
+#financialSupport .qr {
+    background-image: url(../images/reference_to_financial_support/background.jpg);
+    height: 150px;
+}
+
+#financialSupport .text {
+    padding-top: 8px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+
+
+}
+
+#financialSupport .link {
+    padding-top: 8px;
+    text-align: center;
+    color: #FDD817;
+    font-family: Montserrat;
+    font-size: 18px;
+
+}
+
 /*reference to financial support end*/
 
 /*specialty start*/
@@ -277,30 +301,30 @@ body {
     /*header end*/
 
     /*main-block start*/
-    #mainblock .mainblock{
-       background: url(/src/images/Main_block/Group\ 1029.png);
-       background-repeat: no-repeat ;
-       background-size: cover;
+    #mainblock .mainblock {
+        background: url(/src/images/Main_block/Group\ 1029.png);
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 100%;
         height: 1024px;
-        margin: 0 auto;  
+        margin: 0 auto;
         position: relative;
 
     }
 
-    #mainblock .work_it-pic{
-   width: 128px;
-   position: absolute;
-   bottom: 57px;
-   right: 20px;  
+    #mainblock .work_it-pic {
+        width: 128px;
+        position: absolute;
+        bottom: 57px;
+        right: 20px;
     }
 
-    #mainblock .text{
-        padding-top: 355px ;
+    #mainblock .text {
+        padding-top: 355px;
         padding-left: 71px;
     }
-    
-    #mainblock .text_1{
+
+    #mainblock .text_1 {
         color: #05003E;
 
         font-family: Pacifico;
@@ -310,14 +334,15 @@ body {
         line-height: normal;
 
     }
-    #mainblock .text_2{
+
+    #mainblock .text_2 {
         color: #05003E;
 
-font-family: Montserrat;
-font-size: 128px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+        font-family: Montserrat;
+        font-size: 128px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
 
     /*main block end*/
@@ -507,6 +532,30 @@ line-height: normal;
     /*our partners end*/
 
     /*reference to financial support start*/
+    #financialSupport .qr {
+        background-image: url(../images/reference_to_financial_support/qr_tablet.png);
+        height: 226px;
+
+
+    }
+
+    #financialSupport .text {
+        text-align: left;
+        padding: 32px 175px 9px 22px;
+        color: #FFF;
+        font-style: italic;
+        font-size: 20px;
+    }
+
+    #financialSupport .link {
+
+        text-align: center;
+        font-size: 32px;
+
+
+
+    }
+
     /*reference to financial support end*/
 
     /*specialty start*/
@@ -514,233 +563,252 @@ line-height: normal;
 
     /*footer start*/
     /*footer end*/
-}
 
-/*============================ Desktop 1024 px========================*/
+    /*============================ Desktop 1024 px========================*/
 
-@media (min-width: 1024px) {
-    /*header start*/
-    /*header end*/
+    @media (min-width: 1024px) {
+        /*header start*/
+        /*header end*/
 
-    /*main-block start*/
-    /*main block end*/
+        /*main-block start*/
+        /*main block end*/
 
-    /*registration start*/
-    /*registration end*/
+        /*registration start*/
+        /*registration end*/
 
-    /*about the program start*/
-    #aboutTheProgram .main_container {
-        width: 100%;
-        height: 448px;
-        background-color: var(--color-grey-2);
+        /*about the program start*/
+        #aboutTheProgram .main_container {
+            width: 100%;
+            height: 448px;
+            background-color: var(--color-grey-2);
+        }
+
+        #aboutTheProgram .foto {
+            float: right;
+            background-image: url(../images/about_the_program/photo_about_the_program_1.png);
+            padding: 14%;
+            margin: 69.57px 48px 77.48px 0;
+        }
+
+        #aboutTheProgram .main_unit {
+            max-width: 1024px;
+            height: 448px;
+            margin: 0 auto;
+        }
+
+        #aboutTheProgram br {
+            display: flex;
+        }
+
+        #aboutTheProgram .text {
+            background-color: var(--color-grey-2);
+        }
+
+        #aboutTheProgram .text-title {
+            float: left;
+            color: var(--color-blue-1);
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 43.2px;
+            width: 564px;
+            height: 343px;
+            margin: 61px 51px 44px 57px;
+            padding: 0;
+        }
+
+        /*about the program end*/
+
+        /*video clip start*/
+        /*video clip end*/
+
+        /*we provide start*/
+        #provide .images {
+            background-image: url(../images/provide/provide.desktop.png);
+            margin: 0 auto;
+            width: 762.721px;
+            height: 349.395px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #provide .text {
+            color: #05003e;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        #provide .text1 {
+            line-height: 1.8;
+            padding: 15px 0;
+            margin-left: 50px;
+            width: 316.299px;
+            height: 218.44px;
+            color: #05003e;
+            font-family: Montserrat;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        /*we provide end*/
+
+        /*tape with photos start*/
+        #photos .images {
+            background-image: url(../images/tape_with_photos/photos_desktop.jpg);
+            margin-top: 90px;
+            background-size: cover;
+            display: flex;
+            height: 258px;
+            flex-shrink: 0;
+        }
+
+        /*tape with photos end*/
+
+        /*register.attention start*/
+        /*register.attention end*/
+
+        /*resources start*/
+        #resources .resources_block {
+            width: 904px;
+            height: 428px;
+        }
+
+        #resources .resources_block p {
+            width: 859px;
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 180%;
+        }
+
+        #resources .resources_block b {
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 180%;
+        }
+
+        #resources .resources_block img {
+            width: 600px;
+            height: 140px;
+        }
+
+        /*resources end*/
+
+        /*become our partner start*/
+        /*become our partner end*/
+
+        /*our partners start*/
+        #partners {
+            margin-top: 137px;
+        }
+
+        #partners .carousel {
+            display: none;
+        }
+
+        #partners .partners_title {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 203px;
+            color: var(--color-blue-1);
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 49px;
+            letter-spacing: 0em;
+            text-align: center;
+            position: absolute;
+            top: -15%;
+        }
+
+        #partners .our_partners {
+            display: block;
+            background: url(../images/our_partners/border.svg) no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 904px;
+            height: 347px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #partners .our_partners .all_icons {
+            height: 327px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        #partners .our_partners .preview_icon {
+            display: flex;
+            align-items: center;
+            height: 347px;
+        }
+
+        #partners .show-all {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            cursor: pointer;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            font-family: Montserrat;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 34px;
+            letter-spacing: 0em;
+        }
+
+        #partners .our_partners .all_icons .row {
+            margin: 0;
+            padding: 0;
+        }
+
+        #partners .our_partners .all_icons .central_rows {
+            display: flex;
+            align-items: center;
+            height: 45%;
+        }
+
+        #partners .our_partners .all_icons .central_rows .col-md-4 {
+            flex: 1;
+        }
+
+        /*our partners end*/
+        /*our partners start*/
+        /*our partners end*/
+
+        /*reference to financial support start*/
+        #financialSupport .qr {
+            background-image: url(../images/reference_to_financial_support/qr_desktop.png);
+            height: 228px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #financialSupport .text {
+            text-align: left;
+            padding: 32px 60px;
+            padding-right: 591px;
+        }
+
+        #financialSupport .link {
+            text-align: left;
+            font-size: 32px;
+            padding: 32px;
+            padding-top: 1px;
+        }
+
+        /*reference to financial support end*/
+
+        /*specialty start*/
+        /*specialty end*/
+
+        /*footer start*/
+        /*footer end*/
     }
-
-    #aboutTheProgram .foto {
-        float: right;
-        background-image: url(../images/about_the_program/photo_about_the_program_1.png);
-        padding: 14%;
-        margin: 69.57px 48px 77.48px 0;
-    }
-
-    #aboutTheProgram .main_unit {
-        max-width: 1024px;
-        height: 448px;
-        margin: 0 auto;
-    }
-
-    #aboutTheProgram br {
-        display: flex;
-    }
-
-    #aboutTheProgram .text {
-        background-color: var(--color-grey-2);
-    }
-
-    #aboutTheProgram .text-title {
-        float: left;
-        color: var(--color-blue-1);
-        text-align: center;
-        font-family: Montserrat;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 43.2px;
-        width: 564px;
-        height: 343px;
-        margin: 61px 51px 44px 57px;
-        padding: 0;
-    }
-
-    /*about the program end*/
-
-    /*video clip start*/
-    /*video clip end*/
-
-    /*we provide start*/
-    #provide .images {
-        background-image: url(../images/provide/provide.desktop.png);
-        margin: 0 auto;
-        width: 762.721px;
-        height: 349.395px;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    #provide .text {
-        color: #05003e;
-        text-align: center;
-        font-family: Montserrat;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-
-    #provide .text1 {
-        line-height: 1.8;
-        padding: 15px 0;
-        margin-left: 50px;
-        width: 316.299px;
-        height: 218.44px;
-        color: #05003e;
-        font-family: Montserrat;
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 400;
-    }
-
-    /*we provide end*/
-
-    /*tape with photos start*/
-    #photos .images {
-        background-image: url(../images/tape_with_photos/photos_desktop.jpg);
-        margin-top: 90px;
-        background-size: cover;
-        display: flex;
-        height: 258px;
-        flex-shrink: 0;
-    }
-
-    /*tape with photos end*/
-
-    /*register.attention start*/
-    /*register.attention end*/
-
-    /*resources start*/
-    #resources .resources_block {
-        width: 904px;
-        height: 428px;
-    }
-
-    #resources .resources_block p {
-        width: 859px;
-        font-size: 26px;
-        font-weight: 400;
-        line-height: 180%;
-    }
-
-    #resources .resources_block b {
-        font-size: 26px;
-        font-weight: 700;
-        line-height: 180%;
-    }
-
-    #resources .resources_block img {
-        width: 600px;
-        height: 140px;
-    }
-
-    /*resources end*/
-
-    /*become our partner start*/
-    /*become our partner end*/
-
-    /*our partners start*/
-    #partners {
-        margin-top: 137px;
-    }
-
-    #partners .carousel {
-        display: none;
-    }
-
-    #partners .partners_title {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 203px;
-        color: var(--color-blue-1);
-        font-size: 40px;
-        font-weight: 400;
-        line-height: 49px;
-        letter-spacing: 0em;
-        text-align: center;
-        position: absolute;
-        top: -15%;
-    }
-
-    #partners .our_partners {
-        display: block;
-        background: url(../images/our_partners/border.svg) no-repeat;
-        background-size: contain;
-        background-position: center;
-        width: 904px;
-        height: 347px;
-        position: relative;
-        overflow: hidden;
-    }
-
-    #partners .our_partners .all_icons {
-        height: 327px;
-        margin-top: 25px;
-        margin-bottom: 15px;
-    }
-
-    #partners .our_partners .preview_icon {
-        display: flex;
-        align-items: center;
-        height: 347px;
-    }
-
-    #partners .show-all {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        cursor: pointer;
-        margin-right: 20px;
-        margin-bottom: 20px;
-        font-family: Montserrat;
-        font-size: 28px;
-        font-weight: 400;
-        line-height: 34px;
-        letter-spacing: 0em;
-    }
-
-    #partners .our_partners .all_icons .row {
-        margin: 0;
-        padding: 0;
-    }
-
-    #partners .our_partners .all_icons .central_rows {
-        display: flex;
-        align-items: center;
-        height: 45%;
-    }
-
-    #partners .our_partners .all_icons .central_rows .col-md-4 {
-        flex: 1;
-    }
-
-    /*our partners end*/
-    /*our partners start*/
-    /*our partners end*/
-
-    /*reference to financial support start*/
-    /*reference to financial support end*/
-
-    /*specialty start*/
-    /*specialty end*/
-
-    /*footer start*/
-    /*footer end*/
-}
