@@ -248,11 +248,9 @@ h2 {
 }
 
 #mainblock .social-list__item img {
-
     display: block;
     width: 20px;
     height: 20px;
-
 }
 
 #mainblock .work_it-pic {
@@ -312,7 +310,6 @@ h2 {
 }
 
 #registration .register-btn {
-
     width: 230px;
     height: 55px;
     padding: 15px 10px;
@@ -487,7 +484,7 @@ h2 {
     width: 100%;
     height: 192px;
     flex-direction: column;
-    background-image: url(/src/images/to_register/coat\ of\ arms\ background.jpg);
+    background-image: url(/src/images/to_register/coat_of_arms_background.jpg);
     background-repeat: no-repeat;
     margin: 0 auto;
     background-position: center;
@@ -497,12 +494,11 @@ h2 {
 
 #registerAttencion .block_attencion_text1 {
     display: flex;
-    padding-top: 65px;
+    padding-top: 78px;
     padding-right: 9px;
 }
 
 #registerAttencion .block_attencion_text1 h2 {
-
     width: 79px;
     height: 23px;
     flex-shrink: 0;
@@ -1070,7 +1066,6 @@ h2 {
     }
 
     #registration .register-btn {
-
         width: 416px;
         height: 89px;
         padding: 10px;
@@ -1239,7 +1234,7 @@ h2 {
         width: 100%;
         height: 483px;
         flex-direction: column;
-        background-image: url(/src/images/to_register/coat\ of\ arms\ background\ 1\ .jpg);
+        background-image: url(/src/images/to_register/coat_of_arms_background1.jpg);
         background-repeat: no-repeat;
         margin: 0 auto;
         background-position: center;
@@ -1250,7 +1245,7 @@ h2 {
     #registerAttencion .block_attencion_text1 {
         display: flex;
         padding-right: 25px;
-        padding-bottom: 51px;
+        padding-bottom: 90px;
     }
 
     #registerAttencion .block_attencion_text1 h2 {
@@ -1671,7 +1666,6 @@ h2 {
     }
 
     #registration .register-btn {
-
         width: 414px;
         height: 90px;
         padding: 15px 0px;
@@ -1793,7 +1787,7 @@ h2 {
         height: 586px;
         justify-content: center;
         flex-direction: row;
-        background-image: url(/src/images/to_register/coat\ of\ arms\ background3.jpg);
+        background-image: url(/src/images/to_register/coat_of_arms_background2.jpg);
         margin: 0 auto;
     }
 
