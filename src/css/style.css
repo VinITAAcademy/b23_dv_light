@@ -429,6 +429,108 @@ h2 {
 /*tape with photos end*/
 
 /*register.attention start*/
+#registerAttencion .block_registerAttencion {
+    display: flex;
+    width: 100%;
+    height: 344px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#registerAttencion .block_register {
+    display: flex;
+    width: 100%;
+    height: 152px;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+#registerAttencion .block_text {
+    display: flex;
+    width: 277.20px;
+    height: 24px;
+    padding-top: 16px;
+}
+
+#registerAttencion .block_text p {
+    color: #05003E;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#registerAttencion .button {
+    background-color: var(--color-blue-2);
+    width: 230px;
+    height: 55px;
+    flex-shrink: 0;
+    color: var(--color-white);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    align-items: center;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 15px 10px;
+}
+
+#registerAttencion .block_attencion {
+    display: flex;
+    width: 100%;
+    height: 192px;
+    flex-direction: column;
+    background-image: url(/src/images/to_register/coat\ of\ arms\ background.jpg);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#registerAttencion .block_attencion_text1 {
+    display: flex;
+    padding-top: 65px;
+    padding-right: 9px;
+}
+
+#registerAttencion .block_attencion_text1 h2 {
+
+    width: 79px;
+    height: 23px;
+    flex-shrink: 0;
+    color: var(--color-blue-1);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#registerAttencion .block_attencion_text2 {
+    display: flex;
+    width: 324px;
+    margin: 0 0 62px 0;
+    flex-shrink: 0;
+}
+
+#registerAttencion .block_attencion_text2 p {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 7px;
+    text-align: center;
+}
+
 /*register.attention end*/
 
 /*resources start*/
@@ -1075,6 +1177,114 @@ h2 {
 
     /*tape with photos end*/
 
+    /*register.attention start*/
+    #registerAttencion .block_registerAttencion {
+        display: flex;
+        width: 100%;
+        height: 820px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #registerAttencion .block_register {
+        display: flex;
+        width: 100%;
+        height: 337px;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 21px;
+    }
+
+    #registerAttencion .block_text {
+        display: flex;
+        width: 483px;
+        height: 96px;
+        padding-top: 16px;
+    }
+
+    #registerAttencion .block_text>p {
+        color: var(--color-blue-1);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    #registerAttencion .button {
+        display: flex;
+        background-color: var(--color-blue-2);
+        width: 416px;
+        height: 89px;
+        flex-shrink: 0;
+        color: var(--color-white);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        align-items: center;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 15px 10px;
+        justify-content: center;
+    }
+
+    #registerAttencion .block_attencion {
+        display: flex;
+        width: 100%;
+        height: 483px;
+        flex-direction: column;
+        background-image: url(/src/images/to_register/coat\ of\ arms\ background\ 1\ .jpg);
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #registerAttencion .block_attencion_text1 {
+        display: flex;
+        padding-right: 25px;
+        padding-bottom: 51px;
+    }
+
+    #registerAttencion .block_attencion_text1 h2 {
+        width: 196px;
+        height: 61px;
+        flex-shrink: 0;
+        color: var(--color-blue-1);
+        font-family: Montserrat;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    #registerAttencion .block_attencion_text2 {
+        display: flex;
+        width: 728px;
+        height: 266px;
+        margin-bottom: 61px;
+        flex-shrink: 0;
+    }
+
+    #registerAttencion .block_attencion_text2>p {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        margin-top: 7px;
+        text-align: center;
+    }
+
+    /*register.attention end*/
+
     /*resources start*/
     #resources .resources_block {
         width: 742px;
@@ -1577,6 +1787,112 @@ h2 {
     /*tape with photos end*/
 
     /*register.attention start*/
+    #registerAttencion .block_registerAttencion {
+        display: flex;
+        width: 1024px;
+        height: 586px;
+        justify-content: center;
+        flex-direction: row;
+        background-image: url(/src/images/to_register/coat\ of\ arms\ background3.jpg);
+        margin: 0 auto;
+    }
+
+    #registerAttencion .block_register {
+        display: flex;
+        width: 444px;
+        height: 560px;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 21px;
+    }
+
+    #registerAttencion .block_text {
+        display: flex;
+        width: 360px;
+        height: 71px;
+        margin: 218px 0 0 27px;
+    }
+
+    #registerAttencion .block_text p {
+        color: var(--color-blue-1);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.36px;
+    }
+
+    #registerAttencion .button {
+        display: flex;
+        background-color: var(--color-blue-2);
+        width: 270px;
+        height: 53px;
+        flex-shrink: 0;
+        color: var(--color-white);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        align-items: center;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 25px 85px;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 120px;
+    }
+
+    #registerAttencion .block_attencion {
+        display: flex;
+        width: 100%;
+        height: 483px;
+        flex-direction: column;
+        background-image: none;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #registerAttencion .block_attencion_text1 {
+        display: flex;
+        margin: 90px 0 0 92px;
+    }
+
+    #registerAttencion .block_attencion_text1 h2 {
+        width: 145px;
+        flex-shrink: 0;
+        color: var(--color-blue-1);
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    #registerAttencion .block_attencion_text2 {
+        display: flex;
+        width: 517px;
+        flex-shrink: 0;
+        margin: 9px 0 0 46px;
+    }
+
+    #registerAttencion .block_attencion_text2 p {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 180%;
+        text-align: center;
+    }
+
     /*register.attention end*/
 
     /*resources start*/
