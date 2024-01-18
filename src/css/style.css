@@ -27,6 +27,13 @@ body {
     padding: 0;
 }
 
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 :root {
     --color-white: #ffffff;
     --color-yellow: #fdd817;
@@ -43,7 +50,6 @@ body {
 /*============================ Mobile375 px========================*/
 /*header start*/
 * {
-    background-color: rgba(255, 255, 255, 0.1);
     margin: 0px;
     padding: 0px;
     box-shadow: none !important;
@@ -112,7 +118,7 @@ body {
 
 h3 {
     color: var(--color-blue-1);
-    font-family: 'Yeseva One';
+    font-family: "Yeseva One";
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
@@ -208,10 +214,114 @@ h2 {
 /*header end*/
 
 /*main-block start*/
+#mainblock .mainblock {
+    background: url(../images/Main_block/main-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 46px;
+}
+
+#mainblock .flag-backgroud {
+    position: absolute;
+    bottom: -46px;
+    width: 100%;
+    z-index: 1;
+}
+
+#mainblock .social {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    left: 0;
+}
+
+#mainblock .social-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+#mainblock .social-list__item img {
+
+    display: block;
+    width: 20px;
+    height: 20px;
+
+}
+
+#mainblock .work_it-pic {
+    display: none;
+}
+
+#mainblock .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+#mainblock .text_1 {
+    color: #05003e;
+    font-family: Pacifico;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.74;
+}
+
+#mainblock .text_2 {
+    color: #05003e;
+    font-family: Yeseva One;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.7;
+}
 
 /*main block end*/
 
 /*registration start*/
+#registration .container_rg {
+    width: 375px;
+    height: 218px;
+    text-align: center;
+}
+
+#registration .text_1 {
+    color: #05003E;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#registration .text_2 {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#registration .register-btn {
+
+    width: 230px;
+    height: 55px;
+    padding: 15px 10px;
+    background-color: #2162B4;
+    color: #fff;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
 /*registration end*/
 
 /*about the program start*/
@@ -409,7 +519,7 @@ h2 {
     border: none;
     color: var(--color-white);
     margin-bottom: 13px;
-    color: #FFF;
+    color: #fff;
 }
 
 #becomeOurPartner .foto {
@@ -580,7 +690,7 @@ h2 {
 
     h3 {
         color: var(--color-blue-1);
-        font-family: 'Yeseva One';
+        font-family: "Yeseva One";
         font-size: 48px;
         font-style: normal;
         font-weight: 400;
@@ -667,51 +777,79 @@ h2 {
 
     /*main-block start*/
     #mainblock .mainblock {
-        background: url(/src/images/Main_block/Group\ 1029.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
+        background: url(../images/Main_block/main-background-tablet.png);
         height: 1024px;
-        margin: 0 auto;
         position: relative;
+    }
 
+    #mainblock .flag-backgroud {
+        width: 100%;
+    }
+
+    #mainblock .social {
+        display: none;
     }
 
     #mainblock .work_it-pic {
+        right: 30px;
         width: 128px;
+        display: block;
         position: absolute;
-        bottom: 57px;
+        bottom: 75px;
         right: 20px;
-    }
-
-    #mainblock .text {
-        padding-top: 355px;
-        padding-left: 71px;
+        z-index: 2;
     }
 
     #mainblock .text_1 {
-        color: #05003E;
-        font-family: Pacifico;
         font-size: 64px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-
+        white-space: nowrap;
     }
 
     #mainblock .text_2 {
-        color: #05003E;
-
-        font-family: Montserrat;
         font-size: 128px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
     }
 
     /*main block end*/
 
     /*registration start*/
+    #registration .container_rg {
+        width: 768px;
+        height: 440px;
+        text-align: center;
+    }
+
+    #registration .text_1 {
+        color: #05003E;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    #registration .text_2 {
+        color: #05003E;
+        font-family: Montserrat;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding-top: 22px;
+    }
+
+    #registration .register-btn {
+
+        width: 416px;
+        height: 89px;
+        padding: 10px;
+        background-color: #2162B4;
+        color: #fff;
+        font-size: 32px;
+        font-family: Montserrat;
+        font-weight: 500;
+        border-radius: 5px;
+    }
+
     /*registration end*/
 
     /*about the program start*/
@@ -953,7 +1091,6 @@ h2 {
     /*footer end*/
 }
 
-
 /*============================  992 px========================*/
 @media (min-width: 992px) {
 
@@ -1038,15 +1175,125 @@ h2 {
 
 /*header end*/
 
-
 /*============================ Desktop 1024 px========================*/
 
 @media (min-width: 1024px) {
 
     /*main-block start*/
+    #mainblock .mainblock {
+        background: url(../images/Main_block/main-background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #mainblock .flag-backgroud {
+        position: absolute;
+        bottom: -60px;
+        width: calc(100% - 60px);
+        z-index: 1;
+    }
+
+    #mainblock .social {
+        display: block;
+        position: absolute;
+        right: 0;
+        left: unset;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #mainblock .social-list__item img {
+        display: block;
+        width: 32px;
+        height: 32px;
+    }
+
+    #mainblock .social-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    #mainblock .work_it-pic {
+        width: 180px;
+        position: absolute;
+        bottom: 50px;
+        right: 86px;
+        z-index: 2;
+        display: block;
+    }
+
+    #mainblock .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 2;
+    }
+
+    #mainblock .text_1 {
+        color: #05003e;
+        font-family: Pacifico;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.74;
+    }
+
+    #mainblock .text_2 {
+        color: #05003e;
+        font-family: Yeseva One;
+        font-size: 170px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0.7;
+    }
+
     /*main block end*/
 
     /*registration start*/
+    #registration .container_rg {
+        width: 100%;
+        height: 500px;
+        text-align: center;
+    }
+
+    #registration .text_1 {
+        color: #05003E;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 28px;
+    }
+
+    #registration .register-btn {
+
+        width: 414px;
+        height: 90px;
+        padding: 15px 0px;
+        background-color: #2162B4;
+        color: #fff;
+        font-size: 32px;
+        font-family: Montserrat;
+        font-weight: 500;
+    }
+
+    #registration .text_2 {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
     /*registration end*/
 
     /*about the program start*/
