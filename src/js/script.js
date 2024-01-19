@@ -13,6 +13,12 @@ window.addEventListener('DOMContentLoaded', function () {
         video.insertAdjacentHTML('afterbegin', '<iframe class="videoPreview" src="https://www.youtube.com/embed/pmrIlYBWP20?si=fEDOS5Ct8-rmn2I9&autoplay=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
 
     });
+    $(".show-all").click(function () {
+        $(".preview_icon").toggleClass("d-none");
+        $(".all_icons").toggleClass("d-none");
+        var buttonText = $(".all_icons").hasClass("d-none") ? "Показати всі..." : "Показати менше";
+        $(".show-all").text(buttonText);
+    });
     jQuery('#phone, #phone1').inputmask({
         mask: '+38 (099) 999-99-99',
         greedy: false
