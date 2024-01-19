@@ -484,7 +484,7 @@ h2 {
     width: 100%;
     height: 192px;
     flex-direction: column;
-    background-image: url(/src/images/to_register/coat_of_arms_background.jpg);
+    background-image: url(../images/to_register/coat_of_arms_background.jpg);
     background-repeat: no-repeat;
     margin: 0 auto;
     background-position: center;
@@ -1234,7 +1234,7 @@ h2 {
         width: 100%;
         height: 483px;
         flex-direction: column;
-        background-image: url(/src/images/to_register/coat_of_arms_background1.jpg);
+        background-image: url(../images/to_register/coat_of_arms_background1.jpg);
         background-repeat: no-repeat;
         margin: 0 auto;
         background-position: center;
@@ -1787,7 +1787,7 @@ h2 {
         height: 586px;
         justify-content: center;
         flex-direction: row;
-        background-image: url(/src/images/to_register/coat_of_arms_background2.jpg);
+        background-image: url(../images/to_register/coat_of_arms_background2.jpg);
         margin: 0 auto;
     }
 
@@ -1857,7 +1857,7 @@ h2 {
 
     #registerAttencion .block_attencion_text1 {
         display: flex;
-        margin: 90px 0 0 92px;
+        padding: 160px 0 60px 58px;
     }
 
     #registerAttencion .block_attencion_text1 h2 {
