@@ -27,6 +27,13 @@ body {
   padding: 0;
 }
 
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 :root {
   --color-white: #ffffff;
   --color-yellow: #fdd817;
@@ -43,11 +50,10 @@ body {
 /*============================ Mobile375 px========================*/
 /*header start*/
 * {
-  background-color: rgba(255, 255, 255, 0.1);
-  margin: 0px;
-  padding: 0px;
-  box-shadow: none !important;
-  border: none;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: none !important;
+    border: none;
 }
 
 #header .navbar .bg-body-tertiary .navbar-expand-lg {
@@ -111,13 +117,13 @@ body {
 }
 
 h3 {
-  color: var(--color-blue-1);
-  font-family: 'Yeseva One';
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  justify-content: center;
+    color: var(--color-blue-1);
+    font-family: "Yeseva One";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-content: center;
 }
 
 h2 {
@@ -208,10 +214,111 @@ h2 {
 /*header end*/
 
 /*main-block start*/
+#mainblock .mainblock {
+    background: url(../images/Main_block/main-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 46px;
+}
+
+#mainblock .flag-backgroud {
+    position: absolute;
+    bottom: -46px;
+    width: 100%;
+    z-index: 1;
+}
+
+#mainblock .social {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    left: 0;
+}
+
+#mainblock .social-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+#mainblock .social-list__item img {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+#mainblock .work_it-pic {
+    display: none;
+}
+
+#mainblock .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+#mainblock .text_1 {
+    color: #05003e;
+    font-family: Pacifico;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.74;
+}
+
+#mainblock .text_2 {
+    color: #05003e;
+    font-family: Yeseva One;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.7;
+}
 
 /*main block end*/
 
 /*registration start*/
+#registration .container_rg {
+    width: 375px;
+    height: 218px;
+    text-align: center;
+}
+
+#registration .text_1 {
+    color: #05003E;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#registration .text_2 {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#registration .register-btn {
+    width: 230px;
+    height: 55px;
+    padding: 15px 10px;
+    background-color: #2162B4;
+    color: #fff;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
 /*registration end*/
 
 /*about the program start*/
@@ -319,6 +426,107 @@ h2 {
 /*tape with photos end*/
 
 /*register.attention start*/
+#registerAttencion .block_registerAttencion {
+    display: flex;
+    width: 100%;
+    height: 344px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#registerAttencion .block_register {
+    display: flex;
+    width: 100%;
+    height: 152px;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+#registerAttencion .block_text {
+    display: flex;
+    width: 277.20px;
+    height: 24px;
+    padding-top: 16px;
+}
+
+#registerAttencion .block_text p {
+    color: #05003E;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#registerAttencion .button {
+    background-color: var(--color-blue-2);
+    width: 230px;
+    height: 55px;
+    flex-shrink: 0;
+    color: var(--color-white);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    align-items: center;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 15px 10px;
+}
+
+#registerAttencion .block_attencion {
+    display: flex;
+    width: 100%;
+    height: 192px;
+    flex-direction: column;
+    background-image: url(../images/to_register/coat_of_arms_background.jpg);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#registerAttencion .block_attencion_text1 {
+    display: flex;
+    padding-top: 78px;
+    padding-right: 9px;
+}
+
+#registerAttencion .block_attencion_text1 h2 {
+    width: 79px;
+    height: 23px;
+    flex-shrink: 0;
+    color: var(--color-blue-1);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#registerAttencion .block_attencion_text2 {
+    display: flex;
+    width: 324px;
+    margin: 0 0 62px 0;
+    flex-shrink: 0;
+}
+
+#registerAttencion .block_attencion_text2 p {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 7px;
+    text-align: center;
+}
+
 /*register.attention end*/
 
 /*resources start*/
@@ -403,13 +611,13 @@ h2 {
 }
 
 #becomeOurPartner .content-button {
-  background-color: var(--color-blue-2);
-  width: 230px;
-  height: 55px;
-  border: none;
-  color: var(--color-white);
-  margin-bottom: 13px;
-  color: #FFF;
+    background-color: var(--color-blue-2);
+    width: 230px;
+    height: 55px;
+    border: none;
+    color: var(--color-white);
+    margin-bottom: 13px;
+    color: #fff;
 }
 
 #becomeOurPartner .foto {
@@ -529,6 +737,136 @@ h2 {
 /*reference to financial support end*/
 
 /*specialty start*/
+#specialty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: "Montserrat";
+    margin-bottom: 25px;
+}
+
+#specialty .specialty-tittle {
+    background: url(../images/specialty/boreder_icons_mobile.png) no-repeat;
+    width: 320px;
+    height: 263px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    position: relative;
+}
+
+#specialty .specialty-tittle .title {
+    position: absolute;
+    top: -4%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-blue-1);
+}
+
+#specialty .specialty-tittle .description {
+    width: 216px;
+    font-size: 12px;
+    margin: 0;
+    margin-top: 14px;
+}
+
+#specialty .specialty-tittle .professions {
+    width: 176px;
+    height: 116px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#specialty .cards {
+    display: flex;
+    flex-direction: column;
+}
+
+#specialty .cards .card {
+    background: url(../images/specialty/card_background_mobile.png) no-repeat;
+    background-size: cover;
+    width: 320px;
+    height: 441px;
+    display: flex;
+    align-items: center;
+    border: none;
+    text-align: center;
+    margin-top: 25px;
+    position: relative;
+}
+
+#specialty .cards .programing {
+    margin-top: 14px;
+}
+
+#specialty .cards p {
+    margin-top: 17px;
+    margin-bottom: 0;
+}
+
+#specialty .cards button {
+    width: 230px;
+    height: 55px;
+    color: var(--color-white);
+    background-color: var(--color-blue-1);
+    position: absolute;
+    bottom: 0;
+    margin: 15px 0px;
+}
+
+#specialty .cards .label-button {
+    font-size: 12px;
+    width: 189px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 84px;
+}
+
+#specialty .cards .card-title {
+    font-size: 18px;
+}
+
+#specialty .cards img {
+    margin-top: 32px;
+    width: 100px;
+    height: 100px;
+}
+
+#specialty .cards .card .card-descripton {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    width: 236px;
+}
+
+#specialty .cards .programing .card-descripton {
+    margin-top: 48px;
+}
+
+#specialty .cards .testing .card-descripton {
+    margin-top: 17px;
+}
+
+#specialty .cards .Web .card-descripton {
+    margin-top: 38px;
+}
+
+#specialty .cards .PM .card-descripton {
+    margin-top: 35px;
+}
+
+#specialty .cards .row {
+    max-width: 320px;
+}
+
 /*specialty end*/
 
 /*footer start*/
@@ -538,471 +876,637 @@ h2 {
 
 @media (min-width: 768px) {
 
-  /*header start*/
-  #header .navbar .bg-body-tertiary .navbar-expand-lg {
-    display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  #header .container-fluid {
-    padding: 0 !important;
-  }
-
-  #header .foto-swallow {
-    display: flex;
-    width: 75px;
-    height: 50px;
-    flex-shrink: 0;
-    padding: 0;
-  }
-
-  #header .offcanvas.offcanvas-end {
-    width: 100%;
-    height: 659px;
-    border-radius: 20px;
-  }
-
-  #header .offcanvas-body {
-    position: relative;
-    left: 11px;
-    top: 95px;
-  }
-
-  #header p {
-    color: var(--color-blue-2);
-    text-align: center;
-    font-family: Ubuntu;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    border-right: 1px solid var(--color-blue-2);
-    margin: 20px 0px 0px 19px;
-  }
-
-  #header .navbar-toggler-icon {
-    width: 75px;
-    height: 50px;
-    margin: 20px;
-  }
-
-  #header .burder-menu-text1 {
-    width: 382px;
-    height: 66px;
-    flex-shrink: 0;
-  }
-
-  #header .burger-menu-text2 {
-    position: relative;
-    width: 224px;
-    height: 49px;
-    flex-shrink: 0;
-    left: 41px;
-  }
-
-  h3 {
-    color: var(--color-blue-1);
-    font-family: 'Yeseva One';
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    justify-content: center;
-  }
-
-  h2 {
-    color: var(--color-blue-1);
-    font-family: Pacifico;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  #header .nav-link {
-    color: var(--color-blue-1);
-    font-family: Montserrat;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    padding: 0px 5px;
-    margin: 14px 0px;
-  }
-
-  #header.offcanvas-header {
-    display: flex;
-    text-align: center;
-  }
-
-  #header .horizontal-line {
-    top: 91px;
-    left: 30px;
-    width: 708px;
-    height: 3.3px;
-    position: relative;
-    background-color: var(--color-blue-1);
-    border-bottom: 1.9px solid var(--color-yellow);
-  }
-
-  #header .horizontal-line1 {
-    top: 22px;
-    width: 708px;
-    height: 3.1px;
-    left: 6px;
-    position: relative;
-    background-color: var(--color-blue-1);
-    border-bottom: 1.9px solid var(--color-yellow);
-  }
-
-  #header.offcanvas .offcanvas-end {
-    width: 100%;
-    height: 659px;
-    border-radius: 20px;
-  }
-
-  #header .icon-flag {
-    position: relative;
-    top: 9px;
-    left: 4px;
-  }
-
-  #header .flagUA {
-    width: 20px;
-    height: 18px;
-  }
-
-  #header .iconc {
-    width: 50px;
-    height: 50px;
-  }
-
-  #header .icon-link {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 70px;
-    right: 35px;
-  }
-
-  /*header end*/
-
-  /*main-block start*/
-  #mainblock .mainblock {
-    background: url(/src/images/Main_block/Group\ 1029.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 1024px;
-    margin: 0 auto;
-    position: relative;
-
-  }
-
-  #mainblock .work_it-pic {
-    width: 128px;
-    position: absolute;
-    bottom: 57px;
-    right: 20px;
-  }
-
-  #mainblock .text {
-    padding-top: 355px;
-    padding-left: 71px;
-  }
-
-  #mainblock .text_1 {
-    color: #05003E;
-    font-family: Pacifico;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-
-  }
-
-  #mainblock .text_2 {
-    color: #05003E;
-
-    font-family: Montserrat;
-    font-size: 128px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  /*main block end*/
-
-  /*registration start*/
-  /*registration end*/
-
-  /*about the program start*/
-  #aboutTheProgram .main_container {
-    margin: 0;
-    padding: 0;
-  }
-
-  #aboutTheProgram br {
-    display: none;
-  }
-
-  #aboutTheProgram .tex {
-    background-color: var(--color-grey-2);
-  }
-
-  #aboutTheProgram .foto {
-    background-image: url(../images/about_the_program/photo_about_the_program.png);
-    background-size: cover;
-    padding: 25%;
-    margin: 0;
-  }
-
-  #aboutTheProgram .text-title {
-    color: var(--color-blue-1);
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 180%;
-    width: 728px;
-    height: 358px;
-    padding: 50px 20px;
-    margin: 0 auto;
-  }
-
-  /*about the program end*/
-
-  /*video clip start*/
-  #video .videoPreview {
-    max-width: 762px;
-    height: 431px;
-  }
-
-  /*video clip end*/
-
-  /*we provide start*/
-  #provide .images {
-    background-image: url(../images/provide/provide.tablet.png);
-    margin: 0 auto;
-    width: 700px;
-    height: 917px;
-    flex-shrink: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  #provide .text {
-    color: #05003e;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  #provide .text1 {
-    margin-left: 91px;
-    margin-right: 91px;
-    margin-top: 30px;
-    width: 586px;
-    color: #05003e;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.8;
-  }
-
-  /*we provide end*/
-
-  /*tape with photos start*/
-  #photos .images {
-    background-image: url(../images/tape_with_photos/photos_tablet.jpg);
-    margin-top: 50px;
-    background-size: cover;
-    display: flex;
-    height: 368px;
-    flex-shrink: 0;
-  }
-
-  /*tape with photos end*/
-
-  /*resources start*/
-  #resources .resources_block {
-    width: 742px;
-    height: 359px;
-  }
-
-  #resources .resources_block p {
-    width: 700px;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 180%;
-  }
-
-  #resources .resources_block b {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 180%;
-  }
-
-  #resources .resources_block img {
-    width: 268px;
-    height: 74px;
-  }
-
-  /*resources end*/
-
-  /*become our partner start*/
-  #becomeOurPartner {
-    padding-top: 65px;
-    padding-bottom: 37px;
-  }
-
-  #becomeOurPartner .description {
-    background: none;
-  }
-
-  #becomeOurPartner .description p {
-    width: 728px;
-    font-size: 23px;
-    font-weight: 500;
-    line-height: 180%;
-  }
-
-  #becomeOurPartner .join-our-team .foto {
-    display: block;
-  }
-
-  #becomeOurPartner .description .title,
-  #becomeOurPartner .title {
-    font-size: 24px;
-    line-height: normal;
-  }
-
-  #becomeOurPartner .join-our-team p {
-    width: 586px;
-  }
-
-  #becomeOurPartner .content-button {
-    width: 494px;
-    height: 89px;
-    font-size: 32px;
-  }
-
-  #becomeOurPartner .buttons {
-    margin-top: 30px;
-  }
-
-  #becomeOurPartner .description .text .title {
-    font-size: 36px;
-  }
-
-  #becomeOurPartner .description .buttons .label-button b {
-    font-weight: 600;
-  }
-
-  /*become our partner end*/
-
-  /*become our partner start*/
-  /*become our partner end*/
-
-  /*our partners start*/
-  #partners {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    margin-top: 12px;
-    margin-bottom: 44px;
-  }
-
-  #partners .partners_title {
-    color: var(--color-blue-1);
-    font-family: "Montserrat";
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 600;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: center;
-  }
-
-  #partners .carousel {
-    display: flex;
-    width: 100%;
-    max-width: 768px;
-  }
-
-  #partners .carousel .carousel-inner .carousel-item img {
-    height: 40px;
-  }
-
-  #partners .carousel .carousel-control-butt .carousel-control-prev-icon {
-    background: url(../images/our_partners/prev.svg);
-    width: 24px;
-    height: 24px;
-  }
-
-  #partners .carousel .carousel-control-butt .carousel-control-next-icon {
-    background: url(../images/our_partners/next.svg) no-repeat;
-    width: 24px;
-    height: 24px;
-  }
-
-  #partners .carousel .carousel-control-butt {
-    position: static;
-    border-radius: 50%;
-  }
-
-  #partners .our_partners {
-    display: none;
-  }
-
-  /*our partners end*/
-
-  /*reference to financial support start*/
-  #financialSupport .qr {
-    background-image: url(../images/reference_to_financial_support/qr_tablet.png);
-    height: 226px;
-
-
-  }
-
-  #financialSupport .text {
-    text-align: left;
-    padding: 32px 175px 9px 22px;
-    color: #FFF;
-    font-style: italic;
-    font-size: 20px;
-  }
-
-  #financialSupport .link {
-
-    text-align: center;
-    font-size: 32px;
-
-
-
-  }
-
-  /*reference to financial support end*/
-
-  /*specialty start*/
-  /*specialty end*/
-
-  /*footer start*/
-  /*footer end*/
-
-
-  /*============================  992 px========================*/
-  @media (min-width: 992px) {
+    /*header start*/
+    #header .navbar .bg-body-tertiary .navbar-expand-lg {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #header .container-fluid {
+        padding: 0 !important;
+    }
+
+    #header .foto-swallow {
+        display: flex;
+        width: 75px;
+        height: 50px;
+        flex-shrink: 0;
+        padding: 0;
+    }
+
+    #header .offcanvas.offcanvas-end {
+        width: 100%;
+        height: 659px;
+        border-radius: 20px;
+    }
+
+    #header .offcanvas-body {
+        position: relative;
+        left: 11px;
+        top: 95px;
+    }
+
+    #header p {
+        color: var(--color-blue-2);
+        text-align: center;
+        font-family: Ubuntu;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        border-right: 1px solid var(--color-blue-2);
+        margin: 20px 0px 0px 19px;
+    }
+
+    #header .navbar-toggler-icon {
+        width: 75px;
+        height: 50px;
+        margin: 20px;
+    }
+
+    #header .burder-menu-text1 {
+        width: 382px;
+        height: 66px;
+        flex-shrink: 0;
+    }
+
+    #header .burger-menu-text2 {
+        position: relative;
+        width: 224px;
+        height: 49px;
+        flex-shrink: 0;
+        left: 41px;
+    }
+
+    h3 {
+        color: var(--color-blue-1);
+        font-family: "Yeseva One";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        justify-content: center;
+    }
+
+    h2 {
+        color: var(--color-blue-1);
+        font-family: Pacifico;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    #header .nav-link {
+        color: var(--color-blue-1);
+        font-family: Montserrat;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 0px 5px;
+        margin: 14px 0px;
+    }
+
+    #header.offcanvas-header {
+        display: flex;
+        text-align: center;
+    }
+
+    #header .horizontal-line {
+        top: 91px;
+        left: 30px;
+        width: 708px;
+        height: 3.3px;
+        position: relative;
+        background-color: var(--color-blue-1);
+        border-bottom: 1.9px solid var(--color-yellow);
+    }
+
+    #header .horizontal-line1 {
+        top: 22px;
+        width: 708px;
+        height: 3.1px;
+        left: 6px;
+        position: relative;
+        background-color: var(--color-blue-1);
+        border-bottom: 1.9px solid var(--color-yellow);
+    }
+
+    #header.offcanvas .offcanvas-end {
+        width: 100%;
+        height: 659px;
+        border-radius: 20px;
+    }
+
+    #header .icon-flag {
+        position: relative;
+        top: 9px;
+        left: 4px;
+    }
+
+    #header .flagUA {
+        width: 20px;
+        height: 18px;
+    }
+
+    #header .iconc {
+        width: 50px;
+        height: 50px;
+    }
+
+    #header .icon-link {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 70px;
+        right: 35px;
+    }
+
+    /*header end*/
+
+    /*main-block start*/
+    #mainblock .mainblock {
+        background: url(../images/Main_block/main-background-tablet.png);
+        height: 1024px;
+        position: relative;
+    }
+
+    #mainblock .flag-backgroud {
+        width: 100%;
+    }
+
+    #mainblock .social {
+        display: none;
+    }
+
+    #mainblock .work_it-pic {
+        right: 30px;
+        width: 128px;
+        display: block;
+        position: absolute;
+        bottom: 75px;
+        right: 20px;
+        z-index: 2;
+    }
+
+    #mainblock .text_1 {
+        font-size: 64px;
+        white-space: nowrap;
+    }
+
+    #mainblock .text_2 {
+        font-size: 128px;
+    }
+
+    /*main block end*/
+
+    /*registration start*/
+    #registration .container_rg {
+        width: 768px;
+        height: 440px;
+        text-align: center;
+    }
+
+    #registration .text_1 {
+        color: #05003E;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    #registration .text_2 {
+        color: #05003E;
+        font-family: Montserrat;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding-top: 22px;
+    }
+
+    #registration .register-btn {
+        width: 416px;
+        height: 89px;
+        padding: 10px;
+        background-color: #2162B4;
+        color: #fff;
+        font-size: 32px;
+        font-family: Montserrat;
+        font-weight: 500;
+        border-radius: 5px;
+    }
+
+    /*registration end*/
+
+    /*about the program start*/
+    #aboutTheProgram .main_container {
+        margin: 0;
+        padding: 0;
+    }
+
+    #aboutTheProgram br {
+        display: none;
+    }
+
+    #aboutTheProgram .tex {
+        background-color: var(--color-grey-2);
+    }
+
+    #aboutTheProgram .foto {
+        background-image: url(../images/about_the_program/photo_about_the_program.png);
+        background-size: cover;
+        padding: 25%;
+        margin: 0;
+    }
+
+    #aboutTheProgram .text-title {
+        color: var(--color-blue-1);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 180%;
+        width: 728px;
+        height: 358px;
+        padding: 50px 20px;
+        margin: 0 auto;
+    }
+
+    /*about the program end*/
+
+    /*video clip start*/
+    #video .videoPreview {
+        max-width: 762px;
+        height: 431px;
+    }
+
+    /*video clip end*/
+
+    /*we provide start*/
+    #provide .images {
+        background-image: url(../images/provide/provide.tablet.png);
+        margin: 0 auto;
+        width: 700px;
+        height: 917px;
+        flex-shrink: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #provide .text {
+        color: #05003e;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    #provide .text1 {
+        margin-left: 91px;
+        margin-right: 91px;
+        margin-top: 30px;
+        width: 586px;
+        color: #05003e;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.8;
+    }
+
+    /*we provide end*/
+
+    /*tape with photos start*/
+    #photos .images {
+        background-image: url(../images/tape_with_photos/photos_tablet.jpg);
+        margin-top: 50px;
+        background-size: cover;
+        display: flex;
+        height: 368px;
+        flex-shrink: 0;
+    }
+
+    /*tape with photos end*/
+
+    /*register.attention start*/
+    #registerAttencion .block_registerAttencion {
+        display: flex;
+        width: 100%;
+        height: 820px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #registerAttencion .block_register {
+        display: flex;
+        width: 100%;
+        height: 337px;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 21px;
+    }
+
+    #registerAttencion .block_text {
+        display: flex;
+        width: 483px;
+        height: 96px;
+        padding-top: 16px;
+    }
+
+    #registerAttencion .block_text>p {
+        color: var(--color-blue-1);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    #registerAttencion .button {
+        display: flex;
+        background-color: var(--color-blue-2);
+        width: 416px;
+        height: 89px;
+        flex-shrink: 0;
+        color: var(--color-white);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        align-items: center;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 15px 10px;
+        justify-content: center;
+    }
+
+    #registerAttencion .block_attencion {
+        display: flex;
+        width: 100%;
+        height: 483px;
+        flex-direction: column;
+        background-image: url(../images/to_register/coat_of_arms_background1.jpg);
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #registerAttencion .block_attencion_text1 {
+        display: flex;
+        padding-right: 25px;
+        padding-bottom: 90px;
+    }
+
+    #registerAttencion .block_attencion_text1 h2 {
+        width: 196px;
+        height: 61px;
+        flex-shrink: 0;
+        color: var(--color-blue-1);
+        font-family: Montserrat;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    #registerAttencion .block_attencion_text2 {
+        display: flex;
+        width: 728px;
+        height: 266px;
+        margin-bottom: 61px;
+        flex-shrink: 0;
+    }
+
+    #registerAttencion .block_attencion_text2>p {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        margin-top: 7px;
+        text-align: center;
+    }
+
+    /*register.attention end*/
+
+    /*resources start*/
+    #resources .resources_block {
+        width: 742px;
+        height: 359px;
+    }
+
+    #resources .resources_block p {
+        width: 700px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 180%;
+    }
+
+    #resources .resources_block b {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 180%;
+    }
+
+    #resources .resources_block img {
+        width: 268px;
+        height: 74px;
+    }
+
+    /*resources end*/
+
+    /*become our partner start*/
+    #becomeOurPartner {
+        padding-top: 65px;
+        padding-bottom: 37px;
+    }
+
+    #becomeOurPartner .description {
+        background: none;
+    }
+
+    #becomeOurPartner .description p {
+        width: 728px;
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 180%;
+    }
+
+    #becomeOurPartner .join-our-team .foto {
+        display: block;
+    }
+
+    #becomeOurPartner .description .title,
+    #becomeOurPartner .title {
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    #becomeOurPartner .join-our-team p {
+        width: 586px;
+    }
+
+    #becomeOurPartner .content-button {
+        width: 494px;
+        height: 89px;
+        font-size: 32px;
+    }
+
+    #becomeOurPartner .buttons {
+        margin-top: 30px;
+    }
+
+    #becomeOurPartner .description .text .title {
+        font-size: 36px;
+    }
+
+    #becomeOurPartner .description .buttons .label-button b {
+        font-weight: 600;
+    }
+
+    /*become our partner end*/
+
+    /*become our partner start*/
+    /*become our partner end*/
+
+    /*our partners start*/
+    #partners {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        margin-top: 12px;
+        margin-bottom: 44px;
+    }
+
+    #partners .partners_title {
+        color: var(--color-blue-1);
+        font-family: "Montserrat";
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    #partners .carousel {
+        display: flex;
+        width: 100%;
+        max-width: 768px;
+    }
+
+    #partners .carousel .carousel-inner .carousel-item img {
+        height: 40px;
+    }
+
+    #partners .carousel .carousel-control-butt .carousel-control-prev-icon {
+        background: url(../images/our_partners/prev.svg);
+        width: 24px;
+        height: 24px;
+    }
+
+    #partners .carousel .carousel-control-butt .carousel-control-next-icon {
+        background: url(../images/our_partners/next.svg) no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+
+    #partners .carousel .carousel-control-butt {
+        position: static;
+        border-radius: 50%;
+    }
+
+    #partners .our_partners {
+        display: none;
+    }
+
+    /*our partners end*/
+
+    /*reference to financial support start*/
+    /*reference to financial support end*/
+
+    /*specialty start*/
+    #specialty {
+        margin-top: 78px;
+    }
+
+    #specialty .cards .programing,
+    #specialty .cards .testing {
+        margin-top: 54px;
+    }
+
+    #specialty .cards .testing .card-descripton {
+        margin-top: 23px;
+        font-size: 11px;
+    }
+
+    #specialty .cards .row {
+        max-width: 700px;
+        justify-content: space-evenly !important;
+        align-items: center;
+    }
+
+    #specialty .specialty-tittle {
+        background: url(../images/specialty/border_icons_tablet.png) no-repeat;
+        background-size: cover;
+        width: 706px;
+        height: 893px;
+    }
+
+    #specialty .specialty-tittle .title {
+        font-size: 45px;
+        font-weight: 400;
+        left: 48%;
+    }
+
+    #specialty .specialty-tittle .description {
+        font-size: 28px;
+        font-weight: 400;
+        width: 492px;
+        height: 68px;
+        margin-top: 57px;
+    }
+
+    #specialty .specialty-tittle .professions {
+        font-size: 48px;
+        font-weight: 700;
+        width: 506px;
+        height: 384px;
+        margin-top: 92px;
+    }
+
+    #specialty .specialty-tittle .description-bottomn {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 120px;
+    }
+
+    /*specialty end*/
+
+    /*footer start*/
+    /*footer end*/
+}
+
+/*============================  992 px========================*/
+@media (min-width: 992px) {
 
     /*header start*/
     #header .navbar .bg-body-tertiary .navbar-expand-lg {
@@ -1085,15 +1589,129 @@ h2 {
 
   /*header end*/
 
+<<<<<<< HEAD
 
   /*============================ Desktop 1024 px========================*/
+=======
+/*============================ Desktop 1024 px========================*/
+>>>>>>> develop
 
   @media (min-width: 1024px) {
 
     /*main-block start*/
+    #mainblock .mainblock {
+        background: url(../images/Main_block/main-background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #mainblock .flag-backgroud {
+        position: absolute;
+        bottom: -60px;
+        width: calc(100% - 60px);
+        z-index: 1;
+    }
+
+    #mainblock .social {
+        display: block;
+        position: absolute;
+        right: 0;
+        left: unset;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #mainblock .social-list__item img {
+        display: block;
+        width: 32px;
+        height: 32px;
+    }
+
+    #mainblock .social-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    #mainblock .work_it-pic {
+        width: 180px;
+        position: absolute;
+        bottom: 50px;
+        right: 86px;
+        z-index: 2;
+        display: block;
+    }
+
+    #mainblock .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 2;
+    }
+
+    #mainblock .text_1 {
+        color: #05003e;
+        font-family: Pacifico;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.74;
+    }
+
+    #mainblock .text_2 {
+        color: #05003e;
+        font-family: Yeseva One;
+        font-size: 170px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0.7;
+    }
+
     /*main block end*/
 
     /*registration start*/
+    #registration .container_rg {
+        width: 100%;
+        height: 500px;
+        text-align: center;
+    }
+
+    #registration .text_1 {
+        color: #05003E;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 28px;
+    }
+
+    #registration .register-btn {
+        width: 414px;
+        height: 90px;
+        padding: 15px 0px;
+        background-color: #2162B4;
+        color: #fff;
+        font-size: 32px;
+        font-family: Montserrat;
+        font-weight: 500;
+    }
+
+    #registration .text_2 {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
     /*registration end*/
 
     /*about the program start*/
@@ -1192,6 +1810,112 @@ h2 {
     /*tape with photos end*/
 
     /*register.attention start*/
+    #registerAttencion .block_registerAttencion {
+        display: flex;
+        width: 1024px;
+        height: 586px;
+        justify-content: center;
+        flex-direction: row;
+        background-image: url(../images/to_register/coat_of_arms_background2.jpg);
+        margin: 0 auto;
+    }
+
+    #registerAttencion .block_register {
+        display: flex;
+        width: 444px;
+        height: 560px;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 21px;
+    }
+
+    #registerAttencion .block_text {
+        display: flex;
+        width: 360px;
+        height: 71px;
+        margin: 218px 0 0 27px;
+    }
+
+    #registerAttencion .block_text p {
+        color: var(--color-blue-1);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.36px;
+    }
+
+    #registerAttencion .button {
+        display: flex;
+        background-color: var(--color-blue-2);
+        width: 270px;
+        height: 53px;
+        flex-shrink: 0;
+        color: var(--color-white);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        align-items: center;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 25px 85px;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 120px;
+    }
+
+    #registerAttencion .block_attencion {
+        display: flex;
+        width: 100%;
+        height: 483px;
+        flex-direction: column;
+        background-image: none;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #registerAttencion .block_attencion_text1 {
+        display: flex;
+        padding: 160px 0 60px 58px;
+    }
+
+    #registerAttencion .block_attencion_text1 h2 {
+        width: 145px;
+        flex-shrink: 0;
+        color: var(--color-blue-1);
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    #registerAttencion .block_attencion_text2 {
+        display: flex;
+        width: 517px;
+        flex-shrink: 0;
+        margin: 9px 0 0 46px;
+    }
+
+    #registerAttencion .block_attencion_text2 p {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 180%;
+        text-align: center;
+    }
+
     /*register.attention end*/
 
     /*resources start*/
@@ -1397,6 +2121,78 @@ h2 {
     /*reference to financial support end*/
 
     /*specialty start*/
+    #specialty {
+        margin-top: 108px;
+    }
+
+    #specialty .cards .row {
+        max-width: 904px;
+    }
+
+    #specialty .cards .card {
+        background: url(../images/specialty/card_background_desktop.png) no-repeat;
+        background-size: cover;
+        width: 422px;
+        height: 684px;
+    }
+
+    #specialty .cards img {
+        width: 160px;
+        height: 160px;
+    }
+
+    #specialty .cards .card-title {
+        font-size: 30px;
+    }
+
+    #specialty .cards .card .card-descripton {
+        font-size: 18px;
+        width: 310px;
+    }
+
+    #specialty .cards .label-button {
+        font-size: 16px;
+        width: 258px;
+        margin-bottom: 143px;
+    }
+
+    #specialty .cards button {
+        width: 380px;
+        height: 90px;
+        font-size: 32px;
+    }
+
+    #specialty .specialty-tittle {
+        background: url(../images/specialty/border_icons_desktop.png) no-repeat;
+        background-size: contain;
+        margin-left: 26px;
+        width: 927px;
+        height: 696px;
+    }
+
+    #specialty .specialty-tittle .title {
+        font-size: 42px;
+        font-style: italic;
+        font-weight: 600;
+    }
+
+    #specialty .specialty-tittle .description {
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 29px;
+    }
+
+    #specialty .specialty-tittle .professions {
+        font-size: 40px;
+        font-weight: 500;
+        margin-top: 15px;
+        line-height: 200%;
+    }
+
+    #specialty .specialty-tittle .description-bottomn {
+        margin-bottom: 29px;
+    }
+
     /*specialty end*/
 
     /*footer start*/
