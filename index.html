@@ -427,7 +427,7 @@
                             повноцінних <b>проєктів</b> та хоче чесно - своїм інтелектом гарно заробляти!
                         </p>
                         <p class="label-button">Тривалість – 7 міс.<br>Інтенсивна подготовка – 3 міс.</p>
-                        <button>Реєструйся</button>
+                        <button data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Реєструйся</button>
                     </div>
                     <div class="testing card col-md-6">
                         <p class="card-title">Тестування</p>
@@ -438,7 +438,7 @@
                             тобі сюди.
                         </p>
                         <p class="label-button">Тривалість – 7 міс.<br>Інтенсивна подготовка – 3 міс.</p>
-                        <button>Реєструйся</button>
+                        <button data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Реєструйся</button>
                     </div>
                     <div class="Web card col-md-6">
                         <p class="card-title">WEB-Дизайн</p>
@@ -447,7 +447,7 @@
                             просто<b>малювати</b> красиві картинки, а й робити їх частиною привабливого <b>динамічного
                                 веб-сайту!</b></p>
                         <p class="label-button">Тривалість – 7 міс.<br>Інтенсивна подготовка – 3 міс.</p>
-                        <button>Реєструйся</button>
+                        <button data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Реєструйся</button>
                     </div>
                     <div class="PM card col-md-6">
                         <p class="card-title">Project-менеджер</p>
@@ -457,7 +457,7 @@
                             <b>продукту</b>, продуктивну <b>роботу в команді.</b>
                         </p>
                         <p class="label-button">Тривалість – 7 міс.<br>Інтенсивна подготовка – 3 міс.</p>
-                        <button>Реєструйся</button>
+                        <button data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Реєструйся</button>
                     </div>
                 </div>
             </div>
@@ -468,11 +468,84 @@
         <footer id="footer"></footer>
         <!--"footer end"-->
     </div>
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered justify-content-center">
+            <div class="modal-content custom-modal-dialog">
+                <div class="modal-header">
+                    <p class="modal-title" id="exampleModalToggleLabel">Анкета Учасника програми</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="#" id="form-partner" class="modal-body">
+                    <img class="form-seeds" src="src/images/forms/seeds.png" alt="small-seeds">
+                    <div class="form-item">
+                        <input type="text" name="first_name" id="name_participant" placeholder="Ім'я "
+                            class="form-input required name">
+                    </div>
+                    <div class="form-item">
+                        <input type="text" name="last_name" id="last-name-participant" placeholder="Призвіще"
+                            class="form-input required surname">
+                    </div>
+                    <div class="form-item">
+                        <input type="email" name="email" placeholder="Email" class="form-input required email">
+                    </div>
+                    <div class="form-item">
+                        <input type="tel" name="phone" id="phone" placeholder="Мобільний телефон"
+                            class="form-input required phone">
+                    </div>
+                    <div class="form-item">
+                        <input class="city" type="text" name="address"
+                            placeholder="Місто/село, країна теперішнього тимчасового проживання" class="form-input">
+                    </div>
+                    <div class="form-item">
+                        <input class="city" type="text" name="address2"
+                            placeholder="Місто/село,в Україні куди плануєте повернутись" class="form-input">
+                    </div>
+                    <div class="form-item">
+                        <label for="about_us" class="form-label">Звідки отримали інформацію про нас?</label>
+                        <textarea name="about_us" name="about" cols="30" rows="2" class="form-input"></textarea>
+                    </div>
+                    <div class="form-items d-flex flex-column">
+                        <p>Бажаний напрямок підготовки</p>
+                        <div class="formCheck"><input type="checkbox"> <label for="task1">Автоматизоване
+                                тестування</label>
+                        </div>
+                        <div class="formCheck"><input type="checkbox"> <label for="task2">Проектний менеджмент
+                                (PM)</label>
+                            </li>
+                        </div>
+                        <div class="formCheck"><input type="checkbox"> <label for="task3">HR & TA (людські
+                                ресурси і
+                                залучення талантів)</label></div>
+                        <div class="formCheck"><input type="checkbox"> <label for="task4">Школа Хакерів для
+                                дітей
+                                6-16р</label></div>
+                        <div class="formCheck"><input type="checkbox"> <label for="task5">Англійська для
+                                ІТ</label></div>
+                        <div class="formCheck"><input type="checkbox"> <label for="task6">Системне
+                                адміністрування</label>
+                        </div>
+                        <div class="formCheck"><input type="checkbox"> <label for="task7">Ручне
+                                тестування</label></div>
+                        <div class="formCheck"><input type="checkbox"> <label for="task8">Веб-дизайн
+                                (UI/UX)</label></div>
+                        <div class="formCheck"><input type="checkbox"> <label for="task9">Програмування</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary form-button" type="submit" data-bs-toggle="modal"
+                            data-bs-target="#exampleModalToggle2">Надіслати</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="./src/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
 </body>
 
 </html>
