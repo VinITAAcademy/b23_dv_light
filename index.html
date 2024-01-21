@@ -7,135 +7,94 @@
   <meta name="viewport" content="width=device-width,       initial-scale=1.0" />
   <title>DV-light</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
-    <link rel="stylesheet" href="./src/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+  <link rel="stylesheet" href="./src/css/style.css" />
 </head>
 
 <body>
   <!--"loader start"-->
-  <div id="loader"></div>
+ <!-- <div id="loader">
+    <div class="loading-wave">
+      <div class="loading-bar"></div>
+      <div class="loading-bar"></div>
+      <div class="loading-bar"></div>
+      <div class="loading-bar"></div>
+    </div>
+
+  </div>-->
   <!--"loader end"-->
 
-    <div id="wrapper">
-        <!--"header start"-->
-        <header id="header">
-            <nav class="navbar bg-body-tertiary navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img class="foto-swallow" src="./src/images/header/swallow.svg" alt="Swallow" /></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <p class="offcanvas-title" id="offcanvasNavbarLabel">UA</p>
-                            <div class="icon-flag">
-                                <img class="flagUA" src="./src/images/header/flag.svg" alt="" />
-                            </div>
-                            <div class="burder-menu-text1">
-                                <h2>Доброго вечора, ми з</h2>
-                                <div class="burger-menu-text2">
-                                    <h3>України</h3>
-                                </div>
-                            </div>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="horizontal-line"></div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#aboutTheProgram">Про програму</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#specialty">Спеціальності</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Контакти</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Партнери</a>
-                                </li>
-                                <div>
-                                    <a class="icon-UA" href="#">UA</a>
-                                </div>
-                                <div class="horizontal-line1"></div>
-                                <div class="flag-UA">
-                                    <img src="./src/images/header/UA.svg" alt="" />
-                                </div>
-                            </ul>
-                            <div class="icon-link">
-                                <a class="nav-link"
-                                    href=".https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fvinnytsia.itacademy%2F%3Flocale%3Duk_UA">
-                                    <img class="iconc" src="./src/images/header/facebook.svg" alt="icon-facebook" /></a>
-                                <a class="nav-link"
-                                    href="https://twitter.com/intent/tweet?url=https://twitter.com/vinnytsiaita?s=11&t=26yMelGn3njhSXsERHXerg">
-                                    <img class="iconc" src="./src/images/header/twitter.svg" alt="icon-twitter." /></a>
-                                <a class="nav-link" href="https://www.instagram.com/ita.in.ua?igsh=dzJ3bTMxdTFmMGNr">
-                                    <img class="iconc" src="./src/images/header/instagram.svg"
-                                        alt="icon-instagram" /></a>
-                                <a class="nav-link" href="https://api.whatsapp.com/send/?phone=380674317424&text&type=phone_number&app_absent=0
+  <div id="wrapper">
+    <!--"header start"-->
+    <header id="header">
+      <nav class="navbar bg-body-tertiary navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="foto-swallow" src="./src/images/header/swallow.svg" alt="Swallow" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <p class="offcanvas-title" id="offcanvasNavbarLabel">UA</p>
+              <div class="icon-flag">
+                <img class="flagUA" src="./src/images/header/flag.svg" alt="" />
+              </div>
+              <div class="burder-menu-text1">
+                <h2>Доброго вечора, ми з</h2>
+                <div class="burger-menu-text2">
+                  <h3>України</h3>
+                </div>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="#aboutTheProgram">Про програму</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#specialty">Спеціальності</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Контакти</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Партнери</a>
+                </li>
+                <div>
+                  <a class="icon-UA" href="#">UA</a>
+                </div>
+                <div class="horizontal-line1"></div>
+                <div class="flag-UA">
+                  <img src="./src/images/header/UA.svg" alt="" />
+                </div>
+              </ul>
+              <div class="icon-link">
+                <a class="nav-link"
+                  href=".https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fvinnytsia.itacademy%2F%3Flocale%3Duk_UA">
+                  <img class="iconc" src="./src/images/header/facebook.svg" alt="icon-facebook" /></a>
+                <a class="nav-link"
+                  href="https://twitter.com/intent/tweet?url=https://twitter.com/vinnytsiaita?s=11&t=26yMelGn3njhSXsERHXerg">
+                  <img class="iconc" src="./src/images/header/twitter.svg" alt="icon-twitter." /></a>
+                <a class="nav-link" href="https://www.instagram.com/ita.in.ua?igsh=dzJ3bTMxdTFmMGNr">
+                  <img class="iconc" src="./src/images/header/instagram.svg" alt="icon-instagram" /></a>
+                <a class="nav-link" href="https://api.whatsapp.com/send/?phone=380674317424&text&type=phone_number&app_absent=0
                                 ">
-                                    <img class="iconc" src="./src/images/header/basil_viber-outline.svg"
-                                        alt="icon-viber" /></a>
-                                <a class="nav-link" href="https://api.whatsapp.com/send/?phone=380674317424&text&type=phone_number&app_absent=0
+                  <img class="iconc" src="./src/images/header/basil_viber-outline.svg" alt="icon-viber" /></a>
+                <a class="nav-link" href="https://api.whatsapp.com/send/?phone=380674317424&text&type=phone_number&app_absent=0
                                 ">
-                                    <img class="iconc" src="./src/images/header/bxl_whatsapp.svg"
-                                        alt="icon-whatsapp" /></a>
-                                <a class="nav-link" href="https://www.instagram.com/ita.in.ua?igsh=dzJ3bTMxdTFmMGNr">
-                                    <img class="iconc" src="./src/images/header/ph_telegram-logo.svg"
-                                        alt="icon-telegram" /></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <!--"header end"-->
-
-        <!--"main-block start"-->
-        <section id="mainblock">
-            <div class="mainblock">
-                <div class="work_it">
-                    <a href="https://ita.in.ua/" class="work_it_linc">
-                        <img src="./src/images/Main_block/work_it.svg" alt="Bg-min" class="work_it-pic" />
-                    </a>
-                </div>
-                <div class="text">
-                    <h2 class="text_1">Доброго вечора, ми з</h2>
-                    <h1 class="text_2">України!</h1>
-                </div>
-
-                <div class="social">
-                    <ul class="social-list">
-                        <li class="social-list__item">
-                            <a href="#"><img src="./src/images/Main_block/socials/facebook.svg" alt="facebook" /></a>
-                        </li>
-                        <li class="social-list__item">
-                            <a href="#"><img src="./src/images/Main_block/socials/twitter.svg" alt="twitter" /></a>
-                        </li>
-                        <li class="social-list__item">
-                            <a href="#"><img src="./src/images/Main_block/socials/instagram.svg" alt="instagram" /></a>
-                        </li>
-                        <li class="social-list__item">
-                            <a href="#"><img src="./src/images/Main_block/socials/whatsapp.svg" alt="whatsapp" /></a>
-                        </li>
-                        <li class="social-list__item">
-                            <a href="#"><img src="./src/images/Main_block/socials/viber.svg" alt="viber" /></a>
-                        </li>
-                        <li class="social-list__item">
-                            <a href="#"><img src="./src/images/Main_block/socials/telegram.svg" alt="telegram" /></a>
-                        </li>
-                    </ul>
-                </div>
-                <img alt="flag" src="./src/images/Main_block/main-background-flag.svg" class="flag-backgroud" />
+                  <img class="iconc" src="./src/images/header/bxl_whatsapp.svg" alt="icon-whatsapp" /></a>
+                <a class="nav-link" href="https://www.instagram.com/ita.in.ua?igsh=dzJ3bTMxdTFmMGNr">
+                  <img class="iconc" src="./src/images/header/ph_telegram-logo.svg" alt="icon-telegram" /></a>
+              </div>
             </div>
           </div>
         </div>
@@ -143,372 +102,410 @@
     </header>
     <!--"header end"-->
 
-        <!--"registration start"-->
-        <section id="registration">
-            <div class="container_rg">
-                <p class="text_1"><b>Програма працевлаштування ветеранів<br /> та ВПО</b>,
-                    які постраждали від наслідків <br /> війни росії проти України і українського <br /> народу.</p>
-                <p class="text_2">Щоб прийняти участь в програмі: </p>
-                <button class="register-btn">Зареєструватися</button>
-            </div>
-        </section>
-        <!--"registration end"-->
+    <!--"main-block start"-->
+    <section id="mainblock">
+      <div class="mainblock">
+        <div class="work_it">
+          <a href="https://ita.in.ua/" class="work_it_linc">
+            <img src="./src/images/Main_block/work_it.svg" alt="Bg-min" class="work_it-pic" />
+          </a>
+        </div>
+        <div class="text">
+          <h2 class="text_1">Доброго вечора, ми з</h2>
+          <h1 class="text_2">України!</h1>
+        </div>
 
-        <!--"about the program start"-->
-        <section id="aboutTheProgram">
-            <div class="main_container">
-                <div class="main_unit">
-                    <div class="foto"></div>
-                    <div class="text">
-                        <p class="text-title">
-                            Ми створюємо<b> і постійно</b> розвиваємо <br />
-                            <b>всесвітню мережу <br />
-                                офлайн/онлайн</b>
-                            центрів підтримки українців, які постраждали від наслідків
-                            війни, розв’язаної росією проти України і українського народу.
-                            <b>Ветеранів і тих</b>, хто змушені були покинути місця свого
-                            постійного проживання.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--"about the program end"-->
+        <div class="social">
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a href="#"><img src="./src/images/Main_block/socials/facebook.svg" alt="facebook" /></a>
+            </li>
+            <li class="social-list__item">
+              <a href="#"><img src="./src/images/Main_block/socials/twitter.svg" alt="twitter" /></a>
+            </li>
+            <li class="social-list__item">
+              <a href="#"><img src="./src/images/Main_block/socials/instagram.svg" alt="instagram" /></a>
+            </li>
+            <li class="social-list__item">
+              <a href="#"><img src="./src/images/Main_block/socials/whatsapp.svg" alt="whatsapp" /></a>
+            </li>
+            <li class="social-list__item">
+              <a href="#"><img src="./src/images/Main_block/socials/viber.svg" alt="viber" /></a>
+            </li>
+            <li class="social-list__item">
+              <a href="#"><img src="./src/images/Main_block/socials/telegram.svg" alt="telegram" /></a>
+            </li>
+          </ul>
+        </div>
+        <img alt="flag" src="./src/images/Main_block/main-background-flag.svg" class="flag-backgroud" />
+      </div>
+  </div>
+  </div>
+  </nav>
+  </header>
+  <!--"header end"-->
 
-        <!--"video clip start"-->
-        <section id="video" class="d-flex justify-content-center">
-            <div class="videoPreview"></div>
-        </section>
-        <!--"video clip end"-->
+  <!--"registration start"-->
+  <section id="registration">
+    <div class="container_rg">
+      <p class="text_1"><b>Програма працевлаштування ветеранів<br /> та ВПО</b>,
+        які постраждали від наслідків <br /> війни росії проти України і українського <br /> народу.</p>
+      <p class="text_2">Щоб прийняти участь в програмі: </p>
+      <button class="register-btn">Зареєструватися</button>
+    </div>
+  </section>
+  <!--"registration end"-->
 
-        <!--"we provide start"-->
-        <section id="provide">
-            <div class="images">
-                <h1 class="text">Ми забезпечуємо:</h1>
-                <ul class="text1">
-                    <li>
-                        <b>інтенсивне </b>навчання
-                        <b> ветеранів/біженців/переселенців </b> айтішних спеціальностей
-                    </li>
-                    <li>
-                        <b>персональний </b>супровід <b>кожних </b>до працевлаштування
-                    </li>
-                    <li>
-                        <b>повернення</b>до повноцінного життя в свої міста, села в
-                        Україні
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!--"we provide end"-->
+  <!--"about the program start"-->
+  <section id="aboutTheProgram">
+    <div class="main_container">
+      <div class="main_unit">
+        <div class="foto"></div>
+        <div class="text">
+          <p class="text-title">
+            Ми створюємо<b> і постійно</b> розвиваємо <br />
+            <b>всесвітню мережу <br />
+              офлайн/онлайн</b>
+            центрів підтримки українців, які постраждали від наслідків
+            війни, розв’язаної росією проти України і українського народу.
+            <b>Ветеранів і тих</b>, хто змушені були покинути місця свого
+            постійного проживання.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--"about the program end"-->
 
-        <!--"tape with photos start"-->
-        <section id="photos">
-            <div class="images"></div>
-        </section>
-        <!--"tape with photos end"-->
+  <!--"video clip start"-->
+  <section id="video" class="d-flex justify-content-center">
+    <div class="videoPreview"></div>
+  </section>
+  <!--"video clip end"-->
 
-        <!--"register.attention start"-->
-        <section id="registerAttencion">
-            <div class="block_registerAttencion">
-                <div class="block_register">
-                    <div class="block_text">
-                        <p>Ви постраждали від наслідків війни в Україні? Зареєструйтесь, щоб прийняти участь в програмі:
-                        </p>
-                    </div>
-                    <a href="#" class="button">Зарееструватися</a>
-                </div>
-                <div class="block_attencion">
-                    <div class="block_attencion_text1">
-                        <h2>УВАГА!!!</h2>
-                    </div>
-                    <div class="block_attencion_text2">
-                        <p>Обов’якова <b>умова</b> участі в програмі - <b>повернення в свої міста,</b> села в
-                            Україні <b>після перемоги </b> українського народу над російськими загарбниками! <br>
-                            Ми робили, робимо і будемо робити все можливе,щоб кожен українець мав змогу
-                            <b>повернутись</b> до гідного життя в рідній <b>Батьківщині</b>!
-                        </p>
-                    </div>
-                </div>
-            </div>
+  <!--"we provide start"-->
+  <section id="provide">
+    <div class="images">
+      <h1 class="text">Ми забезпечуємо:</h1>
+      <ul class="text1">
+        <li>
+          <b>інтенсивне </b>навчання
+          <b> ветеранів/біженців/переселенців </b> айтішних спеціальностей
+        </li>
+        <li>
+          <b>персональний </b>супровід <b>кожних </b>до працевлаштування
+        </li>
+        <li>
+          <b>повернення</b>до повноцінного життя в свої міста, села в
+          Україні
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!--"we provide end"-->
 
-        </section>
-        <!--"register.attention end"-->
+  <!--"tape with photos start"-->
+  <section id="photos">
+    <div class="images"></div>
+  </section>
+  <!--"tape with photos end"-->
 
-        <!--"resources"-->
-        <section id="resources">
-            <div class="resources_block">
-                <p>
-                    Якнайбільше ресурсів залучатиметься в Україну, а не виводитимуться з
-                    неї, перезапуститься і <b>запрацює</b> українська
-                    <b>економіка,</b> створюватимуться нові <b>робочі місця</b> для
-                    українців (особливо тих, які найбільше постраждали від війни росії
-                    проти України). А все це буде <b>працювати на оборону</b>, стрімкий
-                    розвиток України і персональний <b>добробут</b> кожного українця і
-                    його сім'ї.
-                </p>
-                <img src="src/images/resources/grains.svg" alt="grains" />
-            </div>
-        </section>
-        <!--"resources"-->
+  <!--"register.attention start"-->
+  <section id="registerAttencion">
+    <div class="block_registerAttencion">
+      <div class="block_register">
+        <div class="block_text">
+          <p>Ви постраждали від наслідків війни в Україні? Зареєструйтесь, щоб прийняти участь в програмі:
+          </p>
+        </div>
+        <a href="#" class="button">Зарееструватися</a>
+      </div>
+      <div class="block_attencion">
+        <div class="block_attencion_text1">
+          <h2>УВАГА!!!</h2>
+        </div>
+        <div class="block_attencion_text2">
+          <p>Обов’якова <b>умова</b> участі в програмі - <b>повернення в свої міста,</b> села в
+            Україні <b>після перемоги </b> українського народу над російськими загарбниками! <br>
+            Ми робили, робимо і будемо робити все можливе,щоб кожен українець мав змогу
+            <b>повернутись</b> до гідного життя в рідній <b>Батьківщині</b>!
+          </p>
+        </div>
+      </div>
+    </div>
 
-        <!--"become our partner start"-->
-        <section id="becomeOurPartner">
-            <div class="description">
-                <div class="text">
-                    <p class="title">Стань нашим партнером</p>
-                    <p>
-                        <b>Ви</b> - людина чи організація, фонд які
-                        <b>хочуть допомогти,</b> громадський діяч, політик, дежавний
-                        службовець, айтішник, представник ІТ-компанії, ІТ-Асоціації чи
-                        навчального закладу?
-                    </p>
-                    <p>
-                        <b>Ви маєте</b> певну <b>експертизу</b> в даному напрямку чи
-                        просто <b>велике бажання допомогти?</b>
-                    </p>
-                    <p>
-                        <b>Закликаємо</b> усіх, де б ви не були і кому не байдужа доля
-                        України і українців
-                        <b>долучитись</b>
-                        у якості
-                        <b>партнерів до</b> реалізації програми <b>в Україні</b> і за
-                        кордоном!
-                    </p>
-                    <p>
-                        <b>Залучаємо</b> фінансові, матеріальні <b>ресурси</b> і
-                        експертизу від країн, фондів, підприємств, фізичних осіб із-за
-                        кордону <b>в Україну</b> - як для прямої, так і непрямої
-                        <b>підтримки</b> програми, а відтак української <b>армії</b>,
-                        українського <b>народу</b>.
-                    </p>
-                </div>
-                <div class="buttons">
-                    <p class="title label-button">
-                        <b>Нам потрібен надійний партнер</b>
-                    </p>
-                    <button class="content-button">Приєднатись</button>
-                </div>
-            </div>
-            <div class="join-our-team">
-                <img class="foto" src="src/images/become_our_partner/become_our_partner_foto.jpg" alt="" />
-                <div class="buttons">
-                    <p class="title label-button">
-                        Ви айтішник з досвідом і бажаєте долучитись до нашої команди, як
-                        викладач чи ментор?<br />
-                        <b>Ласкаво просимо.</b>
-                    </p>
-                </div>
-                <button class="content-button">Приєднатись до команди</button>
-            </div>
-        </section>
-        <!--"become our partner end"-->
+  </section>
+  <!--"register.attention end"-->
 
-        <!--"our partners start"-->
-        <section id="partners">
-            <p class="partners_title">Наші партнери</p>
-            <div class="our_partners">
-                <div class="row preview_icon">
-                    <div class="col-md-6">
-                        <a href="https://www.robotamolodi.org/"><img src="src/images/our_partners/work_of_the_young.svg"
-                                alt="work_of_the_young" class="img-fluid" /></a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="https://intita.com/"><img src="src/images/our_partners/INTITA_logo.svg" alt="INTITA"
-                                class="img-fluid" /></a>
-                    </div>
-                </div>
-                <div class="all_icons d-none">
-                    <div class="row central_rows">
-                        <div class="col-md-4">
-                            <a href="https://www.robotamolodi.org/"><img
-                                    src="src/images/our_partners/work_of_the_young.svg" alt="work_of_the_young"
-                                    class="img-fluid" /></a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href=""><img src="src/images/our_partners/INTITA_logo.svg" alt="INTITA"
-                                    class="img-fluid" /></a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="https://it.uspih.vn.ua/"><img
-                                    src="src/images/our_partners/vinnytsia_it_academy_logo.svg"
-                                    alt="vinnytsia_it_academy" class="img-fluid" /></a>
-                        </div>
-                    </div>
-                    <div class="row central_rows">
-                        <div class="col-md-4">
-                            <a href="https://drone.intita.com/"><img src="src/images/our_partners/drone_department.svg"
-                                    alt="drone_department" class="img-fluid" /></a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="https://kavadrive.com/"><img src="src/images/our_partners/kava_drive.svg"
-                                    alt="kava_drive" class="img-fluid" /></a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="https://new.yeps.me/"><img src="src/images/our_partners/Yesp_logo.svg" alt="Yesp"
-                                    class="img-fluid" /></a>
-                        </div>
-                    </div>
-                </div>
-                <p class="show-all">Показати всі...</p>
-            </div>
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <button class="carousel-control-prev carousel-control-butt" type="button"
-                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-6 d-flex justify-content-center">
-                                <a href="https://intita.com/"><img src="src/images/our_partners/INTITA_logo.svg"
-                                        class="d-block img-fluid" alt="INTITA" /></a>
-                            </div>
-                            <div class="col-6 d-flex justify-content-center">
-                                <a href="https://kavadrive.com/"><img src="src/images/our_partners/kava_drive.svg"
-                                        class="d-block img-fluid" alt="kava_drive" /></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-6 d-flex justify-content-center">
-                                <a href=""><img src="src/images/our_partners/work_of_the_young.svg"
-                                        class="d-block img-fluid" alt="work_of_the_young" /></a>
-                            </div>
-                            <div class="col-6 d-flex justify-content-center">
-                                <a href="https://drone.intita.com/"><img
-                                        src="src/images/our_partners/drone_department.svg" class="d-block img-fluid"
-                                        alt="drone_department" /></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-6 d-flex justify-content-center">
-                                <a href="https://new.yeps.me/"><img src="src/images/our_partners/Yesp_logo.svg"
-                                        class="d-block img-fluid" alt="Yesp" /></a>
-                            </div>
-                            <div class="col-6 d-flex justify-content-center">
-                                <a href="https://it.uspih.vn.ua/"><img
-                                        src="src/images/our_partners/vinnytsia_it_academy_logo.svg"
-                                        class="d-block img-fluid" alt="vinnytsia_it_academy" /></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-next carousel-control-butt" type="button"
-                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+  <!--"resources"-->
+  <section id="resources">
+    <div class="resources_block">
+      <p>
+        Якнайбільше ресурсів залучатиметься в Україну, а не виводитимуться з
+        неї, перезапуститься і <b>запрацює</b> українська
+        <b>економіка,</b> створюватимуться нові <b>робочі місця</b> для
+        українців (особливо тих, які найбільше постраждали від війни росії
+        проти України). А все це буде <b>працювати на оборону</b>, стрімкий
+        розвиток України і персональний <b>добробут</b> кожного українця і
+        його сім'ї.
+      </p>
+      <img src="src/images/resources/grains.svg" alt="grains" />
+    </div>
+  </section>
+  <!--"resources"-->
+
+  <!--"become our partner start"-->
+  <section id="becomeOurPartner">
+    <div class="description">
+      <div class="text">
+        <p class="title">Стань нашим партнером</p>
+        <p>
+          <b>Ви</b> - людина чи організація, фонд які
+          <b>хочуть допомогти,</b> громадський діяч, політик, дежавний
+          службовець, айтішник, представник ІТ-компанії, ІТ-Асоціації чи
+          навчального закладу?
+        </p>
+        <p>
+          <b>Ви маєте</b> певну <b>експертизу</b> в даному напрямку чи
+          просто <b>велике бажання допомогти?</b>
+        </p>
+        <p>
+          <b>Закликаємо</b> усіх, де б ви не були і кому не байдужа доля
+          України і українців
+          <b>долучитись</b>
+          у якості
+          <b>партнерів до</b> реалізації програми <b>в Україні</b> і за
+          кордоном!
+        </p>
+        <p>
+          <b>Залучаємо</b> фінансові, матеріальні <b>ресурси</b> і
+          експертизу від країн, фондів, підприємств, фізичних осіб із-за
+          кордону <b>в Україну</b> - як для прямої, так і непрямої
+          <b>підтримки</b> програми, а відтак української <b>армії</b>,
+          українського <b>народу</b>.
+        </p>
+      </div>
+      <div class="buttons">
+        <p class="title label-button">
+          <b>Нам потрібен надійний партнер</b>
+        </p>
+        <button class="content-button">Приєднатись</button>
+      </div>
+    </div>
+    <div class="join-our-team">
+      <img class="foto" src="src/images/become_our_partner/become_our_partner_foto.jpg" alt="" />
+      <div class="buttons">
+        <p class="title label-button">
+          Ви айтішник з досвідом і бажаєте долучитись до нашої команди, як
+          викладач чи ментор?<br />
+          <b>Ласкаво просимо.</b>
+        </p>
+      </div>
+      <button class="content-button">Приєднатись до команди</button>
+    </div>
+  </section>
+  <!--"become our partner end"-->
+
+  <!--"our partners start"-->
+  <section id="partners">
+    <p class="partners_title">Наші партнери</p>
+    <div class="our_partners">
+      <div class="row preview_icon">
+        <div class="col-md-6">
+          <a href="https://www.robotamolodi.org/"><img src="src/images/our_partners/work_of_the_young.svg"
+              alt="work_of_the_young" class="img-fluid" /></a>
+        </div>
+        <div class="col-md-6">
+          <a href="https://intita.com/"><img src="src/images/our_partners/INTITA_logo.svg" alt="INTITA"
+              class="img-fluid" /></a>
+        </div>
+      </div>
+      <div class="all_icons d-none">
+        <div class="row central_rows">
+          <div class="col-md-4">
+            <a href="https://www.robotamolodi.org/"><img src="src/images/our_partners/work_of_the_young.svg"
+                alt="work_of_the_young" class="img-fluid" /></a>
           </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-6 d-flex justify-content-center">
-                <a href=""><img src="src/images/our_partners/work_of_the_young.svg" class="d-block img-fluid"
-                    alt="work_of_the_young"></a>
-              </div>
-              <div class="col-6 d-flex justify-content-center">
-                <a href="https://drone.intita.com/"><img src="src/images/our_partners/drone_department.svg"
-                    class="d-block img-fluid" alt="drone_department"></a>
-              </div>
-            </div>
+          <div class="col-md-4">
+            <a href=""><img src="src/images/our_partners/INTITA_logo.svg" alt="INTITA" class="img-fluid" /></a>
           </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-6 d-flex justify-content-center">
-                <a href="https://new.yeps.me/"><img src="src/images/our_partners/Yesp_logo.svg"
-                    class="d-block img-fluid" alt="Yesp"></a>
-              </div>
-              <div class="col-6 d-flex justify-content-center">
-                <a href="https://it.uspih.vn.ua/"><img src="src/images/our_partners/vinnytsia_it_academy_logo.svg"
-                    class="d-block img-fluid" alt="vinnytsia_it_academy"></a>
-              </div>
+          <div class="col-md-4">
+            <a href="https://it.uspih.vn.ua/"><img src="src/images/our_partners/vinnytsia_it_academy_logo.svg"
+                alt="vinnytsia_it_academy" class="img-fluid" /></a>
+          </div>
+        </div>
+        <div class="row central_rows">
+          <div class="col-md-4">
+            <a href="https://drone.intita.com/"><img src="src/images/our_partners/drone_department.svg"
+                alt="drone_department" class="img-fluid" /></a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://kavadrive.com/"><img src="src/images/our_partners/kava_drive.svg" alt="kava_drive"
+                class="img-fluid" /></a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://new.yeps.me/"><img src="src/images/our_partners/Yesp_logo.svg" alt="Yesp"
+                class="img-fluid" /></a>
+          </div>
+        </div>
+      </div>
+      <p class="show-all">Показати всі...</p>
+    </div>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <button class="carousel-control-prev carousel-control-butt" type="button"
+        data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-6 d-flex justify-content-center">
+              <a href="https://intita.com/"><img src="src/images/our_partners/INTITA_logo.svg" class="d-block img-fluid"
+                  alt="INTITA" /></a>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+              <a href="https://kavadrive.com/"><img src="src/images/our_partners/kava_drive.svg"
+                  class="d-block img-fluid" alt="kava_drive" /></a>
             </div>
           </div>
         </div>
-        <button class="carousel-control-next carousel-control-butt" type="button"
-          data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-    <!--"our partners end"-->
-
-    <!--"reference to financial support start"-->
-    <section id="financialSupport">
-      <div class="qr">
-        <h3 class="text">Бажаєте фінансово підтримати програму і щоб допомогти Україні, то будь ласка,
-          відвідайте сторінку
-          Всеукраїнської молодіжної громадської організації “Молодіжний центр працевлаштування”:</h3>
-        <h2 href="https://www.robotamolodi.org/" class="link">https://www.robotamolodi.org/</h2>
-      </div>
-    </section>
-    <!--"reference to financial support end"-->
-
-        <!--"specialty start"-->
-        <section id="specialty">
-            <div class="specialty-tittle">
-                <p class="title">Спеціальності</p>
-                <p class="description">Мрієш гарантовано отримати роботу в IT:</p>
-                <p class="professions">Програміста<br>Тестувальника<br>WEB-дизайнера<br>Project-менеджера</p>
-                <p class="description description-bottomn">Це твій шанс змінити своє життя!Айтішники мають роботу
-                    завжди! </p>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-6 d-flex justify-content-center">
+              <a href=""><img src="src/images/our_partners/work_of_the_young.svg" class="d-block img-fluid"
+                  alt="work_of_the_young" /></a>
             </div>
-            <div class="cards content">
-                <div class="row justify-content-center">
-                    <div class="programing card col-md-6">
-                        <p class="card-title">Програмування</p>
-                        <img src="src/images/specialty/programing.png" alt="coding">
-                        <p class="card-descripton">Для тих, хто <b>відчуває</b> і собі <b>талант</b> розробника
-                            <b>оригінальних</b>, цікавих і
-                            повноцінних <b>проєктів</b> та хоче чесно - своїм інтелектом гарно заробляти!
-                        </p>
-                        <p class="label-button">Тривалість – 7 міс.<br>Інтенсивна подготовка – 3 міс.</p>
-                        <button>Реєструйся</button>
-                    </div>
-                    <div class="testing card col-md-6">
-                        <p class="card-title">Тестування</p>
-                        <img src="src/images/specialty/testing.png" alt="coding">
-                        <p class="card-descripton">Робота тестувальника нагадує слідчого або <b>детектива</b>: він йде
-                            по “гарячих слідах” програміста і <b>вишукує помилки</b> (на професійній мові
-                            <b>“баги”</b>). У хідйдуть різні <b>дедуктивні методи</b> і прийоми. Ти експериментатор –
-                            тобі сюди.
-                        </p>
-                        <p class="label-button">Тривалість – 7 міс.<br>Інтенсивна подготовка – 3 міс.</p>
-                        <button>Реєструйся</button>
-                    </div>
-                    <div class="Web card col-md-6">
-                        <p class="card-title">WEB-Дизайн</p>
-                        <img src="src/images/specialty/web.png" alt="coding">
-                        <p class="card-descripton">Для креативних, тих, хто має <b>критичне мислення</b>, хоче не
-                            просто<b>малювати</b> красиві картинки, а й робити їх частиною привабливого <b>динамічного
-                                веб-сайту!</b></p>
-                        <p class="label-button">Тривалість – 7 міс.<br>Інтенсивна подготовка – 3 міс.</p>
-                        <button>Реєструйся</button>
-                    </div>
-                    <div class="PM card col-md-6">
-                        <p class="card-title">Project-менеджер</p>
-                        <img src="src/images/specialty/PM.png" alt="coding">
-                        <p class="card-descripton">Посада <b>РМ’а</b> приваблює змогою <b>займатися
-                                управлінням:</b>приймати рішення, <b>організовувати</b> швидке і <b>якісне</b> створення
-                            <b>продукту</b>, продуктивну <b>роботу в команді.</b>
-                        </p>
-                        <p class="label-button">Тривалість – 7 міс.<br>Інтенсивна подготовка – 3 міс.</p>
-                        <button>Реєструйся</button>
-                    </div>
-                </div>
+            <div class="col-6 d-flex justify-content-center">
+              <a href="https://drone.intita.com/"><img src="src/images/our_partners/drone_department.svg"
+                  class="d-block img-fluid" alt="drone_department" /></a>
             </div>
-        </section>
-        <!--"specialty end"-->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-6 d-flex justify-content-center">
+              <a href="https://new.yeps.me/"><img src="src/images/our_partners/Yesp_logo.svg" class="d-block img-fluid"
+                  alt="Yesp" /></a>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+              <a href="https://it.uspih.vn.ua/"><img src="src/images/our_partners/vinnytsia_it_academy_logo.svg"
+                  class="d-block img-fluid" alt="vinnytsia_it_academy" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-next carousel-control-butt" type="button"
+        data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-6 d-flex justify-content-center">
+          <a href=""><img src="src/images/our_partners/work_of_the_young.svg" class="d-block img-fluid"
+              alt="work_of_the_young"></a>
+        </div>
+        <div class="col-6 d-flex justify-content-center">
+          <a href="https://drone.intita.com/"><img src="src/images/our_partners/drone_department.svg"
+              class="d-block img-fluid" alt="drone_department"></a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-6 d-flex justify-content-center">
+          <a href="https://new.yeps.me/"><img src="src/images/our_partners/Yesp_logo.svg" class="d-block img-fluid"
+              alt="Yesp"></a>
+        </div>
+        <div class="col-6 d-flex justify-content-center">
+          <a href="https://it.uspih.vn.ua/"><img src="src/images/our_partners/vinnytsia_it_academy_logo.svg"
+              class="d-block img-fluid" alt="vinnytsia_it_academy"></a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <button class="carousel-control-next carousel-control-butt" type="button"
+      data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+  </section>
+  <!--"our partners end"-->
 
-    <!--"footer start"-->
-    <footer id="footer"></footer>
-    <!--"footer end"-->
+  <!--"reference to financial support start"-->
+  <section id="financialSupport">
+    <div class="qr">
+      <h3 class="text">Бажаєте фінансово підтримати програму і щоб допомогти Україні, то будь ласка,
+        відвідайте сторінку
+        Всеукраїнської молодіжної громадської організації “Молодіжний центр працевлаштування”:</h3>
+      <h2 href="https://www.robotamolodi.org/" class="link">https://www.robotamolodi.org/</h2>
+    </div>
+  </section>
+  <!--"reference to financial support end"-->
+
+  <!--"specialty start"-->
+  <section id="specialty">
+    <div class="specialty-tittle">
+      <p class="title">Спеціальності</p>
+      <p class="description">Мрієш гарантовано отримати роботу в IT:</p>
+      <p class="professions">Програміста<br>Тестувальника<br>WEB-дизайнера<br>Project-менеджера</p>
+      <p class="description description-bottomn">Це твій шанс змінити своє життя!Айтішники мають роботу
+        завжди! </p>
+    </div>
+    <div class="cards content">
+      <div class="row justify-content-center">
+        <div class="programing card col-md-6">
+          <p class="card-title">Програмування</p>
+          <img src="src/images/specialty/programing.png" alt="coding">
+          <p class="card-descripton">Для тих, хто <b>відчуває</b> і собі <b>талант</b> розробника
+            <b>оригінальних</b>, цікавих і
+            повноцінних <b>проєктів</b> та хоче чесно - своїм інтелектом гарно заробляти!
+          </p>
+          <p class="label-button">Тривалість – 7 міс.<br>Інтенсивна подготовка – 3 міс.</p>
+          <button>Реєструйся</button>
+        </div>
+        <div class="testing card col-md-6">
+          <p class="card-title">Тестування</p>
+          <img src="src/images/specialty/testing.png" alt="coding">
+          <p class="card-descripton">Робота тестувальника нагадує слідчого або <b>детектива</b>: він йде
+            по “гарячих слідах” програміста і <b>вишукує помилки</b> (на професійній мові
+            <b>“баги”</b>). У хідйдуть різні <b>дедуктивні методи</b> і прийоми. Ти експериментатор –
+            тобі сюди.
+          </p>
+          <p class="label-button">Тривалість – 7 міс.<br>Інтенсивна подготовка – 3 міс.</p>
+          <button>Реєструйся</button>
+        </div>
+        <div class="Web card col-md-6">
+          <p class="card-title">WEB-Дизайн</p>
+          <img src="src/images/specialty/web.png" alt="coding">
+          <p class="card-descripton">Для креативних, тих, хто має <b>критичне мислення</b>, хоче не
+            просто<b>малювати</b> красиві картинки, а й робити їх частиною привабливого <b>динамічного
+              веб-сайту!</b></p>
+          <p class="label-button">Тривалість – 7 міс.<br>Інтенсивна подготовка – 3 міс.</p>
+          <button>Реєструйся</button>
+        </div>
+        <div class="PM card col-md-6">
+          <p class="card-title">Project-менеджер</p>
+          <img src="src/images/specialty/PM.png" alt="coding">
+          <p class="card-descripton">Посада <b>РМ’а</b> приваблює змогою <b>займатися
+              управлінням:</b>приймати рішення, <b>організовувати</b> швидке і <b>якісне</b> створення
+            <b>продукту</b>, продуктивну <b>роботу в команді.</b>
+          </p>
+          <p class="label-button">Тривалість – 7 міс.<br>Інтенсивна подготовка – 3 міс.</p>
+          <button>Реєструйся</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--"specialty end"-->
+
+  <!--"footer start"-->
+  <footer id="footer"></footer>
+  <!--"footer end"-->
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
