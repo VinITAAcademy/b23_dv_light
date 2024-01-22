@@ -867,6 +867,127 @@ h2 {
     max-width: 320px;
 }
 
+.custom-modal-dialog {
+    border-top: 10px solid var(--color-blue-1);
+    border-radius: 20px;
+    width: 365px;
+    height: 895px;
+}
+
+.modal-header {
+    height: 33px;
+    border: none;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-header p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.modal-header .btn-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    margin-right: 17px;
+    margin-top: 10px;
+    background: url(../images/forms/closeMobile.png) no-repeat;
+    background-size: contain;
+    padding: 0;
+    border-radius: 0;
+}
+
+.modal-body {
+    padding: 0 37px;
+    flex: 0;
+}
+
+.modal-body p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.modal-body .form-item .error {
+    border: 1px solid var(--color-burgundy);
+}
+
+.modal-body .form-item input,
+.modal-body .form-item textarea {
+    font-size: 14px;
+    width: 301px;
+    height: 30px;
+    border-radius: 0.671px;
+    border: 0.503px solid var(--color-grey-2);
+    margin-bottom: 19px;
+    padding-left: 7px;
+}
+
+.modal-body .form-item textarea {
+    height: 75px;
+}
+
+.modal-body .form-item .city {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+}
+
+.formCheck {
+    font-size: 12px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+
+}
+
+.formCheck label {
+    margin-left: 7px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.form-label {
+    font-size: 12px;
+}
+
+.form-button {
+    width: 231px;
+    height: 55px;
+    background-color: var(--color-blue-2);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.form-button:disabled {
+    background-color: var(--color-grey-1);
+    border: none;
+}
+
+.form-seeds {
+    width: 35px;
+    height: 32px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 89px;
+    margin-right: 52px;
+}
+
+.form-item {
+    position: relative;
+}
+
 /*specialty end*/
 
 /*footer start*/
@@ -1497,6 +1618,70 @@ h2 {
         position: absolute;
         bottom: 0;
         margin-bottom: 120px;
+    }
+
+    .custom-modal-dialog {
+        width: 677px;
+        height: 940px;
+    }
+
+    .modal-body .form-item input,
+    .modal-body .form-item textarea,
+    .modal-body .form-item .city {
+        font-size: 16px;
+        width: 517px;
+        height: 38px;
+        margin-bottom: 20px;
+    }
+
+    .modal-body .form-item textarea {
+        height: 40px;
+    }
+
+    .formCheck {
+        font-size: 14px;
+    }
+
+    .modal .modal-dialog .modal-content .modal-header p {
+        font-size: 24px;
+    }
+
+    .modal-header {
+        height: 37x;
+    }
+
+    .modal-header .btn-close {
+        margin-right: 17px;
+        margin-top: 10px;
+        background: url(../images/forms/closeTablet.png) no-repeat cover;
+    }
+
+    .modal-body {
+        padding: 0 80px;
+    }
+
+    .form-label {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .modal-body p {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .form-button {
+        width: 271px;
+        height: 53px;
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    .form-seeds {
+        width: 72px;
+        height: 65px;
+        margin-bottom: 50px;
+        margin-right: 80px;
     }
 
     /*specialty end*/
@@ -2186,6 +2371,73 @@ h2 {
 
     #specialty .specialty-tittle .description-bottomn {
         margin-bottom: 29px;
+    }
+
+    .custom-modal-dialog {
+        width: 960px;
+        height: 1488px;
+    }
+
+    .modal-body .form-item input,
+    .modal-body .form-item textarea,
+    .modal-body .form-item .city {
+        font-size: 16px;
+        width: 680px;
+        height: 57px;
+        margin-bottom: 24px;
+    }
+
+    .modal-body .form-item textarea {
+        height: 163px;
+    }
+
+    .formCheck {
+        font-size: 18px;
+    }
+
+    .modal .modal-dialog .modal-content .modal-header p {
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    .modal-header {
+        height: 146px;
+    }
+
+    .modal-header .btn-close {
+        width: 50px;
+        height: 50px;
+        margin-right: 17px;
+        margin-top: 10px;
+        background: url(../images/forms/closeDescktop.png) no-repeat;
+    }
+
+    .modal-body {
+        padding: 0 140px;
+    }
+
+    .form-label {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .modal-body p {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .form-button {
+        width: 433px;
+        height: 70px;
+        font-size: 32px;
+        margin-top: 50px;
+    }
+
+    .form-seeds {
+        width: 105px;
+        height: 96px;
+        margin-bottom: 182px;
+        margin-right: 109px;
     }
 
     /*specialty end*/
