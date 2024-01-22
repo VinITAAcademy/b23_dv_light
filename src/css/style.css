@@ -859,9 +859,13 @@ h2 {
     justify-content: center;
 }
 
-.modal-header p {
+.modal-header h2 {
+    font-family: "Montserrat";
     font-size: 16px;
     font-weight: 400;
+}
+.modal-header h2 b{
+    font-weight: 500;
 }
 
 .modal-header .btn-close {
@@ -883,7 +887,8 @@ h2 {
     flex: 0;
 }
 
-.modal-body p {
+.modal-body h3 {
+    font-family: "Montserrat";
     font-size: 16px;
     font-weight: 500;
 }
@@ -1618,7 +1623,7 @@ h2 {
         font-size: 14px;
     }
 
-    .modal .modal-dialog .modal-content .modal-header p {
+    .modal .modal-dialog .modal-content .modal-header h2 {
         font-size: 24px;
     }
 
@@ -1641,7 +1646,7 @@ h2 {
         font-weight: 400;
     }
 
-    .modal-body p {
+    .modal-body h3 {
         font-size: 18px;
         font-weight: 500;
     }
@@ -2351,7 +2356,7 @@ h2 {
         font-size: 18px;
     }
 
-    .modal .modal-dialog .modal-content .modal-header p {
+    .modal .modal-dialog .modal-content .modal-header h2 {
         font-size: 40px;
         font-weight: 400;
     }
@@ -2377,7 +2382,7 @@ h2 {
         font-weight: 400;
     }
 
-    .modal-body p {
+    .modal-body h3 {
         font-size: 24px;
         font-weight: 500;
     }
