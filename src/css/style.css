@@ -968,6 +968,48 @@ h2 {
 .form-item {
     position: relative;
 }
+.thanx-modal {
+    width: 340px;
+    height: 320px;
+    border-radius: 20px;
+}
+
+.thanx-modal .modal-header {
+    background: url(../images/forms/thanxBackgroundMobile.jpg) no-repeat;
+    height: 85px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.thanx-modal .modal-body {
+    padding: 0;
+    text-align: center;
+}
+
+.thanx-modal .modal-body p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.thanx-modal .modal-body .title {
+    font-size: 22px;
+    font-family: "Yeseva One";
+    font-weight: 400;
+    margin-top: 21px;
+}
+
+.thanx-modal .modal-footer {
+    margin-top: 35px;
+    display: flex;
+    align-items: end;
+}
+
+.thanx-modal .modal-footer button {
+    width: 230px;
+    height: 55px;
+    font-size: 20px;
+    font-weight: 500;
+}
 
 /*specialty end*/
 
@@ -1664,7 +1706,26 @@ h2 {
         margin-bottom: 50px;
         margin-right: 80px;
     }
-
+    .thanx-modal {
+        width: 370px;
+        height: 330px;
+    }
+    .thanx-modal .modal-header {
+        background: url(../images/forms/thanxBackgroundDesktop.png) no-repeat;
+        height: 94px;
+    }
+    .thanx-modal .modal-body .title {
+        font-size: 24px;
+        margin-top: 39px;
+    }
+    .thanx-modal .modal-footer button {
+        width: 270px;
+        height: 53px;
+        font-size: 22px;
+    }
+    .thanx-modal .modal-footer {
+        margin-top: 20px;
+    }
     /*specialty end*/
 
     /*footer start*/
@@ -2400,7 +2461,41 @@ h2 {
         margin-bottom: 182px;
         margin-right: 109px;
     }
-
+    .thanx-modal {
+        width: 960px;
+        height: 634px;
+        border-radius: 20px;
+        position: relative;
+    }
+    .thanx-modal .modal-header {
+        background: url(../images/forms/thanxBackgroundDesktop.png) no-repeat;
+        height: 446px;
+    }
+    .thanx-modal .modal-body {
+        position: absolute;
+        top: 0;
+        margin-top: 223px;
+        margin-left: 83px;
+    }
+    .thanx-modal .modal-body p {
+        font-size: 40px;
+    }
+    
+    .thanx-modal .modal-body .title {
+        font-size: 64px;
+        margin-top: 0;
+    }
+    .modal{
+        --bs-modal-width:960px;
+    }
+    .thanx-modal .modal-footer{
+        margin-top: 68px;
+    }
+    .thanx-modal .modal-footer button {
+        width: 300px;
+        height: 70px;
+        font-size: 30px;
+    }
     /*specialty end*/
 
     /*footer start*/
