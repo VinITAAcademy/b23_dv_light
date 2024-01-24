@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', function () {
         var buttonText = $(".all_icons").hasClass("d-none") ? "Показати всі..." : "Показати менше";
         $(".show-all").text(buttonText);
     });
-    jQuery('#phone, #phone1').inputmask({
+    jQuery('#phone-participant, #phone-partner').inputmask({
         mask: '+38 (099) 999-99-99',
         greedy: false
     });
