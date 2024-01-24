@@ -476,11 +476,10 @@
         <div class="modal-dialog modal-dialog-centered justify-content-center">
             <div class="modal-content custom-modal-dialog">
                 <div class="modal-header">
-                    <p class="modal-title" id="exampleModalToggleLabel">Анкета Учасника програми</p>
+                    <h2 class="modal-title" id="exampleModalToggleLabel">Анкета <b>Учасника</b> програми</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <form action="#" id="form-partner" class="modal-body">
-                    <img class="form-seeds" src="src/images/forms/seeds.png" alt="small-seeds">
                     <div class="form-item">
                         <input type="text" name="first_name" id="name_participant" placeholder="Ім'я "
                             class="form-input required name">
@@ -493,7 +492,7 @@
                         <input type="email" name="email" placeholder="Email" class="form-input required email">
                     </div>
                     <div class="form-item">
-                        <input type="tel" name="phone" id="phone" placeholder="Мобільний телефон"
+                        <input type="tel" name="phone" id="phone-participant" placeholder="Мобільний телефон"
                             class="form-input required phone">
                     </div>
                     <div class="form-item">
@@ -509,7 +508,7 @@
                         <textarea name="about_us" name="about" cols="30" rows="2" class="form-input"></textarea>
                     </div>
                     <div class="form-items d-flex flex-column">
-                        <p>Бажаний напрямок підготовки</p>
+                        <h3>Бажаний напрямок підготовки</h3>
                         <div class="formCheck"><input type="checkbox"> <label for="task1">Автоматизоване
                                 тестування</label>
                         </div>
@@ -539,6 +538,7 @@
                         <button class="btn btn-primary form-button" type="submit" data-bs-toggle="modal"
                             data-bs-target="#exampleModalToggle2">Надіслати</button>
                     </div>
+                    <img class="form-seeds" src="src/images/forms/seeds.png" alt="small-seeds">
                 </form>
             </div>
         </div>
