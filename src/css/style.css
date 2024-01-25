@@ -864,7 +864,8 @@ h2 {
     font-size: 16px;
     font-weight: 400;
 }
-.modal-header h2 b{
+
+.modal-header h2 b {
     font-weight: 500;
 }
 
@@ -968,6 +969,7 @@ h2 {
 .form-item {
     position: relative;
 }
+
 .thanx-modal {
     width: 340px;
     height: 320px;
@@ -1009,6 +1011,104 @@ h2 {
     height: 55px;
     font-size: 20px;
     font-weight: 500;
+}
+
+.modals {
+    width: 375px;
+    height: 460px;
+    position: relative;
+}
+
+#modalWithModals .modal-dialog {
+    max-width: none;
+    margin: var(--bs-modal-margin);
+}
+
+#modalWithModals .container-fluid {
+    height: 460px;
+}
+
+#modalWithModals .modals-header {
+    height: 108px;
+}
+
+#modalWithModals .modals-header .offcanvas-title {
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 10px;
+    border-right: 1px solid var(--color-blue-2);
+    font-weight: 300;
+    font-family: Ubuntu;
+    color: var(--color-blue-2);
+}
+
+#modalWithModals .modals-header .icon-flag {
+    position: absolute;
+    margin-top: 15.79px;
+    margin-left: 42.78px;
+}
+
+#modalWithModals .modals-header .burder-menu-text1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#modalWithModals .modals-header .btn-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 14px;
+    margin-right: 10px;
+}
+
+#modalWithModals .modals-header .flag-line,
+#modalWithModals .modals-menu .flag-line {
+    margin-left: 24px;
+    width: 311px;
+    height: 2px;
+    background-color: var(--color-blue-1);
+    border-bottom: 1px solid var(--color-yellow);
+}
+
+#modalWithModals .modals-menu .flag-line {
+    position: absolute;
+    bottom: 0;
+}
+
+#modalWithModals .modals-menu {
+    position: relative;
+    height: 288px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#modalWithModals .modals-menu h4{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text, #05003E);
+}
+
+#modalWithModals .modals-menu .form-button {
+    width: 250px;
+    height: 55px;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+}
+
+#modalWithModals .modals-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 67px;
+}
+
+#modalWithModals .modals-footer .icon-link {
+    gap: 20px;
 }
 
 /*specialty end*/
@@ -1706,26 +1806,75 @@ h2 {
         margin-bottom: 50px;
         margin-right: 80px;
     }
+
     .thanx-modal {
         width: 370px;
         height: 330px;
     }
+
     .thanx-modal .modal-header {
         background: url(../images/forms/thanxBackgroundDesktop.png) no-repeat;
         height: 94px;
     }
+
     .thanx-modal .modal-body .title {
         font-size: 24px;
         margin-top: 39px;
     }
+
     .thanx-modal .modal-footer button {
         width: 270px;
         height: 53px;
         font-size: 22px;
     }
+
     .thanx-modal .modal-footer {
         margin-top: 20px;
     }
+
+
+    .modals {
+        max-width: 768px;
+        width: 768px;
+        height: 695px;
+    }
+    
+    #modalWithModals .modals-header {
+        height: 174px;
+    }
+    
+    #modalWithModals .modals-header .flag-line,
+    #modalWithModals .modals-menu .flag-line {
+        margin-left: 22px;
+        width: 668px;
+        height: 3px;
+    
+    }
+    
+    #modalWithModals .modals-menu {
+        height: 414px;
+        gap: 19px;
+    }
+
+    #modalWithModals .modals-menu h4{
+        font-size: 36px;
+    }
+    
+    #modalWithModals .modals-menu .form-button {
+        width: 352px;
+        height: 75px;
+        font-weight: 500;
+        font-size: 24px;
+    }
+    
+    #modalWithModals .modals-footer .icon-link img {
+        width: 50px;
+        height: 50px;
+    }
+    #modalWithModals .modals-footer {
+        height: 104px;
+    }
+
     /*specialty end*/
 
     /*footer start*/
@@ -2461,41 +2610,53 @@ h2 {
         margin-bottom: 182px;
         margin-right: 109px;
     }
+
     .thanx-modal {
         width: 960px;
         height: 634px;
         border-radius: 20px;
         position: relative;
     }
+
     .thanx-modal .modal-header {
         background: url(../images/forms/thanxBackgroundDesktop.png) no-repeat;
         height: 446px;
     }
+
     .thanx-modal .modal-body {
         position: absolute;
         top: 0;
         margin-top: 223px;
         margin-left: 83px;
     }
+
     .thanx-modal .modal-body p {
         font-size: 40px;
     }
-    
+
     .thanx-modal .modal-body .title {
         font-size: 64px;
         margin-top: 0;
     }
-    .modal{
-        --bs-modal-width:960px;
+
+    .modal {
+        --bs-modal-width: 960px;
     }
-    .thanx-modal .modal-footer{
+
+    .thanx-modal .modal-footer {
         margin-top: 68px;
     }
+
     .thanx-modal .modal-footer button {
         width: 300px;
         height: 70px;
         font-size: 30px;
     }
+
+    #modalWithModals .modals-menu {
+        gap: 22px;
+    }
+
     /*specialty end*/
 
     /*footer start*/

@@ -24,24 +24,24 @@ window.addEventListener('DOMContentLoaded', function () {
         greedy: false
     });
 
-    const formPartner = document.getElementById("form-partner");
+    const formParticipant = document.getElementById("form-participant");
     const submitButton = document.querySelector('.form-button');
     submitButton.setAttribute('disabled', 'disabled');
 
-    const formInputs = formPartner.querySelectorAll('.required');
+    const formInputs = formParticipant.querySelectorAll('.required');
     formInputs.forEach(input => {
         input.addEventListener('input', function () {
-            formValidate(formPartner);
+            formValidate(formParticipant);
         });
 
         input.addEventListener('blur', function () {
-            formValidate(formPartner);
+            formValidate(formParticipant);
         });
     });
 
-    formPartner.addEventListener("submit", function (event) {
+    formParticipant.addEventListener("submit", function (event) {
         event.preventDefault();
-        formValidate(formPartner);
+        formValidate(formParticipant);
     });
 
     function formValidate(form) {
