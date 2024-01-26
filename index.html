@@ -25,11 +25,10 @@
 
     <div id="wrapper">
         <!--"header start"-->
-        <header id="header">
+       <header id="header">
             <nav class="navbar bg-body-tertiary navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img class="foto-swallow" src="./src/images/header/swallow.svg" alt="Swallow" /></a>
+                    <img class="foto-swallow" src="./src/images/header/swallow.svg" alt="Swallow" /></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
                         aria-label="Toggle navigation">
@@ -38,14 +37,23 @@
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                         aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
-                            <p class="offcanvas-title" id="offcanvasNavbarLabel">UA</p>
-                            <div class="icon-flag">
-                                <img class="flagUA" src="./src/images/header/flag.svg" alt="" />
+                            <div class="language-dropdown">
+                                <div class="dropdown-btn-burger">
+                                    <img src="./src/images/header/dropdown_burger_menu_ua.svg" alt="Ukraine">
+                                </div>
+                                <div class="dropdown-content">
+                                    <a href="#">
+                                        <img src="./src/images/header/dropdown_burger_menu_ua.svg" alt="Ukraine">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./src/images/header/dpodown_burger_menu_en.svg" alt="English">
+                                    </a>
+                                </div>
                             </div>
                             <div class="burder-menu-text1">
                                 <h2>Доброго вечора, ми з</h2>
                                 <div class="burger-menu-text2">
-                                    <h3>України</h3>
+                                    <h3>України!</h3>
                                 </div>
                             </div>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
@@ -61,41 +69,46 @@
                                     <a class="nav-link" href="#specialty">Спеціальності</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Контакти</a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="#">Партнери</a>
                                 </li>
-                                <div>
-                                    <a class="icon-UA" href="#">UA</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Контакти</a>
+                                </li>
+                                <div class="language-dropdown">
+                                    <div class="dropdown-btn">
+                                        <img src="./src/images/header/dropdown_menu_ua.svg" alt="Ukraine">
+                                    </div>
+                                    <div class="dropdown-content">
+                                        <a href="#">
+                                            <img src="./src/images/header/dropdown_menu_ua.svg" alt="Ukraine">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./src/images/header/dropdown_menu_en.svg" alt="English">
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="horizontal-line1"></div>
-                                <div class="flag-UA">
-                                    <img src="./src/images/header/UA.svg" alt="" />
-                                </div>
                             </ul>
-                            <div class="icon-link">
-                                <a class="nav-link"
-                                    href=".https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fvinnytsia.itacademy%2F%3Flocale%3Duk_UA">
-                                    <img class="iconc" src="./src/images/header/facebook.svg" alt="icon-facebook" /></a>
-                                <a class="nav-link"
-                                    href="https://twitter.com/intent/tweet?url=https://twitter.com/vinnytsiaita?s=11&t=26yMelGn3njhSXsERHXerg">
-                                    <img class="iconc" src="./src/images/header/twitter.svg" alt="icon-twitter." /></a>
-                                <a class="nav-link" href="https://www.instagram.com/ita.in.ua?igsh=dzJ3bTMxdTFmMGNr">
-                                    <img class="iconc" src="./src/images/header/instagram.svg"
-                                        alt="icon-instagram" /></a>
-                                <a class="nav-link" href="https://api.whatsapp.com/send/?phone=380674317424&text&type=phone_number&app_absent=0
+                        </div>
+                        <div class="icon-link">
+                            <a class="nav-link"
+                                href=".https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fvinnytsia.itacademy%2F%3Flocale%3Duk_UA">
+                                <img class="iconc" src="./src/images/header/facebook.svg" alt="icon-facebook" /></a>
+                            <a class="nav-link"
+                                href="https://twitter.com/intent/tweet?url=https://twitter.com/vinnytsiaita?s=11&t=26yMelGn3njhSXsERHXerg">
+                                <img class="iconc" src="./src/images/header/twitter.svg" alt="icon-twitter." /></a>
+                            <a class="nav-link" href="https://www.instagram.com/ita.in.ua?igsh=dzJ3bTMxdTFmMGNr">
+                                <img class="iconc" src="./src/images/header/instagram.svg" alt="icon-instagram" /></a>
+                            <a class="nav-link" href="https://api.whatsapp.com/send/?phone=380674317424&text&type=phone_number&app_absent=0
                                 ">
-                                    <img class="iconc" src="./src/images/header/basil_viber-outline.svg"
-                                        alt="icon-viber" /></a>
-                                <a class="nav-link" href="https://api.whatsapp.com/send/?phone=380674317424&text&type=phone_number&app_absent=0
+                                <img class="iconc" src="./src/images/header/basil_viber-outline.svg"
+                                    alt="icon-viber" /></a>
+                            <a class="nav-link" href="https://api.whatsapp.com/send/?phone=380674317424&text&type=phone_number&app_absent=0
                                 ">
-                                    <img class="iconc" src="./src/images/header/bxl_whatsapp.svg"
-                                        alt="icon-whatsapp" /></a>
-                                <a class="nav-link" href="https://www.instagram.com/ita.in.ua?igsh=dzJ3bTMxdTFmMGNr">
-                                    <img class="iconc" src="./src/images/header/ph_telegram-logo.svg"
-                                        alt="icon-telegram" /></a>
-                            </div>
+                                <img class="iconc" src="./src/images/header/bxl_whatsapp.svg" alt="icon-whatsapp" /></a>
+                            <a class="nav-link" href="https://www.instagram.com/ita.in.ua?igsh=dzJ3bTMxdTFmMGNr">
+                                <img class="iconc" src="./src/images/header/ph_telegram-logo.svg"
+                                    alt="icon-telegram" /></a>
                         </div>
                     </div>
                 </div>
@@ -220,7 +233,7 @@
                         </p>
                     </div>
                     <a href="#" class="button" data-bs-target="#modalWithModals"
-                        data-bs-toggle="modal">Зарееструватися</a>
+                        data-bs-toggle="modal">Зареєструватися</a>
                 </div>
                 <div class="block_attencion">
                     <div class="block_attencion_text1">
