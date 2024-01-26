@@ -19,13 +19,14 @@ window.addEventListener('DOMContentLoaded', function () {
         var buttonText = $(".all_icons").hasClass("d-none") ? "Показати всі..." : "Показати менше";
         $(".show-all").text(buttonText);
     });
-    jQuery('#phone-participant, #phone-partner').inputmask({
+    jQuery('#phone-participant, #phone-partner, #phone-mentor').inputmask({
         mask: '+38 (099) 999-99-99',
         greedy: false
     });
 
     const formParticipant = document.getElementById("form-participant");
     const formPartner = document.getElementById("form-partner");
+    const formMentor = document.getElementById("form-mentor");
     const formButtons = document.querySelectorAll('.button-submit');
 
     formButtons.forEach(button => {
@@ -34,6 +35,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     const formInputsParticipant = formParticipant.querySelectorAll('.required');
     const formInputsPartner = formPartner.querySelectorAll('.required');
+    const formInputsMentor = formMentor.querySelectorAll('.required');
 
     function addEventListenersAndValidate(inputs, form, buttons, eventType) {
         inputs.forEach(input => {
@@ -54,6 +56,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     addEventListenersAndValidate(formInputsParticipant, formParticipant, formButtons, "submit");
     addEventListenersAndValidate(formInputsPartner, formPartner, formButtons, "submit");
+    addEventListenersAndValidate(formInputsMentor, formMentor, formButtons, "submit");
 
     function formValidate(form, buttons) {
         let error = 0;
