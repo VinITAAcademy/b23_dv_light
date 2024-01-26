@@ -287,6 +287,11 @@ h2 {
 /*main block end*/
 
 /*registration start*/
+#registration{
+    display: flex;
+    justify-content: center;
+}
+
 #registration .container_rg {
     width: 375px;
     height: 218px;
@@ -1380,7 +1385,7 @@ textarea{
 
     /*main-block start*/
     #mainblock .mainblock {
-        background: url(../images/Main_block/main-background-tablet.png);
+        background: url(../images/Main_block/main-background-tablet.png) no-repeat cover;
         height: 1024px;
         position: relative;
     }
