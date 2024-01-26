@@ -996,6 +996,73 @@ h2 {
     position: relative;
 }
 
+.form-item .required-label {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.form-item input:placeholder-shown+.required-label {
+    opacity: 1;
+}
+
+.form-item input:focus+label {
+    opacity: 0;
+}
+
+.required-tip {
+    font-size: 10px;
+    font-family: "Montserrat";
+    color: var(--color-blue-1);
+    margin: 0;
+}
+
+.required-tip::before {
+    font-size: 16px;
+    content: '*';
+    color: var(--color-red);
+    margin-right: 4px;
+}
+
+.form-item input::placeholder {
+    color: var(--color-grey-1);
+}
+
+.form-item .required-label {
+    color: var(--color-grey-1);
+    position: absolute;
+    top: 34%;
+    left: 8px;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.form-item .required-label::after {
+    content: '*';
+    color: var(--color-red);
+    padding-left: 4px;
+}
+
+#partnerModal .custom-modal-dialog {
+    height: 603px;
+}
+
+#partnerModal .modal-body {
+    height: 500px;
+}
+
+#partnerModal textarea {
+    height: 38px;
+}
+
+#partnerModal .modal-footer {
+    height: 90px;
+}
+
+#partnerModal .form-seeds {
+    margin-bottom: 82px;
+    margin-right: 40px;
+}
+
 .thanx-modal {
     width: 340px;
     height: 320px;
@@ -1799,7 +1866,7 @@ h2 {
 
     .custom-modal-dialog {
         width: 677px;
-        height: 940px;
+        height: 960px;
     }
 
     .modal-body .form-item input,
@@ -1859,6 +1926,27 @@ h2 {
         height: 65px;
         margin-bottom: 50px;
         margin-right: 80px;
+    }
+
+    #partnerModal .custom-modal-dialog {
+        height: 723px;
+    }
+
+    #partnerModal .modal-body {
+        height: 560px;
+    }
+
+    #partnerModal .modal-header {
+        height: 73px;
+    }
+
+    .required-tip {
+        font-size: 14px;
+    }
+
+    .required-tip::before {
+        font-size: 20px;
+        margin-right: 4px;
     }
 
     .thanx-modal {
@@ -2693,6 +2781,40 @@ h2 {
         height: 96px;
         margin-bottom: 182px;
         margin-right: 109px;
+    }
+
+    #partnerModal .modal-header {
+        height: 103px;
+    }
+
+    #partnerModal .custom-modal-dialog {
+        height: 1156px;
+    }
+
+    #partnerModal textarea {
+        height: 163px;
+    }
+
+    #partnerModal .form-seeds {
+        margin-bottom: 120px;
+        margin-right: 135px;
+    }
+
+    #partnerModal .form-button {
+        margin: 0;
+    }
+
+    #partnerModal .modal-body {
+        height: 1100px;
+    }
+
+    .required-tip {
+        font-size: 16px;
+    }
+
+    .required-tip::before {
+        font-size: 24px;
+        margin-right: 4px;
     }
 
     .thanx-modal {
