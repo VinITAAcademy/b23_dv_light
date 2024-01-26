@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', function () {
 
     var video = this.document.querySelector('.videoPreview');
+    var videoImage = document.getElementById('play-button');
 
     video.addEventListener('click', function () {
 
@@ -12,6 +13,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
         video.insertAdjacentHTML('afterbegin', '<iframe class="videoPreview" src="https://www.youtube.com/embed/pmrIlYBWP20?si=fEDOS5Ct8-rmn2I9&autoplay=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
 
+        videoImage.style.display = 'none';
     });
     $(".show-all").click(function () {
         $(".preview_icon").toggleClass("d-none");

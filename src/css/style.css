@@ -361,8 +361,8 @@ h2 {
 
 /*video clip start*/
 #video {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 #video .videoPreview {
@@ -371,10 +371,18 @@ h2 {
     background-clip: content-box;
     width: 100%;
     height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #video .videoPreview:hover {
     cursor: pointer;
+}
+
+#video img{
+    width: 60px;
+    height: 60px;
 }
 
 /*video clip end*/
@@ -1492,9 +1500,20 @@ textarea{
     /*about the program end*/
 
     /*video clip start*/
+
+    #video{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
     #video .videoPreview {
         max-width: 762px;
         height: 431px;
+    }
+
+    #video img{
+        width: 122px;
+        height: 122px;
     }
 
     /*video clip end*/
@@ -2291,6 +2310,10 @@ textarea{
     /*about the program end*/
 
     /*video clip start*/
+    #video{
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
     /*video clip end*/
 
     /*we provide start*/
