@@ -361,8 +361,8 @@ h2 {
 
 /*video clip start*/
 #video {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 #video .videoPreview {
@@ -1502,8 +1502,8 @@ textarea{
     /*video clip start*/
 
     #video{
-        padding-top: 50px;
-        padding-bottom: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     #video .videoPreview {
@@ -2311,8 +2311,8 @@ textarea{
 
     /*video clip start*/
     #video{
-        padding-top: 90px;
-        padding-bottom: 90px;
+        margin-top: 90px;
+        margin-bottom: 90px;
     }
     /*video clip end*/
 
