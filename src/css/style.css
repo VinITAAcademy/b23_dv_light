@@ -581,7 +581,8 @@ li {
 
 /*resources start*/
 #resources {
-    padding-top: 24px;
+    margin-top: 33px;
+    margin-bottom: 11px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1750,6 +1751,10 @@ textarea{
     /*register.attention end*/
 
     /*resources start*/
+    #resources{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
     #resources .resources_block {
         width: 742px;
         height: 359px;
@@ -2602,6 +2607,11 @@ textarea{
     /*register.attention end*/
 
     /*resources start*/
+    #resources{
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+
     #resources .resources_block {
         width: 904px;
         height: 428px;
