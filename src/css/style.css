@@ -2755,6 +2755,7 @@ textarea{
         display: flex;
         align-items: center;
         height: 347px;
+        margin-left: 16px;
     }
 
     #partners .show-all {
@@ -2773,6 +2774,7 @@ textarea{
 
     #partners .our_partners .all_icons .row {
         margin: 0;
+        margin-left: 15px;
         padding: 0;
     }
 
