@@ -710,6 +710,32 @@ h2 {
 /*our partners end*/
 
 /*reference to financial support start*/
+#financialSupport .qr {
+    background-image: url(../images/reference_to_financial_support/background.jpg);
+    height: 150px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+#financialSupport .text {
+    padding-top: 8px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+
+
+}
+
+#financialSupport .link {
+    padding-top: 8px;
+    text-align: center;
+    color: #FDD817;
+    font-family: Montserrat;
+    font-size: 18px;
+
+}
+
 /*reference to financial support end*/
 
 /*specialty start*/
@@ -1085,7 +1111,7 @@ h2 {
     gap: 20px;
 }
 
-#modalWithModals .modals-menu h4{
+#modalWithModals .modals-menu h4 {
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
@@ -1685,6 +1711,34 @@ h2 {
     /*our partners end*/
 
     /*reference to financial support start*/
+    #financialSupport .qr {
+        background-image: url(../images/reference_to_financial_support/qr_tablet.png);
+        background-position: center;
+        background-size: cover;
+        height: 220px;
+
+    }
+
+    #financialSupport .text {
+        text-align: left;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 500;
+        padding-top: 32px;
+        padding-left: 22px;
+        padding-right: 175px;
+
+
+    }
+
+    #financialSupport .link {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+
+    }
+
     /*reference to financial support end*/
 
     /*specialty start*/
@@ -1838,39 +1892,40 @@ h2 {
         width: 768px;
         height: 695px;
     }
-    
+
     #modalWithModals .modals-header {
         height: 174px;
     }
-    
+
     #modalWithModals .modals-header .flag-line,
     #modalWithModals .modals-menu .flag-line {
         margin-left: 22px;
         width: 668px;
         height: 3px;
-    
+
     }
-    
+
     #modalWithModals .modals-menu {
         height: 414px;
         gap: 19px;
     }
 
-    #modalWithModals .modals-menu h4{
+    #modalWithModals .modals-menu h4 {
         font-size: 36px;
     }
-    
+
     #modalWithModals .modals-menu .form-button {
         width: 352px;
         height: 75px;
         font-weight: 500;
         font-size: 24px;
     }
-    
+
     #modalWithModals .modals-footer .icon-link img {
         width: 50px;
         height: 50px;
     }
+
     #modalWithModals .modals-footer {
         height: 104px;
     }
@@ -2469,6 +2524,35 @@ h2 {
     /*our partners end*/
 
     /*reference to financial support start*/
+    #financialSupport .qr {
+        background-image: url(../images/reference_to_financial_support/qr_desktop.png);
+        height: 228px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 1060px;
+        margin: 0px auto 0px auto;
+    }
+
+    #financialSupport .text {
+        padding-top: 12px;
+        padding-right: 520px;
+        padding-left: 33px;
+        font-family: Raleway;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 500;
+        line-height: normal;
+
+    }
+
+    #financialSupport .link {
+        font-size: 32px;
+        font-weight: 350;
+        padding-top: 8px;
+        padding-left: 27px;
+        text-align: left;
+    }
+
     /*reference to financial support end*/
 
     /*specialty start*/
