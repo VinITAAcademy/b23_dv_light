@@ -56,16 +56,28 @@ li {
     border: none;
 }
 
-#header .navbar .bg-body-tertiary .navbar-expand-lg {
+#header .navbar.bg-body-tertiary.navbar-expand-lg {
     display: flex;
     flex-wrap: inherit;
     align-items: center;
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+#header .container-fluid {
+    z-index: 2;
+}
+
+#header .navbar-brand {
+    padding: 7px 0px 0px 9px;
 }
 
 #header .foto-swallow {
-    display: none;
+    display: flex;
+    width: 24px;
 }
 
 #header .offcanvas.offcanvas-end {
@@ -76,28 +88,18 @@ li {
 
 #header .offcanvas-body {
     position: relative;
-    left: 37px;
-    top: 53px;
+    left: 8px;
+    top: 45px;
+    margin: 0 auto;
 }
 
 #header .navbar-toggler {
     border: none;
+    padding-top: 7px;
 }
 
 #header .navbar-toggler-icon {
-    width: 16px;
-}
-
-#header p {
-    color: var(--color-blue-2);
-    text-align: center;
-    font-family: Uuntu;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    border-right: 1px solid var(--color-blue-2);
-    margin: 0 11px;
+    width: 17px;
 }
 
 #header .burder-menu-text1 {
@@ -116,23 +118,28 @@ li {
     padding-left: 44px;
 }
 
-h3 {
+#header h3 {
+    position: relative;
     color: var(--color-blue-1);
     font-family: "Yeseva One";
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    justify-content: center;
+    right: 30px;
+    bottom: 3px;
 }
 
-h2 {
+#header h2 {
+    position: relative;
     color: var(--color-blue-1);
     font-family: Pacifico;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin: 17px 3px 0px 0px;
+    right: 11px;
 }
 
 #header .nav-link {
@@ -164,51 +171,85 @@ h2 {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 42px;
-    right: 35px;
+    bottom: 22px;
 }
 
 #header .horizontal-line1 {
-    top: 22px;
-    width: 348px;
+    top: 9px;
+    width: 311px;
     height: 2px;
-    left: -48px;
     position: relative;
     background-color: var(--color-blue-1);
     border-bottom: 1px solid var(--color-yellow);
+    margin: 0 auto;
 }
 
 #header .horizontal-line {
     top: 55px;
-    left: 29px;
-    width: 322px;
+    width: 311px;
     height: 2px;
     position: relative;
     background-color: var(--color-blue-1);
     border-bottom: 1px solid var(--color-yellow);
+    margin: 0 auto;
 }
 
-#header .icon-UA {
-    display: none;
+#header .dropdown select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
-#header .flag-UA {
-    display: none;
+#header .dropdown select:focus {
+    outline: none;
 }
 
-#header .icon-flag {
+#header .language-dropdown {
     position: relative;
-    top: -2px;
-    left: -6px;
+    display: inline-block;
 }
 
-#header .flagUA {
-    width: 18px;
-    height: 13px;
+#header .dropdown-btn-burger {
+    padding: 4px 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#header .dropdown-btn-burger img {
+    width: 46px;
+    margin-left: 4px;
+}
+
+#header .dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+#header .dropdown-content img {
+    display: block;
+    width: 46px;
+    height: auto;
+    margin-left: 11px;
+}
+
+#header .language-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#header .dropdown-btn {
+    display: none;
+}
+
+#header .iconc {
+    margin-left: 2px;
 }
 
 #header .btn-close {
-    margin: 0 5px;
+    margin: 8px 5px;
+    padding: 9px;
 }
 
 /*header end*/
@@ -223,6 +264,7 @@ h2 {
     margin: 0 auto;
     position: relative;
     margin-bottom: 46px;
+    z-index: 1;
 }
 
 #mainblock .flag-backgroud {
@@ -366,8 +408,8 @@ h2 {
 
 /*video clip start*/
 #video {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 #video .videoPreview {
@@ -376,10 +418,18 @@ h2 {
     background-clip: content-box;
     width: 100%;
     height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #video .videoPreview:hover {
     cursor: pointer;
+}
+
+#video img{
+    width: 60px;
+    height: 60px;
 }
 
 /*video clip end*/
@@ -536,7 +586,8 @@ h2 {
 
 /*resources start*/
 #resources {
-    padding-top: 24px;
+    margin-top: 33px;
+    margin-bottom: 11px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1238,16 +1289,20 @@ textarea{
         flex-wrap: inherit;
         align-items: center;
         justify-content: space-between;
+        padding: 0px;
     }
 
     #header .container-fluid {
         padding: 0 !important;
     }
+    #header .navbar-brand {
+        padding: 6px 0px 0px 21px;
+    }
 
     #header .foto-swallow {
         display: flex;
-        width: 75px;
-        height: 50px;
+        width: 100px;
+        height: 100px;
         flex-shrink: 0;
         padding: 0;
     }
@@ -1264,22 +1319,10 @@ textarea{
         top: 95px;
     }
 
-    #header p {
-        color: var(--color-blue-2);
-        text-align: center;
-        font-family: Ubuntu;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-        border-right: 1px solid var(--color-blue-2);
-        margin: 20px 0px 0px 19px;
-    }
-
     #header .navbar-toggler-icon {
-        width: 75px;
-        height: 50px;
-        margin: 20px;
+        width: 100px;
+        height: 100px;
+        margin: 4px 7px 0px 0px
     }
 
     #header .burder-menu-text1 {
@@ -1303,16 +1346,19 @@ textarea{
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        justify-content: center;
+        right: 14px;
     }
 
     h2 {
+        position: relative;
         color: var(--color-blue-1);
         font-family: Pacifico;
         font-size: 40px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        right: 20px;
+        top: 2px;
     }
 
     #header .nav-link {
@@ -1322,8 +1368,7 @@ textarea{
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        padding: 0px 5px;
-        margin: 14px 0px;
+        padding: 20px 0px;
     }
 
     #header.offcanvas-header {
@@ -1332,9 +1377,8 @@ textarea{
     }
 
     #header .horizontal-line {
-        top: 91px;
-        left: 30px;
-        width: 708px;
+        top: 105px;
+        width: 688px;
         height: 3.3px;
         position: relative;
         background-color: var(--color-blue-1);
@@ -1342,10 +1386,10 @@ textarea{
     }
 
     #header .horizontal-line1 {
-        top: 22px;
-        width: 708px;
+        top: -4px;
+        width: 688px;
         height: 3.1px;
-        left: 6px;
+        right: 5px;
         position: relative;
         background-color: var(--color-blue-1);
         border-bottom: 1.9px solid var(--color-yellow);
@@ -1357,28 +1401,68 @@ textarea{
         border-radius: 20px;
     }
 
-    #header .icon-flag {
-        position: relative;
-        top: 9px;
-        left: 4px;
-    }
-
-    #header .flagUA {
-        width: 20px;
-        height: 18px;
-    }
-
     #header .iconc {
         width: 50px;
         height: 50px;
+        margin-left: 14px;
     }
 
     #header .icon-link {
         display: flex;
         justify-content: center;
         position: relative;
-        top: 70px;
-        right: 35px;
+        top: 6px;
+        right: 8px;
+    }
+    #header .dropdown select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    #header .dropdown select:focus {
+        outline: none;
+    }
+
+    #header .language-dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    #header .dropdown-btn-burger {
+        padding: 4px 6px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    #header .dropdown-btn-burger img {
+        width: 68px;
+        margin-left: 13px;
+        margin-top: 5px;
+    }
+
+    #header .dropdown-content {
+        display: none;
+        position: absolute;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    #header .dropdown-content img {
+        display: block;
+        width: 70px;
+        height: auto;
+        margin-left: 17px;
+    }
+
+    #header .language-dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    #header .btn-close {
+        margin: 0px 11px 0px 0px;
+        padding: 16px;
     }
 
     /*header end*/
@@ -1497,9 +1581,20 @@ textarea{
     /*about the program end*/
 
     /*video clip start*/
+
+    #video{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
     #video .videoPreview {
         max-width: 762px;
         height: 431px;
+    }
+
+    #video img{
+        width: 122px;
+        height: 122px;
     }
 
     /*video clip end*/
@@ -1661,6 +1756,10 @@ textarea{
     /*register.attention end*/
 
     /*resources start*/
+    #resources{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
     #resources .resources_block {
         width: 742px;
         height: 359px;
@@ -2056,32 +2155,30 @@ textarea{
         align-items: center;
         justify-content: space-between;
     }
+    #header .navbar-expand-lg .navbar-nav {
+        display: flex;
+    }
 
     #header .container-fluid {
+        width: 99%;
         padding: 0 !important;
     }
 
     #header .offcanvas-body {
-        top: -17px;
-        left: 4px;
+        top: 5px;
+        left: 114px;
     }
 
     #header .foto-swallow {
         display: flex;
+        position: relative;
+        top: 34px;
+        left: 32px;
         width: 90px;
         height: 90px;
         flex-shrink: 0;
-        padding: 0;
     }
-
-    #header .icon-UA {
-        display: flex;
-        text-decoration: none !important;
-        font-size: 18px;
-        padding: 5px;
-    }
-
-    #header .flag-UA {
+    #header .offcanvas.offcanvas-end {
         display: flex;
     }
 
@@ -2103,14 +2200,15 @@ textarea{
 
     #header .nav-link {
         display: flex;
+        position: relative;
+        left: 8px;
         color: var(--color-blue-1);
         font-family: Montserrat;
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        padding: 0 5px;
-        margin: 7px 0px;
+        margin: 0px 8px 11px 26px;
     }
 
     #header .horizontal-line {
@@ -2120,12 +2218,62 @@ textarea{
     #header .horizontal-line1 {
         display: none;
     }
+    #header .dropdown select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
 
-    #header ul .navbar-nav .justify-content-end .flex-grow-1 .pe-3 {
+    #header .dropdown select:focus {
+        outline: none;
+    }
+
+    #header .dropdown-btn {
+        display: flex;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    #header .dropdown-btn img {
+        width: 38px;
+        position: relative;
+        top: 18px;
+        left: 37px;
+    }
+
+    #header .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 41px;
+        left: 46px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    #header .dropdown-content img {
+        display: block;
+        width: 38px;
+        height: auto;
+        margin-top: 7px;
+        margin-left: 11px;
+    }
+
+    #header .language-dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    #header .language-dropdown-burger {
+        display: none;
+    }
+
+
+    /*#header ul .navbar-nav .justify-content-end .flex-grow-1 .pe-3 {
         position: relative;
         bottom: 112px;
         right: 8px;
-    }
+    }*/
 }
 
 /*header end*/
@@ -2140,14 +2288,14 @@ textarea{
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 100vh;
+        height: 133vh;
         margin: 0 auto;
         position: relative;
     }
 
     #mainblock .flag-backgroud {
         position: absolute;
-        bottom: -60px;
+        bottom: 18px;
         width: calc(100% - 60px);
         z-index: 1;
     }
@@ -2172,7 +2320,9 @@ textarea{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 14px;
+        position: relative;
+        top: 98px;
+        gap: 13px;
     }
 
     #mainblock .work_it-pic {
@@ -2200,6 +2350,9 @@ textarea{
         font-style: normal;
         font-weight: 400;
         line-height: 1.74;
+        position: relative;
+        left: 22px;
+        bottom: 4px;
     }
 
     #mainblock .text_2 {
@@ -2296,6 +2449,10 @@ textarea{
     /*about the program end*/
 
     /*video clip start*/
+    #video{
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
     /*video clip end*/
 
     /*we provide start*/
@@ -2455,6 +2612,11 @@ textarea{
     /*register.attention end*/
 
     /*resources start*/
+    #resources{
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+
     #resources .resources_block {
         width: 904px;
         height: 428px;
@@ -2598,6 +2760,7 @@ textarea{
         display: flex;
         align-items: center;
         height: 347px;
+        margin-left: 16px;
     }
 
     #partners .show-all {
@@ -2616,6 +2779,7 @@ textarea{
 
     #partners .our_partners .all_icons .row {
         margin: 0;
+        margin-left: 15px;
         padding: 0;
     }
 
