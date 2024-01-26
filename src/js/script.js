@@ -25,26 +25,37 @@ window.addEventListener('DOMContentLoaded', function () {
     });
 
     const formParticipant = document.getElementById("form-participant");
-    const submitButton = document.querySelector('.form-button');
-    submitButton.setAttribute('disabled', 'disabled');
+    const formPartner = document.getElementById("form-partner");
+    const formButtons = document.querySelectorAll('.button-submit');
 
-    const formInputs = formParticipant.querySelectorAll('.required');
-    formInputs.forEach(input => {
-        input.addEventListener('input', function () {
-            formValidate(formParticipant);
-        });
-
-        input.addEventListener('blur', function () {
-            formValidate(formParticipant);
-        });
+    formButtons.forEach(button => {
+        button.setAttribute('disabled', 'disabled');
     });
 
-    formParticipant.addEventListener("submit", function (event) {
-        event.preventDefault();
-        formValidate(formParticipant);
-    });
+    const formInputsParticipant = formParticipant.querySelectorAll('.required');
+    const formInputsPartner = formPartner.querySelectorAll('.required');
 
-    function formValidate(form) {
+    function addEventListenersAndValidate(inputs, form, buttons, eventType) {
+        inputs.forEach(input => {
+            input.addEventListener('input', function () {
+                formValidate(form, buttons);
+            });
+
+            input.addEventListener('blur', function () {
+                formValidate(form, buttons);
+            });
+        });
+
+        form.addEventListener(eventType, function (event) {
+            event.preventDefault();
+            formValidate(form, buttons);
+        });
+    }
+
+    addEventListenersAndValidate(formInputsParticipant, formParticipant, formButtons, "submit");
+    addEventListenersAndValidate(formInputsPartner, formPartner, formButtons, "submit");
+
+    function formValidate(form, buttons) {
         let error = 0;
         let formRequired = form.querySelectorAll(".required");
 
@@ -82,9 +93,13 @@ window.addEventListener('DOMContentLoaded', function () {
             }
         }
         if (error > 0) {
-            submitButton.setAttribute('disabled', 'disabled');
+            buttons.forEach(button => {
+                button.setAttribute('disabled', 'disabled');
+            });
         } else {
-            submitButton.removeAttribute('disabled');
+            buttons.forEach(button => {
+                button.removeAttribute('disabled');
+            });
         }
         return error;
     }
