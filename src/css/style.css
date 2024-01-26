@@ -1042,25 +1042,39 @@ h2 {
     padding-left: 4px;
 }
 
-#partnerModal .custom-modal-dialog {
-    height: 603px;
+#partnerModal .custom-modal-dialog,
+#mentorModal .custom-modal-dialog {
+    height: 633px;
 }
 
-#partnerModal .modal-body {
+#partnerModal .modal-body,
+#mentorModal .modal-body {
     height: 500px;
 }
 
-#partnerModal textarea {
+#partnerModal textarea,
+#mentorModal textarea {
     height: 38px;
 }
 
-#partnerModal .modal-footer {
-    height: 90px;
+#partnerModal .modal-footer,
+#mentorModal .modal-footer {
+    height: 110px;
 }
 
-#partnerModal .form-seeds {
+#partnerModal .form-seeds,
+#mentorModal .form-seeds {
     margin-bottom: 82px;
     margin-right: 40px;
+}
+
+#partnerModal .modal-header,
+#mentorModal .modal-header{
+    height: 60px;
+}
+
+textarea{
+    resize: none;
 }
 
 .thanx-modal {
@@ -1928,15 +1942,18 @@ h2 {
         margin-right: 80px;
     }
 
-    #partnerModal .custom-modal-dialog {
+    #partnerModal .custom-modal-dialog,
+    #mentorModal .custom-modal-dialog{
         height: 723px;
     }
 
-    #partnerModal .modal-body {
+    #partnerModal .modal-body,
+    #mentorModal .modal-body {
         height: 560px;
     }
 
-    #partnerModal .modal-header {
+    #partnerModal .modal-header,
+    #mentorModal .modal-header {
         height: 73px;
     }
 
@@ -2783,28 +2800,34 @@ h2 {
         margin-right: 109px;
     }
 
-    #partnerModal .modal-header {
+    #partnerModal .modal-header,
+    #mentorModal .modal-header {
         height: 103px;
     }
 
-    #partnerModal .custom-modal-dialog {
+    #partnerModal .custom-modal-dialog,
+    #mentorModal .custom-modal-dialog {
         height: 1156px;
     }
 
-    #partnerModal textarea {
+    #partnerModal textarea,
+    #mentorModal textarea {
         height: 163px;
     }
 
-    #partnerModal .form-seeds {
+    #partnerModal .form-seeds,
+    #mentorModal .form-seeds {
         margin-bottom: 120px;
         margin-right: 135px;
     }
 
-    #partnerModal .form-button {
+    #partnerModal .form-button,
+    #mentorModal .form-button {
         margin: 0;
     }
 
-    #partnerModal .modal-body {
+    #partnerModal .modal-body,
+    #mentorModal .modal-body {
         height: 1100px;
     }
 
