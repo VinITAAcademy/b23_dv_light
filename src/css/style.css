@@ -230,6 +230,7 @@ h2 {
     bottom: -46px;
     width: 100%;
     z-index: 1;
+
 }
 
 #mainblock .social {
@@ -619,6 +620,149 @@ h2 {
 /*specialty end*/
 
 /*footer start*/
+#footer .footer_content {
+    background: #6A8EA8;
+    width: 375px;
+    height: 455px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#footer .text_1 {
+    color: #05003E;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+}
+
+#footer .blurring {
+    display: none;
+}
+
+#footer .kontact {
+    display: none;
+}
+
+#footer .kontact_2 {
+    display: none;
+}
+
+#footer a.int {
+    width: 196px;
+    height: 32px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#footer .social-list__item {
+    display: flex;
+    padding-top: 2px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+
+}
+
+#footer .social_3 {
+    display: none;
+}
+
+#footer .nomer {
+    color: #05003E;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#footer .text_special_1 {
+    color: #05003E;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 12px;
+}
+
+#footer .text_special_2 {
+    color: #05003E;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#footer .text_special_3 {
+    color: #05003E;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#footer .special {
+    border-top: 1px solid #FDD817;
+    border-bottom: 1px solid #FDD817;
+}
+
+#footer .text_3 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 25px;
+}
+
+#footer .social-list__item_2 {
+    display: flex;
+    padding-top: 2px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+#footer .logo_ita_2 {
+    display: inline-flex;
+    padding-top: 2px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+
+
+}
+
+#footer .end {
+    background-color: #05003E;
+    width: 375px;
+    height: 30px;
+    margin-top: 20px;
+    padding-top: 5px;
+
+}
+
+#footer .text_4 {
+    color: #FDD817;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+#footer .partners {
+    display: none;
+}
+
+#footer .contacts_1 {
+    display: none;
+}
+
+#footer .social-list__item_4 {
+    display: none;
+}
+
+
 /*footer end*/
 
 /*============================ Tablet 768 px========================*/
@@ -1089,6 +1233,174 @@ h2 {
     /*specialty end*/
 
     /*footer start*/
+    #footer .footer_content {
+        background: #6A8EA8;
+        width: 100%;
+        height: 750px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #footer .text_1 {
+        display: none;
+    }
+
+    #footer .blurring {
+        display: block;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 25px;
+    }
+
+
+
+    #footer .kontact {
+        display: block;
+        color: #FFF;
+        font-family: "Yeseva One";
+        font-size: 28px;
+        font-weight: 400;
+        padding-top: 10px;
+    }
+
+    #footer .kontact_2 {
+        color: #05003E;
+        font-family: Montserrat;
+        font-family: "Yeseva One";
+        font-weight: 400;
+        font-size: 28px;
+        display: block;
+    }
+
+
+    #footer a.int {
+        width: 306px;
+        height: 50px;
+        color: #05003E;
+        font-family: "Yeseva One";
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    #footer .social-list__item {
+
+        padding-top: 2px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+        display: none;
+    }
+
+    #footer .social_3 {
+        display: block;
+    }
+
+    #footer .text_special_1 {
+        padding-top: 23px;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+
+    }
+
+    #footer .text_special_2 {
+        padding-top: 43px;
+        padding-top: 23px;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+
+    }
+
+    #footer .text_special_3 {
+        padding-top: 43px;
+        padding-top: 23px;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+
+    }
+
+    #footer .special {
+        border-top: 1px solid #FDD817;
+        border-bottom: 1px solid #FDD817;
+        height: 237px;
+        gap: 14px;
+
+    }
+
+    #footer .text_3 {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 400;
+        padding-top: 25px;
+    }
+
+    #footer .social_2 {
+        display: none;
+    }
+
+    #footer .social-list__item_2 {
+
+        padding-top: 2px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+    }
+
+    #footer .logo_ita_2 {
+        display: inline-flex;
+        padding-top: 2px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    #footer .logo_1 {
+        width: 50px;
+        height: 50px;
+    }
+
+    #footer .end {
+        background-color: #05003E;
+        width: 100%;
+        height: 50px;
+
+    }
+
+
+
+    #footer .text_4 {
+        color: #FDD817;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        padding-top: 10px;
+    }
+
+    #footer .partners {
+        display: none;
+    }
+
+    #footer .contacts_1 {
+        display: none;
+    }
+
+    #footer .social_4 {
+        display: none;
+    }
+
     /*footer end*/
 }
 
@@ -1581,5 +1893,224 @@ h2 {
     /*specialty end*/
 
     /*footer start*/
+    #footer .footer_content {
+        background: #6A8EA8;
+        width: 1024px;
+        height: 429px;
+        margin: 0 auto;
+
+
+    }
+
+    #footer .text {
+        display: none;
+    }
+
+    #footer .blurring {
+        display: none;
+    }
+
+
+
+    #footer .kontact {
+        display: block;
+        color: #FFF;
+        font-family: "Yeseva One";
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    #footer .kontact_2 {
+        color: #05003E;
+        font-family: Montserrat;
+        font-family: "Yeseva One";
+        font-weight: 400;
+        font-size: 28px;
+        display: block;
+    }
+
+
+    #footer a.int {
+        width: 306px;
+        height: 50px;
+        color: #05003E;
+        font-family: "Yeseva One";
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    #footer .social-list__item {
+
+        padding-top: 2px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+        display: none;
+    }
+
+    #footer .social_3 {
+        display: none;
+    }
+
+    #footer .text_special_1 {
+        padding-top: 23px;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+
+    }
+
+    #footer .text_special_2 {
+        padding-top: 43px;
+        padding-top: 23px;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+
+    }
+
+    #footer .text_special_3 {
+        padding-top: 43px;
+        padding-top: 23px;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+
+    }
+
+    #footer .special {
+        border-top: 1px solid #FDD817;
+        border-bottom: 1px solid #FDD817;
+        height: 237px;
+        gap: 14px;
+        display: none;
+    }
+
+    #footer .text_3 {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 400;
+        padding-top: 25px;
+    }
+
+    #footer .social_2 {
+        display: none;
+    }
+
+    #footer .social-list__item_2 {
+
+        padding-top: 2px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+    }
+
+    #footer .logo{
+        padding-top: 20px;
+
+    }
+
+    #footer .logo_1 {
+        width: 50px;
+        height: 50px;
+    }
+
+    #footer .end {
+        background-color: #05003E;
+        width: 100%;
+        height: 50px;
+    }
+
+
+    #footer .text_4 {
+        color: #FDD817;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    #footer .partners {
+        display: block;
+        padding-top: 25px;
+    }
+
+    #footer .list__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        color: #05003E;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+
+    }
+
+    #footer .contacts_1 {
+        padding-top: 5px;
+    }
+
+
+
+    #footer .text_contacts {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    #footer .int_cont {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    #footer .text_contacts_2 {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+
+    #footer .contacts_1 {
+        display: block;
+
+    }
+
+    #footer .list_contacts {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #footer .social_4 {
+        display: block;
+        padding-top: 10px;
+    }
+
+    #footer .social-list__item_4 {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 14px;
+        align-items: center;
+    }
+
+    #footer .text_5 {
+        color: #05003E;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 400;
+        margin-bottom: 0rem;
+    }
+
+   
     /*footer end*/
 }
