@@ -2284,7 +2284,7 @@ textarea{
 
     /*main-block start*/
     #mainblock .mainblock {
-        background: url(../images/Main_block/main-background.png);
+        background: url(../images/Main_block/main-background.webp);
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
