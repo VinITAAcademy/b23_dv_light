@@ -424,7 +424,7 @@ li {
     cursor: pointer;
 }
 
-#video img{
+#video img {
     width: 60px;
     height: 60px;
 }
@@ -1122,11 +1122,11 @@ li {
 }
 
 #partnerModal .modal-header,
-#mentorModal .modal-header{
+#mentorModal .modal-header {
     height: 60px;
 }
 
-textarea{
+textarea {
     resize: none;
 }
 
@@ -1435,6 +1435,7 @@ textarea{
     #header .container-fluid {
         padding: 0 !important;
     }
+
     #header .navbar-brand {
         padding: 6px 0px 0px 21px;
     }
@@ -1554,6 +1555,7 @@ textarea{
         top: 6px;
         right: 8px;
     }
+
     #header .dropdown select {
         width: 100%;
         padding: 10px;
@@ -1722,7 +1724,7 @@ textarea{
 
     /*video clip start*/
 
-    #video{
+    #video {
         margin-top: 50px;
         margin-bottom: 50px;
     }
@@ -1732,7 +1734,7 @@ textarea{
         height: 431px;
     }
 
-    #video img{
+    #video img {
         width: 122px;
         height: 122px;
     }
@@ -1896,10 +1898,11 @@ textarea{
     /*register.attention end*/
 
     /*resources start*/
-    #resources{
+    #resources {
         margin-top: 50px;
         margin-bottom: 50px;
     }
+
     #resources .resources_block {
         width: 742px;
         height: 359px;
@@ -2187,7 +2190,7 @@ textarea{
     }
 
     #partnerModal .custom-modal-dialog,
-    #mentorModal .custom-modal-dialog{
+    #mentorModal .custom-modal-dialog {
         height: 723px;
     }
 
@@ -2463,6 +2466,7 @@ textarea{
         align-items: center;
         justify-content: space-between;
     }
+
     #header .navbar-expand-lg .navbar-nav {
         display: flex;
     }
@@ -2486,6 +2490,7 @@ textarea{
         height: 90px;
         flex-shrink: 0;
     }
+
     #header .offcanvas.offcanvas-end {
         display: flex;
     }
@@ -2526,6 +2531,7 @@ textarea{
     #header .horizontal-line1 {
         display: none;
     }
+
     #header .dropdown select {
         width: 100%;
         padding: 10px;
@@ -2757,10 +2763,11 @@ textarea{
     /*about the program end*/
 
     /*video clip start*/
-    #video{
+    #video {
         margin-top: 90px;
         margin-bottom: 90px;
     }
+
     /*video clip end*/
 
     /*we provide start*/
@@ -2920,7 +2927,7 @@ textarea{
     /*register.attention end*/
 
     /*resources start*/
-    #resources{
+    #resources {
         margin-top: 90px;
         margin-bottom: 90px;
     }
@@ -3371,8 +3378,6 @@ textarea{
         width: 1024px;
         height: 429px;
         margin: 0 auto;
-
-
     }
 
     #footer .text {
@@ -3431,7 +3436,6 @@ textarea{
         font-family: Montserrat;
         font-size: 24px;
         font-weight: 500;
-
     }
 
     #footer .text_special_2 {
@@ -3441,7 +3445,6 @@ textarea{
         font-family: Montserrat;
         font-size: 24px;
         font-weight: 500;
-
     }
 
     #footer .text_special_3 {
@@ -3451,7 +3454,6 @@ textarea{
         font-family: Montserrat;
         font-size: 24px;
         font-weight: 500;
-
     }
 
     #footer .special {
@@ -3482,7 +3484,7 @@ textarea{
         margin-right: 15px;
     }
 
-    #footer .logo{
+    #footer .logo {
         padding-top: 20px;
 
     }
@@ -3520,7 +3522,6 @@ textarea{
         font-family: Montserrat;
         font-size: 18px;
         font-weight: 500;
-
     }
 
     #footer .contacts_1 {
@@ -3554,7 +3555,6 @@ textarea{
 
     #footer .contacts_1 {
         display: block;
-
     }
 
     #footer .list_contacts {
@@ -3584,6 +3584,6 @@ textarea{
         margin-bottom: 0rem;
     }
 
-   
+
     /*footer end*/
 }
