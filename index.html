@@ -190,7 +190,9 @@
 
         <!--"video clip start"-->
         <section id="video" class="d-flex justify-content-center">
-            <div class="videoPreview"></div>
+            <div class="videoPreview">
+                <img src="src/images/video/play-button.png" alt="play-button" id="play-button">
+            </div>
         </section>
         <!--"video clip end"-->
 
@@ -302,7 +304,7 @@
                         <b>Нам потрібен надійний партнер</b>
                     </p>
                     <button class="content-button" data-bs-target="#modalWithModals"
-                        data-bs-toggle="modal">Приєднатись</button>
+                        data-bs-toggle="modal">Приєднатися</button>
                 </div>
             </div>
             <div class="join-our-team">
@@ -314,7 +316,7 @@
                         <b>Ласкаво просимо.</b>
                     </p>
                 </div>
-                <button class="content-button" data-bs-target="#modalWithModals" data-bs-toggle="modal">Приєднатись до
+                <button class="content-button" data-bs-target="#modalWithModals" data-bs-toggle="modal">Приєднатися до
                     команди</button>
             </div>
         </section>
@@ -448,7 +450,7 @@
                     <div class="programing card col-md-6">
                         <p class="card-title">Програмування</p>
                         <img src="src/images/specialty/programing.png" alt="coding">
-                        <p class="card-descripton">Для тих, хто <b>відчуває</b> і собі <b>талант</b> розробника
+                        <p class="card-descripton">Для тих, хто <b>відчуває</b> в собі <b>талант</b> розробника
                             <b>оригінальних</b>, цікавих і
                             повноцінних <b>проєктів</b> та хоче чесно - своїм інтелектом гарно заробляти!
                         </p>
@@ -460,7 +462,7 @@
                         <img src="src/images/specialty/testing.png" alt="coding">
                         <p class="card-descripton">Робота тестувальника нагадує слідчого або <b>детектива</b>: він йде
                             по “гарячих слідах” програміста і <b>вишукує помилки</b> (на професійній мові
-                            <b>“баги”</b>). У хідйдуть різні <b>дедуктивні методи</b> і прийоми. Ти експериментатор –
+                            <b>“баги”</b>). У хід йдуть різні <b>дедуктивні методи</b> і прийоми. Ти експериментатор –
                             тобі сюди.
                         </p>
                         <p class="label-button">Тривалість – 7 міс.<br>Інтенсивна подготовка – 3 міс.</p>
@@ -609,6 +611,56 @@
                     </div>
                     <div class="form-item">
                         <label for="co-operation" class="form-label">Яка співпраця цікавить вас?</label>
+                        <textarea name="co-operation" name="about" cols="30" rows="1" class="form-input"></textarea>
+                    </div>
+                    <p class="required-tip">Обов’язкові поля</p>
+                </form>
+                <div class="modal-footer">
+                    <button class="btn btn-primary form-button button-submit" type="submit" data-bs-toggle="modal"
+                        data-bs-target="#thanxModal">Надіслати</button>
+                    <img class="form-seeds" src="src/images/forms/seeds.png" alt="small-seeds">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="mentorModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered justify-content-center">
+            <div class="modal-content custom-modal-dialog">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalToggleLabel">Анкета <b>викладачів/менторів</b> програми</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="#" id="form-mentor" class="modal-body">
+                    <div class="form-item required-input">
+                        <input type="text" name="first_name" id="name_mentor" placeholder=""
+                            class="form-input required name">
+                        <label for="name_partner" class="required-label">Ім'я</label>
+                    </div>
+                    <div class="form-item">
+                        <input type="text" name="last_name" id="last-name-mentor" placeholder=""
+                            class="form-input required surname">
+                            <label for="last-name-partner" class="required-label">Призвіще</label>
+                    </div>
+                    <div class="form-item">
+                        <input type="email" name="email" placeholder="" class="form-input required email">
+                        <label for="email" class="required-label">Email</label>
+                    </div>
+                    <div class="form-item">
+                        <input type="tel" name="phone" id="phone-mentor" placeholder=""
+                            class="form-input required phone">
+                            <label for="phone" class="required-label">Мобільний телефон</label>
+                    </div>
+                    <div class="form-item">
+                        <input class="city" type="text" name="address2"
+                            placeholder="В якому місті чи країні бажаєте представляти інтереси проекту?" class="form-input">
+                    </div>
+                    <div class="form-item">
+                        <label for="about_us" class="form-label">Звідки отримали інформацію про нас?</label>
+                        <textarea name="about_us" name="about" cols="30" rows="1" class="form-input"></textarea>
+                    </div>
+                    <div class="form-item">
+                        <label for="co-operation" class="form-label">В чому маєте експертизу?</label>
                         <textarea name="co-operation" name="about" cols="30" rows="1" class="form-input"></textarea>
                     </div>
                     <p class="required-tip">Обов’язкові поля</p>

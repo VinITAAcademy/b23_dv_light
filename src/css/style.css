@@ -329,6 +329,11 @@ li {
 /*main block end*/
 
 /*registration start*/
+#registration{
+    display: flex;
+    justify-content: center;
+}
+
 #registration .container_rg {
     width: 375px;
     height: 218px;
@@ -403,8 +408,8 @@ li {
 
 /*video clip start*/
 #video {
-    padding-top: 24px;
-    padding-bottom: 12px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 #video .videoPreview {
@@ -413,10 +418,18 @@ li {
     background-clip: content-box;
     width: 100%;
     height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #video .videoPreview:hover {
     cursor: pointer;
+}
+
+#video img{
+    width: 60px;
+    height: 60px;
 }
 
 /*video clip end*/
@@ -573,7 +586,8 @@ li {
 
 /*resources start*/
 #resources {
-    padding-top: 24px;
+    margin-top: 33px;
+    margin-bottom: 11px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1084,25 +1098,39 @@ li {
     padding-left: 4px;
 }
 
-#partnerModal .custom-modal-dialog {
-    height: 603px;
+#partnerModal .custom-modal-dialog,
+#mentorModal .custom-modal-dialog {
+    height: 633px;
 }
 
-#partnerModal .modal-body {
+#partnerModal .modal-body,
+#mentorModal .modal-body {
     height: 500px;
 }
 
-#partnerModal textarea {
+#partnerModal textarea,
+#mentorModal textarea {
     height: 38px;
 }
 
-#partnerModal .modal-footer {
-    height: 90px;
+#partnerModal .modal-footer,
+#mentorModal .modal-footer {
+    height: 110px;
 }
 
-#partnerModal .form-seeds {
+#partnerModal .form-seeds,
+#mentorModal .form-seeds {
     margin-bottom: 82px;
     margin-right: 40px;
+}
+
+#partnerModal .modal-header,
+#mentorModal .modal-header{
+    height: 60px;
+}
+
+textarea{
+    resize: none;
 }
 
 .thanx-modal {
@@ -1441,7 +1469,7 @@ li {
 
     /*main-block start*/
     #mainblock .mainblock {
-        background: url(../images/Main_block/main-background-tablet.png);
+        background: url(../images/Main_block/main-background-tablet.png) no-repeat cover;
         height: 1024px;
         position: relative;
     }
@@ -1549,9 +1577,20 @@ li {
     /*about the program end*/
 
     /*video clip start*/
+
+    #video{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
     #video .videoPreview {
         max-width: 762px;
         height: 431px;
+    }
+
+    #video img{
+        width: 122px;
+        height: 122px;
     }
 
     /*video clip end*/
@@ -1713,6 +1752,10 @@ li {
     /*register.attention end*/
 
     /*resources start*/
+    #resources{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
     #resources .resources_block {
         width: 742px;
         height: 359px;
@@ -1999,15 +2042,18 @@ li {
         margin-right: 80px;
     }
 
-    #partnerModal .custom-modal-dialog {
+    #partnerModal .custom-modal-dialog,
+    #mentorModal .custom-modal-dialog{
         height: 723px;
     }
 
-    #partnerModal .modal-body {
+    #partnerModal .modal-body,
+    #mentorModal .modal-body {
         height: 560px;
     }
 
-    #partnerModal .modal-header {
+    #partnerModal .modal-header,
+    #mentorModal .modal-header {
         height: 73px;
     }
 
@@ -2234,7 +2280,7 @@ li {
 
     /*main-block start*/
     #mainblock .mainblock {
-        background: url(../images/Main_block/main-background.png);
+        background: url(../images/Main_block/main-background.webp);
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
@@ -2401,6 +2447,10 @@ li {
     /*about the program end*/
 
     /*video clip start*/
+    #video{
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
     /*video clip end*/
 
     /*we provide start*/
@@ -2560,6 +2610,11 @@ li {
     /*register.attention end*/
 
     /*resources start*/
+    #resources{
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+
     #resources .resources_block {
         width: 904px;
         height: 428px;
@@ -2703,6 +2758,7 @@ li {
         display: flex;
         align-items: center;
         height: 347px;
+        margin-left: 16px;
     }
 
     #partners .show-all {
@@ -2721,6 +2777,7 @@ li {
 
     #partners .our_partners .all_icons .row {
         margin: 0;
+        margin-left: 15px;
         padding: 0;
     }
 
@@ -2910,28 +2967,34 @@ li {
         margin-right: 109px;
     }
 
-    #partnerModal .modal-header {
+    #partnerModal .modal-header,
+    #mentorModal .modal-header {
         height: 103px;
     }
 
-    #partnerModal .custom-modal-dialog {
+    #partnerModal .custom-modal-dialog,
+    #mentorModal .custom-modal-dialog {
         height: 1156px;
     }
 
-    #partnerModal textarea {
+    #partnerModal textarea,
+    #mentorModal textarea {
         height: 163px;
     }
 
-    #partnerModal .form-seeds {
+    #partnerModal .form-seeds,
+    #mentorModal .form-seeds {
         margin-bottom: 120px;
         margin-right: 135px;
     }
 
-    #partnerModal .form-button {
+    #partnerModal .form-button,
+    #mentorModal .form-button {
         margin: 0;
     }
 
-    #partnerModal .modal-body {
+    #partnerModal .modal-body,
+    #mentorModal .modal-body {
         height: 1100px;
     }
 
