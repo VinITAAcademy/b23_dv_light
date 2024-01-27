@@ -56,16 +56,28 @@ li {
     border: none;
 }
 
-#header .navbar .bg-body-tertiary .navbar-expand-lg {
+#header .navbar.bg-body-tertiary.navbar-expand-lg {
     display: flex;
     flex-wrap: inherit;
     align-items: center;
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+#header .container-fluid {
+    z-index: 2;
+}
+
+#header .navbar-brand {
+    padding: 7px 0px 0px 9px;
 }
 
 #header .foto-swallow {
-    display: none;
+    display: flex;
+    width: 24px;
 }
 
 #header .offcanvas.offcanvas-end {
@@ -76,28 +88,18 @@ li {
 
 #header .offcanvas-body {
     position: relative;
-    left: 37px;
-    top: 53px;
+    left: 8px;
+    top: 45px;
+    margin: 0 auto;
 }
 
 #header .navbar-toggler {
     border: none;
+    padding-top: 7px;
 }
 
 #header .navbar-toggler-icon {
-    width: 16px;
-}
-
-#header p {
-    color: var(--color-blue-2);
-    text-align: center;
-    font-family: Uuntu;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    border-right: 1px solid var(--color-blue-2);
-    margin: 0 11px;
+    width: 17px;
 }
 
 #header .burder-menu-text1 {
@@ -116,23 +118,28 @@ li {
     padding-left: 44px;
 }
 
-h3 {
+#header h3 {
+    position: relative;
     color: var(--color-blue-1);
     font-family: "Yeseva One";
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    justify-content: center;
+    right: 30px;
+    bottom: 3px;
 }
 
-h2 {
+#header h2 {
+    position: relative;
     color: var(--color-blue-1);
     font-family: Pacifico;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin: 17px 3px 0px 0px;
+    right: 11px;
 }
 
 #header .nav-link {
@@ -164,51 +171,85 @@ h2 {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 42px;
-    right: 35px;
+    bottom: 22px;
 }
 
 #header .horizontal-line1 {
-    top: 22px;
-    width: 348px;
+    top: 9px;
+    width: 311px;
     height: 2px;
-    left: -48px;
     position: relative;
     background-color: var(--color-blue-1);
     border-bottom: 1px solid var(--color-yellow);
+    margin: 0 auto;
 }
 
 #header .horizontal-line {
     top: 55px;
-    left: 29px;
-    width: 322px;
+    width: 311px;
     height: 2px;
     position: relative;
     background-color: var(--color-blue-1);
     border-bottom: 1px solid var(--color-yellow);
+    margin: 0 auto;
 }
 
-#header .icon-UA {
-    display: none;
+#header .dropdown select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
-#header .flag-UA {
-    display: none;
+#header .dropdown select:focus {
+    outline: none;
 }
 
-#header .icon-flag {
+#header .language-dropdown {
     position: relative;
-    top: -2px;
-    left: -6px;
+    display: inline-block;
 }
 
-#header .flagUA {
-    width: 18px;
-    height: 13px;
+#header .dropdown-btn-burger {
+    padding: 4px 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#header .dropdown-btn-burger img {
+    width: 46px;
+    margin-left: 4px;
+}
+
+#header .dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+#header .dropdown-content img {
+    display: block;
+    width: 46px;
+    height: auto;
+    margin-left: 11px;
+}
+
+#header .language-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#header .dropdown-btn {
+    display: none;
+}
+
+#header .iconc {
+    margin-left: 2px;
 }
 
 #header .btn-close {
-    margin: 0 5px;
+    margin: 8px 5px;
+    padding: 9px;
 }
 
 /*header end*/
@@ -223,6 +264,7 @@ h2 {
     margin: 0 auto;
     position: relative;
     margin-bottom: 46px;
+    z-index: 1;
 }
 
 #mainblock .flag-backgroud {
@@ -249,11 +291,9 @@ h2 {
 }
 
 #mainblock .social-list__item img {
-
     display: block;
     width: 20px;
     height: 20px;
-
 }
 
 #mainblock .work_it-pic {
@@ -313,7 +353,6 @@ h2 {
 }
 
 #registration .register-btn {
-
     width: 230px;
     height: 55px;
     padding: 15px 10px;
@@ -366,8 +405,8 @@ h2 {
 
 /*video clip start*/
 #video {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 #video .videoPreview {
@@ -376,10 +415,18 @@ h2 {
     background-clip: content-box;
     width: 100%;
     height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #video .videoPreview:hover {
     cursor: pointer;
+}
+
+#video img{
+    width: 60px;
+    height: 60px;
 }
 
 /*video clip end*/
@@ -431,11 +478,113 @@ h2 {
 /*tape with photos end*/
 
 /*register.attention start*/
+#registerAttencion .block_registerAttencion {
+    display: flex;
+    width: 100%;
+    height: 344px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#registerAttencion .block_register {
+    display: flex;
+    width: 100%;
+    height: 152px;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+#registerAttencion .block_text {
+    display: flex;
+    width: 277.20px;
+    height: 24px;
+    padding-top: 16px;
+}
+
+#registerAttencion .block_text p {
+    color: #05003E;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#registerAttencion .button {
+    background-color: var(--color-blue-2);
+    width: 230px;
+    height: 55px;
+    flex-shrink: 0;
+    color: var(--color-white);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    align-items: center;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 15px 10px;
+}
+
+#registerAttencion .block_attencion {
+    display: flex;
+    width: 100%;
+    height: 192px;
+    flex-direction: column;
+    background-image: url(../images/to_register/coat_of_arms_background.jpg);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#registerAttencion .block_attencion_text1 {
+    display: flex;
+    padding-top: 78px;
+    padding-right: 9px;
+}
+
+#registerAttencion .block_attencion_text1 h2 {
+    width: 79px;
+    height: 23px;
+    flex-shrink: 0;
+    color: var(--color-blue-1);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#registerAttencion .block_attencion_text2 {
+    display: flex;
+    width: 324px;
+    margin: 0 0 62px 0;
+    flex-shrink: 0;
+}
+
+#registerAttencion .block_attencion_text2 p {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 7px;
+    text-align: center;
+}
+
 /*register.attention end*/
 
 /*resources start*/
 #resources {
-    padding-top: 24px;
+    margin-top: 33px;
+    margin-bottom: 11px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -614,9 +763,514 @@ h2 {
 /*our partners end*/
 
 /*reference to financial support start*/
+#financialSupport .qr {
+    background-image: url(../images/reference_to_financial_support/background.jpg);
+    height: 150px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+#financialSupport .text {
+    padding-top: 8px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+
+
+}
+
+#financialSupport .link {
+    padding-top: 8px;
+    text-align: center;
+    color: #FDD817;
+    font-family: Montserrat;
+    font-size: 18px;
+
+}
+
 /*reference to financial support end*/
 
 /*specialty start*/
+#specialty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: "Montserrat";
+    margin-bottom: 25px;
+}
+
+#specialty .specialty-tittle {
+    background: url(../images/specialty/boreder_icons_mobile.png) no-repeat;
+    width: 320px;
+    height: 263px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    position: relative;
+}
+
+#specialty .specialty-tittle .title {
+    position: absolute;
+    top: -4%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-blue-1);
+}
+
+#specialty .specialty-tittle .description {
+    width: 216px;
+    font-size: 12px;
+    margin: 0;
+    margin-top: 14px;
+}
+
+#specialty .specialty-tittle .professions {
+    width: 176px;
+    height: 116px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#specialty .cards {
+    display: flex;
+    flex-direction: column;
+}
+
+#specialty .cards .card {
+    background: url(../images/specialty/card_background_mobile.png) no-repeat;
+    background-size: cover;
+    width: 320px;
+    height: 441px;
+    display: flex;
+    align-items: center;
+    border: none;
+    text-align: center;
+    margin-top: 25px;
+    position: relative;
+}
+
+#specialty .cards .programing {
+    margin-top: 14px;
+}
+
+#specialty .cards p {
+    margin-top: 17px;
+    margin-bottom: 0;
+}
+
+#specialty .cards button {
+    width: 230px;
+    height: 55px;
+    color: var(--color-white);
+    background-color: var(--color-blue-1);
+    position: absolute;
+    bottom: 0;
+    margin: 15px 0px;
+}
+
+#specialty .cards .label-button {
+    font-size: 12px;
+    width: 189px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 84px;
+}
+
+#specialty .cards .card-title {
+    font-size: 18px;
+}
+
+#specialty .cards img {
+    margin-top: 32px;
+    width: 100px;
+    height: 100px;
+}
+
+#specialty .cards .card .card-descripton {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    width: 236px;
+}
+
+#specialty .cards .programing .card-descripton {
+    margin-top: 48px;
+}
+
+#specialty .cards .testing .card-descripton {
+    margin-top: 17px;
+}
+
+#specialty .cards .Web .card-descripton {
+    margin-top: 38px;
+}
+
+#specialty .cards .PM .card-descripton {
+    margin-top: 35px;
+}
+
+#specialty .cards .row {
+    max-width: 320px;
+}
+
+.custom-modal-dialog {
+    border-top: 10px solid var(--color-blue-1);
+    border-radius: 20px;
+    width: 365px;
+    height: 895px;
+}
+
+.modal-header {
+    height: 33px;
+    border: none;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-header h2 {
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.modal-header h2 b {
+    font-weight: 500;
+}
+
+.modal-header .btn-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    margin-right: 17px;
+    margin-top: 10px;
+    background: url(../images/forms/closeMobile.png) no-repeat;
+    background-size: contain;
+    padding: 0;
+    border-radius: 0;
+}
+
+.modal-body {
+    padding: 0 37px;
+    flex: 0;
+}
+
+.modal-body h3 {
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.modal-body .form-item .error {
+    border: 1px solid var(--color-burgundy);
+}
+
+.modal-body .form-item input,
+.modal-body .form-item textarea {
+    font-size: 14px;
+    width: 301px;
+    height: 30px;
+    border-radius: 0.671px;
+    border: 0.503px solid var(--color-grey-2);
+    margin-bottom: 19px;
+    padding-left: 7px;
+}
+
+.modal-body .form-item textarea {
+    height: 75px;
+}
+
+.modal-body .form-item .city {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+}
+
+.formCheck {
+    font-size: 12px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+
+}
+
+.formCheck label {
+    margin-left: 7px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.form-label {
+    font-size: 12px;
+}
+
+.form-button {
+    width: 231px;
+    height: 55px;
+    background-color: var(--color-blue-2);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.form-button:disabled {
+    background-color: var(--color-grey-1);
+    border: none;
+}
+
+.form-seeds {
+    width: 35px;
+    height: 32px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 89px;
+    margin-right: 52px;
+}
+
+.form-item {
+    position: relative;
+}
+
+.form-item .required-label {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.form-item input:placeholder-shown+.required-label {
+    opacity: 1;
+}
+
+.form-item input:focus+label {
+    opacity: 0;
+}
+
+.required-tip {
+    font-size: 10px;
+    font-family: "Montserrat";
+    color: var(--color-blue-1);
+    margin: 0;
+}
+
+.required-tip::before {
+    font-size: 16px;
+    content: '*';
+    color: var(--color-red);
+    margin-right: 4px;
+}
+
+.form-item input::placeholder {
+    color: var(--color-grey-1);
+}
+
+.form-item .required-label {
+    color: var(--color-grey-1);
+    position: absolute;
+    top: 34%;
+    left: 8px;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.form-item .required-label::after {
+    content: '*';
+    color: var(--color-red);
+    padding-left: 4px;
+}
+
+#partnerModal .custom-modal-dialog,
+#mentorModal .custom-modal-dialog {
+    height: 633px;
+}
+
+#partnerModal .modal-body,
+#mentorModal .modal-body {
+    height: 500px;
+}
+
+#partnerModal textarea,
+#mentorModal textarea {
+    height: 38px;
+}
+
+#partnerModal .modal-footer,
+#mentorModal .modal-footer {
+    height: 110px;
+}
+
+#partnerModal .form-seeds,
+#mentorModal .form-seeds {
+    margin-bottom: 82px;
+    margin-right: 40px;
+}
+
+#partnerModal .modal-header,
+#mentorModal .modal-header{
+    height: 60px;
+}
+
+textarea{
+    resize: none;
+}
+
+.thanx-modal {
+    width: 340px;
+    height: 320px;
+    border-radius: 20px;
+}
+
+.thanx-modal .modal-header {
+    background: url(../images/forms/thanxBackgroundMobile.jpg) no-repeat;
+    height: 85px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.thanx-modal .modal-body {
+    padding: 0;
+    text-align: center;
+}
+
+.thanx-modal .modal-body p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.thanx-modal .modal-body .title {
+    font-size: 22px;
+    font-family: "Yeseva One";
+    font-weight: 400;
+    margin-top: 21px;
+}
+
+.thanx-modal .modal-footer {
+    margin-top: 35px;
+    display: flex;
+    align-items: end;
+}
+
+.thanx-modal .modal-footer button {
+    width: 230px;
+    height: 55px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.modals {
+    width: 375px;
+    height: 460px;
+    position: relative;
+}
+
+#modalWithModals .modal-dialog {
+    max-width: none;
+    margin: var(--bs-modal-margin);
+}
+
+#modalWithModals .container-fluid {
+    height: 460px;
+}
+
+#modalWithModals .modals-header {
+    height: 108px;
+}
+
+#modalWithModals .modals-header .offcanvas-title {
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 10px;
+    border-right: 1px solid var(--color-blue-2);
+    font-weight: 300;
+    font-family: Ubuntu;
+    color: var(--color-blue-2);
+}
+
+#modalWithModals .modals-header .icon-flag {
+    position: absolute;
+    margin-top: 15.79px;
+    margin-left: 42.78px;
+}
+
+#modalWithModals .modals-header .burder-menu-text1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#modalWithModals .modals-header .btn-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 14px;
+    margin-right: 10px;
+}
+
+#modalWithModals .modals-header .flag-line,
+#modalWithModals .modals-menu .flag-line {
+    margin-left: 24px;
+    width: 311px;
+    height: 2px;
+    background-color: var(--color-blue-1);
+    border-bottom: 1px solid var(--color-yellow);
+}
+
+#modalWithModals .modals-menu .flag-line {
+    position: absolute;
+    bottom: 0;
+}
+
+#modalWithModals .modals-menu {
+    position: relative;
+    height: 288px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#modalWithModals .modals-menu h4 {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text, #05003E);
+}
+
+#modalWithModals .modals-menu .form-button {
+    width: 250px;
+    height: 55px;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+}
+
+#modalWithModals .modals-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 67px;
+}
+
+#modalWithModals .modals-footer .icon-link {
+    gap: 20px;
+}
+
 /*specialty end*/
 
 /*footer start*/
@@ -775,16 +1429,20 @@ h2 {
         flex-wrap: inherit;
         align-items: center;
         justify-content: space-between;
+        padding: 0px;
     }
 
     #header .container-fluid {
         padding: 0 !important;
     }
+    #header .navbar-brand {
+        padding: 6px 0px 0px 21px;
+    }
 
     #header .foto-swallow {
         display: flex;
-        width: 75px;
-        height: 50px;
+        width: 100px;
+        height: 100px;
         flex-shrink: 0;
         padding: 0;
     }
@@ -801,22 +1459,10 @@ h2 {
         top: 95px;
     }
 
-    #header p {
-        color: var(--color-blue-2);
-        text-align: center;
-        font-family: Ubuntu;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-        border-right: 1px solid var(--color-blue-2);
-        margin: 20px 0px 0px 19px;
-    }
-
     #header .navbar-toggler-icon {
-        width: 75px;
-        height: 50px;
-        margin: 20px;
+        width: 100px;
+        height: 100px;
+        margin: 4px 7px 0px 0px
     }
 
     #header .burder-menu-text1 {
@@ -840,16 +1486,19 @@ h2 {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        justify-content: center;
+        right: 14px;
     }
 
     h2 {
+        position: relative;
         color: var(--color-blue-1);
         font-family: Pacifico;
         font-size: 40px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        right: 20px;
+        top: 2px;
     }
 
     #header .nav-link {
@@ -859,8 +1508,7 @@ h2 {
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        padding: 0px 5px;
-        margin: 14px 0px;
+        padding: 20px 0px;
     }
 
     #header.offcanvas-header {
@@ -869,9 +1517,8 @@ h2 {
     }
 
     #header .horizontal-line {
-        top: 91px;
-        left: 30px;
-        width: 708px;
+        top: 105px;
+        width: 688px;
         height: 3.3px;
         position: relative;
         background-color: var(--color-blue-1);
@@ -879,10 +1526,10 @@ h2 {
     }
 
     #header .horizontal-line1 {
-        top: 22px;
-        width: 708px;
+        top: -4px;
+        width: 688px;
         height: 3.1px;
-        left: 6px;
+        right: 5px;
         position: relative;
         background-color: var(--color-blue-1);
         border-bottom: 1.9px solid var(--color-yellow);
@@ -894,28 +1541,68 @@ h2 {
         border-radius: 20px;
     }
 
-    #header .icon-flag {
-        position: relative;
-        top: 9px;
-        left: 4px;
-    }
-
-    #header .flagUA {
-        width: 20px;
-        height: 18px;
-    }
-
     #header .iconc {
         width: 50px;
         height: 50px;
+        margin-left: 14px;
     }
 
     #header .icon-link {
         display: flex;
         justify-content: center;
         position: relative;
-        top: 70px;
-        right: 35px;
+        top: 6px;
+        right: 8px;
+    }
+    #header .dropdown select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    #header .dropdown select:focus {
+        outline: none;
+    }
+
+    #header .language-dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    #header .dropdown-btn-burger {
+        padding: 4px 6px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    #header .dropdown-btn-burger img {
+        width: 68px;
+        margin-left: 13px;
+        margin-top: 5px;
+    }
+
+    #header .dropdown-content {
+        display: none;
+        position: absolute;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    #header .dropdown-content img {
+        display: block;
+        width: 70px;
+        height: auto;
+        margin-left: 17px;
+    }
+
+    #header .language-dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    #header .btn-close {
+        margin: 0px 11px 0px 0px;
+        padding: 16px;
     }
 
     /*header end*/
@@ -983,7 +1670,6 @@ h2 {
     }
 
     #registration .register-btn {
-
         width: 416px;
         height: 89px;
         padding: 10px;
@@ -1035,9 +1721,20 @@ h2 {
     /*about the program end*/
 
     /*video clip start*/
+
+    #video{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
     #video .videoPreview {
         max-width: 762px;
         height: 431px;
+    }
+
+    #video img{
+        width: 122px;
+        height: 122px;
     }
 
     /*video clip end*/
@@ -1090,7 +1787,119 @@ h2 {
 
     /*tape with photos end*/
 
+    /*register.attention start*/
+    #registerAttencion .block_registerAttencion {
+        display: flex;
+        width: 100%;
+        height: 820px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #registerAttencion .block_register {
+        display: flex;
+        width: 100%;
+        height: 337px;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 21px;
+    }
+
+    #registerAttencion .block_text {
+        display: flex;
+        width: 483px;
+        height: 96px;
+        padding-top: 16px;
+    }
+
+    #registerAttencion .block_text>p {
+        color: var(--color-blue-1);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    #registerAttencion .button {
+        display: flex;
+        background-color: var(--color-blue-2);
+        width: 416px;
+        height: 89px;
+        flex-shrink: 0;
+        color: var(--color-white);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        align-items: center;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 15px 10px;
+        justify-content: center;
+    }
+
+    #registerAttencion .block_attencion {
+        display: flex;
+        width: 100%;
+        height: 483px;
+        flex-direction: column;
+        background-image: url(../images/to_register/coat_of_arms_background1.jpg);
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #registerAttencion .block_attencion_text1 {
+        display: flex;
+        padding-right: 25px;
+        padding-bottom: 90px;
+    }
+
+    #registerAttencion .block_attencion_text1 h2 {
+        width: 196px;
+        height: 61px;
+        flex-shrink: 0;
+        color: var(--color-blue-1);
+        font-family: Montserrat;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    #registerAttencion .block_attencion_text2 {
+        display: flex;
+        width: 728px;
+        height: 266px;
+        margin-bottom: 61px;
+        flex-shrink: 0;
+    }
+
+    #registerAttencion .block_attencion_text2>p {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        margin-top: 7px;
+        text-align: center;
+    }
+
+    /*register.attention end*/
+
     /*resources start*/
+    #resources{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
     #resources .resources_block {
         width: 742px;
         height: 359px;
@@ -1227,9 +2036,249 @@ h2 {
     /*our partners end*/
 
     /*reference to financial support start*/
+    #financialSupport .qr {
+        background-image: url(../images/reference_to_financial_support/qr_tablet.png);
+        background-position: center;
+        background-size: cover;
+        height: 220px;
+
+    }
+
+    #financialSupport .text {
+        text-align: left;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 500;
+        padding-top: 32px;
+        padding-left: 22px;
+        padding-right: 175px;
+
+
+    }
+
+    #financialSupport .link {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+
+    }
+
     /*reference to financial support end*/
 
     /*specialty start*/
+    #specialty {
+        margin-top: 78px;
+    }
+
+    #specialty .cards .programing,
+    #specialty .cards .testing {
+        margin-top: 54px;
+    }
+
+    #specialty .cards .testing .card-descripton {
+        margin-top: 23px;
+        font-size: 11px;
+    }
+
+    #specialty .cards .row {
+        max-width: 700px;
+        justify-content: space-evenly !important;
+        align-items: center;
+    }
+
+    #specialty .specialty-tittle {
+        background: url(../images/specialty/border_icons_tablet.png) no-repeat;
+        background-size: cover;
+        width: 706px;
+        height: 893px;
+    }
+
+    #specialty .specialty-tittle .title {
+        font-size: 45px;
+        font-weight: 400;
+        left: 48%;
+    }
+
+    #specialty .specialty-tittle .description {
+        font-size: 28px;
+        font-weight: 400;
+        width: 492px;
+        height: 68px;
+        margin-top: 57px;
+    }
+
+    #specialty .specialty-tittle .professions {
+        font-size: 48px;
+        font-weight: 700;
+        width: 506px;
+        height: 384px;
+        margin-top: 92px;
+    }
+
+    #specialty .specialty-tittle .description-bottomn {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 120px;
+    }
+
+    .custom-modal-dialog {
+        width: 677px;
+        height: 960px;
+    }
+
+    .modal-body .form-item input,
+    .modal-body .form-item textarea,
+    .modal-body .form-item .city {
+        font-size: 16px;
+        width: 517px;
+        height: 38px;
+        margin-bottom: 20px;
+    }
+
+    .modal-body .form-item textarea {
+        height: 40px;
+    }
+
+    .formCheck {
+        font-size: 14px;
+    }
+
+    .modal .modal-dialog .modal-content .modal-header h2 {
+        font-size: 24px;
+    }
+
+    .modal-header {
+        height: 37x;
+    }
+
+    .modal-header .btn-close {
+        margin-right: 17px;
+        margin-top: 10px;
+        background: url(../images/forms/closeTablet.png) no-repeat cover;
+    }
+
+    .modal-body {
+        padding: 0 80px;
+    }
+
+    .form-label {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .modal-body h3 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .form-button {
+        width: 271px;
+        height: 53px;
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    .form-seeds {
+        width: 72px;
+        height: 65px;
+        margin-bottom: 50px;
+        margin-right: 80px;
+    }
+
+    #partnerModal .custom-modal-dialog,
+    #mentorModal .custom-modal-dialog{
+        height: 723px;
+    }
+
+    #partnerModal .modal-body,
+    #mentorModal .modal-body {
+        height: 560px;
+    }
+
+    #partnerModal .modal-header,
+    #mentorModal .modal-header {
+        height: 73px;
+    }
+
+    .required-tip {
+        font-size: 14px;
+    }
+
+    .required-tip::before {
+        font-size: 20px;
+        margin-right: 4px;
+    }
+
+    .thanx-modal {
+        width: 370px;
+        height: 330px;
+    }
+
+    .thanx-modal .modal-header {
+        background: url(../images/forms/thanxBackgroundDesktop.png) no-repeat;
+        height: 94px;
+    }
+
+    .thanx-modal .modal-body .title {
+        font-size: 24px;
+        margin-top: 39px;
+    }
+
+    .thanx-modal .modal-footer button {
+        width: 270px;
+        height: 53px;
+        font-size: 22px;
+    }
+
+    .thanx-modal .modal-footer {
+        margin-top: 20px;
+    }
+
+
+    .modals {
+        max-width: 768px;
+        width: 768px;
+        height: 695px;
+    }
+
+    #modalWithModals .modals-header {
+        height: 174px;
+    }
+
+    #modalWithModals .modals-header .flag-line,
+    #modalWithModals .modals-menu .flag-line {
+        margin-left: 22px;
+        width: 668px;
+        height: 3px;
+
+    }
+
+    #modalWithModals .modals-menu {
+        height: 414px;
+        gap: 19px;
+    }
+
+    #modalWithModals .modals-menu h4 {
+        font-size: 36px;
+    }
+
+    #modalWithModals .modals-menu .form-button {
+        width: 352px;
+        height: 75px;
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    #modalWithModals .modals-footer .icon-link img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #modalWithModals .modals-footer {
+        height: 104px;
+    }
+
     /*specialty end*/
 
     /*footer start*/
@@ -1414,32 +2463,30 @@ h2 {
         align-items: center;
         justify-content: space-between;
     }
+    #header .navbar-expand-lg .navbar-nav {
+        display: flex;
+    }
 
     #header .container-fluid {
+        width: 99%;
         padding: 0 !important;
     }
 
     #header .offcanvas-body {
-        top: -17px;
-        left: 4px;
+        top: 5px;
+        left: 114px;
     }
 
     #header .foto-swallow {
         display: flex;
+        position: relative;
+        top: 34px;
+        left: 32px;
         width: 90px;
         height: 90px;
         flex-shrink: 0;
-        padding: 0;
     }
-
-    #header .icon-UA {
-        display: flex;
-        text-decoration: none !important;
-        font-size: 18px;
-        padding: 5px;
-    }
-
-    #header .flag-UA {
+    #header .offcanvas.offcanvas-end {
         display: flex;
     }
 
@@ -1461,14 +2508,15 @@ h2 {
 
     #header .nav-link {
         display: flex;
+        position: relative;
+        left: 8px;
         color: var(--color-blue-1);
         font-family: Montserrat;
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        padding: 0 5px;
-        margin: 7px 0px;
+        margin: 0px 8px 11px 26px;
     }
 
     #header .horizontal-line {
@@ -1478,12 +2526,62 @@ h2 {
     #header .horizontal-line1 {
         display: none;
     }
+    #header .dropdown select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
 
-    #header ul .navbar-nav .justify-content-end .flex-grow-1 .pe-3 {
+    #header .dropdown select:focus {
+        outline: none;
+    }
+
+    #header .dropdown-btn {
+        display: flex;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    #header .dropdown-btn img {
+        width: 38px;
+        position: relative;
+        top: 18px;
+        left: 37px;
+    }
+
+    #header .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 41px;
+        left: 46px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    #header .dropdown-content img {
+        display: block;
+        width: 38px;
+        height: auto;
+        margin-top: 7px;
+        margin-left: 11px;
+    }
+
+    #header .language-dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    #header .language-dropdown-burger {
+        display: none;
+    }
+
+
+    /*#header ul .navbar-nav .justify-content-end .flex-grow-1 .pe-3 {
         position: relative;
         bottom: 112px;
         right: 8px;
-    }
+    }*/
 }
 
 /*header end*/
@@ -1498,14 +2596,14 @@ h2 {
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 100vh;
+        height: 133vh;
         margin: 0 auto;
         position: relative;
     }
 
     #mainblock .flag-backgroud {
         position: absolute;
-        bottom: -60px;
+        bottom: 18px;
         width: calc(100% - 60px);
         z-index: 1;
     }
@@ -1530,7 +2628,9 @@ h2 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 14px;
+        position: relative;
+        top: 98px;
+        gap: 13px;
     }
 
     #mainblock .work_it-pic {
@@ -1558,6 +2658,9 @@ h2 {
         font-style: normal;
         font-weight: 400;
         line-height: 1.74;
+        position: relative;
+        left: 22px;
+        bottom: 4px;
     }
 
     #mainblock .text_2 {
@@ -1589,7 +2692,6 @@ h2 {
     }
 
     #registration .register-btn {
-
         width: 414px;
         height: 90px;
         padding: 15px 0px;
@@ -1655,6 +2757,10 @@ h2 {
     /*about the program end*/
 
     /*video clip start*/
+    #video{
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
     /*video clip end*/
 
     /*we provide start*/
@@ -1705,9 +2811,120 @@ h2 {
     /*tape with photos end*/
 
     /*register.attention start*/
+    #registerAttencion .block_registerAttencion {
+        display: flex;
+        width: 1024px;
+        height: 586px;
+        justify-content: center;
+        flex-direction: row;
+        background-image: url(../images/to_register/coat_of_arms_background2.jpg);
+        margin: 0 auto;
+    }
+
+    #registerAttencion .block_register {
+        display: flex;
+        width: 444px;
+        height: 560px;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 21px;
+    }
+
+    #registerAttencion .block_text {
+        display: flex;
+        width: 360px;
+        height: 71px;
+        margin: 218px 0 0 27px;
+    }
+
+    #registerAttencion .block_text p {
+        color: var(--color-blue-1);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.36px;
+    }
+
+    #registerAttencion .button {
+        display: flex;
+        background-color: var(--color-blue-2);
+        width: 270px;
+        height: 53px;
+        flex-shrink: 0;
+        color: var(--color-white);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        align-items: center;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 25px 85px;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 120px;
+    }
+
+    #registerAttencion .block_attencion {
+        display: flex;
+        width: 100%;
+        height: 483px;
+        flex-direction: column;
+        background-image: none;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #registerAttencion .block_attencion_text1 {
+        display: flex;
+        padding: 160px 0 60px 58px;
+    }
+
+    #registerAttencion .block_attencion_text1 h2 {
+        width: 145px;
+        flex-shrink: 0;
+        color: var(--color-blue-1);
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    #registerAttencion .block_attencion_text2 {
+        display: flex;
+        width: 517px;
+        flex-shrink: 0;
+        margin: 9px 0 0 46px;
+    }
+
+    #registerAttencion .block_attencion_text2 p {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 180%;
+        text-align: center;
+    }
+
     /*register.attention end*/
 
     /*resources start*/
+    #resources{
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+
     #resources .resources_block {
         width: 904px;
         height: 428px;
@@ -1851,6 +3068,7 @@ h2 {
         display: flex;
         align-items: center;
         height: 347px;
+        margin-left: 16px;
     }
 
     #partners .show-all {
@@ -1869,6 +3087,7 @@ h2 {
 
     #partners .our_partners .all_icons .row {
         margin: 0;
+        margin-left: 15px;
         padding: 0;
     }
 
@@ -1887,9 +3106,263 @@ h2 {
     /*our partners end*/
 
     /*reference to financial support start*/
+    #financialSupport .qr {
+        background-image: url(../images/reference_to_financial_support/qr_desktop.png);
+        height: 228px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 1060px;
+        margin: 0px auto 0px auto;
+    }
+
+    #financialSupport .text {
+        padding-top: 12px;
+        padding-right: 520px;
+        padding-left: 33px;
+        font-family: Raleway;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 500;
+        line-height: normal;
+
+    }
+
+    #financialSupport .link {
+        font-size: 32px;
+        font-weight: 350;
+        padding-top: 8px;
+        padding-left: 27px;
+        text-align: left;
+    }
+
     /*reference to financial support end*/
 
     /*specialty start*/
+    #specialty {
+        margin-top: 108px;
+    }
+
+    #specialty .cards .row {
+        max-width: 904px;
+    }
+
+    #specialty .cards .card {
+        background: url(../images/specialty/card_background_desktop.png) no-repeat;
+        background-size: cover;
+        width: 422px;
+        height: 684px;
+    }
+
+    #specialty .cards img {
+        width: 160px;
+        height: 160px;
+    }
+
+    #specialty .cards .card-title {
+        font-size: 30px;
+    }
+
+    #specialty .cards .card .card-descripton {
+        font-size: 18px;
+        width: 310px;
+    }
+
+    #specialty .cards .label-button {
+        font-size: 16px;
+        width: 258px;
+        margin-bottom: 143px;
+    }
+
+    #specialty .cards button {
+        width: 380px;
+        height: 90px;
+        font-size: 32px;
+    }
+
+    #specialty .specialty-tittle {
+        background: url(../images/specialty/border_icons_desktop.png) no-repeat;
+        background-size: contain;
+        margin-left: 26px;
+        width: 927px;
+        height: 696px;
+    }
+
+    #specialty .specialty-tittle .title {
+        font-size: 42px;
+        font-style: italic;
+        font-weight: 600;
+    }
+
+    #specialty .specialty-tittle .description {
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 29px;
+    }
+
+    #specialty .specialty-tittle .professions {
+        font-size: 40px;
+        font-weight: 500;
+        margin-top: 15px;
+        line-height: 200%;
+    }
+
+    #specialty .specialty-tittle .description-bottomn {
+        margin-bottom: 29px;
+    }
+
+    .custom-modal-dialog {
+        width: 960px;
+        height: 1488px;
+    }
+
+    .modal-body .form-item input,
+    .modal-body .form-item textarea,
+    .modal-body .form-item .city {
+        font-size: 16px;
+        width: 680px;
+        height: 57px;
+        margin-bottom: 24px;
+    }
+
+    .modal-body .form-item textarea {
+        height: 163px;
+    }
+
+    .formCheck {
+        font-size: 18px;
+    }
+
+    .modal .modal-dialog .modal-content .modal-header h2 {
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    .modal-header {
+        height: 146px;
+    }
+
+    .modal-header .btn-close {
+        width: 50px;
+        height: 50px;
+        margin-right: 17px;
+        margin-top: 10px;
+        background: url(../images/forms/closeDescktop.png) no-repeat;
+    }
+
+    .modal-body {
+        padding: 0 140px;
+    }
+
+    .form-label {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .modal-body h3 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .form-button {
+        width: 433px;
+        height: 70px;
+        font-size: 32px;
+        margin-top: 50px;
+    }
+
+    .form-seeds {
+        width: 105px;
+        height: 96px;
+        margin-bottom: 182px;
+        margin-right: 109px;
+    }
+
+    #partnerModal .modal-header,
+    #mentorModal .modal-header {
+        height: 103px;
+    }
+
+    #partnerModal .custom-modal-dialog,
+    #mentorModal .custom-modal-dialog {
+        height: 1156px;
+    }
+
+    #partnerModal textarea,
+    #mentorModal textarea {
+        height: 163px;
+    }
+
+    #partnerModal .form-seeds,
+    #mentorModal .form-seeds {
+        margin-bottom: 120px;
+        margin-right: 135px;
+    }
+
+    #partnerModal .form-button,
+    #mentorModal .form-button {
+        margin: 0;
+    }
+
+    #partnerModal .modal-body,
+    #mentorModal .modal-body {
+        height: 1100px;
+    }
+
+    .required-tip {
+        font-size: 16px;
+    }
+
+    .required-tip::before {
+        font-size: 24px;
+        margin-right: 4px;
+    }
+
+    .thanx-modal {
+        width: 960px;
+        height: 634px;
+        border-radius: 20px;
+        position: relative;
+    }
+
+    .thanx-modal .modal-header {
+        background: url(../images/forms/thanxBackgroundDesktop.png) no-repeat;
+        height: 446px;
+    }
+
+    .thanx-modal .modal-body {
+        position: absolute;
+        top: 0;
+        margin-top: 223px;
+        margin-left: 83px;
+    }
+
+    .thanx-modal .modal-body p {
+        font-size: 40px;
+    }
+
+    .thanx-modal .modal-body .title {
+        font-size: 64px;
+        margin-top: 0;
+    }
+
+    .modal {
+        --bs-modal-width: 960px;
+    }
+
+    .thanx-modal .modal-footer {
+        margin-top: 68px;
+    }
+
+    .thanx-modal .modal-footer button {
+        width: 300px;
+        height: 70px;
+        font-size: 30px;
+    }
+
+    #modalWithModals .modals-menu {
+        gap: 22px;
+    }
+
     /*specialty end*/
 
     /*footer start*/
