@@ -955,14 +955,16 @@ li {
     position: absolute;
     right: 0;
     top: 0;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     margin-right: 17px;
     margin-top: 10px;
     background: url(../images/forms/closeMobile.png) no-repeat;
     background-size: contain;
     padding: 0;
     border-radius: 0;
+    padding: 0;
+    opacity: 1;
 }
 
 .modal-body {
@@ -1180,6 +1182,7 @@ textarea{
     width: 375px;
     height: 460px;
     position: relative;
+    border-radius: 20px;
 }
 
 #modalWithModals .modal-dialog {
@@ -1212,8 +1215,15 @@ textarea{
 }
 
 #modalWithModals .modals-header .burder-menu-text1 {
+    font-family: "Pacifico";
+    font-size: 22px;
     text-align: center;
     margin-top: 20px;
+}
+
+#modalWithModals .modals-header .burger-menu-text2{
+    font-family: "Yeseva one";
+    font-size: 32px;
 }
 
 #modalWithModals .modals-header .btn-close {
@@ -1222,11 +1232,13 @@ textarea{
     top: 0;
     margin-top: 14px;
     margin-right: 10px;
+    opacity: 1;
+    padding: 0;
 }
 
 #modalWithModals .modals-header .flag-line,
 #modalWithModals .modals-menu .flag-line {
-    margin-left: 24px;
+    margin: 0 auto;
     width: 311px;
     height: 2px;
     background-color: var(--color-blue-1);
@@ -1274,6 +1286,47 @@ textarea{
     gap: 20px;
 }
 
+#modalWithModals .language-dropdown {
+    position: absolute;
+}
+
+#modalWithModals .dropdown-btn-burger {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#modalWithModals .dropdown-btn-burger img {
+    width: 57px;
+    height: 17px;
+    margin-left: 10px;
+    margin-top: 17px;
+}
+
+#modalWithModals .dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+#modalWithModals .dropdown-content img {
+    display: block;
+    width: 57px;
+    height: 17px;
+    margin-left: 10px;
+}
+
+#modalWithModals .dropdown-btn-burger:hover + .dropdown-content {
+    display: block;
+}
+
+#modalWithModals .dropdown-btn {
+    display: none;
+}
+
+#modalWithModals .iconc {
+    margin-left: 2px;
+}
 /*specialty end*/
 
 /*footer start*/
@@ -2011,7 +2064,12 @@ textarea{
     .modal-header .btn-close {
         margin-right: 17px;
         margin-top: 10px;
-        background: url(../images/forms/closeTablet.png) no-repeat cover;
+        background: url(../images/forms/closeTablet.png);
+        background-repeat: repeat;
+        background-size: contain;
+        width: 30px;
+        height: 30px;
+        padding: 0;
     }
 
     .modal-body {
@@ -2104,10 +2162,8 @@ textarea{
 
     #modalWithModals .modals-header .flag-line,
     #modalWithModals .modals-menu .flag-line {
-        margin-left: 22px;
         width: 668px;
         height: 3px;
-
     }
 
     #modalWithModals .modals-menu {
@@ -2133,6 +2189,29 @@ textarea{
 
     #modalWithModals .modals-footer {
         height: 104px;
+    }
+
+    #modalWithModals .modals-header .btn-close{
+        width: 30px;
+        height: 30px;
+    }
+
+    #modalWithModals .modals-header .burder-menu-text1{
+        margin: 0 auto;
+        width: 382px;
+    }
+
+    #modalWithModals .dropdown-btn-burger img {
+        width: 71px;
+        height: 31px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    
+    #modalWithModals .dropdown-content img {
+        width: 71px;
+        height: 31px;
+        margin-left: 20px;
     }
 
     /*specialty end*/
