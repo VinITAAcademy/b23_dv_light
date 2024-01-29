@@ -387,7 +387,9 @@ li {
 }
 
 #aboutTheProgram .text {
-    background-color: var(--color-grey-2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/about_the_program/background.jpg);
 }
 
 #aboutTheProgram .text-title {
@@ -395,11 +397,9 @@ li {
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: 135%;
     text-align: center;
     color: var(--color-blue-1);
-    width: 328px;
-    height: 156px;
     padding: 29px 24px 24px 23px;
     margin: 0 auto;
 }
@@ -1553,10 +1553,6 @@ textarea{
         display: none;
     }
 
-    #aboutTheProgram .tex {
-        background-color: var(--color-grey-2);
-    }
-
     #aboutTheProgram .foto {
         background-image: url(../images/about_the_program/photo_about_the_program.png);
         background-size: cover;
@@ -1574,7 +1570,7 @@ textarea{
         line-height: 180%;
         width: 728px;
         height: 358px;
-        padding: 50px 20px;
+        padding: 50px 0px;
         margin: 0 auto;
     }
 
@@ -2407,13 +2403,15 @@ textarea{
     #aboutTheProgram .main_container {
         width: 100%;
         height: 448px;
-        background-color: var(--color-grey-2);
+        background-image: url(../images/about_the_program/background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     #aboutTheProgram .foto {
         float: right;
         background-image: url(../images/about_the_program/photo_about_the_program_1.png);
-        padding: 14%;
+        padding: 14.8%;
         margin: 69.57px 48px 77.48px 0;
     }
 
@@ -2442,7 +2440,7 @@ textarea{
         line-height: 43.2px;
         width: 564px;
         height: 343px;
-        margin: 61px 51px 44px 57px;
+        margin: 49px 32px 42px 72px;
         padding: 0;
     }
 
