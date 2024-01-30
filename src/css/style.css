@@ -639,7 +639,6 @@ li {
     text-align: center;
     flex-direction: column;
     font-family: "Montserrat";
-    padding-top: 11px;
     padding-bottom: 10px;
 }
 
@@ -1842,7 +1841,6 @@ textarea{
 
     /*become our partner start*/
     #becomeOurPartner {
-        padding-top: 65px;
         padding-bottom: 37px;
     }
 
@@ -2733,7 +2731,6 @@ textarea{
 
     /*become our partner start*/
     #becomeOurPartner {
-        padding-top: 90px;
         padding-bottom: 0;
         flex-direction: row;
         justify-content: center;
@@ -2849,7 +2846,8 @@ textarea{
         display: flex;
         align-items: center;
         height: 347px;
-        margin-left: 16px;
+        width: 890px;
+        margin: 0 auto;
     }
 
     #partners .show-all {
