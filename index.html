@@ -25,7 +25,7 @@
 
     <div id="wrapper">
         <!--"header start"-->
-       <header id="header">
+        <header id="header">
             <nav class="navbar bg-body-tertiary navbar-expand-lg">
                 <div class="container-fluid">
                     <img class="foto-swallow" src="./src/images/header/swallow.svg" alt="Swallow" /></a>
@@ -175,7 +175,7 @@
                     <div class="foto"></div>
                     <div class="text">
                         <p class="text-title">
-                            Ми <b>створюємо</b> і постійно <b>розвиваємо</b>  <br>всесвітню  мережу </br>
+                            Ми <b>створюємо</b> і постійно <b>розвиваємо</b> <br>всесвітню мережу </br>
                             офлайн/онлайн
                             <b>центрів підтримки українців</b>, які постраждали від наслідків
                             війни, розв’язаної росією проти України і українського народу.
@@ -236,12 +236,14 @@
                 </div>
                 <div class="block_attencion">
                     <div class="block_attencion_text1">
-                        <h2>УВАГА!!!</h2>
+                        <h2>Увага!!!</h2>
                     </div>
                     <div class="block_attencion_text2">
                         <p>Обов’якова <b>умова</b> участі в програмі - <b>повернення в свої міста,</b> села в
-                            Україні <b>після перемоги </b> українського народу над російськими загарбниками! <br>
-                            Ми робили, робимо і будемо робити все можливе,щоб кожен українець мав змогу
+                            Україні <b>після перемоги </b><br class="hyphenation"> українського народу над російськими
+                            загарбниками! <br>
+                            Ми робили, робимо і будемо робити все можливе,щоб <br class="hyphenation"> кожен українець
+                            мав змогу
                             <b>повернутись</b> до гідного життя в рідній <b>Батьківщині</b>!
                         </p>
                     </div>
@@ -513,7 +515,7 @@
                     <div class="form-item">
                         <input type="text" name="last_name" id="last-name-participant" placeholder=""
                             class="form-input required surname">
-                            <label for="last-name-participant" class="required-label">Призвіще</label>
+                        <label for="last-name-participant" class="required-label">Призвіще</label>
                     </div>
                     <div class="form-item">
                         <input type="email" name="email" placeholder="" class="form-input required email">
@@ -590,7 +592,7 @@
                     <div class="form-item">
                         <input type="text" name="last_name" id="last-name-partner" placeholder=""
                             class="form-input required surname">
-                            <label for="last-name-partner" class="required-label">Призвіще</label>
+                        <label for="last-name-partner" class="required-label">Призвіще</label>
                     </div>
                     <div class="form-item">
                         <input type="email" name="email" placeholder="" class="form-input required email">
@@ -599,11 +601,12 @@
                     <div class="form-item">
                         <input type="tel" name="phone" id="phone-partner" placeholder=""
                             class="form-input required phone">
-                            <label for="phone" class="required-label">Мобільний телефон</label>
+                        <label for="phone" class="required-label">Мобільний телефон</label>
                     </div>
                     <div class="form-item">
                         <input class="city" type="text" name="address2"
-                            placeholder="В якому місті чи країні бажаєте представляти інтереси проекту?" class="form-input">
+                            placeholder="В якому місті чи країні бажаєте представляти інтереси проекту?"
+                            class="form-input">
                     </div>
                     <div class="form-item">
                         <label for="about_us" class="form-label">Звідки отримали інформацію про нас?</label>
@@ -623,8 +626,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="mentorModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-        tabindex="-1">
+    <div class="modal fade" id="mentorModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered justify-content-center">
             <div class="modal-content custom-modal-dialog">
                 <div class="modal-header">
@@ -640,7 +642,7 @@
                     <div class="form-item">
                         <input type="text" name="last_name" id="last-name-mentor" placeholder=""
                             class="form-input required surname">
-                            <label for="last-name-partner" class="required-label">Призвіще</label>
+                        <label for="last-name-partner" class="required-label">Призвіще</label>
                     </div>
                     <div class="form-item">
                         <input type="email" name="email" placeholder="" class="form-input required email">
@@ -649,11 +651,12 @@
                     <div class="form-item">
                         <input type="tel" name="phone" id="phone-mentor" placeholder=""
                             class="form-input required phone">
-                            <label for="phone" class="required-label">Мобільний телефон</label>
+                        <label for="phone" class="required-label">Мобільний телефон</label>
                     </div>
                     <div class="form-item">
                         <input class="city" type="text" name="address2"
-                            placeholder="В якому місті чи країні бажаєте представляти інтереси проекту?" class="form-input">
+                            placeholder="В якому місті чи країні бажаєте представляти інтереси проекту?"
+                            class="form-input">
                     </div>
                     <div class="form-item">
                         <label for="about_us" class="form-label">Звідки отримали інформацію про нас?</label>
@@ -694,14 +697,23 @@
         <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
             <div class="modal-content modals">
                 <div class="modals-header">
-                    <p class="offcanvas-title" id="offcanvasNavbarLabel">UA </p>
-                    <div class="icon-flag">
-                        <img class="flagUA" src="./src/images/header/flag.svg" alt="" />
+                    <div class="language-dropdown">
+                        <div class="dropdown-btn-burger">
+                            <img src="./src/images/header/dropdown_burger_menu_ua.svg" alt="Ukraine">
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="#">
+                                <img src="./src/images/header/dropdown_burger_menu_ua.svg" alt="Ukraine">
+                            </a>
+                            <a href="#">
+                                <img src="./src/images/header/dpodown_burger_menu_en.svg" alt="English">
+                            </a>
+                        </div>
                     </div>
                     <div class="burder-menu-text1">
                         <h2>Доброго вечора, ми з</h2>
                         <div class="burger-menu-text2">
-                            <h3>України</h3>
+                            <h3>України!</h3>
                         </div>
                     </div>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
