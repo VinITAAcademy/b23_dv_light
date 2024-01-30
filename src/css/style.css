@@ -1042,16 +1042,6 @@ li {
     border: none;
 }
 
-.form-seeds {
-    width: 35px;
-    height: 32px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin-bottom: 89px;
-    margin-right: 52px;
-}
-
 .form-item {
     position: relative;
 }
@@ -1059,13 +1049,18 @@ li {
 .form-item .required-label {
     transition: opacity 0.3s ease-in-out;
     opacity: 0;
+    cursor: text;
 }
 
-.form-item input:placeholder-shown+.required-label {
+.form-item input:placeholder-shown+.required-label,
+.form-item input:focus+.required-label,
+.form-item:active .required-label, 
+.form-item:focus-within .required-label { 
     opacity: 1;
 }
 
-.form-item input:focus+label {
+.form-item input:focus+.required-label,
+.form-item:active .required-label {
     opacity: 0;
 }
 
