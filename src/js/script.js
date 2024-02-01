@@ -51,9 +51,12 @@ window.addEventListener("DOMContentLoaded", function () {
       input.addEventListener("blur", function () {
         formValidate(form, buttons);
       });
+<<<<<<< HEAD
     });
     $("#phone-participant, #phone-partner, #phone-mentor").on("mouseenter", function () {
         $(this).attr("placeholder", "");
+=======
+>>>>>>> 51cc16d7f0862628d07344b83521827f5c81b561
     });
 
     form.addEventListener(eventType, function (event) {
