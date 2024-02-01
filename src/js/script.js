@@ -52,6 +52,9 @@ window.addEventListener("DOMContentLoaded", function () {
         formValidate(form, buttons);
       });
     });
+    $("#phone-participant, #phone-partner, #phone-mentor").on("mouseenter", function () {
+        $(this).attr("placeholder", "");
+    });
 
     form.addEventListener(eventType, function (event) {
       event.preventDefault();

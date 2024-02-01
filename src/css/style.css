@@ -351,6 +351,11 @@ li {
 /*main block end*/
 
 /*registration start*/
+#registration{
+    display: flex;
+    justify-content: center;
+}
+
 #registration .container_rg {
   width: 375px;
   height: 218px;
@@ -404,21 +409,21 @@ li {
 }
 
 #aboutTheProgram .text {
-  background-color: var(--color-grey-2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/about_the_program/background.jpg);
 }
 
 #aboutTheProgram .text-title {
-  font-family: Montserrat;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-align: center;
-  color: var(--color-blue-1);
-  width: 328px;
-  height: 156px;
-  padding: 29px 24px 24px 23px;
-  margin: 0 auto;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 135%;
+    text-align: center;
+    color: var(--color-blue-1);
+    padding: 29px 24px 24px 23px;
+    margin: 0 auto;
 }
 
 /*about the program end*/
@@ -565,9 +570,8 @@ li {
 }
 
 #registerAttencion .block_attencion_text1 {
-  display: flex;
-  padding-top: 78px;
-  padding-right: 9px;
+    display: flex;
+    padding-top: 78px;
 }
 
 #registerAttencion .block_attencion_text1 h2 {
@@ -590,13 +594,16 @@ li {
 }
 
 #registerAttencion .block_attencion_text2 p {
-  font-family: Montserrat;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-top: 7px;
-  text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 4px;
+    text-align: center;
+}
+#registerAttencion .hyphenation{
+    display: none;
 }
 
 /*register.attention end*/
@@ -966,17 +973,19 @@ li {
 }
 
 .modal-header .btn-close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 10px;
-  height: 10px;
-  margin-right: 17px;
-  margin-top: 10px;
-  background: url(../images/forms/closeMobile.png) no-repeat;
-  background-size: contain;
-  padding: 0;
-  border-radius: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    margin-right: 17px;
+    margin-top: 10px;
+    background: url(../images/forms/closeMobile.png) no-repeat;
+    background-size: contain;
+    padding: 0;
+    border-radius: 0;
+    padding: 0;
+    opacity: 1;
 }
 
 .modal-body {
@@ -1051,31 +1060,26 @@ li {
   border: none;
 }
 
-.form-seeds {
-  width: 35px;
-  height: 32px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  margin-bottom: 89px;
-  margin-right: 52px;
-}
-
 .form-item {
   position: relative;
 }
 
 .form-item .required-label {
-  transition: opacity 0.3s ease-in-out;
-  opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    cursor: text;
 }
 
-.form-item input:placeholder-shown+.required-label {
-  opacity: 1;
+.form-item input:placeholder-shown+.required-label,
+.form-item input:focus+.required-label,
+.form-item:active .required-label, 
+.form-item:focus-within .required-label { 
+    opacity: 1;
 }
 
-.form-item input:focus+label {
-  opacity: 0;
+.form-item input:focus+.required-label,
+.form-item:active .required-label {
+    opacity: 0;
 }
 
 .required-tip {
@@ -1190,9 +1194,10 @@ textarea {
 }
 
 .modals {
-  width: 375px;
-  height: 460px;
-  position: relative;
+    width: 375px;
+    height: 460px;
+    position: relative;
+    border-radius: 20px;
 }
 
 #modalWithModals .modal-dialog {
@@ -1225,25 +1230,34 @@ textarea {
 }
 
 #modalWithModals .modals-header .burder-menu-text1 {
-  text-align: center;
-  margin-top: 20px;
+    font-family: "Pacifico";
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#modalWithModals .modals-header .burger-menu-text2{
+    font-family: "Yeseva one";
+    font-size: 32px;
 }
 
 #modalWithModals .modals-header .btn-close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-top: 14px;
-  margin-right: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 14px;
+    margin-right: 10px;
+    opacity: 1;
+    padding: 0;
 }
 
 #modalWithModals .modals-header .flag-line,
 #modalWithModals .modals-menu .flag-line {
-  margin-left: 24px;
-  width: 311px;
-  height: 2px;
-  background-color: var(--color-blue-1);
-  border-bottom: 1px solid var(--color-yellow);
+    margin: 0 auto;
+    width: 311px;
+    height: 2px;
+    background-color: var(--color-blue-1);
+    border-bottom: 1px solid var(--color-yellow);
 }
 
 #modalWithModals .modals-menu .flag-line {
@@ -1287,6 +1301,47 @@ textarea {
   gap: 20px;
 }
 
+#modalWithModals .language-dropdown {
+    position: absolute;
+}
+
+#modalWithModals .dropdown-btn-burger {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#modalWithModals .dropdown-btn-burger img {
+    width: 57px;
+    height: 17px;
+    margin-left: 10px;
+    margin-top: 17px;
+}
+
+#modalWithModals .dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+#modalWithModals .dropdown-content img {
+    display: block;
+    width: 57px;
+    height: 17px;
+    margin-left: 10px;
+}
+
+#modalWithModals .dropdown-btn-burger:hover + .dropdown-content {
+    display: block;
+}
+
+#modalWithModals .dropdown-btn {
+    display: none;
+}
+
+#modalWithModals .iconc {
+    margin-left: 2px;
+}
 /*specialty end*/
 
 /*footer start*/
@@ -1526,27 +1581,27 @@ textarea {
     left: 41px;
   }
 
-  h3 {
-    color: var(--color-blue-1);
-    font-family: "Yeseva One";
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    right: 14px;
-  }
+    #header h3 {
+        color: var(--color-blue-1);
+        font-family: "Yeseva One";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        right: 14px;
+    }
 
-  h2 {
-    position: relative;
-    color: var(--color-blue-1);
-    font-family: Pacifico;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    right: 20px;
-    top: 2px;
-  }
+    #header h2 {
+        position: relative;
+        color: var(--color-blue-1);
+        font-family: Pacifico;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        right: 20px;
+        top: 2px;
+    }
 
   #header .nav-link {
     color: var(--color-blue-1);
@@ -1655,12 +1710,12 @@ textarea {
 
   /*header end*/
 
-  /*main-block start*/
-  #mainblock .mainblock {
-    background: url(../images/Main_block/main-background-tablet.png);
-    height: 1024px;
-    position: relative;
-  }
+    /*main-block start*/
+    #mainblock .mainblock {
+        background: url(../images/Main_block/main-background-tablet.png) no-repeat cover;
+        height: 1024px;
+        position: relative;
+    }
 
   #mainblock .flag-backgroud {
     width: 100%;
@@ -1737,13 +1792,9 @@ textarea {
     padding: 0;
   }
 
-  #aboutTheProgram br {
-    display: none;
-  }
-
-  #aboutTheProgram .tex {
-    background-color: var(--color-grey-2);
-  }
+    #aboutTheProgram br {
+        display: none;
+    }
 
   #aboutTheProgram .foto {
     background-image: url(../images/about_the_program/photo_about_the_program.png);
@@ -1752,19 +1803,19 @@ textarea {
     margin: 0;
   }
 
-  #aboutTheProgram .text-title {
-    color: var(--color-blue-1);
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 180%;
-    width: 728px;
-    height: 358px;
-    padding: 50px 20px;
-    margin: 0 auto;
-  }
+    #aboutTheProgram .text-title {
+        color: var(--color-blue-1);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 180%;
+        width: 728px;
+        height: 358px;
+        padding: 50px 0px;
+        margin: 0 auto;
+    }
 
   /*about the program end*/
 
@@ -1871,26 +1922,27 @@ textarea {
     line-height: normal;
   }
 
-  #registerAttencion .button {
-    display: flex;
-    background-color: var(--color-blue-2);
-    width: 416px;
-    height: 89px;
-    flex-shrink: 0;
-    color: var(--color-white);
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    align-items: center;
-    border: none;
-    text-decoration: none;
-    cursor: pointer;
-    padding: 15px 10px;
-    justify-content: center;
-  }
+    #registerAttencion .button {
+        display: flex;
+        background-color: var(--color-blue-2);
+        width: 416px;
+        height: 89px;
+        flex-shrink: 0;
+        color: var(--color-white);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        align-items: center;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 15px 10px;
+        justify-content: center;
+        border-radius: 5px;
+    }
 
   #registerAttencion .block_attencion {
     display: flex;
@@ -1905,11 +1957,10 @@ textarea {
     align-items: center;
   }
 
-  #registerAttencion .block_attencion_text1 {
-    display: flex;
-    padding-right: 25px;
-    padding-bottom: 90px;
-  }
+    #registerAttencion .block_attencion_text1 {
+        display: flex;
+        margin: 0px 0px 82px 4px;
+    }
 
   #registerAttencion .block_attencion_text1 h2 {
     width: 196px;
@@ -1931,15 +1982,19 @@ textarea {
     flex-shrink: 0;
   }
 
-  #registerAttencion .block_attencion_text2>p {
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    margin-top: 7px;
-    text-align: center;
-  }
+    #registerAttencion .block_attencion_text2>p {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 180%;
+        margin-top: 4px;
+        text-align: center;
+        padding: 0px 5px;
+    }
+    #registerAttencion .hyphenation{
+        display: flex;
+    }    
 
   /*register.attention end*/
 
@@ -2197,11 +2252,16 @@ textarea {
     height: 37x;
   }
 
-  .modal-header .btn-close {
-    margin-right: 17px;
-    margin-top: 10px;
-    background: url(../images/forms/closeTablet.png) no-repeat cover;
-  }
+    .modal-header .btn-close {
+        margin-right: 17px;
+        margin-top: 10px;
+        background: url(../images/forms/closeTablet.png);
+        background-repeat: repeat;
+        background-size: contain;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+    }
 
   .modal-body {
     padding: 0 80px;
@@ -2290,12 +2350,11 @@ textarea {
     height: 174px;
   }
 
-  #modalWithModals .modals-header .flag-line,
-  #modalWithModals .modals-menu .flag-line {
-    margin-left: 22px;
-    width: 668px;
-    height: 3px;
-  }
+    #modalWithModals .modals-header .flag-line,
+    #modalWithModals .modals-menu .flag-line {
+        width: 668px;
+        height: 3px;
+    }
 
   #modalWithModals .modals-menu {
     height: 414px;
@@ -2318,9 +2377,32 @@ textarea {
     height: 50px;
   }
 
-  #modalWithModals .modals-footer {
-    height: 104px;
-  }
+    #modalWithModals .modals-footer {
+        height: 104px;
+    }
+
+    #modalWithModals .modals-header .btn-close{
+        width: 30px;
+        height: 30px;
+    }
+
+    #modalWithModals .modals-header .burder-menu-text1{
+        margin: 0 auto;
+        width: 382px;
+    }
+
+    #modalWithModals .dropdown-btn-burger img {
+        width: 71px;
+        height: 31px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    
+    #modalWithModals .dropdown-content img {
+        width: 71px;
+        height: 31px;
+        margin-left: 20px;
+    }
 
   /*specialty end*/
 
@@ -2515,16 +2597,16 @@ textarea {
 
 @media (min-width: 1024px) {
 
-  /*main-block start*/
-  #mainblock .mainblock {
-    background: url(../images/Main_block/main-background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 133vh;
-    margin: 0 auto;
-    position: relative;
-  }
+    /*main-block start*/
+    #mainblock .mainblock {
+        background: url(../images/Main_block/main-background.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 133vh;
+        margin: 0 auto;
+        position: relative;
+    }
 
   #mainblock .flag-backgroud {
     position: absolute;
@@ -2636,19 +2718,21 @@ textarea {
 
   /*registration end*/
 
-  /*about the program start*/
-  #aboutTheProgram .main_container {
-    width: 100%;
-    height: 448px;
-    background-color: var(--color-grey-2);
-  }
+    /*about the program start*/
+    #aboutTheProgram .main_container {
+        width: 100%;
+        height: 448px;
+        background-image: url(../images/about_the_program/background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
-  #aboutTheProgram .foto {
-    float: right;
-    background-image: url(../images/about_the_program/photo_about_the_program_1.png);
-    padding: 14%;
-    margin: 69.57px 48px 77.48px 0;
-  }
+    #aboutTheProgram .foto {
+        float: right;
+        background-image: url(../images/about_the_program/photo_about_the_program_1.png);
+        padding: 14.8%;
+        margin: 69.57px 48px 77.48px 0;
+    }
 
   #aboutTheProgram .main_unit {
     max-width: 1024px;
@@ -2664,20 +2748,20 @@ textarea {
     background-color: var(--color-grey-2);
   }
 
-  #aboutTheProgram .text-title {
-    float: left;
-    color: var(--color-blue-1);
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 43.2px;
-    width: 564px;
-    height: 343px;
-    margin: 61px 51px 44px 57px;
-    padding: 0;
-  }
+    #aboutTheProgram .text-title {
+        float: left;
+        color: var(--color-blue-1);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 43.2px;
+        width: 564px;
+        height: 343px;
+        margin: 49px 32px 42px 72px;
+        padding: 0;
+    }
 
   /*about the program end*/
 
@@ -2757,12 +2841,14 @@ textarea {
     padding-bottom: 21px;
   }
 
-  #registerAttencion .block_text {
-    display: flex;
-    width: 360px;
-    height: 71px;
-    margin: 218px 0 0 27px;
-  }
+    #registerAttencion .block_text {
+        display: flex;
+        width: 360px;
+        height: 71px;
+        position: relative;
+        top: 122px;
+        left: 34px;
+    }
 
   #registerAttencion .block_text p {
     color: var(--color-blue-1);
@@ -2775,28 +2861,26 @@ textarea {
     letter-spacing: -0.36px;
   }
 
-  #registerAttencion .button {
-    display: flex;
-    background-color: var(--color-blue-2);
-    width: 270px;
-    height: 53px;
-    flex-shrink: 0;
-    color: var(--color-white);
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    align-items: center;
-    border: none;
-    text-decoration: none;
-    cursor: pointer;
-    padding: 25px 85px;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 120px;
-  }
+    #registerAttencion .button {
+        position: relative;
+        background-color: var(--color-blue-2);
+        width: 270px;
+        height: 53px;
+        flex-shrink: 0;
+        color: var(--color-white);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-decoration: none;
+        cursor: pointer;
+        gap: 10px;
+        bottom: 46px;
+        left: 34px;
+        border-radius: 5px;
+    }
 
   #registerAttencion .block_attencion {
     display: flex;
@@ -2811,10 +2895,11 @@ textarea {
     align-items: center;
   }
 
-  #registerAttencion .block_attencion_text1 {
-    display: flex;
-    padding: 160px 0 60px 58px;
-  }
+    #registerAttencion .block_attencion_text1 {
+        display: flex;
+        padding: 154px 0px 49px 121px;
+        margin: 0px;
+    }
 
   #registerAttencion .block_attencion_text1 h2 {
     width: 145px;
@@ -2834,16 +2919,21 @@ textarea {
     margin: 9px 0 0 46px;
   }
 
-  #registerAttencion .block_attencion_text2 p {
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 180%;
-    text-align: center;
-  }
+    #registerAttencion .block_attencion_text2 p {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 180%;
+        text-align: center;
+        position: relative;
+        left: 32px;
+    }
 
-  /*register.attention end*/
+    #registerAttencion .hyphenation{
+        display: none;
+    }
+    /*register.attention end*/
 
   /*resources start*/
   #resources {
