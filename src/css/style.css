@@ -56,6 +56,28 @@ li {
     border: none;
 }
 
+.scroll-to-top-btn {
+    position: fixed;
+    display: flex;
+    bottom: 20px;
+    right: 40px;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+
+    padding: 10px 15px;
+    border: none;
+    background-color: #2162b4;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.tablet-only {
+    display: none;
+}
+
 #header .navbar.bg-body-tertiary.navbar-expand-lg {
     display: flex;
     flex-wrap: inherit;
@@ -272,7 +294,6 @@ li {
     bottom: -46px;
     width: 100%;
     z-index: 1;
-
 }
 
 #mainblock .social {
@@ -337,7 +358,7 @@ li {
 }
 
 #registration .text_1 {
-    color: #05003E;
+    color: #05003e;
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
@@ -356,12 +377,11 @@ li {
     width: 230px;
     height: 55px;
     padding: 15px 10px;
-    background-color: #2162B4;
+    background-color: #2162b4;
     color: #fff;
     font-family: Montserrat;
     font-weight: 500;
 }
-
 
 /*registration end*/
 
@@ -497,13 +517,13 @@ li {
 
 #registerAttencion .block_text {
     display: flex;
-    width: 277.20px;
+    width: 277.2px;
     height: 24px;
     padding-top: 16px;
 }
 
 #registerAttencion .block_text p {
-    color: #05003E;
+    color: #05003e;
     text-align: center;
     font-family: Montserrat;
     font-size: 10px;
@@ -772,21 +792,18 @@ li {
 
 #financialSupport .text {
     padding-top: 8px;
-    color: #FFF;
+    color: #fff;
     text-align: center;
     font-family: Montserrat;
     font-size: 12px;
-
-
 }
 
 #financialSupport .link {
     padding-top: 8px;
     text-align: center;
-    color: #FDD817;
+    color: #fdd817;
     font-family: Montserrat;
     font-size: 18px;
-
 }
 
 /*reference to financial support end*/
@@ -1003,7 +1020,6 @@ li {
     margin-bottom: 15px;
     display: flex;
     align-items: center;
-
 }
 
 .formCheck label {
@@ -1071,7 +1087,7 @@ li {
 
 .required-tip::before {
     font-size: 16px;
-    content: '*';
+    content: "*";
     color: var(--color-red);
     margin-right: 4px;
 }
@@ -1090,7 +1106,7 @@ li {
 }
 
 .form-item .required-label::after {
-    content: '*';
+    content: "*";
     color: var(--color-red);
     padding-left: 4px;
 }
@@ -1249,7 +1265,7 @@ textarea {
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
-    color: var(--text, #05003E);
+    color: var(--text, #05003e);
 }
 
 #modalWithModals .modals-menu .form-button {
@@ -1274,154 +1290,184 @@ textarea {
 /*specialty end*/
 
 /*footer start*/
-#footer .footer_content {
-    background: #6A8EA8;
-    width: 375px;
-    height: 455px;
+
+/* Стили для footer */
+#footer {
+    font-family: Montserrat;
+    background-color: #6a8ea8;
+    padding: 20px 0 0 0;
+}
+
+.footer_contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_contacts_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Стили для wrapper */
+.wrapper {
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Стили для content */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стили для footer_content */
+.footer_content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили для footer_flx */
+.footer_flx {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили для question */
+.question {
+    margin-bottom: 20px;
+}
+
+/* Стили для question_text */
+.question_text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #05003e;
+    font-size: 12px;
+    line-height: 14.63px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+/* Стили для fishnet_mb */
+.footer_link {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+/* Стили для social_mb */
+.footer_social-list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 14px;
+}
+
+.footer_button-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 1px 0;
+    border-color: #fdd817;
+    border-style: solid;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.footer_button-link {
+    color: #05003e;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer_social-networks-title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
     text-align: center;
 }
 
-#footer .text_1 {
-    color: #05003E;
-    font-family: Montserrat;
+.footer_logo {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.footer_logo a {
+    color: #fff;
     font-size: 12px;
-    font-weight: 500;
-    padding-top: 18px;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: block;
 }
 
-#footer .blurring {
-    display: none;
-}
-
-#footer .kontact {
-    display: none;
-}
-
-#footer .kontact_2 {
-    display: none;
-}
-
-#footer a.int {
-    width: 196px;
-    height: 32px;
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-#footer .social-list__item {
+.social-networks__list {
     display: flex;
-    padding-top: 2px;
-    justify-content: center;
     align-items: center;
-    margin-right: 15px;
-
-}
-
-#footer .social_3 {
-    display: none;
-}
-
-#footer .nomer {
-    color: #05003E;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-#footer .text_special_1 {
-    color: #05003E;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 600;
-    padding-top: 12px;
-}
-
-#footer .text_special_2 {
-    color: #05003E;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-#footer .text_special_3 {
-    color: #05003E;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-#footer .special {
-    border-top: 1px solid #FDD817;
-    border-bottom: 1px solid #FDD817;
-}
-
-#footer .text_3 {
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 400;
-    padding-top: 25px;
-}
-
-#footer .social-list__item_2 {
-    display: flex;
-    padding-top: 2px;
     justify-content: center;
-    align-items: center;
-    margin-right: 15px;
+    gap: 14px;
 }
 
-#footer .logo_ita_2 {
-    display: inline-flex;
-    padding-top: 2px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin: 0;
-
-
+.social-networks__list a {
+    text-decoration: none;
 }
 
-#footer .end {
-    background-color: #05003E;
-    width: 375px;
+/* Стили для social-list__item */
+.social-list__item {
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+/* Стили для nomer */
+.nomer {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Стили для social-list__viber, social-list__telegram, social-list__whatsapp */
+.social-list__viber img,
+.social-list__telegram img,
+.social-list__whatsapp img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Стили для footer_end */
+.footer_end {
+    background-color: #05003e;
     height: 30px;
-    margin-top: 20px;
-    padding-top: 5px;
-
 }
 
-#footer .text_4 {
-    color: #FDD817;
-    font-family: Montserrat;
+/* Стили для end_flx */
+.end_flx {
+    display: flex;
+    justify-content: center;
+}
+
+/* Стили для end_text */
+.end_text {
     font-size: 10px;
-    font-weight: 500;
+    margin-top: 5px;
+    color: #fdd817;
 }
-
-#footer .partners {
-    display: none;
-}
-
-#footer .contacts_1 {
-    display: none;
-}
-
-#footer .social-list__item_4 {
-    display: none;
-}
-
 
 /*footer end*/
 
 /*============================ Tablet 768 px========================*/
 
 @media (min-width: 768px) {
+    .tablet-only {
+        display: block;
+    }
 
     /*header start*/
     #header .navbar .bg-body-tertiary .navbar-expand-lg {
@@ -1463,7 +1509,7 @@ textarea {
     #header .navbar-toggler-icon {
         width: 100px;
         height: 100px;
-        margin: 4px 7px 0px 0px
+        margin: 4px 7px 0px 0px;
     }
 
     #header .burder-menu-text1 {
@@ -1653,7 +1699,7 @@ textarea {
     }
 
     #registration .text_1 {
-        color: #05003E;
+        color: #05003e;
         font-family: Montserrat;
         font-size: 32px;
         font-style: normal;
@@ -1662,7 +1708,7 @@ textarea {
     }
 
     #registration .text_2 {
-        color: #05003E;
+        color: #05003e;
         font-family: Montserrat;
         font-size: 28px;
         font-style: normal;
@@ -1675,7 +1721,7 @@ textarea {
         width: 416px;
         height: 89px;
         padding: 10px;
-        background-color: #2162B4;
+        background-color: #2162b4;
         color: #fff;
         font-size: 32px;
         font-family: Montserrat;
@@ -2044,7 +2090,6 @@ textarea {
         background-position: center;
         background-size: cover;
         height: 220px;
-
     }
 
     #financialSupport .text {
@@ -2056,15 +2101,12 @@ textarea {
         padding-top: 32px;
         padding-left: 22px;
         padding-right: 175px;
-
-
     }
 
     #financialSupport .link {
         text-align: center;
         font-size: 32px;
         font-weight: 700;
-
     }
 
     /*reference to financial support end*/
@@ -2238,7 +2280,6 @@ textarea {
         margin-top: 20px;
     }
 
-
     .modals {
         max-width: 768px;
         width: 768px;
@@ -2254,7 +2295,6 @@ textarea {
         margin-left: 22px;
         width: 668px;
         height: 3px;
-
     }
 
     #modalWithModals .modals-menu {
@@ -2285,172 +2325,56 @@ textarea {
     /*specialty end*/
 
     /*footer start*/
-    #footer .footer_content {
-        background: #6A8EA8;
-        width: 100%;
-        height: 750px;
-        margin: 0 auto;
-        text-align: center;
+    .footer_contacts_inner {
+        flex-direction: column-reverse;
+        order: 0;
+    }
+
+    .footer_contacts .question {
+        display: none;
+    }
+
+    .question {
+        min-width: 768px;
         display: flex;
         justify-content: center;
-        flex-direction: column;
-        justify-content: space-between;
     }
 
-    #footer .text_1 {
-        display: none;
+    .footer_link {
+        order: 1;
+        color: #05003e;
     }
 
-    #footer .blurring {
-        display: block;
-        color: #FFF;
-        font-family: Montserrat;
+    .footer_socials_title {
+        font-size: 28px;
+        color: #fff;
+        order: 2;
+        margin-bottom: 0;
+    }
+
+    .question_text {
+        max-width: 600px;
+        margin-top: 25px;
+        line-height: 1.5;
         font-size: 20px;
-        font-weight: 600;
-        padding-top: 25px;
+        color: #fff;
     }
 
-
-
-    #footer .kontact {
-        display: block;
-        color: #FFF;
-        font-family: "Yeseva One";
-        font-size: 28px;
-        font-weight: 400;
-        padding-top: 10px;
+    .footer_social-networks-title {
+        margin-bottom: 0;
+        color: #05003e;
+        font-size: 25px;
     }
 
-    #footer .kontact_2 {
-        color: #05003E;
-        font-family: Montserrat;
-        font-family: "Yeseva One";
-        font-weight: 400;
-        font-size: 28px;
-        display: block;
-    }
-
-
-    #footer a.int {
-        width: 306px;
-        height: 50px;
-        color: #05003E;
-        font-family: "Yeseva One";
-        font-size: 28px;
-        font-weight: 400;
-    }
-
-    #footer .social-list__item {
-
-        padding-top: 2px;
-        justify-content: center;
+    .footer_social-networks {
+        display: flex;
         align-items: center;
-        margin-right: 15px;
-        display: none;
-    }
-
-    #footer .social_3 {
-        display: block;
-    }
-
-    #footer .text_special_1 {
-        padding-top: 23px;
-        color: #FFF;
-        font-family: Montserrat;
-        font-size: 24px;
-        font-weight: 500;
-
-    }
-
-    #footer .text_special_2 {
-        padding-top: 43px;
-        padding-top: 23px;
-        color: #FFF;
-        font-family: Montserrat;
-        font-size: 24px;
-        font-weight: 500;
-
-    }
-
-    #footer .text_special_3 {
-        padding-top: 43px;
-        padding-top: 23px;
-        color: #FFF;
-        font-family: Montserrat;
-        font-size: 24px;
-        font-weight: 500;
-
-    }
-
-    #footer .special {
-        border-top: 1px solid #FDD817;
-        border-bottom: 1px solid #FDD817;
-        height: 237px;
-        gap: 14px;
-
-    }
-
-    #footer .text_3 {
-        color: #FFF;
-        font-family: Montserrat;
-        font-size: 18px;
-        font-weight: 400;
-        padding-top: 25px;
-    }
-
-    #footer .social_2 {
-        display: none;
-    }
-
-    #footer .social-list__item_2 {
-
-        padding-top: 2px;
         justify-content: center;
-        align-items: center;
-        margin-right: 15px;
-    }
-
-    #footer .logo_ita_2 {
-        display: inline-flex;
-        padding-top: 2px;
-        justify-content: center;
-        align-items: center;
         flex-direction: row;
-        margin: 0;
     }
 
-    #footer .logo_1 {
-        width: 50px;
-        height: 50px;
-    }
-
-    #footer .end {
-        background-color: #05003E;
-        width: 100%;
-        height: 50px;
-
-    }
-
-
-
-    #footer .text_4 {
-        color: #FDD817;
-        font-family: Montserrat;
-        font-size: 16px;
-        font-weight: 400;
-        padding-top: 10px;
-    }
-
-    #footer .partners {
-        display: none;
-    }
-
-    #footer .contacts_1 {
-        display: none;
-    }
-
-    #footer .social_4 {
-        display: none;
+    .footer_button-links {
+        gap: 20px;
     }
 
     /*footer end*/
@@ -2582,7 +2506,6 @@ textarea {
         display: none;
     }
 
-
     /*#header ul .navbar-nav .justify-content-end .flex-grow-1 .pe-3 {
         position: relative;
         bottom: 112px;
@@ -2688,7 +2611,7 @@ textarea {
     }
 
     #registration .text_1 {
-        color: #05003E;
+        color: #05003e;
         font-family: Montserrat;
         font-size: 24px;
         font-style: normal;
@@ -2701,7 +2624,7 @@ textarea {
         width: 414px;
         height: 90px;
         padding: 15px 0px;
-        background-color: #2162B4;
+        background-color: #2162b4;
         color: #fff;
         font-size: 32px;
         font-family: Montserrat;
@@ -3131,7 +3054,6 @@ textarea {
         font-style: italic;
         font-weight: 500;
         line-height: normal;
-
     }
 
     #financialSupport .link {
@@ -3373,217 +3295,80 @@ textarea {
     /*specialty end*/
 
     /*footer start*/
-    #footer .footer_content {
-        background: #6A8EA8;
-        width: 1024px;
-        height: 429px;
-        margin: 0 auto;
-    }
-
-    #footer .text {
-        display: none;
-    }
-
-    #footer .blurring {
-        display: none;
-    }
-
-
-
-    #footer .kontact {
-        display: block;
-        color: #FFF;
-        font-family: "Yeseva One";
-        font-size: 28px;
-        font-weight: 400;
-    }
-
-    #footer .kontact_2 {
-        color: #05003E;
-        font-family: Montserrat;
-        font-family: "Yeseva One";
-        font-weight: 400;
-        font-size: 28px;
-        display: block;
-    }
-
-
-    #footer a.int {
-        width: 306px;
-        height: 50px;
-        color: #05003E;
-        font-family: "Yeseva One";
-        font-size: 28px;
-        font-weight: 400;
-    }
-
-    #footer .social-list__item {
-
-        padding-top: 2px;
-        justify-content: center;
-        align-items: center;
-        margin-right: 15px;
-        display: none;
-    }
-
-    #footer .social_3 {
-        display: none;
-    }
-
-    #footer .text_special_1 {
-        padding-top: 23px;
-        color: #FFF;
-        font-family: Montserrat;
-        font-size: 24px;
-        font-weight: 500;
-    }
-
-    #footer .text_special_2 {
-        padding-top: 43px;
-        padding-top: 23px;
-        color: #FFF;
-        font-family: Montserrat;
-        font-size: 24px;
-        font-weight: 500;
-    }
-
-    #footer .text_special_3 {
-        padding-top: 43px;
-        padding-top: 23px;
-        color: #FFF;
-        font-family: Montserrat;
-        font-size: 24px;
-        font-weight: 500;
-    }
-
-    #footer .special {
-        border-top: 1px solid #FDD817;
-        border-bottom: 1px solid #FDD817;
-        height: 237px;
-        gap: 14px;
-        display: none;
-    }
-
-    #footer .text_3 {
-        color: #FFF;
-        font-family: Montserrat;
-        font-size: 18px;
-        font-weight: 400;
-        padding-top: 25px;
-    }
-
-    #footer .social_2 {
-        display: none;
-    }
-
-    #footer .social-list__item_2 {
-
-        padding-top: 2px;
-        justify-content: center;
-        align-items: center;
-        margin-right: 15px;
-    }
-
-    #footer .logo {
-        padding-top: 20px;
-
-    }
-
-    #footer .logo_1 {
-        width: 50px;
-        height: 50px;
-    }
-
-    #footer .end {
-        background-color: #05003E;
-        width: 100%;
-        height: 50px;
-    }
-
-
-    #footer .text_4 {
-        color: #FDD817;
-        font-family: Montserrat;
-        font-size: 16px;
-        font-weight: 400;
-    }
-
-    #footer .partners {
-        display: block;
-        padding-top: 25px;
-    }
-
-    #footer .list__item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 32px;
-        color: #05003E;
-        font-family: Montserrat;
-        font-size: 18px;
-        font-weight: 500;
-    }
-
-    #footer .contacts_1 {
-        padding-top: 5px;
-    }
-
-
-
-    #footer .text_contacts {
-        color: #FFF;
-        font-family: Montserrat;
-        font-size: 24px;
-        font-weight: 700;
-    }
-
-    #footer .int_cont {
-        color: #FFF;
-        font-family: Montserrat;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 500;
-    }
-
-    #footer .text_contacts_2 {
-        color: #FFF;
-        font-family: Montserrat;
-        font-size: 24px;
-        font-weight: 500;
-    }
-
-
-    #footer .contacts_1 {
-        display: block;
-    }
-
-    #footer .list_contacts {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    #footer .social_4 {
-        display: block;
-        padding-top: 10px;
-    }
-
-    #footer .social-list__item_4 {
-        display: inline-flex;
+    .footer_button-links {
+        order: -1;
         flex-direction: row;
         justify-content: center;
+        gap: 32px;
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer_contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .footer_contacts_inner {
+        margin: 10px 0;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        min-width: 400px;
+    }
+
+    .question {
+        order: 2;
+    }
+
+    .footer_social-list {
+        justify-content: start;
+    }
+
+    .footer_socials_title {
+        color: #fff;
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .footer_social-list .nomer {
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .footer_social-networks {
+        display: flex;
+        justify-content: center;
         gap: 14px;
         align-items: center;
     }
 
-    #footer .text_5 {
-        color: #05003E;
-        font-family: Montserrat;
-        font-size: 32px;
-        font-weight: 400;
-        margin-bottom: 0rem;
+    .question_text {
+        font-size: 24px;
+        line-height: 1.5;
+        color: #fff;
+        text-align: left;
+        margin-left: 155px;
     }
 
+    .footer_link {
+        font-size: 24px;
+    }
+
+    .footer_social-networks-title {
+        margin-bottom: 0;
+        font-size: 32px;
+        color: #05003e;
+    }
+
+    .footer_contacts .question {
+        display: block;
+    }
+
+    .question {
+        display: none;
+    }
 
     /*footer end*/
 }
