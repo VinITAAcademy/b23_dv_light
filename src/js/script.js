@@ -53,7 +53,7 @@ window.addEventListener("DOMContentLoaded", function () {
       });
     });
     $("#phone-participant, #phone-partner, #phone-mentor").on("mouseenter", function () {
-        $(this).attr("placeholder", "");
+      $(this).attr("placeholder", "");
     });
 
     form.addEventListener(eventType, function (event) {

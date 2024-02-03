@@ -351,7 +351,7 @@ li {
 /*main block end*/
 
 /*registration start*/
-#registration{
+#registration {
     display: flex;
     justify-content: center;
 }
@@ -602,7 +602,8 @@ li {
     margin-top: 4px;
     text-align: center;
 }
-#registerAttencion .hyphenation{
+
+#registerAttencion .hyphenation {
     display: none;
 }
 
@@ -1072,8 +1073,8 @@ li {
 
 .form-item input:placeholder-shown+.required-label,
 .form-item input:focus+.required-label,
-.form-item:active .required-label, 
-.form-item:focus-within .required-label { 
+.form-item:active .required-label,
+.form-item:focus-within .required-label {
     opacity: 1;
 }
 
@@ -1236,7 +1237,7 @@ textarea {
     margin-top: 20px;
 }
 
-#modalWithModals .modals-header .burger-menu-text2{
+#modalWithModals .modals-header .burger-menu-text2 {
     font-family: "Yeseva one";
     font-size: 32px;
 }
@@ -1331,7 +1332,7 @@ textarea {
     margin-left: 10px;
 }
 
-#modalWithModals .dropdown-btn-burger:hover + .dropdown-content {
+#modalWithModals .dropdown-btn-burger:hover+.dropdown-content {
     display: block;
 }
 
@@ -1342,6 +1343,7 @@ textarea {
 #modalWithModals .iconc {
     margin-left: 2px;
 }
+
 /*specialty end*/
 
 /*footer start*/
@@ -1465,51 +1467,47 @@ textarea {
     font-size: 12px;
 }
 
-.social-networks__list {
+#footer .social-networks__list {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 14px;
 }
 
-.social-networks__list a {
+#footer .social-networks__list a {
     text-decoration: none;
 }
 
 /* Стили для social-list__item */
-.social-list__item {
+#footer .social-list__item {
     list-style-type: none;
     margin-right: 10px;
 }
 
 /* Стили для nomer */
-.nomer {
+#footer .number {
     font-size: 16px;
     font-weight: bold;
 }
 
-/* Стили для social-list__viber, social-list__telegram, social-list__whatsapp */
-.social-list__viber img,
-.social-list__telegram img,
-.social-list__whatsapp img {
+#footer .social-list__whatsapp img {
     width: 24px;
     height: 24px;
 }
 
-/* Стили для footer_end */
 .footer_end {
     background-color: #05003e;
     height: 30px;
 }
 
 /* Стили для end_flx */
-.end_flx {
+#footer .end_flx { 
     display: flex;
     justify-content: center;
 }
 
 /* Стили для end_text */
-.end_text {
+#footer .end_text {
     font-size: 10px;
     margin-top: 5px;
     color: #fdd817;
@@ -1992,9 +1990,10 @@ textarea {
         text-align: center;
         padding: 0px 5px;
     }
-    #registerAttencion .hyphenation{
+
+    #registerAttencion .hyphenation {
         display: flex;
-    }    
+    }
 
     /*register.attention end*/
 
@@ -2381,12 +2380,12 @@ textarea {
         height: 104px;
     }
 
-    #modalWithModals .modals-header .btn-close{
+    #modalWithModals .modals-header .btn-close {
         width: 30px;
         height: 30px;
     }
 
-    #modalWithModals .modals-header .burder-menu-text1{
+    #modalWithModals .modals-header .burder-menu-text1 {
         margin: 0 auto;
         width: 382px;
     }
@@ -2397,7 +2396,7 @@ textarea {
         margin-left: 20px;
         margin-top: 20px;
     }
-    
+
     #modalWithModals .dropdown-content img {
         width: 71px;
         height: 31px;
@@ -2416,7 +2415,7 @@ textarea {
         display: none;
     }
 
-    .question {
+     .question {
         min-width: 768px;
         display: flex;
         justify-content: center;
@@ -2434,7 +2433,7 @@ textarea {
         margin-bottom: 0;
     }
 
-    .question_text {
+    #footer .question_text {
         max-width: 600px;
         margin-top: 25px;
         line-height: 1.5;
@@ -2934,9 +2933,10 @@ textarea {
         left: 32px;
     }
 
-    #registerAttencion .hyphenation{
+    #registerAttencion .hyphenation {
         display: none;
     }
+
     /*register.attention end*/
 
     /*resources start*/
@@ -3408,7 +3408,7 @@ textarea {
         min-width: 400px;
     }
 
-    .question {
+    #footer .question {
         order: 2;
     }
 
@@ -3434,7 +3434,7 @@ textarea {
         align-items: center;
     }
 
-    .question_text {
+    #footer .question_text {
         font-size: 24px;
         line-height: 1.5;
         color: #fff;
