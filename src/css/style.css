@@ -1048,7 +1048,6 @@ li {
 
 .form-item .required-label {
     transition: opacity 0.3s ease-in-out;
-    opacity: 0;
     cursor: text;
 }
 
@@ -1117,10 +1116,14 @@ li {
     height: 110px;
 }
 
-#partnerModal .form-seeds,
-#mentorModal .form-seeds {
-    margin-bottom: 82px;
+.form-seeds {
+    margin-bottom: 72px;
     margin-right: 40px;
+    width: 35px;
+    height: 32px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 #partnerModal .modal-header,
@@ -2159,6 +2162,7 @@ textarea{
 
     #modalWithModals .modals-header {
         height: 174px;
+        align-items: center;
     }
 
     #modalWithModals .modals-header .flag-line,
@@ -2170,6 +2174,15 @@ textarea{
     #modalWithModals .modals-menu {
         height: 414px;
         gap: 19px;
+    }
+
+    #modalWithModals .modals-header h2 {
+        padding-top: 35px;
+        font-size: 40px;
+    }
+
+    #modalWithModals .modals-header h3 {
+        font-size: 48px;
     }
 
     #modalWithModals .modals-menu h4 {
