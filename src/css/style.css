@@ -1367,38 +1367,32 @@ textarea {
     justify-content: center;
 }
 
-/* Стили для wrapper */
-.wrapper {
+#footer .wrapper {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Стили для content */
-.content {
+#footer .content {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Стили для footer_content */
 .footer_content {
     display: flex;
     flex-direction: column;
 }
 
-/* Стили для footer_flx */
 .footer_flx {
     display: flex;
     flex-direction: column;
 }
 
-/* Стили для question */
 .question {
     margin-bottom: 20px;
 }
 
-/* Стили для question_text */
 .question_text {
     text-align: center;
     font-size: 16px;
@@ -1410,7 +1404,6 @@ textarea {
     margin-bottom: 0;
 }
 
-/* Стили для fishnet_mb */
 .footer_link {
     text-align: center;
     text-decoration: none;
@@ -1420,7 +1413,6 @@ textarea {
     line-height: 32px;
 }
 
-/* Стили для social_mb */
 .footer_social-list {
     display: flex;
     align-items: center;
@@ -1478,13 +1470,11 @@ textarea {
     text-decoration: none;
 }
 
-/* Стили для social-list__item */
 #footer .social-list__item {
     list-style-type: none;
     margin-right: 10px;
 }
 
-/* Стили для nomer */
 #footer .number {
     font-size: 16px;
     font-weight: bold;
@@ -1500,13 +1490,11 @@ textarea {
     height: 30px;
 }
 
-/* Стили для end_flx */
-#footer .end_flx { 
+#footer .end_flx {
     display: flex;
     justify-content: center;
 }
 
-/* Стили для end_text */
 #footer .end_text {
     font-size: 10px;
     margin-top: 5px;
@@ -2415,7 +2403,7 @@ textarea {
         display: none;
     }
 
-     .question {
+    .question {
         min-width: 768px;
         display: flex;
         justify-content: center;
