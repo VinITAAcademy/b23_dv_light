@@ -25,6 +25,9 @@ window.addEventListener('DOMContentLoaded', function () {
         mask: '+38 (099) 999-99-99',
         greedy: false
     });
+    $("#phone-participant, #phone-partner, #phone-mentor").on("mouseenter", function () {
+        $(this).attr("placeholder", "");
+    });
 
     const formParticipant = document.getElementById("form-participant");
     const formPartner = document.getElementById("form-partner");

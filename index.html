@@ -234,12 +234,14 @@
                 </div>
                 <div class="block_attencion">
                     <div class="block_attencion_text1">
-                        <h2>УВАГА!!!</h2>
+                        <h2>Увага!!!</h2>
                     </div>
                     <div class="block_attencion_text2">
                         <p>Обов’якова <b>умова</b> участі в програмі - <b>повернення в свої міста,</b> села в
-                            Україні <b>після перемоги </b> українського народу над російськими загарбниками! <br>
-                            Ми робили, робимо і будемо робити все можливе,щоб кожен українець мав змогу
+                            Україні <b>після перемоги </b><br class="hyphenation"> українського народу над російськими
+                            загарбниками! <br>
+                            Ми робили, робимо і будемо робити все можливе,щоб <br class="hyphenation"> кожен українець
+                            мав змогу
                             <b>повернутись</b> до гідного життя в рідній <b>Батьківщині</b>!
                         </p>
                     </div>
@@ -514,8 +516,8 @@
                         <label for="last-name-participant" class="required-label">Призвіще</label>
                     </div>
                     <div class="form-item">
-                        <input type="email" name="email" placeholder="" class="form-input required email">
-                        <label for="email" class="required-label">Email</label>
+                        <input type="email" name="email" placeholder="" id="email-participant" class="form-input required email">
+                        <label for="email-participant" class="required-label">Email</label>
                     </div>
                     <div class="form-item">
                         <input type="tel" name="phone" id="phone-participant" placeholder=""
@@ -591,13 +593,18 @@
                         <label for="last-name-partner" class="required-label">Призвіще</label>
                     </div>
                     <div class="form-item">
-                        <input type="email" name="email" placeholder="" class="form-input required email">
-                        <label for="email" class="required-label">Email</label>
+                        <input type="email" name="email" placeholder="" id="email-partner" class="form-input required email">
+                        <label for="email-partner" class="required-label">Email</label>
                     </div>
                     <div class="form-item">
+<<<<<<< HEAD
                         <input type="tel" name="phone" id="phone-partner" placeholder=""
                             class="form-input required phone">
                         <label for="phone" class="required-label">Мобільний телефон</label>
+=======
+                        <input type="tel" name="phone" id="phone-partner" class="form-input required phone" placeholder="">
+                        <label for="phone-partner" class="required-label">Мобільний телефон</label>
+>>>>>>> develop
                     </div>
                     <div class="form-item">
                         <input class="city" type="text" name="address2"
@@ -647,7 +654,11 @@
                     <div class="form-item">
                         <input type="tel" name="phone" id="phone-mentor" placeholder=""
                             class="form-input required phone">
+<<<<<<< HEAD
                         <label for="phone" class="required-label">Мобільний телефон</label>
+=======
+                        <label for="phone-mentor" class="required-label phone-label">Мобільний телефон</label>
+>>>>>>> develop
                     </div>
                     <div class="form-item">
                         <input class="city" type="text" name="address2"
@@ -693,14 +704,23 @@
         <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
             <div class="modal-content modals">
                 <div class="modals-header">
-                    <p class="offcanvas-title" id="offcanvasNavbarLabel">UA </p>
-                    <div class="icon-flag">
-                        <img class="flagUA" src="./src/images/header/flag.svg" alt="" />
+                    <div class="language-dropdown">
+                        <div class="dropdown-btn-burger">
+                            <img src="./src/images/header/dropdown_burger_menu_ua.svg" alt="Ukraine">
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="#">
+                                <img src="./src/images/header/dropdown_burger_menu_ua.svg" alt="Ukraine">
+                            </a>
+                            <a href="#">
+                                <img src="./src/images/header/dpodown_burger_menu_en.svg" alt="English">
+                            </a>
+                        </div>
                     </div>
                     <div class="burder-menu-text1">
                         <h2>Доброго вечора, ми з</h2>
                         <div class="burger-menu-text2">
-                            <h3>України</h3>
+                            <h3>України!</h3>
                         </div>
                     </div>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
