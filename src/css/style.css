@@ -256,7 +256,7 @@ li {
 
 /*main-block start*/
 #mainblock .mainblock {
-    background: url(../images/Main_block/main-background.png);
+    background: url(../images/Main_block/main-background-tablet.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 80px 0;
@@ -506,7 +506,7 @@ li {
 }
 
 #registerAttencion .block_text p {
-    color: #05003E;
+    color: var(--color-blue-1);
     text-align: center;
     font-family: Montserrat;
     font-size: 10px;
@@ -1770,7 +1770,7 @@ textarea{
 
     #registerAttencion .block_attencion_text1 {
         display: flex;
-        margin: 0px 0px 82px 4px;
+        padding: 0px 0px 82px 4px;
     }
 
     #registerAttencion .block_attencion_text1 h2 {
@@ -1802,6 +1802,10 @@ textarea{
         margin-top: 4px;
         text-align: center;
         padding: 0px 5px;
+    }
+
+    #registerAttencion .hyphenation {
+        display: flex;
     }
     #registerAttencion .hyphenation{
         display: flex;
@@ -2602,7 +2606,7 @@ textarea{
         justify-content: center;
         flex-direction: row;
         background-image: url(../images/to_register/coat_of_arms_background2.jpg);
-        margin: 0 auto;
+        margin: 50px auto;
     }
 
     #registerAttencion .block_register {
