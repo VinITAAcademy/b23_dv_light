@@ -160,3 +160,48 @@ window.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const offcanvasNavbar = document.getElementById('offcanvasNavbar');
+    const btnClose = document.querySelector('.btn-close');
+    const offcanvasBody = document.querySelector('.offcanvas-body');
+    let scrollPosition = 0;
+
+    // Opening burger menu
+    navbarToggler.addEventListener('click', function () {
+        // Save the current scroll position
+        scrollPosition = window.pageYOffset;
+        offcanvasNavbar.classList.add('show');
+        // Page scroll lock
+        document.body.style.overflow = 'hidden';
+    });
+
+    // Closing burger menu
+    function closeOffcanvasNavbar() {
+        offcanvasNavbar.classList.remove('show');
+        // Unblocking page scrolling
+        document.body.style.overflow = '';
+        // Restore scroll position
+        window.scrollTo(0, scrollPosition);
+    }
+
+    btnClose.addEventListener('click', closeOffcanvasNavbar);
+
+    // Closing the burger menu when clicking on the pages
+    offcanvasBody.addEventListener('click', function (event) {
+        if (event.target === offcanvasBody) {
+            closeOffcanvasNavbar();
+        }
+    });
+
+    // Closing the burger menu when clicking on the menu item
+    offcanvasBody.querySelectorAll('.nav-link').forEach(function (link) {
+        link.addEventListener('click', closeOffcanvasNavbar);
+    });
+
+    // Unlocking the page when clicking on the page
+    document.addEventListener('click', function () {
+    });
+});
+

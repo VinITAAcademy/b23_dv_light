@@ -256,7 +256,7 @@ li {
 
 /*main-block start*/
 #mainblock .mainblock {
-    background: url(../images/Main_block/main-background.png);
+    background: url(../images/Main_block/main-background-tablet.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 80px 0;
@@ -506,7 +506,7 @@ li {
 }
 
 #registerAttencion .block_text p {
-    color: #05003E;
+    color: var(--color-blue-1);
     text-align: center;
     font-family: Montserrat;
     font-size: 10px;
@@ -578,7 +578,7 @@ li {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 7px;
+    margin-top: 4px;
     text-align: center;
 }
 
@@ -1339,7 +1339,7 @@ textarea{
         left: 41px;
     }
 
-    h3 {
+    #header h3 {
         color: var(--color-blue-1);
         font-family: "Yeseva One";
         font-size: 48px;
@@ -1349,7 +1349,7 @@ textarea{
         right: 14px;
     }
 
-    h2 {
+    #header h2 {
         position: relative;
         color: var(--color-blue-1);
         font-family: Pacifico;
@@ -1698,6 +1698,7 @@ textarea{
         cursor: pointer;
         padding: 15px 10px;
         justify-content: center;
+        border-radius: 5px;
     }
 
     #registerAttencion .block_attencion {
@@ -1715,8 +1716,7 @@ textarea{
 
     #registerAttencion .block_attencion_text1 {
         display: flex;
-        padding-right: 25px;
-        padding-bottom: 90px;
+        padding: 0px 0px 82px 4px;
     }
 
     #registerAttencion .block_attencion_text1 h2 {
@@ -1744,9 +1744,14 @@ textarea{
         font-size: 24px;
         font-style: normal;
         font-weight: 500;
-        line-height: 150%;
-        margin-top: 7px;
+        line-height: 180%;
+        margin-top: 4px;
         text-align: center;
+        padding: 0px 5px;
+    }
+
+    #registerAttencion .hyphenation {
+        display: flex;
     }
 
     /*register.attention end*/
@@ -2508,7 +2513,7 @@ textarea{
         justify-content: center;
         flex-direction: row;
         background-image: url(../images/to_register/coat_of_arms_background2.jpg);
-        margin: 0 auto;
+        margin: 50px auto;
     }
 
     #registerAttencion .block_register {
