@@ -1501,7 +1501,7 @@ textarea {
 }
 
 /* Стили для end_flx */
-#footer .end_flx { 
+#footer .end_flx {
     display: flex;
     justify-content: center;
 }
@@ -2415,7 +2415,7 @@ textarea {
         display: none;
     }
 
-     .question {
+    .question {
         min-width: 768px;
         display: flex;
         justify-content: center;
