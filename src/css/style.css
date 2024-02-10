@@ -278,7 +278,7 @@ li {
 
 /*main-block start*/
 #mainblock .mainblock {
-    background: url(../images/Main_block/main-background.png);
+    background: url(../images/Main_block/main-background-tablet.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 80px 0;
@@ -528,7 +528,7 @@ li {
 }
 
 #registerAttencion .block_text p {
-    color: #05003e;
+    color: var(--color-blue-1);
     text-align: center;
     font-family: Montserrat;
     font-size: 10px;
@@ -1136,10 +1136,14 @@ li {
     height: 110px;
 }
 
-#partnerModal .form-seeds,
-#mentorModal .form-seeds {
-    margin-bottom: 82px;
+.form-seeds {
+    margin-bottom: 72px;
     margin-right: 40px;
+    width: 35px;
+    height: 32px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 #partnerModal .modal-header,
@@ -1957,7 +1961,7 @@ textarea {
 
     #registerAttencion .block_attencion_text1 {
         display: flex;
-        margin: 0px 0px 82px 4px;
+        padding: 0px 0px 82px 4px;
     }
 
     #registerAttencion .block_attencion_text1 h2 {
@@ -1992,6 +1996,9 @@ textarea {
     }
 
     #registerAttencion .hyphenation {
+        display: flex;
+    }
+    #registerAttencion .hyphenation{
         display: flex;
     }
 
@@ -2347,6 +2354,7 @@ textarea {
 
     #modalWithModals .modals-header {
         height: 174px;
+        align-items: center;
     }
 
     #modalWithModals .modals-header .flag-line,
@@ -2358,6 +2366,15 @@ textarea {
     #modalWithModals .modals-menu {
         height: 414px;
         gap: 19px;
+    }
+
+    #modalWithModals .modals-header h2 {
+        padding-top: 35px;
+        font-size: 40px;
+    }
+
+    #modalWithModals .modals-header h3 {
+        font-size: 48px;
     }
 
     #modalWithModals .modals-menu h4 {
@@ -2831,7 +2848,7 @@ textarea {
         justify-content: center;
         flex-direction: row;
         background-image: url(../images/to_register/coat_of_arms_background2.jpg);
-        margin: 0 auto;
+        margin: 50px auto;
     }
 
     #registerAttencion .block_register {
