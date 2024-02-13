@@ -493,9 +493,101 @@
         <!--"specialty end"-->
 
         <!--"footer start"-->
-        <footer id="footer"></footer>
+        <footer id="footer">
+            <div class="wrapper">
+                <div class="content">
+                    <div class="footer_content">
+                        <div class="conteiner">
+                            <div class="footer_flx">
+                                <div class="footer_contacts">
+                                    <div class="question ">
+                                        <p class="question_text">
+                                            Якщо у вас виникли запитання про нашу програму чи організацію або про те, як
+                                            ви можете нам допомогти, будь ласка, зв’яжіться з нами!
+                                        </p>
+                                    </div>
+                                    <div class="footer_contacts_inner">
+                                        <a href="https://intita.com/" target="_blank"
+                                            class="footer_link">ita.in.ua@gmail.com</a>
+                                        <ul class="footer_social-list">
+                                            <li class="number">067 431 19 21</li>
+                                            <li class="social-list__item social-list__viber">
+                                                <a href="viber://chat?number=+380674317424  ">
+                                                    <img src="./src/images/footer/social_1/basil_viber-outline.svg"
+                                                        alt="viber">
+                                                </a>
+                                            </li>
+                                            <li class="social-list__item social-list__telegram">
+                                                <a href="https://t.me/IT_Academy_Vinnytsia">
+                                                    <img src="./src/images/footer/social_1/ph_telegram-logo.svg"
+                                                        alt="telegram">
+                                                </a>
+                                            </li>
+                                            <li class="social-list__item social-list__whatsapp">
+                                                <a href="https://wa.me/+380674317424">
+                                                    <img src="./src/images/footer/social_1/bxl_whatsapp.svg"
+                                                        alt="whatsapp">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <p class="tablet-only footer_socials_title">Контакти</p>
+                                    </div>
+                                </div>
+                                <div class="footer_button-links">
+                                    <a class="footer_button-link" href="#aboutTheProgram">Про програму</a>
+                                    <a class="footer_button-link" href="#specialty">Спеціальності</a>
+                                    <a class="footer_button-link" href="#partners">Партнери</a>
+                                </div>
+                                <div class="footer_social-networks">
+                                    <h4 class="footer_social-networks-title">Ми в соціальних мережах:</h4>
+                                    <div class="social-networks__list">
+                                        <a
+                                            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fvinnytsia.itacademy%2F%3Flocale%3Duk_UA">
+                                            <img src="./src/images/footer/social_1/facebook.svg" alt="facebook">
+                                        </a>
+                                        <a href="https://twitter.com/intent/tweet?url=https://twitter.com/vinnytsiaita?s=11&t=26yMelGn3njhSXsERHXerg
+                                        ">
+                                            <img src="./src/images/footer/social_1/twitter.svg" alt="twitter">
+                                        </a>
+                                        <a href="https://www.instagram.com/ita.in.ua?igsh=dzJ3bTMxdTFmMGNr">
+                                            <img src="./src/images/footer/social_1/instagram.svg" alt="instagram">
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <div class="question tablet-only">
+                                    <p class="question_text">
+                                        Якщо у вас виникли запитання про нашу програму чи організацію або про те, як ви
+                                        можете нам допомогти, будь ласка, зв’яжіться з нами!
+                                    </p>
+                                </div>
+                                <div class="footer_logo">
+                                    <img src="./src/images/footer/logo_ita_2.svg" alt="logo">
+                                    <a href="#">Розроблено студентами
+                                        <br>
+                                        Вінницької IT-Академії 2024
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_end">
+                <div class="conteiner">
+                    <div class="end_flx">
+                        <div class="end_text">©2024 Доброго вечора, ми з України!</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <!--"footer end"-->
     </div>
+    <button class="scroll-to-top-btn" id="scrollToTopBtn" onclick="scrollToTop()">
+        <path d="M14 3L25 14.1429M14 3L3 14.1429M14 3V29" stroke="white" stroke-width="5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+    </button>
     <div class="modal fade" id="participantModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
         tabindex="-1">
         <div class="modal-dialog modal-dialog-centered justify-content-center">
@@ -516,7 +608,8 @@
                         <label for="last-name-participant" class="required-label">Призвіще</label>
                     </div>
                     <div class="form-item">
-                        <input type="email" name="email" placeholder="" id="email-participant" class="form-input required email">
+                        <input type="email" name="email" placeholder="" id="email-participant"
+                            class="form-input required email">
                         <label for="email-participant" class="required-label">Email</label>
                     </div>
                     <div class="form-item">
@@ -593,11 +686,13 @@
                         <label for="last-name-partner" class="required-label">Призвіще</label>
                     </div>
                     <div class="form-item">
-                        <input type="email" name="email" placeholder="" id="email-partner" class="form-input required email">
+                        <input type="email" name="email" placeholder="" id="email-partner"
+                            class="form-input required email">
                         <label for="email-partner" class="required-label">Email</label>
                     </div>
                     <div class="form-item">
-                        <input type="tel" name="phone" id="phone-partner" class="form-input required phone" placeholder="">
+                        <input type="tel" name="phone" id="phone-partner" class="form-input required phone"
+                            placeholder="">
                         <label for="phone-partner" class="required-label">Мобільний телефон</label>
                     </div>
                     <div class="form-item">
