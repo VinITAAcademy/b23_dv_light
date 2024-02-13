@@ -162,6 +162,21 @@ window.addEventListener('DOMContentLoaded', function () {
             formRemoveError(input);
         }
     }
+
+    $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > $(window).height()) {
+            $(".scroll-to-top-btn").fadeIn();
+          } else {
+            $(".scroll-to-top-btn").fadeOut();
+          }
+        });
+    
+        $(".scroll-to-top-btn").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 800);
+          return false;
+        });
+      });
 });
 
 document.addEventListener('DOMContentLoaded', function () {
