@@ -56,6 +56,29 @@ li {
     border: none;
 }
 
+.scroll-to-top-btn {
+    position: fixed;
+    display: flex;
+    bottom: 296px;
+    right: 5px;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/footer/arrow\ button.svg);
+
+    padding: 10px 15px;
+    border: none;
+    background-color: var(--color-blue-2);
+    border-radius: 50%;
+    color: var(--color-white);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.tablet-only {
+    display: none;
+}
+
 #header .navbar.bg-body-tertiary.navbar-expand-lg {
     display: flex;
     flex-wrap: inherit;
@@ -309,7 +332,7 @@ li {
 }
 
 #mainblock .text_1 {
-    color: #05003e;
+    color: var(--color-blue-1);
     font-family: Pacifico;
     font-size: 28px;
     font-style: normal;
@@ -318,7 +341,7 @@ li {
 }
 
 #mainblock .text_2 {
-    color: #05003e;
+    color: var(--color-blue-1);
     font-family: Yeseva One;
     font-size: 64px;
     font-style: normal;
@@ -329,7 +352,7 @@ li {
 /*main block end*/
 
 /*registration start*/
-#registration{
+#registration {
     display: flex;
     justify-content: center;
 }
@@ -341,7 +364,7 @@ li {
 }
 
 #registration .text_1 {
-    color: #05003E;
+    color: var(--color-blue-1);
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
@@ -360,8 +383,8 @@ li {
     width: 230px;
     height: 55px;
     padding: 15px 10px;
-    background-color: #2162B4;
-    color: #fff;
+    background-color: var(--color-blue-2);
+    color: var(--color-white);
     font-family: Montserrat;
     font-weight: 500;
 }
@@ -427,7 +450,7 @@ li {
     cursor: pointer;
 }
 
-#video img{
+#video img {
     width: 60px;
     height: 60px;
 }
@@ -446,7 +469,7 @@ li {
 }
 
 #provide .text {
-    color: #05003e;
+    color: var(--color-blue-1);
     text-align: center;
     font-family: Open Sans;
     font-size: 20px;
@@ -458,7 +481,7 @@ li {
 #provide .text1 {
     width: 279px;
     text-align: left;
-    color: #05003e;
+    color: var(--color-blue-1);
     font-family: Montserrat;
     font-size: 12px;
     font-style: normal;
@@ -580,7 +603,8 @@ li {
     margin-top: 4px;
     text-align: center;
 }
-#registerAttencion .hyphenation{
+
+#registerAttencion .hyphenation {
     display: none;
 }
 
@@ -675,7 +699,7 @@ li {
     border: none;
     color: var(--color-white);
     margin-bottom: 13px;
-    color: #fff;
+    color: var(--color-white);
 }
 
 #becomeOurPartner .foto {
@@ -777,7 +801,7 @@ li {
 
 #financialSupport .text {
     padding-top: 8px;
-    color: #FFF;
+    color: var(--color-white);
     text-align: center;
     font-family: Montserrat;
     font-size: 12px;
@@ -788,7 +812,7 @@ li {
 #financialSupport .link {
     padding-top: 8px;
     text-align: center;
-    color: #FDD817;
+    color: var(--color-yellow);
     font-family: Montserrat;
     font-size: 18px;
 
@@ -1054,8 +1078,8 @@ li {
 
 .form-item input:placeholder-shown+.required-label,
 .form-item input:focus+.required-label,
-.form-item:active .required-label, 
-.form-item:focus-within .required-label { 
+.form-item:active .required-label,
+.form-item:focus-within .required-label {
     opacity: 1;
 }
 
@@ -1128,11 +1152,11 @@ li {
 }
 
 #partnerModal .modal-header,
-#mentorModal .modal-header{
+#mentorModal .modal-header {
     height: 60px;
 }
 
-textarea{
+textarea {
     resize: none;
 }
 
@@ -1222,7 +1246,7 @@ textarea{
     margin-top: 20px;
 }
 
-#modalWithModals .modals-header .burger-menu-text2{
+#modalWithModals .modals-header .burger-menu-text2 {
     font-family: "Yeseva one";
     font-size: 32px;
 }
@@ -1317,7 +1341,7 @@ textarea{
     margin-left: 10px;
 }
 
-#modalWithModals .dropdown-btn-burger:hover + .dropdown-content {
+#modalWithModals .dropdown-btn-burger:hover+.dropdown-content {
     display: block;
 }
 
@@ -1328,9 +1352,166 @@ textarea{
 #modalWithModals .iconc {
     margin-left: 2px;
 }
+
 /*specialty end*/
 
 /*footer start*/
+
+#footer {
+    font-family: Montserrat;
+    background-color: var(--color-footer);
+    padding: 20px 0 0 0;
+}
+
+#footer .footer_contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_contacts_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#footer .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .footer_content {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer .footer_flx {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer .question {
+    margin-bottom: 20px;
+}
+
+#footer .question_text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-blue-1);
+    font-size: 12px;
+    line-height: 14.63px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+#footer .footer_link {
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+#footer .footer_social-list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 14px;
+}
+
+#footer .footer_button-links {
+    display: flex;
+    width: 318.75px;
+    flex-direction: column;
+    align-items: center;
+    border-width: 1px 0;
+    border-color: var(--color-yellow);
+    border-style: solid;
+    padding: 10px 0;
+    margin: 10px auto;
+}
+
+#footer .footer_button-link {
+    color: var(--color-blue-1);
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#footer .footer_social-networks-title {
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#footer .footer_logo {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+#footer .footer_logo a {
+    color: var(--color-white);
+    font-size: 12px;
+}
+
+#footer .social-networks__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+#footer .social-networks__list a {
+    text-decoration: none;
+}
+
+#footer .social-list__item {
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+#footer .number {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color-blue-1);
+}
+
+#footer .social-list__whatsapp img {
+    width: 24px;
+    height: 24px;
+}
+
+#footer .footer_end {
+    background-color: var(--color-blue-1);
+    height: 30px;
+}
+
+
+#footer .end_flx {
+    display: flex;
+    justify-content: center;
+}
+
+#footer .end_text {
+    font-size: 10px;
+    margin-top: 5px;
+    color: var(--color-yellow);
+}
+
 /*footer end*/
 
 /*============================ Tablet 768 px========================*/
@@ -1349,6 +1530,7 @@ textarea{
     #header .container-fluid {
         padding: 0 !important;
     }
+
     #header .navbar-brand {
         padding: 6px 0px 0px 21px;
     }
@@ -1468,6 +1650,7 @@ textarea{
         top: 6px;
         right: 8px;
     }
+
     #header .dropdown select {
         width: 100%;
         padding: 10px;
@@ -1565,7 +1748,7 @@ textarea{
     }
 
     #registration .text_1 {
-        color: #05003E;
+        color: var(--color-blue-1);
         font-family: Montserrat;
         font-size: 32px;
         font-style: normal;
@@ -1574,7 +1757,7 @@ textarea{
     }
 
     #registration .text_2 {
-        color: #05003E;
+        color: var(--color-blue-1);
         font-family: Montserrat;
         font-size: 28px;
         font-style: normal;
@@ -1587,8 +1770,8 @@ textarea{
         width: 416px;
         height: 89px;
         padding: 10px;
-        background-color: #2162B4;
-        color: #fff;
+        background-color: var(--color-blue-2);
+        color: var(--color-white);
         font-size: 32px;
         font-family: Montserrat;
         font-weight: 500;
@@ -1632,7 +1815,7 @@ textarea{
 
     /*video clip start*/
 
-    #video{
+    #video {
         margin-top: 50px;
         margin-bottom: 50px;
     }
@@ -1642,7 +1825,7 @@ textarea{
         height: 431px;
     }
 
-    #video img{
+    #video img {
         width: 122px;
         height: 122px;
     }
@@ -1661,7 +1844,7 @@ textarea{
     }
 
     #provide .text {
-        color: #05003e;
+        color: var(--color-blue-1);
         text-align: center;
         font-family: Montserrat;
         font-size: 30px;
@@ -1675,7 +1858,7 @@ textarea{
         margin-right: 91px;
         margin-top: 30px;
         width: 586px;
-        color: #05003e;
+        color: var(--color-blue-1);
         font-family: Montserrat;
         font-size: 24px;
         font-style: normal;
@@ -1807,17 +1990,19 @@ textarea{
     #registerAttencion .hyphenation {
         display: flex;
     }
-    #registerAttencion .hyphenation{
+
+    #registerAttencion .hyphenation {
         display: flex;
-    }    
+    }
 
     /*register.attention end*/
 
     /*resources start*/
-    #resources{
+    #resources {
         margin-top: 50px;
         margin-bottom: 50px;
     }
+
     #resources .resources_block {
         width: 742px;
         height: 359px;
@@ -2110,7 +2295,7 @@ textarea{
     }
 
     #partnerModal .custom-modal-dialog,
-    #mentorModal .custom-modal-dialog{
+    #mentorModal .custom-modal-dialog {
         height: 723px;
     }
 
@@ -2210,12 +2395,12 @@ textarea{
         height: 104px;
     }
 
-    #modalWithModals .modals-header .btn-close{
+    #modalWithModals .modals-header .btn-close {
         width: 30px;
         height: 30px;
     }
 
-    #modalWithModals .modals-header .burder-menu-text1{
+    #modalWithModals .modals-header .burder-menu-text1 {
         margin: 0 auto;
         width: 382px;
     }
@@ -2226,7 +2411,7 @@ textarea{
         margin-left: 20px;
         margin-top: 20px;
     }
-    
+
     #modalWithModals .dropdown-content img {
         width: 71px;
         height: 31px;
@@ -2236,6 +2421,100 @@ textarea{
     /*specialty end*/
 
     /*footer start*/
+
+    #footer .footer_contacts_inner {
+        flex-direction: column-reverse;
+        order: 0;
+    }
+
+    .scroll-to-top-btn {
+        position: fixed;
+        display: flex;
+        top: 10px;
+        right: 10px;
+        font-size: 10px;
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/footer/arrow\ button1.svg);
+        transform: scale(0.7);
+
+        padding: 10px 15px;
+        border: none;
+        background-color: var(--color-blue-2);
+        border-radius: 50%;
+        color: var(--color-white);
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .tablet-only {
+        display: flex;
+    }
+
+    #footer .footer_contacts .question {
+        display: none;
+    }
+
+    #footer .question {
+        min-width: 768px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #footer .footer_button-links {
+        width: 438px;
+    }
+
+    #footer .footer_link {
+        order: 1;
+        color: var(--color-blue-1);
+    }
+
+    #footer .footer_socials_title {
+        font-size: 28px;
+        color: var(--color-white);
+        order: 2;
+        margin-bottom: 0;
+    }
+
+    #footer .question_text {
+        max-width: 600px;
+        margin-top: 25px;
+        line-height: 1.5;
+        font-size: 20px;
+        color: var(--color-white);
+    }
+
+    #footer .footer_social-networks-title {
+        margin-bottom: 0;
+        color: var(--color-blue-1);
+        font-size: 25px;
+    }
+
+    #footer .footer_social-networks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    #footer .footer_button-links {
+        gap: 20px;
+    }
+
+    #footer .footer_end {
+        background-color: var(--color-blue-1);
+        height: 55px;
+    }
+
+    #footer .end_text {
+        font-weight: 400;
+        line-height: 19.5px;
+        font-size: 16px;
+        margin-top: 15px;
+        color: var(--color-yellow);
+    }
+
     /*footer end*/
 }
 
@@ -2249,6 +2528,7 @@ textarea{
         align-items: center;
         justify-content: space-between;
     }
+
     #header .navbar-expand-lg .navbar-nav {
         display: flex;
     }
@@ -2272,6 +2552,7 @@ textarea{
         height: 90px;
         flex-shrink: 0;
     }
+
     #header .offcanvas.offcanvas-end {
         display: flex;
     }
@@ -2312,6 +2593,7 @@ textarea{
     #header .horizontal-line1 {
         display: none;
     }
+
     #header .dropdown select {
         width: 100%;
         padding: 10px;
@@ -2438,7 +2720,7 @@ textarea{
     }
 
     #mainblock .text_1 {
-        color: #05003e;
+        color: var(--color-blue-1);
         font-family: Pacifico;
         font-size: 50px;
         font-style: normal;
@@ -2450,7 +2732,7 @@ textarea{
     }
 
     #mainblock .text_2 {
-        color: #05003e;
+        color: var(--color-blue-1);
         font-family: Yeseva One;
         font-size: 170px;
         font-style: normal;
@@ -2468,7 +2750,7 @@ textarea{
     }
 
     #registration .text_1 {
-        color: #05003E;
+        color: var(--color-blue-1);
         font-family: Montserrat;
         font-size: 24px;
         font-style: normal;
@@ -2481,8 +2763,8 @@ textarea{
         width: 414px;
         height: 90px;
         padding: 15px 0px;
-        background-color: #2162B4;
-        color: #fff;
+        background-color: var(--color-blue-2);
+        color: var(--color-white);
         font-size: 32px;
         font-family: Montserrat;
         font-weight: 500;
@@ -2545,10 +2827,11 @@ textarea{
     /*about the program end*/
 
     /*video clip start*/
-    #video{
+    #video {
         margin-top: 90px;
         margin-bottom: 90px;
     }
+
     /*video clip end*/
 
     /*we provide start*/
@@ -2562,7 +2845,7 @@ textarea{
     }
 
     #provide .text {
-        color: #05003e;
+        color: var(--color-blue-1);
         text-align: center;
         font-family: Montserrat;
         font-size: 24px;
@@ -2577,7 +2860,7 @@ textarea{
         margin-left: 50px;
         width: 316.299px;
         height: 218.44px;
-        color: #05003e;
+        color: var(--color-blue-1);
         font-family: Montserrat;
         font-size: 13px;
         font-style: normal;
@@ -2708,13 +2991,14 @@ textarea{
         left: 32px;
     }
 
-    #registerAttencion .hyphenation{
+    #registerAttencion .hyphenation {
         display: none;
     }
+
     /*register.attention end*/
 
     /*resources start*/
-    #resources{
+    #resources {
         margin-top: 90px;
         margin-bottom: 90px;
     }
@@ -3160,5 +3444,109 @@ textarea{
     /*specialty end*/
 
     /*footer start*/
+    .scroll-to-top-btn {
+        top: 155px;
+        right: 14px;
+    }
+
+    #footer .footer_button-links {
+        order: -1;
+        flex-direction: row;
+        justify-content: center;
+        gap: 32px;
+        border: 0;
+        padding: 0;
+    }
+
+    #footer .footer_button-link {
+        color: var(--color-blue-1);
+        font-size: 18px;
+        line-height: 21.94px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #footer .footer_contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    #footer .footer_contacts_inner {
+        margin: 10px 0px 0px 35px;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        min-width: 400px;
+    }
+
+    #footer .question {
+        min-width: 481.52px;
+        order: 2;
+    }
+
+    #footer .footer_social-list {
+        justify-content: start;
+    }
+
+    #footer .footer_socials_title {
+        color: var(--color-white);
+        font-size: 24px;
+        margin-bottom: 0;
+        line-height: 29.26px;
+    }
+
+    #footer .footer_social-list .nomer {
+        color: var(--color-white);
+        font-size: 24px;
+    }
+
+    #footer .footer_social-networks {
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+        align-items: center;
+    }
+
+    #footer .question_text {
+        font-size: 24px;
+        line-height: 29.26px;
+        font-weight: 500;
+        color: var(--color-white);
+        text-align: left;
+    }
+
+    #footer .footer_link {
+        font-size: 24px;
+        margin: 12px 0px 20px 0px;
+    }
+
+    #footer .footer_social-networks-title {
+        margin-bottom: 0;
+        font-size: 32px;
+        color: var(--color-blue-1);
+
+    }
+
+    #footer .footer_contacts .question {
+        display: block;
+    }
+
+    #footer .question {
+        display: none;
+    }
+
+    #footer .end_text {
+        font-weight: 500;
+        line-height: 29.29px;
+        font-size: 24px;
+        margin-top: 11px;
+        color: var(--color-yellow);
+    }
+
+    #footer .footer_end {
+        background-color: var(--color-blue-1);
+        height: 57px;
+    }
+
     /*footer end*/
 }
