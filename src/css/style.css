@@ -3831,7 +3831,8 @@ textarea {
     line-height: 0.7;
     padding-top: 8px;
 }
-#mainblock404 .text_3{
+
+#mainblock404 .text_3 {
     display: none;
 }
 
@@ -3905,6 +3906,7 @@ textarea {
         height: 100px;
         margin: 5px 9px 0px 0px
     }
+
     #mainblock404 .text {
         position: absolute;
         top: 40%;
@@ -4127,7 +4129,7 @@ textarea {
         border-radius: 5px;
         margin-top: 561px;
     }
-     
+
     /*main block end*/
 }
 

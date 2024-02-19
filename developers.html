@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,       initial-scale=1.0" />
+    <link rel="shortcut icon" sizes="32x32" href="/src/images/favicon/favicon_desktop.svg">
+    <link rel="icon" sizes="24x24" href="/src/images/favicon/favicon_tablet.svg">
+    <link rel="icon" sizes="16x16" href="/src/images/favicon/favicon_mobile.svg">
+    <title>DV-light</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+    <link rel="stylesheet" href="/src/css/developers.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="offcanvas offcanvas-end" style="width: 60vw;" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="flex-en flex-en-two">
+            <div class="translate">
+                UA
+            </div>
+            <div class="br-header"></div>
+            <a class="link-ln" href="">
+                <div class=" translate translate-one">
+                    EN
+                </div>
+            </a>
+        </div>
+        <img onclick="brRemove()" class="cross" src="./src/images/developers/closeBurgerMenu.svg" alt="close"
+            data-bs-dismiss="offcanvas" aria-label="Close">
+        <img onclick="brRemove()" class="cross-big" src="./src/images/developers/closeBurgerMenuBig.svg" alt="close"
+            data-bs-dismiss="offcanvas" aria-label="Close">
+        <ul class="burger-menu-top">
+            <li class="item-burger">
+                <a onclick="brRemovee()" target="_blank" class="link-burger ln-height-br" href="https://vinitaacademy.github.io/b23_dv_light/">
+                    Головна
+                    <a>
+            </li>
+            <li class="item-burger">
+                <a onclick="brRemovee()" class="link-burger ln-height-br" href="#mentors-text">
+                    Наставники
+                </a>
+            </li>
+            <li class="item-burger">
+                <a onclick="brRemovee()" class="link-burger ln-height-br" href="#container-students">
+                    Команда
+                </a>
+            </li>
+            <li class="item-burger">
+                <a class="link-burger ln-height-br" onclick="brRemovee()" href="#text-technologi">
+                    Технології проєкту
+                </a>
+            </li>
+            <li class="item-burger item-burger-bt">
+                <a target="_blank"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfHnq7BpNh56usPNMw54poaw5nve-sEINkJo6DNdstXqQPwTw/viewform">
+                    <button class="btn-progect-br">
+                        Замовити проєкт
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="blur-container-br">
+        <div class="header-container">
+            <a target="_blank"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfHnq7BpNh56usPNMw54poaw5nve-sEINkJo6DNdstXqQPwTw/viewform"
+                class="btn-1 btn-white btn-animation-1">
+                Замовити проєкт
+            </a>
+            <img onclick="brAdd()" class="open-btn btn-primary img-burger" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight" src="./src/images/developers/burger.svg" />
+        </div>
+        <div onclick="brRemove()" class="posterior-background-br"></div>
+        <div class="container-header">
+            <a class="header-link header-link-line" target="_blank" href="https://vinitaacademy.github.io/b23_dv_light/" data-hover-name="HOVER.LINE">
+                Головна
+            </a>
+            <a class="header-link header-link-line header-link-desktop-mentors" href="#mentors-text">
+                Наставники
+            </a>
+            <a class="header-link header-link-line header-link-desktop-team" href="#container-students">
+                Команда
+            </a>
+            <a class="header-link header-link-line header-link-desktop-technologies" href="#text-technologi">
+                Технології проєкту
+            </a>
+            <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfHnq7BpNh56usPNMw54poaw5nve-sEINkJo6DNdstXqQPwTw/viewform" class="btn-1 btn-white btn-animation-1">
+                Замовити проєкт
+            </a>
+            <div class="flex-en">
+                <a class="link-language" href="developers-en">
+                    <div class="translate  translate-one">
+                        EN
+                    </div>
+                </a>
+                <div class="br-header"></div>
+                <div class="translate">
+                    UA
+                </div>
+            </div>
+        </div>
+        <div class="about-container">
+            <div class="container-one">
+                <div class="container-intita">
+                    <a class="link-intita" target="_blank" href="https://www.ita.in.ua/">
+                        <img class="picture-intita" src="./src/images/developers/ITA.svg">
+                    </a>
+                    <span class="text-intita">
+                        <a class="link-intita" target="_blank" href="https://www.ita.in.ua/">
+                            <h1>
+                                Вінницька<br>ІТ
+                                <span class="academy-text">
+                                    -Академія
+                                </span>
+                            </h1>
+                        </a>
+                    </span>
+                </div>
+                <div class="text-one">
+                    Програмуй майбутнє!
+                </div>
+                <div class="text-two">
+                    Ти справді хочеш роботу в ІТ?&nbsp<br>Тоді тобі до нас!
+                </div>
+            </div>
+            <div class="fields-about-container">
+                <div class="container-about-one">
+                    Ми займаємось підготовкою, супроводом та працевлаштуванням в ІТ
+                </div>
+                <div class="container-about-two">
+                    Тільки необхідні навички, викладачі-практики, реальні проєкти і мотивуюче середовище
+                </div>
+                <div class="container-about-three">
+                    Наша формула: 20% теорії та 80% практики
+                </div>
+                <div class="container-about-four">
+                    Інтенсивні програми навчання
+                </div>
+            </div>
+        </div>
+        <h2 id="mentors-text" class="mentors-text">
+            Наші наставники
+        </h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <a target="_blank" href="https://www.linkedin.com/in/marianaderlitsa/">
+                    <div class="swiper-slide">
+                        <div class="mentors">
+                            <img class="mentor-picture" src="./src/images/developers/mentors/Maryana.jpg">
+                            <div class="flex-mentors">
+                                <a href="https://www.linkedin.com/in/marianaderlitsa/">
+                                    <img class="linkidin" src="./src/images/developers/Linkedin.png">
+                                </a>
+                                Мар’яна<br>Дерлиця
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/vitalii-bogdaniuk-903426134/">
+                    <div class="swiper-slide">
+                        <div class="mentors">
+                            <img class="mentor-picture" src="./src/images/developers/mentors/Vitalii.png">
+                            <div class="flex-mentors">
+                                <a target="_blank" href="https://www.linkedin.com/in/vitalii-bogdaniuk-903426134/">
+                                    <img class="linkidin" src="./src/images/developers/Linkedin.png">
+                                </a>
+                                Віталій<br>Богданюк
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/tamara-panchenko-9041b8161/">
+                    <div class="swiper-slide">
+                        <div class="mentors">
+                            <img class="mentor-picture" src="./src/images/developers/mentors/Tamara.png">
+                            <div class="flex-mentors">
+                                <a target="_blank" href="https://www.linkedin.com/in/tamara-panchenko-9041b8161/">
+                                    <img class="linkidin" src="./src/images/developers/Linkedin.png">
+                                </a>
+                                Тамара<br>Панченко
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="mentors-laptop">
+            <a target="_blank" class="link-linkedin" href="https://www.linkedin.com/in/tamara-panchenko-9041b8161/">
+                <div class="mentors width-container">
+                    <img class="mentor-picture" src="./src/images/developers/mentors/Tamara.png">
+                    <div class="flex-mentors">
+                        <img class="linkidin" src="./src/images/developers/Linkedin.png">
+                        Тамара<br>Панченко
+                    </div>
+                </div>
+            </a>
+            <a target="_blank" class="link-linkedin" href="https://www.linkedin.com/in/vitalii-bogdaniuk-903426134/">
+                <div class="mentors">
+                    <img class="mentor-picture" src="./src/images/developers/mentors/Vitalii.png">
+                    <div class="flex-mentors">
+                        <img class="linkidin" src="./src/images/developers/Linkedin.png">
+                        Віталій<br>Богданюк
+                    </div>
+                </div>
+            </a>
+            <a target="_blank" class="link-linkedin" href="https://www.linkedin.com/in/marianaderlitsa/">
+                <div class="mentors">
+                    <img class="mentor-picture" src="./src/images/developers/mentors/Maryana.jpg">
+                    <div class="flex-mentors">
+                        <img class="linkidin" src="./src/images/developers/Linkedin.png">
+                        Мар’яна<br>Дерлиця
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="container-students" class="container-students">
+        <h2 class="text-team">
+            Команда студентів
+        </h2>
+        <div class="container-students-laptop">
+            <a class="link-linkedin" target="_blank" href="https://www.linkedin.com/in/олександр-антонюк-6ab68a65">
+                <div class="container-student">
+                    <img class="picture-team" src="./src/images/developers/mentors/Oleksandr_Antoniuk.jpg">
+                    <div class="container-student-text">
+                        <div class="name-student">
+                            Олександр Антонюк
+                        </div>
+                        <span class="about-students-light">
+                            Project Manager
+                        </span>
+                        <img class="picture-linkedin" src="./src/images/developers/Linkedin.png">
+                    </div>
+                </div>
+            </a>
+            <a class="link-linkedin" target="_blank" href="https://www.linkedin.com/in/oksana-bartash-5ab562292/">
+                <div class="container-student">
+                    <img class="picture-team" src="./src/images/developers/mentors/Oksana Bartash.jpg">
+                    <div class="container-student-text">
+                        <div class="name-student">
+                            Оксана Барташ
+                        </div>
+                        <span class="about-students-light">
+                            Tech Lead
+                        </span>
+                        <img class="picture-linkedin" src="./src/images/developers/Linkedin.png">
+                    </div>
+                </div>
+            </a>
+            <a class="link-linkedin" target="_blank" href="https://www.linkedin.com/in/nikita-rimkin-b347382aa">
+                <div class="container-student">
+                    <img class="picture-team" src="./src/images/developers/student/Nikita_Rimkin.jpg">
+                    <div class="container-student-text">
+                        <div class="name-student">
+                            Нікіта Рімкін
+                        </div>
+                        <span class="about-students-light">
+                            UI/UX Designer
+                        </span>
+                        <img class="picture-linkedin" src="./src/images/developers/Linkedin.png">
+                    </div>
+                </div>
+            </a>
+            <a class="link-linkedin" target="_blank" href="https://www.linkedin.com/in/lesia-korol-9059472a3/">
+                <div class="container-student">
+                    <img class="picture-team" src="./src/images/developers/student/Lesia_Korol.jpg">
+                    <div class="container-student-text">
+                        <div class="name-student">
+                            Леся Король
+                        </div>
+                        <span class="about-students-light">
+                            QA Engineer
+                        </span>
+                        <img class="picture-linkedin" src="./src/images/developers/Linkedin.png">
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="container-students-laptop container-students-laptop-team-lead">
+            <a class="link-linkedin link-linkedin-team-lead" target="_blank"
+                href="https://www.linkedin.com/in/%D0%B2%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BC%D0%B8%D1%80-%D0%B3%D0%BB%D0%B0%D0%B4%D1%96%D0%B9-703730269/">
+                <div class="container-student">
+                    <img class="picture-team picture-team-team-lead"
+                        src="./src/images/developers/student/Volodymyr Gladiy.jpg">
+                    <div class="container-student-text">
+                        <div class="name-student">
+                            Володимир Гладій
+                        </div>
+                        <span class="about-students-light about-students-light-team-lead">
+                            Developer/Team Lead
+                        </span>
+                        <img class="picture-linkedin" src="./src/images/developers/Linkedin.png">
+                    </div>
+                </div>
+            </a>
+            <a class="link-linkedin" target="_blank" href="https://www.linkedin.com/in/oleksandr-koss-4255b217a/">
+                <div class="container-student">
+                    <img class="picture-team" src="./src/images/developers/student/Oleksandr Koss.jpg">
+                    <div class="container-student-text">
+                        <div class="name-student">
+                            Олександр Косс
+                        </div>
+                        <span class="about-students-light">
+                            Developer
+                        </span>
+                        <img class="picture-linkedin" src="./src/images/developers/Linkedin.png">
+                    </div>
+                </div>
+            </a>
+            <a class="link-linkedin" target="_blank" href="https://ua.linkedin.com/">
+                <div class="container-student">
+                    <img class="picture-team" src="./src/images/developers/student/Andrey Gerasimovich.jpg">
+                    <div class="container-student-text">
+                        <div class="name-student">
+                            Андрій Герасимович
+                        </div>
+                        <span class="about-students-light">
+                            Developer
+                        </span>
+                        <img class="picture-linkedin" src="./src/images/developers/Linkedin.png">
+                    </div>
+                </div>
+            </a>
+            <a class="link-linkedin" target="_blank"
+                href="https://www.linkedin.com/in/%D0%B0%D1%80%D1%82%D1%83%D1%80-%D1%80%D0%B0%D1%81-30a4252b5/">
+                <div class="container-student">
+                    <img class="picture-team" src="./src/images/developers/student/Artur Bas .jpg">
+                    <div class="container-student-text">
+                        <div class="name-student">
+                            Артур <br> Бас
+                        </div>
+                        <span class="about-students-light">
+                            Developer
+                        </span>
+                        <img class="picture-linkedin" src="./src/images/developers/Linkedin.png">
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="text-technologi" class="text-technologi">
+        <h2 class="title-footer">
+            Технології проєкту
+        </h2>
+    </div>
+    <div id="container-technologies">
+        <div class="container-technologi">
+            <img class="picture-technologies" src="./src/images/developers/thechnologies/js.png">
+            <div class="text-technologies">
+                JavaScript
+            </div>
+        </div>
+        <div class="container-technologi">
+            <img class="picture-technologies" src="./src/images/developers/thechnologies/html.png">
+            <div class="text-technologies">
+                HTML
+            </div>
+        </div>
+        <div class="container-technologi">
+            <img class="picture-technologies" src="./src/images/developers/thechnologies/css.png">
+            <div class="text-technologies">
+                CSS
+            </div>
+        </div>
+        <div class="container-technologi">
+            <img class="picture-technologies" src="./src/images/developers/thechnologies/figma.png">
+            <div class="text-technologies">
+                Figma
+            </div>
+        </div>
+        <div class="container-technologi ">
+            <img class="picture-technologies" src="./src/images/developers/thechnologies/VisualStudio.png">
+            <div class="text-technologies">
+                Visual&nbsp<br>studio&nbsp<br>code
+            </div>
+        </div>
+        <div class="container-technologi">
+            <img class="picture-technologies" src="./src/images/developers/thechnologies/Trello.png">
+            <div class="text-technologies">
+                Trello
+            </div>
+        </div>
+        <div class="container-technologi">
+            <img class="picture-technologies" src="./src/images/developers/thechnologies/github.png">
+            <div class="text-technologies">
+                Github
+            </div>
+        </div>
+        <div class="container-technologi ">
+            <img class="picture-technologies" src="./src/images/developers/thechnologies/PixelPerfect.png">
+            <div class="text-technologies ">
+                Pixel&nbsp<br>Perfect<br>Tool
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer-mobile">
+            <div class="progect">
+                <p>
+                    Розробка унікального сайту різної складності. Складемо професійний проєкт Вашого веб-ресурсу,
+                    виконаємо дизайн та розробку з урахуванням усіх вимог.
+                </p>
+            </div>
+            <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfHnq7BpNh56usPNMw54poaw5nve-sEINkJo6DNdstXqQPwTw/viewform"" class="btn-1 btn-white btn-animation-1 btn-progect-footer">
+                Замовити проєкт
+            </a>
+        </div>
+        <div class="dix-button">
+            <img onclick="topFunction()" id="topBtn" width="46" height="61" viewBox="0 0 46 61" fill="none"
+                src="./src/images/developers/anchor-arrow.svg" />
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        igitntegrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="./src/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="src/js/developers.js"></script>
+
+</body>
+
+</html>
