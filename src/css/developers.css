@@ -169,6 +169,7 @@ a {
 
 #blur-container-br .link-intita h1 {
     position: relative;
+    width: 255px;
     font-size: 48px;
     font-weight: 400;
     line-height: normal;
