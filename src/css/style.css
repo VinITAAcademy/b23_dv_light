@@ -155,6 +155,7 @@ li {
 
 #header h2 {
     position: relative;
+    width: 240px;
     color: var(--color-blue-1);
     font-family: Pacifico;
     font-size: 22px;
@@ -1586,6 +1587,7 @@ textarea {
     }
 
     #header h2 {
+        width: 436px;
         position: relative;
         color: var(--color-blue-1);
         font-family: Pacifico;
@@ -3860,6 +3862,165 @@ textarea {
 
 /*main block end*/
 
+/*footer start*/
+
+#footer404 {
+    font-family: Montserrat;
+    background-color: var(--color-footer);
+    padding: 20px 0 0 0;
+}
+
+#footer404 .footer_contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer404.footer_contacts_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer404 .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#footer404 .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer404 .footer_content {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer404 .footer_flx {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer404 .question {
+    margin-bottom: 20px;
+}
+
+#footer404 .question_text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-blue-1);
+    font-size: 12px;
+    line-height: 14.63px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+#footer404 .footer_link {
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+#footer404 .footer_social-list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 14px;
+}
+
+#footer404 .footer_button-links {
+    display: flex;
+    width: 318.75px;
+    flex-direction: column;
+    align-items: center;
+    border-width: 1px 0;
+    border-color: var(--color-yellow);
+    border-style: solid;
+    padding: 10px 0;
+    margin: 10px auto;
+}
+
+#footer404 .footer_button-link {
+    color: var(--color-blue-1);
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#footer404 .footer_social-networks-title {
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#footer404 .footer_logo {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+#footer404 .footer_logo a {
+    color: var(--color-white);
+    font-size: 12px;
+}
+
+#footer404 .social-networks__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+#footer404 .social-networks__list a {
+    text-decoration: none;
+}
+
+#footer404 .social-list__item {
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+#footer404 .number {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color-blue-1);
+}
+
+#footer404 .social-list__whatsapp img {
+    width: 24px;
+    height: 24px;
+}
+
+#footer404 .footer_end {
+    background-color: var(--color-blue-1);
+    height: 30px;
+}
+
+
+#footer404 .end_flx {
+    display: flex;
+    justify-content: center;
+}
+
+#footer404 .end_text {
+    font-size: 10px;
+    margin-top: 5px;
+    color: var(--color-yellow);
+}
+
+/*footer end*/
+
 /*============================ Tablet 768 px========================*/
 @media (min-width: 768px) {
 
@@ -4131,6 +4292,101 @@ textarea {
     }
 
     /*main block end*/
+
+    #footer404 .footer_contacts_inner {
+        flex-direction: column-reverse;
+        order: 0;
+    }
+
+    .scroll-to-top-btn {
+        position: fixed;
+        display: flex;
+        top: 10px;
+        right: 10px;
+        font-size: 10px;
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/footer/arrow\ button1.svg);
+        transform: scale(0.7);
+
+        padding: 10px 15px;
+        border: none;
+        background-color: var(--color-blue-2);
+        border-radius: 50%;
+        color: var(--color-white);
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .tablet-only {
+        display: flex;
+    }
+
+    #footer404 .footer_contacts .question {
+        display: none;
+    }
+
+    #footer404 .question {
+        min-width: 768px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #footer404 .footer_button-links {
+        width: 438px;
+    }
+
+    #footer404 .footer_link {
+        order: 1;
+        color: var(--color-blue-1);
+    }
+
+    #footer404 .footer_socials_title {
+        font-size: 28px;
+        color: var(--color-white);
+        order: 2;
+        margin-bottom: 0;
+    }
+
+    #footer404 .question_text {
+        max-width: 600px;
+        margin-top: 25px;
+        line-height: 1.5;
+        font-size: 20px;
+        color: var(--color-white);
+    }
+
+    #footer404 .footer_social-networks-title {
+        margin-bottom: 0;
+        color: var(--color-blue-1);
+        font-size: 25px;
+    }
+
+    #footer404 .footer_social-networks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    #footer404 .footer_button-links {
+        gap: 20px;
+    }
+
+    #footer404 .footer_end {
+        background-color: var(--color-blue-1);
+        height: 55px;
+    }
+
+    #footer404 .end_text {
+        font-weight: 400;
+        line-height: 19.5px;
+        font-size: 16px;
+        margin-top: 15px;
+        color: var(--color-yellow);
+    }
+
+    /*footer end*/
 }
 
 /*============================  992 px========================*/
@@ -4372,4 +4628,111 @@ textarea {
     }
 
     /*main block end*/
+
+    /*footer start*/
+    .scroll-to-top-btn {
+        top: 155px;
+        right: 14px;
+    }
+
+    #footer404 .footer_button-links {
+        order: -1;
+        flex-direction: row;
+        justify-content: center;
+        gap: 32px;
+        border: 0;
+        padding: 0;
+    }
+
+    #footer404 .footer_button-link {
+        color: var(--color-blue-1);
+        font-size: 18px;
+        line-height: 21.94px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #footer404 .footer_contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    #footer404 .footer_contacts_inner {
+        margin: 10px 0px 0px 35px;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        min-width: 400px;
+    }
+
+    #footer404 .question {
+        min-width: 481.52px;
+        order: 2;
+    }
+
+    #footer404 .footer_social-list {
+        justify-content: start;
+    }
+
+    #footer404 .footer_socials_title {
+        color: var(--color-white);
+        font-size: 24px;
+        margin-bottom: 0;
+        line-height: 29.26px;
+    }
+
+    #footer404 .footer_social-list .nomer {
+        color: var(--color-white);
+        font-size: 24px;
+    }
+
+    #footer404 .footer_social-networks {
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+        align-items: center;
+    }
+
+    #footer404 .question_text {
+        font-size: 24px;
+        line-height: 29.26px;
+        font-weight: 500;
+        color: var(--color-white);
+        text-align: left;
+    }
+
+    #footer404 .footer_link {
+        font-size: 24px;
+        margin: 12px 0px 20px 0px;
+    }
+
+    #footer404 .footer_social-networks-title {
+        margin-bottom: 0;
+        font-size: 32px;
+        color: var(--color-blue-1);
+
+    }
+
+    #footer404 .footer_contacts .question {
+        display: block;
+    }
+
+    #footer404 .question {
+        display: none;
+    }
+
+    #footer404 .end_text {
+        font-weight: 500;
+        line-height: 29.29px;
+        font-size: 24px;
+        margin-top: 11px;
+        color: var(--color-yellow);
+    }
+
+    #footer404 .footer_end {
+        background-color: var(--color-blue-1);
+        height: 57px;
+    }
+
+    /*footer end*/
 }
