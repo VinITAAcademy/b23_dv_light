@@ -816,6 +816,7 @@ li {
     color: var(--color-yellow);
     font-family: Montserrat;
     font-size: 18px;
+    text-decoration: none;
 
 }
 
