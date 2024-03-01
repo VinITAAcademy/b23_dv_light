@@ -48,7 +48,39 @@ li {
 }
 
 /*============================ Mobile375 px========================*/
+
+/*loader  start*/
+#loader .loader-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(16 45 177); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3; 
+}
+
+#loader .loader {
+    border: 10px solid #3498db;
+    border-top: 10px solid #fdd817;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/*loader  end*/
+
 /*header start*/
+
 * {
     margin: 0px;
     padding: 0px;
