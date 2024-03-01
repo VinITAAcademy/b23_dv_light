@@ -223,3 +223,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+window.addEventListener('load', function () {
+    let loaderWrapper = document.querySelector('.loader-background');
+    loaderWrapper.style.display = 'none';
+});
