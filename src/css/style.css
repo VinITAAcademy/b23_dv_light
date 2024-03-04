@@ -494,14 +494,15 @@ li {
 #provide .images {
     background-image: url(../images/provide/providemobile.png);
     margin: 0 auto;
-    width: 326.727px;
-    height: 186.2px;
-    flex-shrink: 0;
+    width: 93%;
+    height: 52vw;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #provide .text {
+    position: relative;
+    bottom: 11px;
     color: var(--color-blue-1);
     text-align: center;
     font-family: Open Sans;
@@ -509,10 +510,11 @@ li {
     font-style: italic;
     font-weight: 600;
     line-height: normal;
+    margin: 0px;
 }
 
 #provide .text1 {
-    width: 279px;
+    width: 86%;
     text-align: left;
     color: var(--color-blue-1);
     font-family: Montserrat;
@@ -520,6 +522,16 @@ li {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin: 0 auto;
+    padding: 0px 44px 0px 0px ;
+}
+
+#provide .text1
+li {
+    position: sticky;
+    left: 42px;
+    margin: 0px 13px 19px 0px;
+    list-style: disc;
 }
 
 /*we provide end*/
@@ -2874,13 +2886,16 @@ textarea {
     #provide .images {
         background-image: url(../images/provide/provide.desktop.png);
         margin: 0 auto;
-        width: 762.721px;
-        height: 349.395px;
+        width: 904px;
+        height: 360px;
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     #provide .text {
+        position: relative;
+        bottom: 15px;
+        right: 23px;
         color: var(--color-blue-1);
         text-align: center;
         font-family: Montserrat;
@@ -2891,14 +2906,13 @@ textarea {
     }
 
     #provide .text1 {
-        line-height: 1.8;
+        line-height: 175%;
         padding: 15px 0;
-        margin-left: 50px;
-        width: 316.299px;
-        height: 218.44px;
+        margin-left: 35px;
+        width: 42%;
         color: var(--color-blue-1);
         font-family: Montserrat;
-        font-size: 13px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
     }
