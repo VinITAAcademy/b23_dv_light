@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', function () {
         $(".show-all").text(buttonText);
     });
     jQuery('#phone-participant, #phone-partner, #phone-mentor').inputmask({
-        mask: '+38 (099) 999-99-99',
+        mask: '+380 (99) 999-99-99',
         greedy: false
     });
     $("#phone-participant, #phone-partner, #phone-mentor").on("mouseenter", function () {
@@ -227,4 +227,100 @@ document.addEventListener('DOMContentLoaded', function () {
 window.addEventListener('load', function () {
     let loaderWrapper = document.querySelector('.loader-background');
     loaderWrapper.style.display = 'none';
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    function validateEmail(email) {
+        const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/;
+        return emailRegex.test(email);
+    }
+
+    function validatePhone(phone) {
+        const phoneRegex = /^\+380 \(\d{2}\) \d{3}-\d{2}-\d{2}$/;
+        return phoneRegex.test(phone);
+    }
+
+    function validatePhoneLength(phone) {
+        return phone.replace(/\D/g, '').length === 12;
+    }
+
+    function formValidate(input) {
+        const value = input.value.trim();
+        const parentElement = input.parentElement;
+
+        parentElement.querySelectorAll('.error-message').forEach(function (error) {
+            error.remove();
+        });
+
+        if (input.classList.contains('email')) {
+            if (!validateEmail(value)) {
+    
+                input.classList.add('error');
+
+                const errorMessage = document.createElement('span');
+                errorMessage.className = 'error-message';
+                errorMessage.textContent = 'Email введено некоректно';
+                input.insertAdjacentElement('afterend', errorMessage);
+                return false;
+            }
+        }
+
+        if (input.classList.contains('phone')) {
+            if (!validatePhone(value)) {
+
+                input.classList.add('error');
+
+                const errorMessage = document.createElement('span');
+                errorMessage.className = 'error-message';
+                errorMessage.textContent = 'Некоректний формат телефонного номеру';
+                input.insertAdjacentElement('afterend', errorMessage);
+                return false;
+            }
+
+            if (!validatePhoneLength(value)) {
+        
+                input.classList.add('error');
+        
+                const errorMessage = document.createElement('span');
+                errorMessage.className = 'error-message';
+                errorMessage.textContent = 'Номер телефону має містити 13 символів';
+                input.insertAdjacentElement('afterend', errorMessage);
+                return false;
+            }
+        }
+
+        input.classList.remove('error');
+        return true;
+    }
+
+    document.querySelectorAll('.required').forEach(function (input) {
+        input.addEventListener('input', function () {
+            formValidate(input);
+        });
+
+        input.addEventListener('blur', function () {
+            formValidate(input);
+        });
+    });
+
+    document.querySelectorAll('form').forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            let isValid = true;
+            form.querySelectorAll('.required').forEach(function (input) {
+                if (!formValidate(input)) {
+                    isValid = false;
+                }
+            });
+            if (isValid) {
+                form.submit();
+            }
+        });
+    });
+
+    document.querySelectorAll('.phone').forEach(function (input) {
+        input.value = '+380 (__) __-__-__';
+    });
 });
