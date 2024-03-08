@@ -324,3 +324,58 @@ document.addEventListener('DOMContentLoaded', function () {
         input.value = '+380 (__) __-__-__';
     });
 });
+
+
+
+function onSubmit(event) {
+    event.preventDefault();
+    const formId = event.target.id;
+    grecaptcha.ready(function () {
+        grecaptcha.execute('6LewBoomAAAAANblzC930dkOMIaIVG2D3X-BYnZL', { action: 'submit' }).then(function (token) {
+            const formElement = document.querySelector('#' + formId);
+            if (formElement.checkValidity()) {
+                const actionUrl = "https://intita.com/api/v1/entrant";
+                const formData = new FormData(formElement);
+                formData.append('g-recaptcha-response', token);
+                const http = new XMLHttpRequest();
+                http.open('POST', actionUrl, true);
+                http.onreadystatechange = function () {
+                    if (http.readyState === 4) {
+                        if (http.status === 201) {
+                            submitResponse();
+                        } else {
+                            submitResponse('Помилка сервера. Зробіть ще одну спробу');
+                        }
+                    }
+                };
+                http.send(formData);
+            } else {
+                const elements = formElement.querySelectorAll('input[name="first_name"], input[name="email"], input[name="phone"]');
+                elements.forEach((el, index) => {
+                    if (!el.value) {
+                        el.classList.add('input-error');
+                        if (index === 0) { el.scrollIntoView(); }
+                    } else {
+                        el.classList.remove('input-error');
+                    }
+                });
+            }
+        });
+    });
+}
+
+function submitResponse(errorStr = 'Ваша форма успішно відправлена') {
+    const elementResponse = document.querySelector('#response_message');
+    elementResponse.innerText = errorStr;
+    elementResponse.style.display = 'block';
+    scroll(0, 0);
+}
+
+function listenFormSubmit() {
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+        form.addEventListener('submit', onSubmit);
+    });
+}
+
+listenFormSubmit();
