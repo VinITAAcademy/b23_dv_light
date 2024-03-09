@@ -1,3 +1,4 @@
+let isValid = false;
 window.addEventListener('DOMContentLoaded', function () {
 
     var video = this.document.querySelector('.videoPreview');
@@ -108,6 +109,7 @@ window.addEventListener('DOMContentLoaded', function () {
             buttons.forEach(button => {
                 button.removeAttribute('disabled');
             });
+            isValid = true;
         }
         return error;
     }
@@ -278,7 +280,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 input.insertAdjacentElement('afterend', errorMessage);
                 return false;
             }
-
+      
             if (!validatePhoneLength(value)) {
         
                 input.classList.add('error');
@@ -324,3 +326,71 @@ document.addEventListener('DOMContentLoaded', function () {
         input.value = '+380 (__) __-__-__';
     });
 });
+
+
+
+window.onload = function () {
+    listenEntrantSubmit();
+};
+function getElement(selector) {
+    return document.querySelector(selector);
+}
+function onSubmit(event) {
+    event.preventDefault();
+    console.log(event)
+    grecaptcha.ready(function () {
+        grecaptcha.execute('6LcwRRUaAAAAADavxcmw5ShOEUt1xMBmRAcPf6QP', { action: 'submit' }).then(function (token) {
+            const formElement = event.target.closest('.modal-body');
+            if (isValid) {
+                const actionUrl = 'https://intita.com/api/v1/entrant';
+                const entrantFormData = new FormData(formElement);
+                entrantFormData.append('g-recaptcha-response', token);
+                const http = new XMLHttpRequest();
+                http.open('POST', actionUrl, true);
+                http.onreadystatechange = function () {
+                    if (+http.readyState === 4 && +http.status === 201) {
+                        entrantSubmitResponse("Дякуємо за Вашу заявку! Очікуйте зворотнього зв’язку.");
+                    } else if (+http.status === 400) {
+                        entrantSubmitResponse('Помилка сервера. Зробіть ще одну спробу');
+                    }
+                }
+                http.onload = function () {
+                    if (+http.status !== 201) {
+                        entrantSubmitResponse('Помилка сервера. Зробіть ще одну спробу');
+                        return;
+                    }
+                    entrantSubmitResponse("Дякуємо за Вашу заявку! Очікуйте зворотнього зв’язку.");
+                }
+                http.send(entrantFormData);
+            } else {
+                let index = 0;
+                for (let el of formElement.elements) {
+                    const attrName = el.getAttribute('name');
+                    if (['first_name', 'email', 'phone'].includes(attrName)) {
+                        if (el.value) {
+                            el.classList.remove('input-error');
+                        } else {
+                            el.classList.add('input-error');
+                            if (index === 0) { el.scrollIntoView() }
+                            index++;
+                        }
+                    }
+                }
+
+            }
+        });
+    });
+}
+function listenEntrantSubmit() {
+    const partnerButton = document.getElementById('parner-button');
+    const participantButton = document.getElementById('participant-botton');
+    const mentorButton = document.getElementById('mentor-botton');
+    partnerButton.addEventListener('click', onSubmit);
+    participantButton.addEventListener('click', onSubmit);
+    mentorButton.addEventListener('click', onSubmit);
+}
+function entrantSubmitResponse(errorSt) {
+    const elementResponse = getElement('#entrants_response');
+    elementResponse.innerText = errorSt;
+    scroll(0, 0);
+}
