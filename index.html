@@ -617,7 +617,7 @@
                     <h2 class="modal-title" id="exampleModalToggleLabel">Анкета <b>Учасника</b> програми</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form action="#" id="form-participant" class="modal-body">
+                <form action="#" id="form-participant" class="modal-body" method="post" accept-charset="UTF-8">
                     <div class="form-item">
                         <input type="text" name="first_name" id="name_participant" placeholder=""
                             class="form-input required name">
@@ -680,9 +680,10 @@
                     <p class="required-tip">Обов’язкові поля</p>
                     <div class="modal-footer">
                         <button class="btn btn-primary form-button button-submit" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#thanxModal">Надіслати</button>
+                            data-bs-target="#thanxModal" id="participant-botton">Надіслати</button>
                     </div>
                     <img class="form-seeds" src="src/images/forms/seeds.png" alt="small-seeds">
+                    <input type="hidden" name="organization_id" value="1">
                 </form>
             </div>
         </div>
@@ -695,7 +696,7 @@
                     <h2 class="modal-title" id="exampleModalToggleLabel">Анкета <b>партнерів</b> програми</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form action="#" id="form-partner" class="modal-body">
+                <form action="#" id="form-partner" class="modal-body" method="post" accept-charset="UTF-8">
                     <div class="form-item required-input">
                         <input type="text" name="first_name" id="name_partner" placeholder=""
                             class="form-input required name">
@@ -730,12 +731,13 @@
                         <textarea name="co-operation" name="about" cols="30" rows="1" class="form-input"></textarea>
                     </div>
                     <p class="required-tip">Обов’язкові поля</p>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary form-button button-submit" type="submit" data-bs-toggle="modal"
+                            data-bs-target="#thanxModal" id="parner-button">Надіслати</button>
+                        <img class="form-seeds" src="src/images/forms/seeds.png" alt="small-seeds">
+                    </div>
+                    <input type="hidden" name="organization_id" value="1">
                 </form>
-                <div class="modal-footer">
-                    <button class="btn btn-primary form-button button-submit" type="submit" data-bs-toggle="modal"
-                        data-bs-target="#thanxModal">Надіслати</button>
-                    <img class="form-seeds" src="src/images/forms/seeds.png" alt="small-seeds">
-                </div>
             </div>
         </div>
     </div>
@@ -746,7 +748,7 @@
                     <h2 class="modal-title" id="exampleModalToggleLabel">Анкета <b>викладачів/менторів</b> програми</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form action="#" id="form-mentor" class="modal-body">
+                <form action="#" id="form-mentor" class="modal-body" method="post" accept-charset="UTF-8">
                     <div class="form-item required-input">
                         <input type="text" name="first_name" id="name_mentor" placeholder=""
                             class="form-input required name">
@@ -780,12 +782,13 @@
                         <textarea name="co-operation" name="about" cols="30" rows="1" class="form-input"></textarea>
                     </div>
                     <p class="required-tip">Обов’язкові поля</p>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary form-button button-submit" type="submit" data-bs-toggle="modal"
+                            data-bs-target="#thanxModal" id="mentor-botton">Надіслати</button>
+                        <img class="form-seeds" src="src/images/forms/seeds.png" alt="small-seeds">
+                    </div>
+                    <input type="hidden" name="organization_id" value="1">
                 </form>
-                <div class="modal-footer">
-                    <button class="btn btn-primary form-button button-submit" type="submit" data-bs-toggle="modal"
-                        data-bs-target="#thanxModal">Надіслати</button>
-                    <img class="form-seeds" src="src/images/forms/seeds.png" alt="small-seeds">
-                </div>
             </div>
         </div>
     </div>
@@ -797,8 +800,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p class="title">Дякуємо за Вашу заявку!</p>
-                    <p>Очікуйте зворотнього зв’язку.</p>
+                    <p class="title" id="entrants_response"></p>
                 </div>
                     <div class="modal-footer">
                         <a href="/" target="_blank"><button class="btn btn-primary" data-bs-dismiss="modal">На головну</button></a>
@@ -874,6 +876,7 @@
     <script src="./src/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcwRRUaAAAAADavxcmw5ShOEUt1xMBmRAcPf6QP"></script>
 </body>
 
 </html>
