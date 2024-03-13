@@ -174,6 +174,7 @@ window.addEventListener('DOMContentLoaded', function () {
           }
         });
     
+        $(".scroll-to-top-btn").hide();
         $(".scroll-to-top-btn").click(function () {
           $("html, body").animate({ scrollTop: 0 }, 800);
           return false;
