@@ -623,6 +623,11 @@ li {
     padding-top: 78px;
 }
 
+#registerAttencion .block_attencion_text-en {
+    display: flex;
+    padding-top: 51px;
+}
+
 #registerAttencion .block_attencion_text1 h2 {
     width: 79px;
     height: 23px;
@@ -633,6 +638,19 @@ li {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+#registerAttencion .block_attencion_text-en  h2 {
+    width: 79px;
+    height: 23px;
+    flex-shrink: 0;
+    color: var(--color-blue-1);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 7px;
 }
 
 #registerAttencion .block_attencion_text2 {
@@ -2008,7 +2026,26 @@ textarea {
         padding: 0px 0px 45px 4px;
     }
 
+    #registerAttencion .block_attencion_text-en {
+        display: flex;
+        margin-top: 11px;
+        padding: 0px 0px 15px 4px;
+        margin-right: 71px;
+    }
+
     #registerAttencion .block_attencion_text1 h2 {
+        width: 196px;
+        height: 61px;
+        flex-shrink: 0;
+        color: var(--color-blue-1);
+        font-family: Montserrat;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    #registerAttencion .block_attencion_text-en h2 {
         width: 196px;
         height: 61px;
         flex-shrink: 0;
@@ -3016,7 +3053,24 @@ textarea {
         margin: 0px;
     }
 
+    #registerAttencion .block_attencion_text-en {
+        display: flex;
+        padding: 154px 0px 55px 71px;
+        margin: 0px;
+    }
+
     #registerAttencion .block_attencion_text1 h2 {
+        width: 145px;
+        flex-shrink: 0;
+        color: var(--color-blue-1);
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    #registerAttencion .block_attencion_text-en h2 {
         width: 145px;
         flex-shrink: 0;
         color: var(--color-blue-1);
