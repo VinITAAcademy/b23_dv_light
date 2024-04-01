@@ -2468,6 +2468,11 @@ textarea {
         font-size: 36px;
     }
 
+    #modalWithModals .menu_description-en h4 {
+        font-size: 30px;
+        margin-top: 18px;
+    }
+
     #modalWithModals .modals-menu .form-button {
         width: 352px;
         height: 75px;
