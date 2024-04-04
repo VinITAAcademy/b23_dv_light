@@ -2738,12 +2738,6 @@ textarea {
         display: none;
     }
 
-
-    /*#header ul .navbar-nav .justify-content-end .flex-grow-1 .pe-3 {
-        position: relative;
-        bottom: 112px;
-        right: 8px;
-    }*/
 }
 
 /*header end*/
@@ -3558,7 +3552,7 @@ textarea {
 
     /*footer start*/
     .scroll-to-top-btn {
-        top: 155px;
+        top: 240px;
         right: 14px;
     }
 
@@ -4409,7 +4403,7 @@ textarea {
         order: 0;
     }
 
-    .scroll-to-top-btn {
+    #footer404 .scroll-to-top-btn {
         position: fixed;
         display: flex;
         top: 10px;
@@ -4741,7 +4735,7 @@ textarea {
     /*main block end*/
 
     /*footer start*/
-    .scroll-to-top-btn {
+    #footer404 .scroll-to-top-btn {
         top: 155px;
         right: 14px;
     }
