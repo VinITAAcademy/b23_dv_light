@@ -1427,6 +1427,17 @@ textarea {
 
 /*specialty end*/
 
+/* bunner start */
+#bunner .bunner {
+    background-image: url(../images/bunner/bunner_mobile.webp);
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 20.8vw;
+    display: block;
+}
+/* bunner end */
+
 /*footer start*/
 
 #footer {
