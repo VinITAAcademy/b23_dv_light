@@ -395,3 +395,29 @@ function entrantSubmitResponse(errorSt) {
     elementResponse.innerText = errorSt;
     scroll(0, 0);
 }
+
+// banner start
+let bannerButtonWrapper = document.getElementById("banner-button-wrapper");
+let bannerButtonFrame = document.getElementById("banner-button-frame");
+let bannerButton = document.getElementById("banner-button");
+
+bannerButtonWrapper.addEventListener("mouseover", () => {
+    bannerButton.classList.add("banner-button-hover");
+    bannerButtonFrame.classList.add("banner-button-frame-hover");
+});
+
+bannerButtonWrapper.addEventListener("mouseout", () => {
+    bannerButton.classList.remove("banner-button-hover");
+    bannerButtonFrame.classList.remove("banner-button-frame-hover");
+});
+
+bannerButtonWrapper.addEventListener("mousedown", () => {
+    bannerButton.classList.add("banner-button-active");
+    bannerButtonFrame.classList.add("banner-button-frame-active");
+});
+
+bannerButtonWrapper.addEventListener("mouseup", () => {
+    bannerButton.classList.remove("banner-button-active");
+    bannerButtonFrame.classList.remove("banner-button-frame-active");
+});
+// banner end
