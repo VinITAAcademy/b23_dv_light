@@ -2783,7 +2783,11 @@ textarea {
         line-height: normal;
         margin: 0px 8px 3px 26px;
     }
-
+    
+    #header .dropdown-toggle{
+        margin: 0;
+    }
+    
     #header .horizontal-line {
         display: none;
     }
