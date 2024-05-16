@@ -22,6 +22,34 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "MyriadPro Regular";
+    src: url("../fonts/MYRIADPRO-REGULAR.OTF");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MyriadPro SemiBold";
+    src: url("../fonts/MyriadPro-Semibold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "RobotoMono SemiBold";
+    src: url("../fonts/RobotoMono-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "RobotoMono Bold";
+    src: url("../fonts/RobotoMono-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -45,6 +73,9 @@ li {
     --color-footer: #6a8ea8;
     --color-grey-1: #999999;
     --color-grey-2: #e9e9e9;
+    --color-grey-banner: #858585;
+    --color-grey-banner-enroll: #E5E5E5;
+    --color-banner-button-hover: #9B9B9B
 }
 
 .grecaptcha-badge {
@@ -1490,6 +1521,180 @@ textarea {
 }
 
 /*specialty end*/
+
+/* banner start */
+#banner {
+    background: url(../images/banner/banner_background_mobile.webp);
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 135vw;
+    position: relative;
+    padding-top: 21vw;
+}
+
+#banner .academy-logo {
+    width: 35.2vw;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: var(--color-black);
+    position: absolute;
+    top: 5.33vw;
+    left: 5.33vw;
+}
+
+#banner .academy-logo .academy-logo-img {
+    height: 13.87vw;
+}
+
+#banner .academy-logo .academy-logo-txt {
+    font-family: "MyriadPro Regular";
+    font-size: 3.7vw;
+    line-height: 1.2em;
+    margin: auto 0px;
+}
+
+#banner .academy-logo .academy-logo-txt .academy-logo-txt-bold {
+    font-family: "MyriadPro SemiBold";
+    margin: 0px;
+    font-size: 4vw;
+    line-height: 1.2em;
+}
+
+#banner .banner-content {
+    font-family: "RobotoMono Bold";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#banner .banner-content .banner-ukr-txt {
+    font-size: 4.8vw;
+    color: var(--color-grey-banner);
+    line-height: 1.67em;
+    margin-bottom: 0px;
+}
+
+#banner .banner-content .banner-line {
+    width: 56vw;
+}
+
+#banner .banner-content .banner-control-txt {
+    font-size: 5.3vw;
+    letter-spacing: 0.07em;
+    margin-bottom: 6.4vw;
+}
+
+#banner .banner-content .banner-department-txt-wrapper {
+    width: 87.5vw;
+    height: 12.1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+#banner .banner-content .banner-department-txt-wrapper .banner-flag {
+    height: 12.1vw;
+    position: absolute;
+    right: 0px;
+}
+
+#banner .banner-content .banner-department-txt {
+    font-size: 8.5vw;
+    letter-spacing: 0.08em;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0px;
+}
+
+#banner .banner-content .banner-department-txt-en {
+    font-size: 8vw;
+}
+
+#banner .banner-content .banner-description-txt {
+    font-family: "RobotoMono SemiBold";
+    font-size: 3.7vw;
+    line-height: 1.4em;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-bottom: 4.3vw;
+}
+
+#banner .banner-content .banner-button-wrapper {
+    width: 79.7vw;
+    height: 14.4vw;
+    position: relative;
+    text-decoration: none;
+}
+
+#banner .banner-content .banner-button-wrapper .banner-button-frame {
+    width: 77.6vw;
+    height: 13vw;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: 0.1vw solid var(--color-black);
+}
+
+#banner .banner-content .banner-button-wrapper .banner-button-frame-hover {
+    border: 0.1vw solid var(--color-banner-button-hover);
+}
+
+#banner .banner-content .banner-button-wrapper .banner-button-frame-active {
+    border: 0.1vw solid var(--color-black);
+}
+
+#banner .banner-content .banner-button-wrapper .banner-button {
+    width: 77.6vw;
+    height: 13vw;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.31em;
+    font-size: 4.3vw;
+    color: var(--color-grey-banner-enroll);
+}
+
+#banner .banner-content .banner-button-wrapper .banner-button-hover {
+    background-color: var(--color-banner-button-hover);
+}
+
+#banner .banner-content .banner-button-wrapper .banner-button-active {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border: 1px solid var(--color-black)
+}
+
+#banner .banner-phone {
+    width: 39.7vw;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 5vw;
+    bottom: 2.1vw;
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+#banner .banner-phone .banner-phone-img {
+    height: 8.5vw;
+}
+
+#banner .banner-phone .banner-phone-number {
+    font-family: "RobotoMono SemiBold";
+    font-size: 3.7vw;
+    margin: auto 0;
+}
+
+/* banner end */
 
 /*footer start*/
 
@@ -3658,6 +3863,106 @@ textarea {
     }
 
     /*specialty end*/
+
+    /* banner start */
+    #banner {
+        background: url(../images/banner/banner_background_desktop.webp);
+        background-position: center;
+        background-size: cover;
+        height: 20.8vw;
+        padding-top: 1.3vw;
+    }
+
+    #banner .academy-logo {
+        width: 12.89vw;
+        top: 1.17vw;
+        left: 1.17vw;
+    }
+
+    #banner .academy-logo .academy-logo-img {
+        height: 5vw;
+    }
+
+    #banner .academy-logo .academy-logo-txt {
+        font-size: 1.37vw;
+    }
+
+    #banner .academy-logo .academy-logo-txt .academy-logo-txt-bold {
+        font-size: 1.46vw;
+    }
+
+    #banner .banner-content .banner-ukr-txt {
+        font-size: 1.3vw;
+        line-height: 1em;
+        margin-bottom: 0.1vw;
+    }
+
+    #banner .banner-content .banner-line {
+        width: 15vw;
+        margin-bottom: 0.5vw;
+    }
+
+    #banner .banner-content .banner-control-txt {
+        font-size: 1.38vw;
+        line-height: 1em;
+        margin-bottom: 1.15vw;
+    }
+
+    #banner .banner-content .banner-department-txt-wrapper {
+        width: 34.5vw;
+        height: 4.8vw;
+        margin-bottom: 0.2vw;
+    }
+
+    #banner .banner-content .banner-department-txt-wrapper .banner-flag {
+        height: 4.8vw;
+    }
+
+    #banner .banner-content .banner-department-txt {
+        font-size: 3.3vw;
+    }
+
+    #banner .banner-content .banner-department-txt-en {
+        font-size: 3.1vw;
+    }
+
+    #banner .banner-content .banner-description-txt {
+        font-size: 1.2vw;
+        margin-bottom: 1.3vw;
+        width: 36.9vw;
+    }
+
+    #banner .banner-content .banner-button-wrapper {
+        width: 20.7vw;
+        height: 3.7vw;
+    }
+
+    #banner .banner-content .banner-button-wrapper .banner-button-frame {
+        width: 20.1vw;
+        height: 3.32vw;
+    }
+
+    #banner .banner-content .banner-button-wrapper .banner-button {
+        width: 20.1vw;
+        height: 3.32vw;
+        font-size: 1vw;
+    }
+
+    #banner .banner-phone {
+        width: 13.6vw;
+        left: 67.5vw;
+        bottom: 1.89vw;
+    }
+
+    #banner .banner-phone .banner-phone-img {
+        height: 2.1vw;
+    }
+
+    #banner .banner-phone .banner-phone-number {
+        font-size: 1.4vw;
+    }
+
+    /* banner end */
 
     /*footer start*/
     .scroll-to-top-btn {
