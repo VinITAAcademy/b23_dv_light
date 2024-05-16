@@ -1530,34 +1530,27 @@ textarea {
     width: 100%;
     height: 135vw;
     position: relative;
-    /* padding-top: 84px; */
     padding-top: 21vw;
 }
 
 #banner .academy-logo {
-    /* width: 132px; */
     width: 35.2vw;
     display: flex;
     justify-content: space-between;
     text-decoration: none;
     color: var(--color-black);
     position: absolute;
-    /* top: 20px; */
     top: 5.33vw;
-    /* left: 20px; */
     left: 5.33vw;
 }
 
 #banner .academy-logo .academy-logo-img {
-    /* height: 52px; */
     height: 13.87vw;
 }
 
 #banner .academy-logo .academy-logo-txt {
     font-family: "MyriadPro Regular";
-    /* font-size: 14px; */
     font-size: 3.7vw;
-    /* line-height: 16.8px; */
     line-height: 1.2em;
     margin: auto 0px;
 }
@@ -1565,9 +1558,7 @@ textarea {
 #banner .academy-logo .academy-logo-txt .academy-logo-txt-bold {
     font-family: "MyriadPro SemiBold";
     margin: 0px;
-    /* font-size: 15px; */
     font-size: 4vw;
-    /* line-height: 18px; */
     line-height: 1.2em;
 }
 
@@ -1579,30 +1570,23 @@ textarea {
 }
 
 #banner .banner-content .banner-ukr-txt {
-    /* font-size: 18px; */
     font-size: 4.8vw;
     color: var(--color-grey-banner);
-    /* line-height: 21px; */
     line-height: 1.67em;
-    /* margin-bottom: 2px; */
     margin-bottom: 0px;
 }
 
 #banner .banner-content .banner-line {
-    /* width: 210px; */
     width: 56vw;
 }
 
 #banner .banner-content .banner-control-txt {
-    /* font-size: 20px; */
     font-size: 5.3vw;
     letter-spacing: 0.07em;
-    /* margin-bottom: 24px; */
     margin-bottom: 6.4vw;
 }
 
 #banner .banner-content .banner-department-txt-wrapper {
-    /* width: 328px; */
     width: 87.5vw;
     height: 12.1vw;
     display: flex;
@@ -1610,7 +1594,6 @@ textarea {
     align-items: center;
     text-align: center;
     position: relative;
-    /* margin-bottom: 1px; */
     margin-bottom: 0px;
 }
 
@@ -1621,7 +1604,6 @@ textarea {
 }
 
 #banner .banner-content .banner-department-txt {
-    /* font-size: 32px; */
     font-size: 8.5vw;
     letter-spacing: 0.08em;
     position: relative;
@@ -1635,29 +1617,22 @@ textarea {
 
 #banner .banner-content .banner-description-txt {
     font-family: "RobotoMono SemiBold";
-    /* font-size: 14px; */
     font-size: 3.7vw;
-    /* line-height: 20px; */
     line-height: 1.4em;
     letter-spacing: 0.01em;
     text-align: center;
-    /* margin-bottom: 16px; */
     margin-bottom: 4.3vw;
 }
 
 #banner .banner-content .banner-button-wrapper {
-    /* width: 299px; */
     width: 79.7vw;
-    /* height: 54px; */
     height: 14.4vw;
     position: relative;
     text-decoration: none;
 }
 
 #banner .banner-content .banner-button-wrapper .banner-button-frame {
-    /* width: 291px; */
     width: 77.6vw;
-    /* height: 48.91px; */
     height: 13vw;
     position: absolute;
     top: 0px;
@@ -1674,9 +1649,7 @@ textarea {
 }
 
 #banner .banner-content .banner-button-wrapper .banner-button {
-    /* width: 291px; */
     width: 77.6vw;
-    /* height: 48.91px; */
     height: 13vw;
     position: absolute;
     bottom: 0px;
@@ -1686,7 +1659,6 @@ textarea {
     justify-content: center;
     align-items: center;
     letter-spacing: 0.31em;
-    /* font-size: 16px; */
     font-size: 4.3vw;
     color: var(--color-grey-banner-enroll);
 }
@@ -1702,27 +1674,22 @@ textarea {
 }
 
 #banner .banner-phone {
-    /* width: 149px; */
     width: 39.7vw;
     display: flex;
     justify-content: space-between;
     position: absolute;
-    /* left: 19px; */
     left: 5vw;
-    /* bottom: 8px; */
     bottom: 2.1vw;
     text-decoration: none;
     color: var(--color-black);
 }
 
 #banner .banner-phone .banner-phone-img {
-    /* height: 32px; */
     height: 8.5vw;
 }
 
 #banner .banner-phone .banner-phone-number {
     font-family: "RobotoMono SemiBold";
-    /* font-size: 14px; */
     font-size: 3.7vw;
     margin: auto 0;
 }
