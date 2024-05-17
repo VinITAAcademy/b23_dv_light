@@ -2084,8 +2084,7 @@ textarea {
     }
 
     #mainblock .work_it-pic {
-        right: 30px;
-        width: 128px;
+        width: 16.7vw;
         display: block;
         position: absolute;
         bottom: 75px;
