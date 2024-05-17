@@ -213,7 +213,7 @@ li {
 
 #header .burder-menu-text1 {
     display: block;
-    width: 211px;
+    width: 260px;
     height: 41px;
     flex-shrink: 0;
     margin: 0 auto;
@@ -235,13 +235,12 @@ li {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    right: 30px;
     bottom: 3px;
 }
 
 #header h2 {
     position: relative;
-    width: 240px;
+    width: 271px;
     color: var(--color-blue-1);
     font-family: Pacifico;
     font-size: 22px;
@@ -287,6 +286,8 @@ li {
     text-overflow: ellipsis;
     width: 100%;
     margin-left: 2px;
+    display: inline-block;
+    width: 300px;
 }
 
 .nav-item .dropdown {
@@ -330,7 +331,7 @@ li {
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 22px;
+    bottom: 10px;
 }
 
 #header .horizontal-line1 {
@@ -386,6 +387,12 @@ li {
     position: absolute;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 #header .dropdown-content img {
@@ -1095,7 +1102,7 @@ li {
     margin: 0;
     font-size: 12px;
     font-weight: 400;
-    width: 236px;
+    width: 260px;
 }
 
 #specialty .cards .programing .card-descripton {
@@ -1491,7 +1498,7 @@ textarea {
     width: 57px;
     height: 17px;
     margin-left: 10px;
-    margin-top: 17px;
+    margin-top: 8px;
 }
 
 #modalWithModals .dropdown-content {
@@ -1587,7 +1594,7 @@ textarea {
 }
 
 #banner .banner-content .banner-department-txt-wrapper {
-    width: 87.5vw;
+    width: 92.5vw;
     height: 12.1vw;
     display: flex;
     justify-content: center;
@@ -1936,7 +1943,7 @@ textarea {
     }
 
     #header h2 {
-        width: 436px;
+        width: 493px;
         position: relative;
         color: var(--color-blue-1);
         font-family: Pacifico;
@@ -1946,6 +1953,11 @@ textarea {
         line-height: normal;
         right: 46px;
         top: 2px;
+    }
+
+    #header .offcanvas-body .nav-item .nav-link,
+    #header .offcanvas-body .nav-item .dropdown-item {
+        width: 600px;
     }
 
     #header .nav-link,
@@ -2939,14 +2951,18 @@ textarea {
     }
 
     #header .dropdown {
-        height: 65px;
+        height: 70px;
+    }
+
+    #header .dropdown-list{
+        width: 317px;
     }
 
     .dropdown-toggle::after {
         margin-left: 3px;
         vertical-align: 4px;
         position: relative;
-        top: 50%;
+        top: 30%;
     }
 
     #header .navbar-nav .dropdown-menu {
@@ -2957,6 +2973,7 @@ textarea {
     #header .offcanvas-body .nav-item .dropdown-item {
         margin: 0;
         width: 290px;
+        display: inline-block;
     }
 
     #header .navbar-toggler {
@@ -2988,11 +3005,11 @@ textarea {
         line-height: normal;
         margin: 0px 8px 3px 26px;
     }
-    
-    #header .dropdown-toggle{
+
+    #header .dropdown-toggle {
         margin: 0;
     }
-    
+
     #header .horizontal-line {
         display: none;
     }
@@ -3058,6 +3075,11 @@ textarea {
 /*============================ Desktop 1024 px========================*/
 
 @media (min-width: 1024px) {
+
+    #header .offcanvas-body .nav-item .nav-link,
+    #header .offcanvas-body .nav-item .dropdown-item {
+        width: 100%;
+    }
 
     /*main-block start*/
     #mainblock .mainblock {
@@ -3663,7 +3685,7 @@ textarea {
 
     #specialty .cards .card .card-descripton {
         font-size: 18px;
-        width: 310px;
+        width: 365px;
     }
 
     #specialty .cards .label-button {
@@ -3909,7 +3931,7 @@ textarea {
     }
 
     #banner .banner-content .banner-department-txt-wrapper {
-        width: 34.5vw;
+        width: 36.5vw;
         height: 4.8vw;
         margin-bottom: 0.2vw;
     }
