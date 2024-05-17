@@ -967,7 +967,6 @@ li {
 /*reference to financial support start*/
 #financialSupport .qr {
     background-image: url(../images/reference_to_financial_support/background.jpg);
-    height: 150px;
     padding: 20px;
     margin-bottom: 50px;
 }
@@ -978,17 +977,24 @@ li {
     text-align: center;
     font-family: Montserrat;
     font-size: 12px;
+    margin-bottom: 14px;
 
 
 }
 
 #financialSupport .link {
-    padding-top: 8px;
+    padding: 10px 0px;
+    width: 207px;
+    border-radius: 5px;
     text-align: center;
-    color: var(--color-yellow);
+    color: var(--color-blue-1);
+    background: linear-gradient(71.79deg, #F4CE00 15.58%, #F1CB00 20.36%, #F2CC00 29.1%, #FFDD2C 46.53%, #FCDF43 52.25%, #FFE76A 66.1%, #E7C200 88.28%, #DBB800 95.32%), linear-gradient(254.01deg, rgba(253, 221, 46, 0.2) 57.74%, rgba(241, 241, 237, 0.2) 79.91%, rgba(255, 213, 0, 0.2) 102.98%);
     font-family: Montserrat;
     font-size: 18px;
     text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
 
 }
 
@@ -2527,7 +2533,6 @@ textarea {
         background-image: url(../images/reference_to_financial_support/qr_tablet.png);
         background-position: center;
         background-size: cover;
-        height: 220px;
 
     }
 
@@ -2547,7 +2552,7 @@ textarea {
     #financialSupport .link {
         text-align: center;
         font-size: 32px;
-        font-weight: 700;
+        width: 300px;
 
     }
 
@@ -3573,8 +3578,8 @@ textarea {
         background: url(../images/our_partners/border.svg) no-repeat;
         background-size: contain;
         background-position: center;
-        width: 904px;
-        height: 347px;
+        width: 1000px;
+        height: 382px;
         position: relative;
         overflow: hidden;
     }
@@ -3629,7 +3634,7 @@ textarea {
     /*reference to financial support start*/
     #financialSupport .qr {
         background-image: url(../images/reference_to_financial_support/qr_desktop.png);
-        height: 228px;
+        height: 273px;
         background-size: cover;
         background-repeat: no-repeat;
         max-width: 1060px;
@@ -3645,15 +3650,15 @@ textarea {
         font-style: italic;
         font-weight: 500;
         line-height: normal;
-
+        width: 950px;
     }
 
     #financialSupport .link {
-        font-size: 30px;
-        font-weight: 350;
-        padding-top: 8px;
-        padding-left: 27px;
-        text-align: left;
+        width: 239px;
+        font-size: 20px;
+        line-height: 24.38px;
+        padding: 18.5px 0px;
+        margin: 0px 0px 29px 154px;
     }
 
     /*reference to financial support end*/
