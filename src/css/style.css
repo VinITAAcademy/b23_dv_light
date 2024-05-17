@@ -22,6 +22,34 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "MyriadPro Regular";
+    src: url("../fonts/MYRIADPRO-REGULAR.OTF");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MyriadPro SemiBold";
+    src: url("../fonts/MyriadPro-Semibold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "RobotoMono SemiBold";
+    src: url("../fonts/RobotoMono-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "RobotoMono Bold";
+    src: url("../fonts/RobotoMono-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -45,6 +73,9 @@ li {
     --color-footer: #6a8ea8;
     --color-grey-1: #999999;
     --color-grey-2: #e9e9e9;
+    --color-grey-banner: #858585;
+    --color-grey-banner-enroll: #E5E5E5;
+    --color-banner-button-hover: #9B9B9B
 }
 
 .grecaptcha-badge {
@@ -146,7 +177,7 @@ li {
 
 #header .offcanvas.offcanvas-end {
     width: 100%;
-    height: 351px;
+    height: 400px;
     border-radius: 20px;
 }
 
@@ -154,7 +185,21 @@ li {
     position: relative;
     left: 8px;
     top: 45px;
-    margin: 0 auto;
+    overflow-y: auto;
+    margin-bottom: 85px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+
+#header .dropdown-menu {
+    width: 450px;
+}
+
+#header .dropdown-item {
+    width: 100%;
 }
 
 #header .navbar-toggler {
@@ -168,7 +213,7 @@ li {
 
 #header .burder-menu-text1 {
     display: block;
-    width: 211px;
+    width: 260px;
     height: 41px;
     flex-shrink: 0;
     margin: 0 auto;
@@ -190,13 +235,12 @@ li {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    right: 30px;
     bottom: 3px;
 }
 
 #header h2 {
     position: relative;
-    width: 240px;
+    width: 271px;
     color: var(--color-blue-1);
     font-family: Pacifico;
     font-size: 22px;
@@ -207,7 +251,8 @@ li {
     right: 11px;
 }
 
-#header .nav-link {
+#header .nav-link,
+#header .nav-links {
     color: var(--color-blue-1);
     font-family: Montserrat;
     font-size: 18px;
@@ -216,6 +261,56 @@ li {
     line-height: normal;
     padding: 0 5px;
     margin: 7px 0px;
+    text-decoration: none;
+}
+
+#header .dropdown {
+    display: flex;
+    height: 36px;
+    z-index: 0;
+    text-align: center;
+}
+
+#header .navbar-nav .dropdown-menu {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    width: 100%;
+}
+
+#header .offcanvas-body .nav-item .nav-link,
+#header .offcanvas-body .nav-item .dropdown-item {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    margin-left: 2px;
+    display: inline-block;
+    width: 300px;
+}
+
+.nav-item .dropdown {
+    flex-direction: column;
+    z-index: 0;
+    align-items: start;
+}
+
+#header .dropdown-menu {
+    border: none;
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-toggle::after {
+    margin-left: 1px;
+    vertical-align: 4px;
+}
+
+.dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #header .nav-link:hover {
@@ -236,17 +331,18 @@ li {
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 22px;
+    bottom: 10px;
 }
 
 #header .horizontal-line1 {
-    top: 9px;
     width: 311px;
     height: 2px;
-    position: relative;
+    position: fixed;
     background-color: var(--color-blue-1);
     border-bottom: 1px solid var(--color-yellow);
     margin: 0 auto;
+    left: 0;
+    right: 0;
 }
 
 #header .horizontal-line {
@@ -291,6 +387,12 @@ li {
     position: absolute;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 #header .dropdown-content img {
@@ -1000,7 +1102,7 @@ li {
     margin: 0;
     font-size: 12px;
     font-weight: 400;
-    width: 236px;
+    width: 260px;
 }
 
 #specialty .cards .programing .card-descripton {
@@ -1396,7 +1498,7 @@ textarea {
     width: 57px;
     height: 17px;
     margin-left: 10px;
-    margin-top: 17px;
+    margin-top: 8px;
 }
 
 #modalWithModals .dropdown-content {
@@ -1426,6 +1528,180 @@ textarea {
 }
 
 /*specialty end*/
+
+/* banner start */
+#banner {
+    background: url(../images/banner/banner_background_mobile.webp);
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 135vw;
+    position: relative;
+    padding-top: 21vw;
+}
+
+#banner .academy-logo {
+    width: 35.2vw;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: var(--color-black);
+    position: absolute;
+    top: 5.33vw;
+    left: 5.33vw;
+}
+
+#banner .academy-logo .academy-logo-img {
+    height: 13.87vw;
+}
+
+#banner .academy-logo .academy-logo-txt {
+    font-family: "MyriadPro Regular";
+    font-size: 3.7vw;
+    line-height: 1.2em;
+    margin: auto 0px;
+}
+
+#banner .academy-logo .academy-logo-txt .academy-logo-txt-bold {
+    font-family: "MyriadPro SemiBold";
+    margin: 0px;
+    font-size: 4vw;
+    line-height: 1.2em;
+}
+
+#banner .banner-content {
+    font-family: "RobotoMono Bold";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#banner .banner-content .banner-ukr-txt {
+    font-size: 4.8vw;
+    color: var(--color-grey-banner);
+    line-height: 1.67em;
+    margin-bottom: 0px;
+}
+
+#banner .banner-content .banner-line {
+    width: 56vw;
+}
+
+#banner .banner-content .banner-control-txt {
+    font-size: 5.3vw;
+    letter-spacing: 0.07em;
+    margin-bottom: 6.4vw;
+}
+
+#banner .banner-content .banner-department-txt-wrapper {
+    width: 92.5vw;
+    height: 12.1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+#banner .banner-content .banner-department-txt-wrapper .banner-flag {
+    height: 12.1vw;
+    position: absolute;
+    right: 0px;
+}
+
+#banner .banner-content .banner-department-txt {
+    font-size: 8.5vw;
+    letter-spacing: 0.08em;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0px;
+}
+
+#banner .banner-content .banner-department-txt-en {
+    font-size: 8vw;
+}
+
+#banner .banner-content .banner-description-txt {
+    font-family: "RobotoMono SemiBold";
+    font-size: 3.7vw;
+    line-height: 1.4em;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-bottom: 4.3vw;
+}
+
+#banner .banner-content .banner-button-wrapper {
+    width: 79.7vw;
+    height: 14.4vw;
+    position: relative;
+    text-decoration: none;
+}
+
+#banner .banner-content .banner-button-wrapper .banner-button-frame {
+    width: 77.6vw;
+    height: 13vw;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: 0.1vw solid var(--color-black);
+}
+
+#banner .banner-content .banner-button-wrapper .banner-button-frame-hover {
+    border: 0.1vw solid var(--color-banner-button-hover);
+}
+
+#banner .banner-content .banner-button-wrapper .banner-button-frame-active {
+    border: 0.1vw solid var(--color-black);
+}
+
+#banner .banner-content .banner-button-wrapper .banner-button {
+    width: 77.6vw;
+    height: 13vw;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.31em;
+    font-size: 4.3vw;
+    color: var(--color-grey-banner-enroll);
+}
+
+#banner .banner-content .banner-button-wrapper .banner-button-hover {
+    background-color: var(--color-banner-button-hover);
+}
+
+#banner .banner-content .banner-button-wrapper .banner-button-active {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border: 1px solid var(--color-black)
+}
+
+#banner .banner-phone {
+    width: 39.7vw;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 5vw;
+    bottom: 2.1vw;
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+#banner .banner-phone .banner-phone-img {
+    height: 8.5vw;
+}
+
+#banner .banner-phone .banner-phone-number {
+    font-family: "RobotoMono SemiBold";
+    font-size: 3.7vw;
+    margin: auto 0;
+}
+
+/* banner end */
 
 /*footer start*/
 
@@ -1618,14 +1894,22 @@ textarea {
 
     #header .offcanvas.offcanvas-end {
         width: 100%;
-        height: 692px;
+        height: 750px;
         border-radius: 20px;
     }
 
     #header .offcanvas-body {
         position: relative;
         left: 11px;
-        top: 95px;
+        overflow-y: auto;
+        max-height: 700px;
+        margin-top: 60px;
+        margin-bottom: 25px;
+        padding-top: 0;
+    }
+
+    #header .dropdown {
+        height: 103px;
     }
 
     #header .navbar-toggler-icon {
@@ -1659,7 +1943,7 @@ textarea {
     }
 
     #header h2 {
-        width: 436px;
+        width: 493px;
         position: relative;
         color: var(--color-blue-1);
         font-family: Pacifico;
@@ -1671,7 +1955,13 @@ textarea {
         top: 2px;
     }
 
-    #header .nav-link {
+    #header .offcanvas-body .nav-item .nav-link,
+    #header .offcanvas-body .nav-item .dropdown-item {
+        width: 600px;
+    }
+
+    #header .nav-link,
+    #header .nav-links {
         color: var(--color-blue-1);
         font-family: Montserrat;
         font-size: 40px;
@@ -1696,11 +1986,10 @@ textarea {
     }
 
     #header .horizontal-line1 {
-        top: -27px;
         width: 688px;
         height: 3.1px;
-        right: 5px;
-        position: relative;
+        position: fixed;
+        bottom: 150px;
         background-color: var(--color-blue-1);
         border-bottom: 1.9px solid var(--color-yellow);
     }
@@ -1723,6 +2012,7 @@ textarea {
         position: relative;
         top: 6px;
         right: 8px;
+        bottom: 0;
     }
 
     #header .dropdown select {
@@ -2633,13 +2923,17 @@ textarea {
     }
 
     #header .container-fluid {
-        width: 99%;
+        width: 96%;
         padding: 0 !important;
+        margin: 0;
     }
 
     #header .offcanvas-body {
         top: 5px;
-        left: 114px;
+        padding: 0;
+        margin: 0;
+        overflow: visible;
+        margin-right: 15px;
     }
 
     #header .foto-swallow {
@@ -2654,6 +2948,32 @@ textarea {
 
     #header .offcanvas.offcanvas-end {
         display: flex;
+    }
+
+    #header .dropdown {
+        height: 70px;
+    }
+
+    #header .dropdown-list{
+        width: 317px;
+    }
+
+    .dropdown-toggle::after {
+        margin-left: 3px;
+        vertical-align: 4px;
+        position: relative;
+        top: 30%;
+    }
+
+    #header .navbar-nav .dropdown-menu {
+        width: 325px;
+        left: -90px;
+    }
+
+    #header .offcanvas-body .nav-item .dropdown-item {
+        margin: 0;
+        width: 290px;
+        display: inline-block;
     }
 
     #header .navbar-toggler {
@@ -2672,7 +2992,8 @@ textarea {
         display: none;
     }
 
-    #header .nav-link {
+    #header .nav-link,
+    #header .nav-links {
         display: flex;
         position: relative;
         left: 8px;
@@ -2683,6 +3004,10 @@ textarea {
         font-weight: 500;
         line-height: normal;
         margin: 0px 8px 3px 26px;
+    }
+
+    #header .dropdown-toggle {
+        margin: 0;
     }
 
     #header .horizontal-line {
@@ -2750,6 +3075,11 @@ textarea {
 /*============================ Desktop 1024 px========================*/
 
 @media (min-width: 1024px) {
+
+    #header .offcanvas-body .nav-item .nav-link,
+    #header .offcanvas-body .nav-item .dropdown-item {
+        width: 100%;
+    }
 
     /*main-block start*/
     #mainblock .mainblock {
@@ -3355,7 +3685,7 @@ textarea {
 
     #specialty .cards .card .card-descripton {
         font-size: 18px;
-        width: 310px;
+        width: 365px;
     }
 
     #specialty .cards .label-button {
@@ -3555,6 +3885,106 @@ textarea {
     }
 
     /*specialty end*/
+
+    /* banner start */
+    #banner {
+        background: url(../images/banner/banner_background_desktop.webp);
+        background-position: center;
+        background-size: cover;
+        height: 20.8vw;
+        padding-top: 1.3vw;
+    }
+
+    #banner .academy-logo {
+        width: 12.89vw;
+        top: 1.17vw;
+        left: 1.17vw;
+    }
+
+    #banner .academy-logo .academy-logo-img {
+        height: 5vw;
+    }
+
+    #banner .academy-logo .academy-logo-txt {
+        font-size: 1.37vw;
+    }
+
+    #banner .academy-logo .academy-logo-txt .academy-logo-txt-bold {
+        font-size: 1.46vw;
+    }
+
+    #banner .banner-content .banner-ukr-txt {
+        font-size: 1.3vw;
+        line-height: 1em;
+        margin-bottom: 0.1vw;
+    }
+
+    #banner .banner-content .banner-line {
+        width: 15vw;
+        margin-bottom: 0.5vw;
+    }
+
+    #banner .banner-content .banner-control-txt {
+        font-size: 1.38vw;
+        line-height: 1em;
+        margin-bottom: 1.15vw;
+    }
+
+    #banner .banner-content .banner-department-txt-wrapper {
+        width: 36.5vw;
+        height: 4.8vw;
+        margin-bottom: 0.2vw;
+    }
+
+    #banner .banner-content .banner-department-txt-wrapper .banner-flag {
+        height: 4.8vw;
+    }
+
+    #banner .banner-content .banner-department-txt {
+        font-size: 3.3vw;
+    }
+
+    #banner .banner-content .banner-department-txt-en {
+        font-size: 3.1vw;
+    }
+
+    #banner .banner-content .banner-description-txt {
+        font-size: 1.2vw;
+        margin-bottom: 1.3vw;
+        width: 36.9vw;
+    }
+
+    #banner .banner-content .banner-button-wrapper {
+        width: 20.7vw;
+        height: 3.7vw;
+    }
+
+    #banner .banner-content .banner-button-wrapper .banner-button-frame {
+        width: 20.1vw;
+        height: 3.32vw;
+    }
+
+    #banner .banner-content .banner-button-wrapper .banner-button {
+        width: 20.1vw;
+        height: 3.32vw;
+        font-size: 1vw;
+    }
+
+    #banner .banner-phone {
+        width: 13.6vw;
+        left: 67.5vw;
+        bottom: 1.89vw;
+    }
+
+    #banner .banner-phone .banner-phone-img {
+        height: 2.1vw;
+    }
+
+    #banner .banner-phone .banner-phone-number {
+        font-size: 1.4vw;
+    }
+
+    /* banner end */
 
     /*footer start*/
     .scroll-to-top-btn {
@@ -3761,7 +4191,8 @@ textarea {
     right: 11px;
 }
 
-#header404 .nav-link {
+#header404 .nav-link,
+#header404 .nav-links {
     color: var(--color-blue-1);
     font-family: Montserrat;
     font-size: 18px;
@@ -4220,7 +4651,8 @@ textarea {
         top: 2px;
     }
 
-    #header404 .nav-link {
+    #header404 .nav-link,
+    #header404 .nav-links {
         color: var(--color-blue-1);
         font-family: Montserrat;
         font-size: 40px;
@@ -4536,7 +4968,8 @@ textarea {
         display: none;
     }
 
-    #header404 .nav-link {
+    #header404 .nav-link,
+    #header404 .nav-links {
         display: flex;
         position: relative;
         left: 8px;
