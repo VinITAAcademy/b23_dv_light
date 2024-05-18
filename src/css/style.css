@@ -3197,15 +3197,9 @@ textarea {
         width: 17.54vw;
         height: 5.4vw;
         border-radius: 1.1vw;
-        border: 0.1vw solid var(--color-black);
-        position: absolute;
         right: 9.08vw;
         bottom: 6.93vw;
-        z-index: 5;
-        rotate: -17deg;
         padding-top: 0.3vw;
-        text-align: center;
-        color: var(--color-black);
     }
 
     #mainblock .work_it .work_it_linc .garanty .garanty-txt {
@@ -3217,7 +3211,6 @@ textarea {
     #mainblock .work_it .work_it_linc .garanty .garanty-txt-italic {
         font-family: "Montserrat Medium";
         font-size: 0.97vw;
-        margin: 0 auto;
     }
 
     #mainblock .text {
@@ -3709,8 +3702,6 @@ textarea {
         flex: 1;
     }
 
-    /*our partners end*/
-    /*our partners start*/
     /*our partners end*/
 
     /*reference to financial support start*/
