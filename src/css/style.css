@@ -2090,8 +2090,7 @@ textarea {
     }
 
     #mainblock .work_it-pic {
-        right: 30px;
-        width: 128px;
+        width: 16.7vw;
         display: block;
         position: absolute;
         bottom: 75px;
@@ -2925,6 +2924,8 @@ textarea {
 
     #header .navbar-expand-lg .navbar-nav {
         display: flex;
+        justify-content: center !important;
+        gap: 4.9vw;
     }
 
     #header .container-fluid {
@@ -2935,10 +2936,12 @@ textarea {
 
     #header .offcanvas-body {
         top: 5px;
+        left: 30px;
         padding: 0;
         margin: 0;
         overflow: visible;
         margin-right: 15px;
+        position: unset;
     }
 
     #header .foto-swallow {
@@ -2957,6 +2960,7 @@ textarea {
 
     #header .dropdown {
         height: 70px;
+        margin-bottom: 8px;
     }
 
     #header .dropdown-list{
@@ -3004,11 +3008,10 @@ textarea {
         left: 8px;
         color: var(--color-blue-1);
         font-family: Montserrat;
-        font-size: 18px;
+        font-size: 26px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        margin: 0px 8px 3px 26px;
     }
 
     #header .dropdown-toggle {
@@ -3039,10 +3042,11 @@ textarea {
         padding: 10px 20px;
         font-size: 16px;
         cursor: pointer;
+        margin-top: 10px;
     }
 
     #header .dropdown-btn img {
-        width: 38px;
+        width: 50px;
         position: relative;
         top: 15px;
         left: 22px;
@@ -3059,7 +3063,7 @@ textarea {
 
     #header .dropdown-content img {
         display: block;
-        width: 38px;
+        width: 50px;
         height: auto;
         margin-top: 3px;
         margin-left: -4px;
@@ -3067,6 +3071,7 @@ textarea {
 
     #header .language-dropdown:hover .dropdown-content {
         display: block;
+        margin-top: 10px;
     }
 
     #header .language-dropdown-burger {
@@ -3086,6 +3091,12 @@ textarea {
         width: 100%;
     }
 
+    #header .language-dropdown {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
     /*main-block start*/
     #mainblock .mainblock {
         background: url(../images/Main_block/main-background.webp);
@@ -3099,7 +3110,7 @@ textarea {
 
     #mainblock .flag-backgroud {
         position: absolute;
-        top: 150px;
+        top: 93px;
         width: calc(100% - 60px);
         z-index: 1;
     }
@@ -3107,16 +3118,15 @@ textarea {
     #mainblock .social {
         display: block;
         position: absolute;
-        right: 0;
+        right: 10px;
         left: unset;
-        top: 42%;
-        transform: translate(-50%, -50%);
+        top: 10%;
     }
 
     #mainblock .social-list__item img {
         display: block;
-        width: 32px;
-        height: 32px;
+        width: 40px;
+        height: 40px;
     }
 
     #mainblock .social-list {
@@ -3125,12 +3135,12 @@ textarea {
         align-items: center;
         justify-content: center;
         position: relative;
-        top: 98px;
-        gap: 13px;
+        top: 42px;
+        gap: 2.9vw;
     }
 
     #mainblock .work_it-pic {
-        width: 180px;
+        width: 17.6vw;
         position: absolute;
         bottom: 56px;
         right: 90px;
@@ -3936,7 +3946,7 @@ textarea {
     }
 
     #banner .banner-content .banner-department-txt-wrapper {
-        width: 36.5vw;
+        width: 34.5vw;
         height: 4.8vw;
         margin-bottom: 0.2vw;
     }
