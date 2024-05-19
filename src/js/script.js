@@ -397,9 +397,9 @@ function entrantSubmitResponse(errorSt) {
 }
 
 // banner start
-let bannerButtonWrapper = document.getElementById("banner-button-wrapper");
-let bannerButtonFrame = document.getElementById("banner-button-frame");
-let bannerButton = document.getElementById("banner-button");
+const bannerButtonWrapper = document.getElementById("banner-button-wrapper");
+const bannerButtonFrame = document.getElementById("banner-button-frame");
+const bannerButton = document.getElementById("banner-button");
 
 bannerButtonWrapper.addEventListener("mouseover", () => {
     bannerButton.classList.add("banner-button-hover");

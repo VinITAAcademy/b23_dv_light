@@ -50,6 +50,27 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url("../fonts/Montserrat-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat Medium";
+    src: url("../fonts/Montserrat-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat Italic";
+    src: url("../fonts/Montserrat-Italic.ttf");
+    font-weight: 400;
+    font-style: italic;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -462,7 +483,7 @@ li {
     height: 20px;
 }
 
-#mainblock .work_it-pic {
+#mainblock .work_it {
     display: none;
 }
 
@@ -2089,13 +2110,37 @@ textarea {
         display: none;
     }
 
-    #mainblock .work_it-pic {
-        width: 16.7vw;
+    #mainblock .work_it {
         display: block;
+    }
+
+    #mainblock .work_it .work_it_linc .garanty {
+        width: 16.67vw;
+        height: 6vw;
+        border-radius: 0.8vw;
+        border: 0.1vw solid var(--color-black);
         position: absolute;
-        bottom: 75px;
-        right: 20px;
-        z-index: 2;
+        right: 3.1vw;
+        bottom: 11.7vw;
+        z-index: 5;
+        rotate: -17deg;
+        padding-top: 0.44vw;
+        text-align: center;
+        color: var(--color-black);
+    }
+
+    #mainblock .work_it .work_it_linc .garanty .garanty-txt {
+        font-family: "Montserrat Bold";
+        font-size: 1.69vw;
+        line-height: 0.92em;
+        width: 13.7vw;
+        margin: 0 auto 0.37vw;
+    }
+
+    #mainblock .work_it .work_it_linc .garanty .garanty-txt-italic {
+        font-family: "Montserrat Italic";
+        font-size: 0.78vw;
+        margin: 0 auto;
     }
 
     #mainblock .text_1 {
@@ -2963,7 +3008,7 @@ textarea {
         margin-bottom: 8px;
     }
 
-    #header .dropdown-list{
+    #header .dropdown-list {
         width: 317px;
     }
 
@@ -3103,7 +3148,7 @@ textarea {
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 100vh;
+        height: 48.6vw;
         margin: 0 auto;
         position: relative;
     }
@@ -3120,7 +3165,9 @@ textarea {
         position: absolute;
         right: 10px;
         left: unset;
+        top: 50px;
         top: 10%;
+        bottom: unset;
     }
 
     #mainblock .social-list__item img {
@@ -3133,19 +3180,37 @@ textarea {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         position: relative;
         top: 42px;
+        transition: 0.3s all;
+        justify-content: space-between;
+        justify-content: flex-end;
         gap: 2.9vw;
     }
 
-    #mainblock .work_it-pic {
-        width: 17.6vw;
-        position: absolute;
-        bottom: 56px;
-        right: 90px;
-        z-index: 2;
-        display: block;
+    #mainblock .social-list-active {
+        top: 80px;
+        gap: 2.1vw;
+    }
+
+    #mainblock .work_it .work_it_linc .garanty {
+        width: 17.54vw;
+        height: 5.4vw;
+        border-radius: 1.1vw;
+        right: 9.08vw;
+        bottom: 6.93vw;
+        padding-top: 0.3vw;
+    }
+
+    #mainblock .work_it .work_it_linc .garanty .garanty-txt {
+        font-size: 1.95vw;
+        width: 15vw;;
+        margin: 0 auto;
+    }
+
+    #mainblock .work_it .work_it_linc .garanty .garanty-txt-italic {
+        font-family: "Montserrat Medium";
+        font-size: 0.97vw;
     }
 
     #mainblock .text {
@@ -3638,8 +3703,6 @@ textarea {
     }
 
     /*our partners end*/
-    /*our partners start*/
-    /*our partners end*/
 
     /*reference to financial support start*/
     #financialSupport .qr {
@@ -3949,6 +4012,10 @@ textarea {
         width: 34.5vw;
         height: 4.8vw;
         margin-bottom: 0.2vw;
+    }
+
+    #banner .banner-content .banner-department-txt-wrapper-de {
+        width: 36.5vw;
     }
 
     #banner .banner-content .banner-department-txt-wrapper .banner-flag {
@@ -4355,10 +4422,6 @@ textarea {
     display: block;
     width: 20px;
     height: 20px;
-}
-
-#mainblock404 .work_it-pic {
-    display: none;
 }
 
 #mainblock404 .text {
@@ -4791,16 +4854,6 @@ textarea {
         display: none;
     }
 
-    #mainblock404 .work_it-pic {
-        right: 30px;
-        width: 128px;
-        display: block;
-        position: absolute;
-        bottom: 75px;
-        right: 20px;
-        z-index: 2;
-    }
-
     #mainblock404 .text_1 {
         width: 626px;
         font-family: "Pacifico";
@@ -4815,6 +4868,7 @@ textarea {
 
     #mainblock404 .text_3 {
         display: flex;
+        justify-content: center;
         color: var(--color-blue-1);
         width: 666px;
         font-family: Montserrat;
@@ -5069,44 +5123,48 @@ textarea {
         background-repeat: no-repeat;
         background-size: cover;
         max-width: 100%;
-        height: 82vh;
+        height: 48.6vw;
         margin: 0 auto;
         position: relative;
     }
 
     #mainblock404 .flag-backgroud {
         top: 72px;
-        width: 94%;
+        width: calc(100% - 60px);
         z-index: 1;
     }
 
     #mainblock404 .social {
         display: block;
         position: absolute;
-        right: 3px;
+        right: 10px;
         left: unset;
-        top: 38%;
-        transform: translate(-50%, -50%);
+        top: 50px;
+        top: 10%;
+        bottom: unset;
     }
 
     #mainblock404 .social-list__item img {
         display: block;
-        width: 32px;
-        height: 32px;
+        width: 40px;
+        height: 40px;
     }
 
     #mainblock404 .social-list {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         position: relative;
-        top: 98px;
-        gap: 13px;
+        top: 42px;
+        transition: 0.3s all;
+        justify-content: space-between;
+        justify-content: flex-end;
+        gap: 2.9vw;
     }
 
-    #mainblock404 .work_it-pic {
-        display: none;
+    #mainblock404 .social-list-active {
+        top: 80px;
+        gap: 2.1vw;
     }
 
     #mainblock404 .text {
