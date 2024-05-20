@@ -402,7 +402,7 @@ const bannerButtonFrame = document.getElementById("banner-button-frame");
 const bannerButton = document.getElementById("banner-button");
 const screenWidth = window.screen.width;
 
-if (screenWidth > 768) {
+if (screenWidth > 1023) {
     bannerButtonWrapper.addEventListener("mouseover", () => {
         bannerButton.classList.add("banner-button-hover");
         bannerButtonFrame.classList.add("banner-button-frame-hover");
