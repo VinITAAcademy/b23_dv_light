@@ -70,7 +70,7 @@ const headerData = [
 const wrapper = document.getElementById("wrapper");
 const title = wrapper.getAttribute("title");
 
-switch(title) {
+switch (title) {
     case "Ukrainian":
         i = 0;
         break;
@@ -130,15 +130,6 @@ class Header extends HTMLElement {
                         <div class="horizontal-line"></div>
                         <div class="offcanvas-body" type="button" aria-label="Close">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-center">
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#specialty">${headerData[i].specialties}</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#partners">${headerData[i].partners}</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#footer">${headerData[i].contacts}</a>
-                                </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-links dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     ${headerData[i].ourProjects}
@@ -153,6 +144,15 @@ class Header extends HTMLElement {
                                         <li class="nav-item dropdown dropdown-list"><a class="dropdown-item nav-link" href="https://getstrong.intita.com/">${headerData[i].smallBusinessSupport}</a></li>
                                         <li class="nav-item dropdown dropdown-list"><a class="dropdown-item nav-link" href="https://uspih.vn.ua/">${headerData[i].veteransAndIDPsEmployment} і ВПО</a></li>
                                     </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#specialty">${headerData[i].specialties}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#partners">${headerData[i].partners}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#footer">${headerData[i].contacts}</a>
                                 </li>
                             </ul>
                             <div id="language-dropdown-desktop" class="language-dropdown">
@@ -198,7 +198,7 @@ class Header extends HTMLElement {
             </nav>
         </header>
         `;
-        
+
     }
 }
 customElements.define("header-component", Header);
