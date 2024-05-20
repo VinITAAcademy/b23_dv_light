@@ -400,16 +400,19 @@ function entrantSubmitResponse(errorSt) {
 const bannerButtonWrapper = document.getElementById("banner-button-wrapper");
 const bannerButtonFrame = document.getElementById("banner-button-frame");
 const bannerButton = document.getElementById("banner-button");
+const screenWidth = window.screen.width;
 
-bannerButtonWrapper.addEventListener("mouseover", () => {
-    bannerButton.classList.add("banner-button-hover");
-    bannerButtonFrame.classList.add("banner-button-frame-hover");
-});
+if (screenWidth > 1023) {
+    bannerButtonWrapper.addEventListener("mouseover", () => {
+        bannerButton.classList.add("banner-button-hover");
+        bannerButtonFrame.classList.add("banner-button-frame-hover");
+    });
 
-bannerButtonWrapper.addEventListener("mouseout", () => {
-    bannerButton.classList.remove("banner-button-hover");
-    bannerButtonFrame.classList.remove("banner-button-frame-hover");
-});
+    bannerButtonWrapper.addEventListener("mouseout", () => {
+        bannerButton.classList.remove("banner-button-hover");
+        bannerButtonFrame.classList.remove("banner-button-frame-hover");
+    });
+}
 
 bannerButtonWrapper.addEventListener("mousedown", () => {
     bannerButton.classList.add("banner-button-active");
