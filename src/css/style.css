@@ -1235,6 +1235,10 @@ li {
     padding-left: 7px;
 }
 
+.phone::placeholder {
+    color: transparent !important;
+}
+
 .modal-body .form-item textarea {
     height: 75px;
 }
@@ -1901,6 +1905,10 @@ textarea {
     font-size: 10px;
     margin-top: 5px;
     color: var(--color-yellow);
+}
+
+#footer .added-icon{
+    width: 32px;
 }
 
 /*footer end*/
@@ -3139,7 +3147,11 @@ textarea {
 
     #header .language-dropdown:hover .dropdown-content {
         display: block;
-        margin-top: 10px;
+        margin-top: 13px;
+    }
+
+    #header .language-dropdown:hover .dropdown-content a{
+        padding-bottom: 4px;
     }
 
     #header .language-dropdown-burger {
@@ -3772,7 +3784,7 @@ textarea {
         background: url(../images/specialty/card_background_desktop.png) no-repeat;
         background-size: cover;
         width: 422px;
-        height: 684px;
+        height: 620px;
     }
 
     #specialty .cards img {
