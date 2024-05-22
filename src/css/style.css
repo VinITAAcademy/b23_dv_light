@@ -1061,7 +1061,7 @@ li {
 
 #specialty .specialty-tittle .title {
     position: absolute;
-    top: -4.5%;
+    top: -4%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 18px;
