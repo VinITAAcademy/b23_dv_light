@@ -2651,16 +2651,15 @@ textarea {
     }
 
     #specialty .specialty-tittle {
-        background: url(../images/specialty/border_icons_tablet.png) no-repeat;
+        background: url(../images/specialty/border_icons_tablet.webp) no-repeat;
         background-size: cover;
-        width: 706px;
-        height: 893px;
+        width: 734px;
+        height: 710px;
     }
 
     #specialty .specialty-tittle .title {
         font-size: 45px;
         font-weight: 400;
-        left: 48%;
     }
 
     #specialty .specialty-tittle .description {
@@ -2676,7 +2675,6 @@ textarea {
         font-weight: 700;
         width: 506px;
         height: 384px;
-        margin-top: 92px;
     }
 
     #specialty .specialty-tittle .description-bottomn {
@@ -3814,11 +3812,10 @@ textarea {
     }
 
     #specialty .specialty-tittle {
-        background: url(../images/specialty/border_icons_desktop.png) no-repeat;
+        background: url(../images/specialty/border_icons_desktop.webp) no-repeat;
         background-size: contain;
-        margin-left: 26px;
         width: 927px;
-        height: 696px;
+        height: 572px;
     }
 
     #specialty .specialty-tittle .title {
@@ -3831,17 +3828,20 @@ textarea {
         font-size: 20px;
         font-weight: 500;
         margin-top: 29px;
+        position: static;
     }
 
     #specialty .specialty-tittle .professions {
         font-size: 40px;
         font-weight: 500;
-        margin-top: 15px;
         line-height: 200%;
+        height: 284px;
+        margin-bottom: 20px;
     }
 
     #specialty .specialty-tittle .description-bottomn {
         margin-bottom: 29px;
+        width: 364px;
     }
 
     .custom-modal-dialog {
