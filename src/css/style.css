@@ -1076,6 +1076,10 @@ li {
     margin-top: 14px;
 }
 
+#specialty .specialty-tittle .description-bottomn {
+    width: 268px;
+}
+
 #specialty .specialty-tittle .professions {
     width: 176px;
     height: 116px;
@@ -2681,6 +2685,7 @@ textarea {
         position: absolute;
         bottom: 0;
         margin-bottom: 120px;
+        width: 668px;
     }
 
     .custom-modal-dialog {
@@ -3830,6 +3835,7 @@ textarea {
         font-weight: 500;
         margin-top: 29px;
         position: static;
+        width: 506px;
     }
 
     #specialty .specialty-tittle .professions {
@@ -3842,7 +3848,6 @@ textarea {
 
     #specialty .specialty-tittle .description-bottomn {
         margin-bottom: 29px;
-        width: 364px;
     }
 
     .custom-modal-dialog {
