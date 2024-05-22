@@ -1061,7 +1061,7 @@ li {
 
 #specialty .specialty-tittle .title {
     position: absolute;
-    top: -4%;
+    top: -4.5%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 18px;
@@ -3822,6 +3822,7 @@ textarea {
         font-size: 42px;
         font-style: italic;
         font-weight: 600;
+        top: -5%;
     }
 
     #specialty .specialty-tittle .description {
