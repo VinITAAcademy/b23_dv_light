@@ -543,18 +543,23 @@ li {
     text-align: center;
 }
 
+#registration .container_rg {
+    height: 235px;
+}
+
 #registration .text_1 {
     color: var(--color-blue-1);
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: normal;
 }
 
 #registration .text_2 {
     font-family: Montserrat;
-    font-size: 12px;
+    font-size: 16px;
+    line-height: 23px;
     font-style: normal;
     font-weight: 400;
 }
@@ -600,7 +605,7 @@ li {
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
-    line-height: 135%;
+    line-height: 18px;
     text-align: center;
     color: var(--color-blue-1);
     padding: 29px 24px 24px 23px;
@@ -612,7 +617,7 @@ li {
 /*video clip start*/
 #video {
     margin-top: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 6.4vw;
 }
 
 #video .videoPreview {
@@ -649,14 +654,14 @@ li {
 
 #provide .text {
     position: relative;
-    bottom: 11px;
+    bottom: 2.93vw;
     color: var(--color-blue-1);
     text-align: center;
     font-family: Open Sans;
-    font-size: 20px;
+    font-size: 4.8vw;
     font-style: italic;
     font-weight: 600;
-    line-height: normal;
+    line-height: 6.13vw;
     margin: 0px;
 }
 
@@ -665,18 +670,19 @@ li {
     text-align: left;
     color: var(--color-blue-1);
     font-family: Montserrat;
-    font-size: 12px;
+    font-size: 3.2vw;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    line-height: 1.25em;
     margin: 0 auto;
-    padding: 0px 44px 0px 0px;
+    padding: 0px 11.7vw 0px 0px;
 }
 
 #provide .text1 li {
     position: sticky;
-    left: 42px;
-    margin: 0px 13px 19px 0px;
+    left: 11.8vw;
+    margin: 0px 3.47vw 5.07vw 0px;
     list-style: disc;
 }
 
@@ -698,7 +704,6 @@ li {
 #registerAttencion .block_registerAttencion {
     display: flex;
     width: 100%;
-    height: 344px;
     justify-content: center;
     flex-direction: column;
 }
@@ -706,16 +711,13 @@ li {
 #registerAttencion .block_register {
     display: flex;
     width: 100%;
-    height: 152px;
-    justify-content: space-around;
     flex-direction: column;
     align-items: center;
 }
 
 #registerAttencion .block_text {
     display: flex;
-    width: 277.20px;
-    height: 24px;
+    width: 330px;
     padding-top: 16px;
 }
 
@@ -723,10 +725,10 @@ li {
     color: var(--color-blue-1);
     text-align: center;
     font-family: Montserrat;
-    font-size: 10px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 23px;
 }
 
 #registerAttencion .button {
@@ -746,12 +748,13 @@ li {
     text-decoration: none;
     cursor: pointer;
     padding: 15px 10px;
+    margin-bottom: 20px;
 }
 
 #registerAttencion .block_attencion {
     display: flex;
     width: 100%;
-    height: 192px;
+    height: 205px;
     flex-direction: column;
     background-image: url(../images/to_register/coat_of_arms_background.jpg);
     background-repeat: no-repeat;
@@ -763,16 +766,19 @@ li {
 
 #registerAttencion .block_attencion_text1 {
     display: flex;
-    padding-top: 78px;
+    padding-top: 85px;
 }
 
-#registerAttencion .block_attencion_text-en {
-    display: flex;
-    padding-top: 51px;
+#registerAttencion .block_attencion_text1-en {
+    padding-top: 72px;
+}
+
+#registerAttencion .block_attencion_text1-pl {
+    padding-top: 67px;
 }
 
 #registerAttencion .block_attencion_text1 h2 {
-    width: 79px;
+    width: 90px;
     height: 23px;
     flex-shrink: 0;
     color: var(--color-blue-1);
@@ -781,6 +787,8 @@ li {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 12px;
+    text-align: center;
 }
 
 #registerAttencion .block_attencion_text-en h2 {
@@ -796,9 +804,18 @@ li {
     margin-right: 7px;
 }
 
+#registerAttencion .block_attencion_text1 .warning-de {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#registerAttencion .block_attencion_text1 .warning-en {
+    font-size: 16px;
+}
+
 #registerAttencion .block_attencion_text2 {
     display: flex;
-    width: 324px;
+    width: 334px;
     margin: 0 0 62px 0;
     flex-shrink: 0;
 }
@@ -808,8 +825,7 @@ li {
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    margin-top: 4px;
+    line-height: 18px;
     text-align: center;
 }
 
@@ -832,9 +848,17 @@ li {
 #resources .resources_block {
     position: relative;
     width: 342px;
-    height: 163px;
+    height: 193px;
     display: flex;
     justify-content: center;
+}
+
+#resources .resources_block-en {
+    height: 170px;
+}
+
+#resources .resources_block-pl {
+    height: 170px;
 }
 
 #resources .resources_block img {
@@ -853,6 +877,7 @@ li {
     font-style: normal;
     font-weight: 400;
     line-height: 14.63px;
+    line-height: 18px;
 }
 
 #resources .resources_block b {
@@ -890,6 +915,7 @@ li {
     font-size: 12px;
     font-weight: 400;
     line-height: normal;
+    line-height: 23px;
     width: 320px;
 }
 
@@ -897,7 +923,7 @@ li {
 #becomeOurPartner .title {
     font-size: 18px;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 23px;
     padding-top: 16px;
 }
 
@@ -1007,15 +1033,19 @@ li {
     margin-bottom: 50px;
 }
 
+#financialSupport .qr .qr-img {
+    display: none;
+}
+
 #financialSupport .text {
     padding-top: 8px;
     color: var(--color-white);
     text-align: center;
     font-family: Montserrat;
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 21px;
+    font-style: italic;
     margin-bottom: 14px;
-
-
 }
 
 #financialSupport .link {
@@ -1073,7 +1103,7 @@ li {
     width: 216px;
     font-size: 12px;
     margin: 0;
-    margin-top: 14px;
+    margin: 14px 0px 15px;
 }
 
 #specialty .specialty-tittle .description-bottomn {
@@ -1083,10 +1113,13 @@ li {
 #specialty .specialty-tittle .professions {
     width: 176px;
     height: 116px;
-    margin: 0;
+    margin: 0px 0px 5px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 16px;
+    line-height: 29px;
+    font-weight: 700;
 }
 
 #specialty .cards {
@@ -1801,11 +1834,9 @@ textarea {
 
 #footer .question_text {
     text-align: center;
-    font-size: 16px;
-    line-height: 1.5;
     color: var(--color-blue-1);
     font-size: 12px;
-    line-height: 14.63px;
+    line-height: 15px;
     font-weight: 500;
     margin-bottom: 0;
 }
@@ -2179,6 +2210,10 @@ textarea {
         white-space: nowrap;
     }
 
+    #mainblock .text_1-de {
+        font-size: 60px;
+    }
+
     #mainblock .text_2 {
         font-size: 128px;
     }
@@ -2197,7 +2232,7 @@ textarea {
         font-family: Montserrat;
         font-size: 32px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 500;
         line-height: normal;
     }
 
@@ -2296,6 +2331,7 @@ textarea {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        bottom: 16px;
     }
 
     #provide .text1 {
@@ -2309,6 +2345,13 @@ textarea {
         font-style: normal;
         font-weight: 500;
         line-height: 1.8;
+    }
+
+    #provide .text1 li {
+        position: sticky;
+        left: 42px;
+        margin: 0px 13px 19px 0px;
+        list-style: disc;
     }
 
     /*we provide end*/
@@ -2410,7 +2453,7 @@ textarea {
     }
 
     #registerAttencion .block_attencion_text1 h2 {
-        width: 196px;
+        width: 276px;
         height: 61px;
         flex-shrink: 0;
         color: var(--color-blue-1);
@@ -2419,18 +2462,15 @@ textarea {
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+        text-align: center;
     }
 
-    #registerAttencion .block_attencion_text-en h2 {
-        width: 196px;
-        height: 61px;
-        flex-shrink: 0;
-        color: var(--color-blue-1);
-        font-family: Montserrat;
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+    #registerAttencion .block_attencion_text1 .warning-de {
+        font-size: 45px;
+    }
+
+    #registerAttencion .block_attencion_text1 .warning-en {
+        font-size: 45px;
     }
 
     #registerAttencion .block_attencion_text2 {
@@ -2470,7 +2510,11 @@ textarea {
 
     #resources .resources_block {
         width: 742px;
-        height: 359px;
+        height: 382px;
+    }
+
+    #resources .resources_block-de {
+        height: 410px;
     }
 
     #resources .resources_block p {
@@ -2497,6 +2541,10 @@ textarea {
     #becomeOurPartner {
         padding-top: 65px;
         padding-bottom: 37px;
+    }
+
+    #becomeOurPartner {
+        padding-top: 0px;
     }
 
     #becomeOurPartner .description {
@@ -2606,9 +2654,19 @@ textarea {
     /*reference to financial support start*/
     #financialSupport .qr {
         background-image: url(../images/reference_to_financial_support/qr_tablet.png);
+        background-image: none;
+        background: var(--color-blue-1);
         background-position: center;
         background-size: cover;
+        position: relative;
+    }
 
+    #financialSupport .qr .qr-img {
+        display: block;
+        position: absolute;
+        width: 107px;
+        top: 30px;
+        right: 22px;
     }
 
     #financialSupport .text {
@@ -2617,11 +2675,9 @@ textarea {
         font-size: 20px;
         font-style: italic;
         font-weight: 500;
-        padding-top: 32px;
+        padding-top: 12px;
         padding-left: 22px;
         padding-right: 175px;
-
-
     }
 
     #financialSupport .link {
@@ -2676,9 +2732,9 @@ textarea {
 
     #specialty .specialty-tittle .professions {
         font-size: 48px;
-        font-weight: 700;
         width: 506px;
         height: 384px;
+        line-height: 82px;
     }
 
     #specialty .specialty-tittle .description-bottomn {
@@ -3294,11 +3350,11 @@ textarea {
     #registration .text_1 {
         color: var(--color-blue-1);
         font-family: Montserrat;
-        font-size: 24px;
+        font-size: 38px;
         font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        padding-top: 28px;
+        font-weight: 500;
+        line-height: 1.5em;
+        padding: 28px 5% 0px;
     }
 
     #registration .register-btn {
@@ -3314,9 +3370,9 @@ textarea {
 
     #registration .text_2 {
         font-family: Montserrat;
-        font-size: 16px;
+        font-size: 28px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 600;
     }
 
     /*registration end*/
@@ -3324,7 +3380,7 @@ textarea {
     /*about the program start*/
     #aboutTheProgram .main_container {
         width: 100%;
-        height: 448px;
+        height: 545px;
         background-image: url(../images/about_the_program/background.jpg);
         background-size: cover;
         background-repeat: no-repeat;
@@ -3334,7 +3390,7 @@ textarea {
         float: right;
         background-image: url(../images/about_the_program/photo_about_the_program_1.png);
         padding: 14.8%;
-        margin: 69.57px 48px 77.48px 0;
+        margin: 105px 48px 0px 0px;
     }
 
     #aboutTheProgram .main_unit {
@@ -3356,11 +3412,11 @@ textarea {
         color: var(--color-blue-1);
         text-align: center;
         font-family: Montserrat;
-        font-size: 24px;
+        font-size: 28px;
         font-style: normal;
-        font-weight: 500;
-        line-height: 43.2px;
-        width: 564px;
+        font-weight: 400;
+        line-height: 50px;
+        width: 565px;
         height: 343px;
         margin: 49px 32px 42px 72px;
         padding: 0;
@@ -3402,13 +3458,18 @@ textarea {
     #provide .text1 {
         line-height: 175%;
         padding: 15px 0;
-        margin-left: 35px;
-        width: 42%;
+        margin: 24px 35px;
+        width: 40%;
         color: var(--color-blue-1);
         font-family: Montserrat;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
+    }
+
+    #provide .text1 li {
+        font-size: 16px;
+        line-height: 28.8px;
     }
 
     /*we provide end*/
@@ -3448,7 +3509,7 @@ textarea {
 
     #registerAttencion .block_text {
         display: flex;
-        width: 360px;
+        width: 369px;
         height: 71px;
         position: relative;
         top: 122px;
@@ -3459,10 +3520,10 @@ textarea {
         color: var(--color-blue-1);
         text-align: center;
         font-family: Montserrat;
-        font-size: 18px;
+        font-size: 20px;
         font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        font-weight: 500;
+        line-height: 35px;
         letter-spacing: -0.36px;
     }
 
@@ -3482,15 +3543,15 @@ textarea {
         text-decoration: none;
         cursor: pointer;
         gap: 10px;
-        bottom: 46px;
         left: 34px;
         border-radius: 5px;
+        margin-bottom: 0px;
     }
 
     #registerAttencion .block_attencion {
         display: flex;
         width: 100%;
-        height: 483px;
+        height: 473px;
         flex-direction: column;
         background-image: none;
         background-repeat: no-repeat;
@@ -3502,8 +3563,16 @@ textarea {
 
     #registerAttencion .block_attencion_text1 {
         display: flex;
-        padding: 154px 0px 49px 121px;
+        padding: 154px 0px 49px 103px;
         margin: 0px;
+    }
+
+    #registerAttencion .block_attencion_text1 .warning-de {
+        font-size: 38px;
+    }
+
+    #registerAttencion .block_attencion_text1 .warning-en {
+        font-size: 40px;
     }
 
     #registerAttencion .block_attencion_text-en {
@@ -3513,7 +3582,7 @@ textarea {
     }
 
     #registerAttencion .block_attencion_text1 h2 {
-        width: 145px;
+        width: 228px;
         flex-shrink: 0;
         color: var(--color-blue-1);
         font-family: Montserrat;
@@ -3521,6 +3590,7 @@ textarea {
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+        margin: 0px;
     }
 
     #registerAttencion .block_attencion_text-en h2 {
@@ -3538,18 +3608,19 @@ textarea {
         display: flex;
         width: 517px;
         flex-shrink: 0;
-        margin: 9px 0 0 46px;
+        margin: 0px 0px 0px 46px;
     }
 
     #registerAttencion .block_attencion_text2 p {
         font-family: Montserrat;
-        font-size: 18px;
+        font-size: 22px;
         font-style: normal;
-        font-weight: 400;
-        line-height: 180%;
+        font-weight: 600;
+        line-height: 190%;
         text-align: center;
         position: relative;
         left: 32px;
+        margin: 0px;
     }
 
     #registerAttencion .hyphenation {
@@ -3566,13 +3637,21 @@ textarea {
 
     #resources .resources_block {
         width: 904px;
-        height: 428px;
+        height: 455px;
+    }
+
+    #resources .resources_block-de {
+        height: 480px;
+    }
+
+    #resources .resources_block-en {
+        height: 390px;
     }
 
     #resources .resources_block p {
         width: 859px;
         font-size: 26px;
-        font-weight: 400;
+        font-weight: 600;
         line-height: 180%;
     }
 
@@ -3591,7 +3670,7 @@ textarea {
 
     /*become our partner start*/
     #becomeOurPartner {
-        padding-top: 90px;
+        padding-top: 0px;
         padding-bottom: 0;
         flex-direction: row;
         justify-content: center;
@@ -3600,8 +3679,13 @@ textarea {
 
     #becomeOurPartner .join-our-team,
     #becomeOurPartner .description {
-        height: 887px;
+        height: 1000px;
         width: 452px;
+    }
+
+    #becomeOurPartner .join-our-team-de,
+    #becomeOurPartner .description-de {
+        height: 1050px;
     }
 
     #becomeOurPartner .join-our-team {
@@ -3612,14 +3696,15 @@ textarea {
     }
 
     #becomeOurPartner .join-our-team .foto {
+        margin-top: 50px;
         width: 437px;
         height: 645px;
     }
 
     #becomeOurPartner .description p {
         font-size: 16px;
-        line-height: 180%;
-        font-weight: 400;
+        line-height: 230%;
+        font-weight: 600;
         width: 446px;
         margin-top: 36px;
         margin-bottom: 36px;
@@ -3635,13 +3720,20 @@ textarea {
     }
 
     #becomeOurPartner .description .text .title {
-        font-size: 32px;
-        font-weight: 400;
+        font-size: 33px;
+        font-weight: 500;
         margin-top: 0;
+        padding-top: 0px;
     }
 
     #becomeOurPartner .join-our-team p {
-        width: 420px;
+        font-size: 20px;
+        line-height: 30px;
+        width: 505px;
+    }
+
+    #becomeOurPartner .join-our-team .join-our-team-label-button-de {
+        width: 490px;
     }
 
     #becomeOurPartner .description .title,
@@ -3657,7 +3749,8 @@ textarea {
     }
 
     #becomeOurPartner .description .buttons .label-button b {
-        font-weight: 700;
+        font-size: 20px;
+        font-weight: 500;
     }
 
     /*become our partner end*/
@@ -3752,16 +3845,29 @@ textarea {
         margin: 0px auto 0px auto;
     }
 
+    #financialSupport .qr .qr-img {
+        display: none;
+    }
+
     #financialSupport .text {
         padding-top: 12px;
-        padding-right: 520px;
-        padding-left: 33px;
+        padding-right: 416px;
+        padding-left: 44px;
         font-family: Raleway;
-        font-size: 20px;
+        font-size: 21px;
         font-style: italic;
         font-weight: 500;
-        line-height: normal;
+        line-height: 30px;
         width: 950px;
+    }
+
+    #financialSupport .text-en {
+        padding-right: 430px;
+    }
+
+    #financialSupport .text-pl {
+        padding-right: 430px;
+        padding-left: 35px;
     }
 
     #financialSupport .link {
@@ -3802,6 +3908,11 @@ textarea {
     #specialty .cards .card .card-descripton {
         font-size: 18px;
         width: 365px;
+        font-weight: 600;
+    }
+
+    #specialty .cards .card .card-descripton-de {
+        margin-top: 15px;
     }
 
     #specialty .cards .label-button {
@@ -3840,7 +3951,7 @@ textarea {
 
     #specialty .specialty-tittle .professions {
         font-size: 40px;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 200%;
         height: 284px;
         margin-bottom: 20px;
