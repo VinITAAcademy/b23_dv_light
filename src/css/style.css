@@ -315,7 +315,7 @@ li {
     width: 300px;
 }
 
-#header .offcanvas-body .nav-item .dropdown-item{
+#header .offcanvas-body .nav-item .dropdown-item {
     font-size: 14px;
 }
 
@@ -342,7 +342,7 @@ li {
     align-items: center;
 }
 
-#header .dropdown{
+#header .dropdown {
     height: 35px;
 }
 
@@ -451,6 +451,7 @@ li {
     margin: 8px 5px;
     padding: 9px;
 }
+
 .nav-item.dropdown {
     order: 4;
 }
@@ -1590,7 +1591,7 @@ textarea {
     padding-top: 21vw;
 }
 
-#banner .academy-logo {
+#banner .banner-academy-logo {
     width: 35.2vw;
     display: flex;
     justify-content: space-between;
@@ -1601,18 +1602,18 @@ textarea {
     left: 5.33vw;
 }
 
-#banner .academy-logo .academy-logo-img {
+#banner .banner-academy-logo .banner-academy-logo-img {
     height: 13.87vw;
 }
 
-#banner .academy-logo .academy-logo-txt {
+#banner .banner-academy-logo .banner-academy-logo-txt {
     font-family: "MyriadPro Regular";
     font-size: 3.7vw;
     line-height: 1.2em;
     margin: auto 0px;
 }
 
-#banner .academy-logo .academy-logo-txt .academy-logo-txt-bold {
+#banner .banner-academy-logo .banner-academy-logo-txt .banner-academy-logo-txt-bold {
     font-family: "MyriadPro SemiBold";
     margin: 0px;
     font-size: 4vw;
@@ -1669,6 +1670,10 @@ textarea {
 }
 
 #banner .banner-content .banner-department-txt-en {
+    font-size: 8vw;
+}
+
+#banner .banner-content .banner-department-txt-de {
     font-size: 8vw;
 }
 
@@ -1731,9 +1736,7 @@ textarea {
 }
 
 #banner .banner-phone {
-    width: 39.7vw;
     display: flex;
-    justify-content: space-between;
     position: absolute;
     left: 5vw;
     bottom: 2.1vw;
@@ -1743,6 +1746,7 @@ textarea {
 
 #banner .banner-phone .banner-phone-img {
     height: 8.5vw;
+    margin-right: 1.3vw;
 }
 
 #banner .banner-phone .banner-phone-number {
@@ -1911,11 +1915,112 @@ textarea {
     color: var(--color-yellow);
 }
 
-#footer .added-icon{
+#footer .added-icon {
     width: 32px;
 }
 
 /*footer end*/
+
+/*============================ Tablet 576 px========================*/
+
+@media (min-width: 576px) {
+
+    /* banner start */
+    #banner {
+        height: 78.5vw;
+        padding-top: 14.7vw;
+    }
+
+    #banner .banner-academy-logo {
+        width: 24.64vw;
+        top: 2.31vw;
+        left: 2.31vw;
+    }
+
+    #banner .banner-academy-logo .banner-academy-logo-img {
+        height: 9.71vw;
+    }
+
+    #banner .banner-academy-logo .banner-academy-logo-txt {
+        font-size: 2.59vw;
+    }
+
+    #banner .banner-academy-logo .banner-academy-logo-txt .banner-academy-logo-txt-bold {
+        font-size: 2.8vw;
+    }
+
+    #banner .banner-content .banner-ukr-txt {
+        font-size: 3.36vw;
+    }
+
+    #banner .banner-content .banner-line {
+        width: 39.2vw;
+    }
+
+    #banner .banner-content .banner-control-txt {
+        font-size: 3.71vw;
+        margin-bottom: 4.48vw;
+    }
+
+    #banner .banner-content .banner-department-txt-wrapper {
+        width: 64.75vw;
+        height: 8.47vw;
+    }
+
+    #banner .banner-content .banner-department-txt-wrapper .banner-flag {
+        height: 8.47vw;
+    }
+
+    #banner .banner-content .banner-department-txt {
+        font-size: 5.95vw;
+    }
+
+    #banner .banner-content .banner-department-txt-en {
+        font-size: 5.6vw;
+    }
+
+    #banner .banner-content .banner-department-txt-de {
+        font-size: 5.6vw;
+    }
+
+    #banner .banner-content .banner-description-txt {
+        font-size: 2.59vw;
+        margin-bottom: 3vw;
+        width: 60vw;
+    }
+
+    #banner .banner-content .banner-button-wrapper {
+        width: 55.79vw;
+        height: 10.08vw;
+    }
+
+    #banner .banner-content .banner-button-wrapper .banner-button-frame {
+        width: 54.32vw;
+        height: 9.1vw;
+    }
+
+    #banner .banner-content .banner-button-wrapper .banner-button {
+        width: 54.32vw;
+        height: 9.1vw;
+        font-size: 3vw;
+    }
+
+    #banner .banner-phone {
+        left: 3.5vw;
+        bottom: 1.47vw;
+    }
+
+    #banner .banner-phone .banner-phone-img {
+        height: 5.95vw;
+        margin-right: 0.91vw;
+    }
+
+    #banner .banner-phone .banner-phone-number {
+        font-size: 2.59vw;
+    }
+
+    /* banner end */
+}
 
 /*============================ Tablet 768 px========================*/
 
@@ -2014,7 +2119,7 @@ textarea {
         width: 600px;
     }
 
-    #header .offcanvas-body .nav-item .dropdown-item{
+    #header .offcanvas-body .nav-item .dropdown-item {
         font-size: 26px;
     }
 
@@ -2888,6 +2993,110 @@ textarea {
 
     /*specialty end*/
 
+    /* banner start */
+    #banner {
+        background: url(../images/banner/banner_background_tablet.webp);
+        background-position: center;
+        background-size: cover;
+        height: calc(20.8vw*1.4);
+        padding-top: 1.3vw;
+    }
+
+    #banner .banner-academy-logo {
+        width: calc(12.89vw*1.2);
+        top: calc(1.17vw*1.2);
+        left: calc(1.17vw*1.2);
+    }
+
+    #banner .banner-academy-logo .banner-academy-logo-img {
+        height: calc(5vw*1.2);
+    }
+
+    #banner .banner-academy-logo .banner-academy-logo-txt {
+        font-size: calc(1.37vw*1.2);
+    }
+
+    #banner .banner-academy-logo .banner-academy-logo-txt .banner-academy-logo-txt-bold {
+        font-size: calc(1.46vw*1.2);
+    }
+
+    #banner .banner-content .banner-ukr-txt {
+        font-size: calc(1.3vw*1.2);
+        line-height: 1em;
+        margin-bottom: calc(0.1vw*1.2);
+    }
+
+    #banner .banner-content .banner-line {
+        width: calc(15vw*1.2);
+        margin-bottom: calc(0.5vw*1.2);
+    }
+
+    #banner .banner-content .banner-control-txt {
+        font-size: calc(1.38vw*1.2);
+        line-height: 1em;
+        margin-bottom: calc(1.15vw*1.2);
+    }
+
+    #banner .banner-content .banner-department-txt-wrapper {
+        width: calc(34.5vw*1.2);
+        height: calc(4.8vw*1.2);
+        margin-bottom: calc(0.2vw*1.2);
+    }
+
+    #banner .banner-content .banner-department-txt-wrapper .banner-flag {
+        height: calc(4.8vw*1.2);
+    }
+
+    #banner .banner-content .banner-department-txt {
+        font-size: calc(3.3vw*1.2);
+    }
+
+    #banner .banner-content .banner-department-txt-en {
+        font-size: calc(3.1vw*1.2);
+    }
+
+    #banner .banner-content .banner-department-txt-de {
+        font-size: calc(3.1vw*1.1);
+    }
+
+    #banner .banner-content .banner-description-txt {
+        font-size: calc(1.2vw*1.2);
+        margin-bottom: calc(1.3vw*1.2);
+        width: calc(36.9vw*1.2);
+    }
+
+    #banner .banner-content .banner-button-wrapper {
+        width: calc(20.7vw*1.8);
+        height: calc(3.7vw*1.8);
+    }
+
+    #banner .banner-content .banner-button-wrapper .banner-button-frame {
+        width: calc(20.1vw*1.8);
+        height: calc(3.32vw*1.8);
+    }
+
+    #banner .banner-content .banner-button-wrapper .banner-button {
+        width: calc(20.1vw*1.8);
+        height: calc(3.32vw*1.8);
+        font-size: calc(1vw*1.8);
+    }
+
+    #banner .banner-phone {
+        left: 73.5vw;
+        bottom: calc(4.5vw*1.2);
+    }
+
+    #banner .banner-phone .banner-phone-img {
+        height: calc(2.1vw*1.2);
+        margin-right: 0.73vw;
+    }
+
+    #banner .banner-phone .banner-phone-number {
+        font-size: calc(1.4vw*1.2);
+    }
+
+    /* banner end */
+
     /*footer start*/
 
     #footer .footer_contacts_inner {
@@ -3153,7 +3362,7 @@ textarea {
         margin-top: 13px;
     }
 
-    #header .language-dropdown:hover .dropdown-content a{
+    #header .language-dropdown:hover .dropdown-content a {
         padding-bottom: 4px;
     }
 
@@ -3242,7 +3451,8 @@ textarea {
 
     #mainblock .work_it .work_it_linc .garanty .garanty-txt {
         font-size: 1.95vw;
-        width: 15vw;;
+        width: 15vw;
+        ;
         margin: 0 auto;
     }
 
@@ -4014,21 +4224,21 @@ textarea {
         padding-top: 1.3vw;
     }
 
-    #banner .academy-logo {
+    #banner .banner-academy-logo {
         width: 12.89vw;
         top: 1.17vw;
         left: 1.17vw;
     }
 
-    #banner .academy-logo .academy-logo-img {
+    #banner .banner-academy-logo .banner-academy-logo-img {
         height: 5vw;
     }
 
-    #banner .academy-logo .academy-logo-txt {
+    #banner .banner-academy-logo .banner-academy-logo-txt {
         font-size: 1.37vw;
     }
 
-    #banner .academy-logo .academy-logo-txt .academy-logo-txt-bold {
+    #banner .banner-academy-logo .banner-academy-logo-txt .banner-academy-logo-txt-bold {
         font-size: 1.46vw;
     }
 
@@ -4071,6 +4281,10 @@ textarea {
         font-size: 3.1vw;
     }
 
+    #banner .banner-content .banner-department-txt-de {
+        font-size: 3.1vw;
+    }
+
     #banner .banner-content .banner-description-txt {
         font-size: 1.2vw;
         margin-bottom: 1.3vw;
@@ -4094,7 +4308,6 @@ textarea {
     }
 
     #banner .banner-phone {
-        width: 13.6vw;
         left: 67.5vw;
         bottom: 1.89vw;
     }
