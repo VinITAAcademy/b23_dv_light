@@ -75,7 +75,6 @@
     --bs-breakpoint-xl: 1024px;
 }
 
-
 body {
     margin: 0;
     padding: 0;
@@ -3432,7 +3431,6 @@ textarea {
     #header .navbar .container-fluid .navbar-toggler {
         display: block;
     }
-
 }
 
 /*header end*/
