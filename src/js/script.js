@@ -194,7 +194,6 @@ document.addEventListener('DOMContentLoaded', function () {
         // Save the current scroll position
         scrollPosition = window.pageYOffset;
         offcanvasNavbar.classList.add('show');
-        // offcanvasNavbar.style.display = 'flex';
         // Page scroll lock
         document.body.style.overflow = 'hidden';
     });
