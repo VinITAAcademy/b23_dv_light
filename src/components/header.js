@@ -93,7 +93,7 @@ class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <header id="header">
-            <nav class="navbar bg-body-tertiary navbar-expand-lg">
+            <nav class="navbar bg-body-tertiary navbar-expand-xl">
                 <div class="container-fluid">
                     <img class="foto-swallow" src="./src/images/header/swallow.svg" alt="Swallow" />
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
