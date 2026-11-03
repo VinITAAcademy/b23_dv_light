@@ -9,7 +9,7 @@ const headerData = [
         ITSuccess: "IT-Успіх",
         careerDays: "Дні кар’єри",
         veteransCoffee: "Кава ветерана",
-        YEPSHackathons: "Хакатони YEPS",
+        YEPSHackathons: "Хакатон",
         droneDepartmen: "Кафедра дронів",
         EnglishForIT: "Англійська для IT",
         smallBusinessSupport: "Підтримка малого бізнесу",
@@ -25,7 +25,7 @@ const headerData = [
         ITSuccess: "IT Success",
         careerDays: "Career Days",
         veteransCoffee: "Veteran's Coffee",
-        YEPSHackathons: "YEPS Hackathons",
+        YEPSHackathons: "Hackathon",
         droneDepartmen: "Drone Department",
         EnglishForIT: "English for IT",
         smallBusinessSupport: "Small Business Support",
@@ -41,7 +41,7 @@ const headerData = [
         ITSuccess: "IT-Erfolg",
         careerDays: "Karriere-Tage",
         veteransCoffee: "Kaffee für Veteranen",
-        YEPSHackathons: "YEPS Hackathons",
+        YEPSHackathons: "Hackathon",
         droneDepartmen: "Abteilung Drohnen",
         EnglishForIT: "Englisch für IT",
         smallBusinessSupport: "Unterstützung für kleine Unternehmen",
@@ -57,7 +57,7 @@ const headerData = [
         ITSuccess: "Sukces IT",
         careerDays: "Dni kariery",
         veteransCoffee: "Kawa dla weteranów",
-        YEPSHackathons: "Hackathony YEPS",
+        YEPSHackathons: "Hackathon",
         droneDepartmen: "Dział dronów",
         EnglishForIT: "Angielski dla informatyków",
         smallBusinessSupport: "Wsparcie dla małych firm",
@@ -135,14 +135,14 @@ class Header extends HTMLElement {
                                     ${headerData[i].ourProjects}
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li class="nav-item dropdown dropdown-list"><a class="dropdown-item nav-link" href="https://it.uspih.vn.ua/">${headerData[i].ITSuccess}</a></li>
-                                        <li class="nav-item dropdown dropdown-list"><a class="dropdown-item nav-link" href="https://profitday.info/">${headerData[i].careerDays}</a></li>
+                                        <li class="nav-item dropdown dropdown-list"><a class="dropdown-item nav-link" href="https://it.uspih.intita.com/">${headerData[i].ITSuccess}</a></li>
+                                        <li class="nav-item dropdown dropdown-list"><a class="dropdown-item nav-link" href="https://profitday.intita.com/">${headerData[i].careerDays}</a></li>
                                         <li class="nav-item dropdown dropdown-list"><a class="dropdown-item nav-link" href="https://kavadrive.com/#promo">${headerData[i].veteransCoffee}</a></li>
-                                        <li class="nav-item dropdown dropdown-list"><a class="dropdown-item nav-link" href="http://yeps.intita.com/">${headerData[i].YEPSHackathons}</a></li>
+                                        <li class="nav-item dropdown dropdown-list"><a class="dropdown-item nav-link" href="https://hackathon.intita.com/">${headerData[i].YEPSHackathons}</a></li>
                                         <li class="nav-item dropdown dropdown-list"><a class="dropdown-item nav-link" href="https://drone.intita.com/">${headerData[i].droneDepartmen}</a></li>
                                         <li class="nav-item dropdown dropdown-list"><a class="dropdown-item nav-link" href="https://english.intita.com/">${headerData[i].EnglishForIT}</a></li>
                                         <li class="nav-item dropdown dropdown-list"><a class="dropdown-item nav-link" href="https://getstrong.intita.com/">${headerData[i].smallBusinessSupport}</a></li>
-                                        <li class="nav-item dropdown dropdown-list"><a class="dropdown-item nav-link" href="https://uspih.vn.ua/">${headerData[i].veteransAndIDPsEmployment} і ВПО</a></li>
+                                        <!-- <li class="nav-item dropdown dropdown-list"><a class="dropdown-item nav-link" href="https://uspih.intita.com/">${headerData[i].veteransAndIDPsEmployment} і ВПО</a></li> -->
                                     </ul>
                                 </li>
                                 <li class="nav-item">
